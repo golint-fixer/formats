@@ -32,8 +32,10 @@ package cel
 import (
 	"bufio"
 	"encoding/binary"
+	"fmt"
 	"image"
 	"image/color"
+	"image/draw"
 	"io"
 	"os"
 	"path/filepath"
@@ -132,8 +134,29 @@ func decodeType0(data []byte, w, h int, pal color.Palette) image.Image {
 	panic("cel.decodeType0: not yet implemented")
 }
 
+// decodeType1 decodes the pixel data of a regular CEL frame with the specified
+// dimentions, using colours from the provided palette.
 func decodeType1(data []byte, w, h int, pal color.Palette) image.Image {
-	panic("cel.decodeType1: not yet implemented")
+	img := image.NewRGBA(image.Rect(0, 0, w, h))
+	drawPixel := pixelDrawer(img, w, h)
+	for pos := 0; pos < len(data); {
+		n := int(int8(data[pos]))
+		pos++
+		if n < 0 {
+			// Draw transparent pixels.
+			n = -n
+			for i := 0; i < n; i++ {
+				drawPixel(color.Transparent)
+			}
+		} else {
+			// Draw regular pixels.
+			for i := 0; i < n; i++ {
+				drawPixel(pal[data[pos]])
+				pos++
+			}
+		}
+	}
+	return img
 }
 
 func decodeType2(data []byte, w, h int, pal color.Palette) image.Image {
@@ -154,4 +177,26 @@ func decodeType5(data []byte, w, h int, pal color.Palette) image.Image {
 
 func decodeType6(data []byte, w, h int, pal color.Palette) image.Image {
 	panic("cel.decodeType6: not yet implemented")
+}
+
+// pixelDrawer returns a function which may be invoked to incrementally set
+// pixels; starting in the lower left corner, going from left to right, and then
+// row by row from the bottom to the top of the image.
+func pixelDrawer(dst draw.Image, w, h int) func(color.Color) {
+	x, y := 0, h-1
+	return func(c color.Color) {
+		// TODO: Remove sanity check once the cel decoder library has mature.
+		if x < 0 || x >= w {
+			panic(fmt.Sprintf("cel.pixelDrawer.drawPixel: invalid x; expected 0 <= x < %d, got x=%d", w, x))
+		}
+		if y < 0 || y >= h {
+			panic(fmt.Sprintf("cel.pixelDrawer.drawPixel: invalid y; expected 0 <= y < %d, got y=%d", h, y))
+		}
+		dst.Set(x, y, c)
+		x++
+		if x >= w {
+			x = 0
+			y--
+		}
+	}
 }
