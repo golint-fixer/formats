@@ -109,6 +109,7 @@ package cel
 import (
 	"image"
 	"image/color"
+	"path/filepath"
 )
 
 // decoders maps CEL frame types to decoder functions.
@@ -129,4 +130,30 @@ var (
 	{{ .LevelName }}FrameTypes = {{ printf "%#v" .FrameTypes }}
 {{- end }}
 )
+
+// getDecoder returns the CEL frame decoder of to the given file name and frame
+// number.
+func getDecoder(name string, frameNum int) func([]byte, int, int, color.Palette) image.Image {
+	// Early return for CL2 files.
+	if filepath.Ext(name) == ".cl2" {
+		return decodeType6
+	}
+
+	// Determine level CEL frame decoder based on the MIN frame type mappings.
+	switch name {
+	case "l1.cel":
+		return decoders[l1FrameTypes[frameNum]]
+	case "l2.cel":
+		return decoders[l2FrameTypes[frameNum]]
+	case "l3.cel":
+		return decoders[l3FrameTypes[frameNum]]
+	case "l4.cel":
+		return decoders[l4FrameTypes[frameNum]]
+	case "town.cel":
+		return decoders[townFrameTypes[frameNum]]
+	}
+
+	// Return default CEL decoder.
+	return decodeType1
+}
 `
