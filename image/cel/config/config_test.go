@@ -72,6 +72,7 @@ func TestConfs(t *testing.T) {
 				t.Errorf("%q: pixel count mismatch for frame number %d; expected %d, got %d", relCelPath, frameNum, want, got)
 				continue
 			} else {
+				// TODO: Remove once the image configs have matured.
 				fmt.Println("PASS:", relCelPath)
 			}
 		}
