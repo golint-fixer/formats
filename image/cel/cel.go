@@ -71,7 +71,7 @@ func DecodeAll(path string, pal color.Palette) ([]image.Image, error) {
 		}
 		if conf.Nimgs != 0 {
 			// TODO: Implement support for CEL archives.
-			return nil, errutil.Newf("cel.DecodeAll: support for CEL archives not yet implemented; unable to extract %q", name)
+			panic(fmt.Sprintf("cel.DecodeAll: support for CEL archives not yet implemented; unable to extract %q", name))
 		}
 		// Use image dimensions for the specific frame number if present.
 		w, ok := conf.FrameWidth[frameNum]

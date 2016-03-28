@@ -10,7 +10,6 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mewkiz/pkg/errutil"
 	"github.com/mewkiz/pkg/osutil"
 	"github.com/sanctuary/formats/image/cel"
 	"github.com/sanctuary/formats/image/cel/config"
@@ -162,7 +161,7 @@ func hashImage(img image.Image) [sha1.Size]byte {
 				data.WriteByte(c.B)
 				data.WriteByte(c.A)
 			default:
-				log.Fatal(errutil.Newf("support for %T not yet implemented", c))
+				panic(fmt.Sprintf("cel_test.hashImage: support for %T not yet implemented", c))
 			}
 		}
 	}

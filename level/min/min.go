@@ -29,6 +29,7 @@ package min
 import (
 	"bufio"
 	"encoding/binary"
+	"fmt"
 	"image"
 	"image/draw"
 	"io"
@@ -73,7 +74,7 @@ func Parse(path string) ([]Piece, error) {
 	case "l4.min", "town.min":
 		nblocks = 16
 	default:
-		return nil, errutil.Newf("min.Parse: support for %q not yet implemented", name)
+		panic(fmt.Sprintf("min.Parse: support for %q not yet implemented", name))
 	}
 	buf := make([]uint16, nblocks)
 
