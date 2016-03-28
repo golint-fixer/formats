@@ -41,6 +41,7 @@ import (
 	"path/filepath"
 
 	"github.com/mewkiz/pkg/errutil"
+	"github.com/sanctuary/formats/image/cel/config"
 )
 
 // DecodeAll decodes the given CEL image using colours from the provided
@@ -60,32 +61,32 @@ func DecodeAll(path string, pal color.Palette) ([]image.Image, error) {
 		decode := getDecoder(name, frameNum)
 
 		// Locate image config data.
-		relPath, ok := relPaths[name]
+		relPath, ok := config.RelPaths[name]
 		if !ok {
 			return nil, errutil.Newf("cel.DecodeAll: unable to locate relative path of %q", name)
 		}
-		conf, ok := confs[relPath]
+		conf, ok := config.Confs[relPath]
 		if !ok {
 			return nil, errutil.Newf("cel.DecodeAll: unable to locate CEL config for %q", name)
 		}
-		if conf.nimgs != 0 {
+		if conf.Nimgs != 0 {
 			// TODO: Implement support for CEL archives.
 			return nil, errutil.Newf("cel.DecodeAll: support for CEL archives not yet implemented; unable to extract %q", name)
 		}
 		// Use image dimensions for the specific frame number if present.
-		w, ok := conf.frameWidth[frameNum]
+		w, ok := conf.FrameWidth[frameNum]
 		if !ok {
 			// Fallback to default frame width.
-			w = conf.w
+			w = conf.W
 		}
-		h, ok := conf.frameHeight[frameNum]
+		h, ok := conf.FrameHeight[frameNum]
 		if !ok {
 			// Fallback to default frame height.
-			h = conf.h
+			h = conf.H
 		}
 
 		// Decode the frame pixel data.
-		data := frame[conf.header:] // Skip header contents if present.
+		data := frame[conf.Header:] // Skip header contents if present.
 		img := decode(data, w, h, pal)
 		imgs = append(imgs, img)
 	}
