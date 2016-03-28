@@ -30,7 +30,10 @@ var Confs = map[string]*Config{
 		W: 261, // ref: 0x406B12
 		H: 136, // h = npixels/w = 35496/261 = 136
 	},
-	"ctrlpan/p8bulbs.cel":           {W: unknown, H: unknown},
+	"ctrlpan/p8bulbs.cel": {
+		W: 88, // ref: 0x404707
+		H: 88, // h = npixels/w = 7744/88 = 88
+	},
 	"ctrlpan/p8but2.cel":            {W: unknown, H: unknown},
 	"ctrlpan/panel8.cel":            {W: unknown, H: unknown},
 	"ctrlpan/panel8bu.cel":          {W: unknown, H: unknown},

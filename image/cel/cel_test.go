@@ -54,6 +54,18 @@ func TestDecodeAll(t *testing.T) {
 				},
 			},
 		},
+		{
+			relCelPath: "ctrlpan/p8bulbs.cel",
+			palTests: []palTest{
+				{
+					relPalPath: "levels/towndata/town.pal",
+					wants: [][sha1.Size]byte{
+						{0x49, 0xA7, 0xE3, 0x9E, 0x98, 0xFB, 0xDB, 0x27, 0x53, 0xAE, 0x42, 0x83, 0x7D, 0x68, 0x4A, 0x13, 0x64, 0x71, 0x78, 0x2F},
+						{0x8C, 0x42, 0xB9, 0x57, 0xB3, 0x9B, 0x25, 0xCF, 0x8B, 0x86, 0x5A, 0x51, 0xE0, 0x04, 0x12, 0x70, 0x57, 0x3F, 0x04, 0xD1},
+					},
+				},
+			},
+		},
 	}
 
 	for _, g := range golden {
@@ -84,7 +96,8 @@ func TestDecodeAll(t *testing.T) {
 		celPath := filepath.Join(mpqDir, g.relCelPath)
 		for _, palTest := range g.palTests {
 			// TODO: Remove sanity check once the test cases have matured.
-			if len(palTest.wants) < 1 {
+			wants := palTest.wants
+			if len(wants) < 1 {
 				t.Errorf("%q: incomplete test; no expected SHA1 hashes for the decoded frames of palette %q", g.relCelPath, palTest.relPalPath)
 				continue
 			}
@@ -101,30 +114,29 @@ func TestDecodeAll(t *testing.T) {
 				t.Errorf("%q: unable to decode CEL frames; %v", g.relCelPath, err)
 				continue
 			}
-			if len(imgs) != len(palTest.wants) {
-				t.Errorf("%q: frame count mismatch; expected %d, got %d", g.relCelPath, palTest.wants, len(imgs))
+			if len(imgs) != len(wants) {
+				t.Errorf("%q: frame count mismatch; expected %d, got %d", g.relCelPath, len(wants), len(imgs))
 			}
 
 			// Compare the raw pixel data of the decoded frames to the expected
 			// SHA1 hashsums.
-			wants := palTest.wants
 			for frameNum, img := range imgs {
-				got := hashImage(img)
-				// TODO: Remove once the test cases have been implemented.
-				fmt.Print("hash: {")
-				for i, b := range got[:] {
-					if i != 0 {
-						fmt.Print(", ")
-					}
-					fmt.Printf("0x%02X", b)
-				}
-				fmt.Println("}")
-
 				if frameNum >= len(wants) {
-					t.Errorf("%q: invalid number of frames; expected %d, got %d", g.relCelPath, palTest.wants, len(imgs))
+					t.Errorf("%q: invalid number of frames; expected %d, got %d", g.relCelPath, len(wants), len(imgs))
 					break
 				}
+				got := hashImage(img)
 				if want := wants[frameNum]; got != want {
+					// TODO: Remove once the test cases have been implemented.
+					fmt.Print("{")
+					for i, b := range got[:] {
+						if i != 0 {
+							fmt.Print(", ")
+						}
+						fmt.Printf("0x%02X", b)
+					}
+					fmt.Println("},")
+
 					t.Errorf("%q: raw pixel data hash mismatch for frame number %d and palette %q; expected %032X, got %032X", g.relCelPath, frameNum, palTest.relPalPath, want, got)
 					continue
 				}
