@@ -23,7 +23,7 @@ type Config struct {
 // unknown tracks unknown data.
 const unknown = 0
 
-// confs specifies the data required for decoding
+// Confs specifies the data required for decoding
 var Confs = map[string]*Config{
 	// CEL images.
 	"ctrlpan/golddrop.cel": {
