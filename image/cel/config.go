@@ -25,7 +25,10 @@ const unknown = 0
 // confs specifies the data required for decoding
 var confs = map[string]config{
 	// CEL images.
-	"ctrlpan/golddrop.cel":          config{w: unknown, h: unknown},
+	"ctrlpan/golddrop.cel": config{
+		w: 261, // ref: 0x406B12
+		h: 136, // h = npixels/w = 35496/261 = 136
+	},
 	"ctrlpan/p8bulbs.cel":           config{w: unknown, h: unknown},
 	"ctrlpan/p8but2.cel":            config{w: unknown, h: unknown},
 	"ctrlpan/panel8.cel":            config{w: unknown, h: unknown},
