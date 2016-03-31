@@ -42,11 +42,26 @@ var Confs = map[string]*Config{
 		W: 640, // ref: 0x4046C7
 		H: 144, // h = npixels/w = 92160/640 = 144
 	},
-	"ctrlpan/panel8bu.cel":          {W: unknown, H: unknown},
-	"ctrlpan/smaltext.cel":          {W: unknown, H: unknown},
-	"ctrlpan/spelicon.cel":          {W: unknown, H: unknown},
-	"ctrlpan/talkbutt.cel":          {W: unknown, H: unknown},
-	"ctrlpan/talkpanl.cel":          {W: unknown, H: unknown},
+	"ctrlpan/panel8bu.cel": {
+		W: 71, // ref: 0x404993
+		H: 19, // h = npixels/w = 1349/71 = 19
+	},
+	"ctrlpan/smaltext.cel": {
+		W: 13, // ref: 0x404167
+		H: 11, // h = npixels/w = 143/13 = 11
+	},
+	"ctrlpan/spelicon.cel": {
+		W: 56, // ref: 0x403E98
+		H: 56, // h = npixels/w = 3136/56 = 56
+	},
+	"ctrlpan/talkbutt.cel": {
+		W: 61, // ref: 0x407019
+		H: 16, // h = npixels/w = 976/61 = 16
+	},
+	"ctrlpan/talkpanl.cel": {
+		W: 640, // ref: 0x4046C7
+		H: 144, // h = npixels/w = 92160/640 = 144
+	},
 	"data/bigtgold.cel":             {W: unknown, H: unknown},
 	"data/char.cel":                 {W: unknown, H: unknown},
 	"data/charbut.cel":              {W: unknown, H: unknown},
