@@ -121,7 +121,7 @@ var npixelsMapping = map[string][]int{
 	"data/spellbk.cel":              {112640},
 	"data/spellbkb.cel":             {2204},
 	"data/spelli2.cel":              {1406},
-	"data/square.cel":               {8172},
+	"data/square.cel":               {8192},
 	"data/textbox.cel":              {179073},
 	"data/textbox2.cel":             {82113},
 	"data/textslid.cel":             {144},
