@@ -342,16 +342,76 @@ var Confs = map[string]*Config{
 		W: 12, // ref: 0x4180B2
 		H: 12, // h = npixels/w = 144/12 = 12
 	},
-	"gendata/cut2.cel":              {W: unknown, H: unknown},
-	"gendata/cut3.cel":              {W: unknown, H: unknown},
-	"gendata/cut4.cel":              {W: unknown, H: unknown},
-	"gendata/cutgate.cel":           {W: unknown, H: unknown},
-	"gendata/cutl1d.cel":            {W: unknown, H: unknown},
-	"gendata/cutportl.cel":          {W: unknown, H: unknown},
-	"gendata/cutportr.cel":          {W: unknown, H: unknown},
-	"gendata/cutstart.cel":          {W: unknown, H: unknown},
-	"gendata/cuttt.cel":             {W: unknown, H: unknown},
-	"gendata/quotes.cel":            {W: unknown, H: unknown},
+	"gendata/cut2.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cut2.pal", // ref: 0x41B674
+		},
+	},
+	"gendata/cut3.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cut3.pal", // ref: 0x41B7AA
+		},
+	},
+	"gendata/cut4.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cut4.pal", // ref: 0x41B797
+		},
+	},
+	"gendata/cutgate.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cutgate.pal", // ref: 0x41B65E
+		},
+	},
+	"gendata/cutl1d.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cutl1d.pal", // ref: 0x41B69E
+		},
+	},
+	"gendata/cutportl.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cutportl.pal", // ref: 0x41B748
+		},
+	},
+	"gendata/cutportr.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cutportr.pal", // ref: 0x41B700
+		},
+	},
+	"gendata/cutstart.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cutstart.pal", // ref: 0x41B75B
+		},
+	},
+	"gendata/cuttt.cel": {
+		W: 640, // ref: 0x41B225
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/cuttt.pal", // ref: 0x41B7D1
+		},
+	},
+	"gendata/quotes.cel": {
+		W: 640, // NOTE: Unused?
+		H: 480, // h = npixels/w = 307200/640 = 480
+		Pals: []string{
+			"gendata/quotes.pal", // NOTE: Unused?
+		},
+	},
 	"items/armor2.cel":              {W: unknown, H: unknown},
 	"items/axe.cel":                 {W: unknown, H: unknown},
 	"items/axeflip.cel":             {W: unknown, H: unknown},
