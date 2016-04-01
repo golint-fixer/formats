@@ -3,15 +3,15 @@ package config
 
 // A Config specifies the data required for decoding a given CEL image.
 type Config struct {
-	// Default frame dimensions.
-	W, H int
-	// Specific frame dimensions, mapping from frame number to width or height.
-	FrameWidth, FrameHeight map[int]int
 	// Number of embedded images; a non-zero value implies that the given file is
 	// a CEL archive.
 	Nimgs int
 	// Header size in bytes.
 	Header int
+	// Default frame dimensions.
+	W, H int
+	// Specific frame dimensions, mapping from frame number to width or height.
+	FrameWidth, FrameHeight map[int]int
 	// Palette paths.
 	Pals []string
 	// Colour transition paths.
@@ -62,27 +62,286 @@ var Confs = map[string]*Config{
 		W: 640, // ref: 0x4046C7
 		H: 144, // h = npixels/w = 92160/640 = 144
 	},
-	"data/bigtgold.cel":             {W: unknown, H: unknown},
-	"data/char.cel":                 {W: unknown, H: unknown},
-	"data/charbut.cel":              {W: unknown, H: unknown},
-	"data/diabsmal.cel":             {W: unknown, H: unknown},
-	"data/inv/inv.cel":              {W: unknown, H: unknown},
-	"data/inv/inv_rog.cel":          {W: unknown, H: unknown},
-	"data/inv/inv_sor.cel":          {W: unknown, H: unknown},
-	"data/inv/objcurs.cel":          {W: unknown, H: unknown},
-	"data/medtexts.cel":             {W: unknown, H: unknown},
-	"data/optbar.cel":               {W: unknown, H: unknown},
-	"data/option.cel":               {W: unknown, H: unknown},
-	"data/pentspin.cel":             {W: unknown, H: unknown},
-	"data/pentspn2.cel":             {W: unknown, H: unknown},
-	"data/quest.cel":                {W: unknown, H: unknown},
-	"data/spellbk.cel":              {W: unknown, H: unknown},
-	"data/spellbkb.cel":             {W: unknown, H: unknown},
-	"data/spelli2.cel":              {W: unknown, H: unknown},
-	"data/square.cel":               {W: unknown, H: unknown},
-	"data/textbox.cel":              {W: unknown, H: unknown},
-	"data/textbox2.cel":             {W: unknown, H: unknown},
-	"data/textslid.cel":             {W: unknown, H: unknown},
+	"data/bigtgold.cel": {
+		W: 46, // ref: 0x419EEA
+		H: 45, // h = npixels/w = 2070/46 = 45
+	},
+	"data/char.cel": {
+		W: 320, // ref: 0x4056E1
+		H: 352, // h = npixels/w = 112640/320 = 352
+	},
+	"data/charbut.cel": {
+		W: 41, // ref: 0x406267
+		H: 22, // h = npixels/w = 902/41 = 22
+		FrameWidth: map[int]int{
+			// NOTE: Unused frame 0?
+			0: 95, // w = npixels/h = 2090/22 = 95
+		},
+	},
+	"data/diabsmal.cel": {
+		W: 296, // ref: 0x41A0D1
+		H: 100, // h = npixels/w = 29600/296 = 100
+	},
+	"data/inv/inv.cel": {
+		W: 320, // ref: 0x41B8D8
+		H: 352, // h = npixels/w = 112640/320 = 352
+	},
+	"data/inv/inv_rog.cel": {
+		W: 320, // ref: 0x41B8D8
+		H: 352, // h = npixels/w = 112640/320 = 352
+	},
+	"data/inv/inv_sor.cel": {
+		W: 320, // ref: 0x41B8D8
+		H: 352, // h = npixels/w = 112640/320 = 352
+	},
+	"data/inv/objcurs.cel": {
+		// The contents of frame 0 at offset 0x2D4 in objcurs.cel starts with the
+		// following header: 0A 00 00 00 00 00 00 00 00 00.
+		Header: 10,
+		// There are 93 occurrences of width 56 in objcurs_frame_width_from_frame.
+		W: 56,
+		// There are 87 occurrences of height 84 in objcurs_frame_height_from_frame.
+		H: 84,
+		// ref: https://github.com/sanctuary/notes/blob/master/rdata/cursor.md#objcurs_frame_width_from_frame
+		FrameWidth: map[int]int{
+			0:  33,
+			1:  32,
+			2:  32,
+			3:  32,
+			4:  32,
+			5:  32,
+			6:  32,
+			7:  32,
+			8:  32,
+			9:  32,
+			10: 23,
+			11: 28,
+			12: 28,
+			13: 28,
+			14: 28,
+			15: 28,
+			16: 28,
+			17: 28,
+			18: 28,
+			19: 28,
+			20: 28,
+			21: 28,
+			22: 28,
+			23: 28,
+			24: 28,
+			25: 28,
+			26: 28,
+			27: 28,
+			28: 28,
+			29: 28,
+			30: 28,
+			31: 28,
+			32: 28,
+			33: 28,
+			34: 28,
+			35: 28,
+			36: 28,
+			37: 28,
+			38: 28,
+			39: 28,
+			40: 28,
+			41: 28,
+			42: 28,
+			43: 28,
+			44: 28,
+			45: 28,
+			46: 28,
+			47: 28,
+			48: 28,
+			49: 28,
+			50: 28,
+			51: 28,
+			52: 28,
+			53: 28,
+			54: 28,
+			55: 28,
+			56: 28,
+			57: 28,
+			58: 28,
+			59: 28,
+			60: 28,
+			61: 28,
+			62: 28,
+			63: 28,
+			64: 28,
+			65: 28,
+			66: 28,
+			67: 28,
+			68: 28,
+			69: 28,
+			70: 28,
+			71: 28,
+			72: 28,
+			73: 28,
+			74: 28,
+			75: 28,
+			76: 28,
+			77: 28,
+			78: 28,
+			79: 28,
+			80: 28,
+			81: 28,
+			82: 28,
+			83: 28,
+			84: 28,
+			85: 28,
+		},
+		// ref: https://github.com/sanctuary/notes/blob/master/rdata/cursor.md#objcurs_frame_height_from_frame
+		FrameHeight: map[int]int{
+			0:   29,
+			1:   32,
+			2:   32,
+			3:   32,
+			4:   32,
+			5:   32,
+			6:   32,
+			7:   32,
+			8:   32,
+			9:   32,
+			10:  35,
+			11:  28,
+			12:  28,
+			13:  28,
+			14:  28,
+			15:  28,
+			16:  28,
+			17:  28,
+			18:  28,
+			19:  28,
+			20:  28,
+			21:  28,
+			22:  28,
+			23:  28,
+			24:  28,
+			25:  28,
+			26:  28,
+			27:  28,
+			28:  28,
+			29:  28,
+			30:  28,
+			31:  28,
+			32:  28,
+			33:  28,
+			34:  28,
+			35:  28,
+			36:  28,
+			37:  28,
+			38:  28,
+			39:  28,
+			40:  28,
+			41:  28,
+			42:  28,
+			43:  28,
+			44:  28,
+			45:  28,
+			46:  28,
+			47:  28,
+			48:  28,
+			49:  28,
+			50:  28,
+			51:  28,
+			52:  28,
+			53:  28,
+			54:  28,
+			55:  28,
+			56:  28,
+			57:  28,
+			58:  28,
+			59:  28,
+			60:  28,
+			61:  56,
+			62:  56,
+			63:  56,
+			64:  56,
+			65:  56,
+			66:  56,
+			86:  56,
+			87:  56,
+			88:  56,
+			89:  56,
+			90:  56,
+			91:  56,
+			92:  56,
+			93:  56,
+			94:  56,
+			95:  56,
+			96:  56,
+			97:  56,
+			98:  56,
+			99:  56,
+			100: 56,
+			101: 56,
+			102: 56,
+			103: 56,
+			104: 56,
+			105: 56,
+			106: 56,
+			107: 56,
+			108: 56,
+			109: 56,
+			110: 56,
+		},
+	},
+	"data/medtexts.cel": {
+		W: 22, // ref: 0x4281B2
+		H: 22, // h = npixels/w = 484/22 = 22
+	},
+	"data/optbar.cel": {
+		W: 287, // ref: 0x41A161
+		H: 32,  // h = npixels/w = 9184/287 = 32
+	},
+	"data/option.cel": {
+		W: 27, // ref: 0x41A1B6
+		H: 28, // h = npixels/w = 756/27 = 28
+	},
+	"data/pentspin.cel": {
+		W: 48, // ref: 0x41A204
+		H: 48, // h = npixels/w = 2304/48 = 48
+	},
+	"data/pentspn2.cel": {
+		W: 12, // ref: 0x406C14
+		H: 12, // h = npixels/w = 144/12 = 12
+	},
+	"data/quest.cel": {
+		W: 320, // ref: 0x4525E7
+		H: 352, // h = npixels/w = 112640/320 = 352
+	},
+	"data/spellbk.cel": {
+		W: 320, // ref: 0x406671
+		H: 352, // h = npixels/w = 112640/320 = 352
+	},
+	"data/spellbkb.cel": {
+		W: 76, // ref: 0x406697
+		H: 29, // h = npixels/w = 2204/76 = 29
+	},
+	"data/spelli2.cel": {
+		W: 37, // ref: 0x40673F
+		H: 38, // h = npixels/w = 1406/37 = 38
+	},
+	"data/square.cel": {
+		// The contents of frame 0 at offset 0xC in square.cel starts with the
+		// following header: 0A 00 8C 01 AC 01 CC 01 00 00.
+		Header: 10,
+		W:      64,  // ref: 0x4552A1
+		H:      128, // h = npixels/w = 8192/64 = 128
+	},
+	"data/textbox.cel": {
+		W: 591, // ref: 0x428105
+		H: 303, // h = npixels/w = 179073/591 = 303
+	},
+	"data/textbox2.cel": {
+		W: 271, // ref: 0x457B79
+		H: 303, // h = npixels/w = 82113/271 = 303
+	},
+	"data/textslid.cel": {
+		W: 12, // ref: 0x4180B2
+		H: 12, // h = npixels/w = 144/12 = 12
+	},
 	"gendata/cut2.cel":              {W: unknown, H: unknown},
 	"gendata/cut3.cel":              {W: unknown, H: unknown},
 	"gendata/cut4.cel":              {W: unknown, H: unknown},
