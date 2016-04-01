@@ -412,81 +412,439 @@ var Confs = map[string]*Config{
 			"gendata/quotes.pal", // NOTE: Unused?
 		},
 	},
-	"items/armor2.cel":              {W: unknown, H: unknown},
-	"items/axe.cel":                 {W: unknown, H: unknown},
-	"items/axeflip.cel":             {W: unknown, H: unknown},
-	"items/bldstn.cel":              {W: unknown, H: unknown},
-	"items/bottle.cel":              {W: unknown, H: unknown},
-	"items/bow.cel":                 {W: unknown, H: unknown},
-	"items/cleaver.cel":             {W: unknown, H: unknown},
-	"items/crownf.cel":              {W: unknown, H: unknown},
-	"items/duricons.cel":            {W: unknown, H: unknown},
-	"items/fanvil.cel":              {W: unknown, H: unknown},
-	"items/fbook.cel":               {W: unknown, H: unknown},
-	"items/fbow.cel":                {W: unknown, H: unknown},
-	"items/fbrain.cel":              {W: unknown, H: unknown},
-	"items/fbttle.cel":              {W: unknown, H: unknown},
-	"items/fbttlebb.cel":            {W: unknown, H: unknown},
-	"items/fbttlebl.cel":            {W: unknown, H: unknown},
-	"items/fbttlebr.cel":            {W: unknown, H: unknown},
-	"items/fbttleby.cel":            {W: unknown, H: unknown},
-	"items/fbttledb.cel":            {W: unknown, H: unknown},
-	"items/fbttledy.cel":            {W: unknown, H: unknown},
-	"items/fbttleor.cel":            {W: unknown, H: unknown},
-	"items/fbttlewh.cel":            {W: unknown, H: unknown},
-	"items/fear.cel":                {W: unknown, H: unknown},
-	"items/feye.cel":                {W: unknown, H: unknown},
-	"items/fheart.cel":              {W: unknown, H: unknown},
-	"items/flazstaf.cel":            {W: unknown, H: unknown},
-	"items/fmush.cel":               {W: unknown, H: unknown},
-	"items/food.cel":                {W: unknown, H: unknown},
-	"items/fplatear.cel":            {W: unknown, H: unknown},
-	"items/goldflip.cel":            {W: unknown, H: unknown},
-	"items/helmut.cel":              {W: unknown, H: unknown},
-	"items/innsign.cel":             {W: unknown, H: unknown},
-	"items/larmor.cel":              {W: unknown, H: unknown},
-	"items/mace.cel":                {W: unknown, H: unknown},
-	"items/manaflip.cel":            {W: unknown, H: unknown},
-	"items/map/mapz0000.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0001.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0002.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0003.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0004.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0005.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0006.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0007.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0008.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0009.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0010.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0011.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0012.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0013.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0014.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0015.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0016.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0017.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0018.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0019.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0020.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0021.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0022.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0023.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0024.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0025.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0026.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0027.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0028.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0029.cel":        {W: unknown, H: unknown},
-	"items/map/mapz0030.cel":        {W: unknown, H: unknown},
-	"items/map/mapzdoom.cel":        {W: unknown, H: unknown},
-	"items/ring.cel":                {W: unknown, H: unknown},
-	"items/rock.cel":                {W: unknown, H: unknown},
-	"items/scroll.cel":              {W: unknown, H: unknown},
-	"items/shield.cel":              {W: unknown, H: unknown},
-	"items/staff.cel":               {W: unknown, H: unknown},
-	"items/swrdflip.cel":            {W: unknown, H: unknown},
-	"items/wand.cel":                {W: unknown, H: unknown},
-	"items/wshield.cel":             {W: unknown, H: unknown},
+	"items/armor2.cel": {
+		// The contents of frame 0 at offset 0x44 in armor2.cel starts with the
+		// following header: 0A 00 8C 00 52 01 72 01 92 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/axe.cel": {
+		// The contents of frame 0 at offset 0x3C in axe.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 6B 01 97 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/axeflip.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x44 in axeflip.cel starts with the
+		// following header: 0A 00 6A 01 75 02 95 02 B5 02.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/bldstn.cel": {
+		// The contents of frame 0 at offset 0x3C in bldstn.cel starts with the
+		// following header: 0A 00 2A 00 7E 00 1D 01 3D 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/bottle.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x44 in bottle.cel starts with the
+		// following header: 0A 00 5C 00 E0 00 00 01 20 01.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/bow.cel": {
+		// The contents of frame 0 at offset 0x3C in bow.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 A5 00 C5 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/cleaver.cel": {
+		// The contents of frame 0 at offset 0x3C in cleaver.cel starts with the
+		// following header: 0A 00 2A 00 57 00 4A 01 6A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/crownf.cel": {
+		// The contents of frame 0 at offset 0x3C in crownf.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 11 01 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"items/duricons.cel": {
+		W: 32, // ref: 0x4064EB
+		H: 32, // h = npixels/w = 1024/32 = 32
+	},
+	"items/fanvil.cel": {
+		// The contents of frame 0 at offset 0x3C in fanvil.cel starts with the
+		// following header: 0A 00 2A 00 77 00 1E 03 3E 03.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbook.cel": {
+		// The contents of frame 0 at offset 0x3C in fbook.cel starts with the
+		// following header: 0A 00 2A 00 56 00 43 01 63 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbow.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x40 in fbow.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 6D 00 8D 00.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbrain.cel": {
+		// The contents of frame 0 at offset 0x38 in fbrain.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 C2 00 E2 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttle.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttle.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttlebb.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttlebb.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttlebl.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttlebl.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttlebr.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttlebr.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttleby.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttleby.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttledb.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttledb.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttledy.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttledy.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttleor.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttleor.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fbttlewh.cel": {
+		// The contents of frame 0 at offset 0x48 in fbttlewh.cel starts with the
+		// following header: 0A 00 BA 00 DA 00 FA 00 1A 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fear.cel": {
+		// The contents of frame 0 at offset 0x3C in fear.cel starts with the
+		// following header: 0A 00 2A 00 5F 00 AA 00 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"items/feye.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x38 in feye.cel starts with the
+		// following header: 0A 00 2A 00 6E 00 D5 00 F5 00.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fheart.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x38 in fheart.cel starts with the
+		// following header: 0A 00 2A 00 70 00 E2 00 02 01.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/flazstaf.cel": {
+		// The contents of frame 0 at offset 0x28 in flazstaf.cel starts with the
+		// following header: 0A 00 2A 00 16 01 31 02 73 02.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/fmush.cel": {
+		// The contents of frame 0 at offset 0x38 in fmush.cel starts with the
+		// following header: 0A 00 2A 00 4E 00 CD 00 ED 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/food.cel": {
+		// The contents of frame 0 at offset 0xC in food.cel starts with the
+		// following header: 0A 00 2A 00 66 01 86 01 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"items/fplatear.cel": {
+		// The contents of frame 0 at offset 0x3C in fplatear.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 BC 02 DC 02.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/goldflip.cel": {
+		// The contents of frame 0 at offset 0x30 in goldflip.cel starts with the
+		// following header: 0A 00 2A 00 F3 00 C4 01 E4 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/helmut.cel": {
+		// The contents of frame 0 at offset 0x3C in helmut.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 44 01 64 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/innsign.cel": {
+		// The contents of frame 0 at offset 0x3C in innsign.cel starts with the
+		// following header: 0A 00 42 00 09 03 4E 04 6E 04.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/larmor.cel": {
+		// The contents of frame 0 at offset 0x3C in larmor.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 9B 02 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"items/mace.cel": {
+		// The contents of frame 0 at offset 0x3C in mace.cel starts with the
+		// following header: 0A 00 2A 00 69 00 55 01 75 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/manaflip.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x44 in manaflip.cel starts with the
+		// following header: 0A 00 3B 00 5B 00 7B 00 9B 00.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/map/mapz0000.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0001.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0002.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0003.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0004.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0005.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0006.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0007.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0008.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0009.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0010.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0011.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0012.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0013.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0014.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0015.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0016.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0017.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0018.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0019.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0020.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0021.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0022.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0023.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0024.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0025.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0026.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0027.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0028.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0029.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapz0030.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/map/mapzdoom.cel": {
+		W: 640, // ref: 0x40ADBB
+		H: 352, // h = npixels/w = 225280/640 = 352
+	},
+	"items/ring.cel": {
+		// The contents of frame 0 at offset 0x3C in ring.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 A5 00 C5 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/rock.cel": {
+		// The contents of frame 0 at offset 0x58 in rock.cel starts with the
+		// following header: 0A 00 54 01 74 01 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x4219E1
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"items/scroll.cel": {
+		// The contents of frame 0 at offset 0x3C in scroll.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 F9 00 19 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/shield.cel": {
+		// The contents of frame 0 at offset 0x3C in shield.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 70 00 90 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/staff.cel": {
+		// The contents of frame 0 at offset 0x3C in staff.cel starts with the
+		// following header: 0A 00 2A 00 66 00 0C 01 5E 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/swrdflip.cel": {
+		// The contents of frame 0 at offset 0x3C in swrdflip.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 0C 01 2C 01.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/wand.cel": {
+		// NOTE: Unused?
+		// The contents of frame 0 at offset 0x3C in wand.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 AA 00 CA 00.
+		Header: 10,
+		W:      96,  // NOTE: Unused?
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	"items/wshield.cel": {
+		// The contents of frame 0 at offset 0x3C in wshield.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 BD 02 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x4219E1
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
 	"levels/l1data/l1.cel":          {W: unknown, H: unknown},
 	"levels/l1data/l1s.cel":         {W: unknown, H: unknown},
 	"levels/l2data/l2.cel":          {W: unknown, H: unknown},
