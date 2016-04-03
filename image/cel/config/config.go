@@ -405,11 +405,12 @@ var Confs = map[string]*Config{
 			"gendata/cuttt.pal", // ref: 0x41B7D1
 		},
 	},
+	// NOTE: Unused?
 	"gendata/quotes.cel": {
-		W: 640, // NOTE: Unused?
+		W: 640,
 		H: 480, // h = npixels/w = 307200/640 = 480
 		Pals: []string{
-			"gendata/quotes.pal", // NOTE: Unused?
+			"gendata/quotes.pal",
 		},
 	},
 	"items/armor2.cel": {
@@ -426,12 +427,12 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
+	// NOTE: Unused?
 	"items/axeflip.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x44 in axeflip.cel starts with the
 		// following header: 0A 00 6A 01 75 02 95 02 B5 02.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
 	"items/bldstn.cel": {
@@ -441,12 +442,12 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
+	// NOTE: Unused?
 	"items/bottle.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x44 in bottle.cel starts with the
 		// following header: 0A 00 5C 00 E0 00 00 01 20 01.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
 	"items/bow.cel": {
@@ -488,12 +489,12 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
+	// NOTE: Unused?
 	"items/fbow.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x40 in fbow.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 6D 00 8D 00.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
 	"items/fbrain.cel": {
@@ -573,20 +574,20 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
+	// NOTE: Unused?
 	"items/feye.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x38 in feye.cel starts with the
 		// following header: 0A 00 2A 00 6E 00 D5 00 F5 00.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
+	// NOTE: Unused?
 	"items/fheart.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x38 in fheart.cel starts with the
 		// following header: 0A 00 2A 00 70 00 E2 00 02 01.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
 	"items/flazstaf.cel": {
@@ -652,12 +653,12 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
+	// NOTE: Unused?
 	"items/manaflip.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x44 in manaflip.cel starts with the
 		// following header: 0A 00 3B 00 5B 00 7B 00 9B 00.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
 	"items/map/mapz0000.cel": {
@@ -830,12 +831,12 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
+	// NOTE: Unused?
 	"items/wand.cel": {
-		// NOTE: Unused?
 		// The contents of frame 0 at offset 0x3C in wand.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 AA 00 CA 00.
 		Header: 10,
-		W:      96,  // NOTE: Unused?
+		W:      96,
 		H:      160, // h = npixels/w = 15360/96 = 160
 	},
 	"items/wshield.cel": {
@@ -845,66 +846,430 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
-	"levels/l1data/l1.cel":          {W: unknown, H: unknown},
-	"levels/l1data/l1s.cel":         {W: unknown, H: unknown},
-	"levels/l2data/l2.cel":          {W: unknown, H: unknown},
-	"levels/l2data/l2s.cel":         {W: unknown, H: unknown},
-	"levels/l3data/l3.cel":          {W: unknown, H: unknown},
-	"levels/l4data/l4.cel":          {W: unknown, H: unknown},
-	"levels/towndata/town.cel":      {W: unknown, H: unknown},
-	"levels/towndata/towns.cel":     {W: unknown, H: unknown},
-	"missiles/flamel1.cel":          {W: unknown, H: unknown},
-	"missiles/flamel10.cel":         {W: unknown, H: unknown},
-	"missiles/flamel11.cel":         {W: unknown, H: unknown},
-	"missiles/flamel12.cel":         {W: unknown, H: unknown},
-	"missiles/flamel13.cel":         {W: unknown, H: unknown},
-	"missiles/flamel14.cel":         {W: unknown, H: unknown},
-	"missiles/flamel15.cel":         {W: unknown, H: unknown},
-	"missiles/flamel16.cel":         {W: unknown, H: unknown},
-	"missiles/flamel2.cel":          {W: unknown, H: unknown},
-	"missiles/flamel3.cel":          {W: unknown, H: unknown},
-	"missiles/flamel4.cel":          {W: unknown, H: unknown},
-	"missiles/flamel5.cel":          {W: unknown, H: unknown},
-	"missiles/flamel6.cel":          {W: unknown, H: unknown},
-	"missiles/flamel7.cel":          {W: unknown, H: unknown},
-	"missiles/flamel8.cel":          {W: unknown, H: unknown},
-	"missiles/flamel9.cel":          {W: unknown, H: unknown},
-	"missiles/flames1.cel":          {W: unknown, H: unknown},
-	"missiles/flames10.cel":         {W: unknown, H: unknown},
-	"missiles/flames11.cel":         {W: unknown, H: unknown},
-	"missiles/flames12.cel":         {W: unknown, H: unknown},
-	"missiles/flames13.cel":         {W: unknown, H: unknown},
-	"missiles/flames14.cel":         {W: unknown, H: unknown},
-	"missiles/flames15.cel":         {W: unknown, H: unknown},
-	"missiles/flames16.cel":         {W: unknown, H: unknown},
-	"missiles/flames2.cel":          {W: unknown, H: unknown},
-	"missiles/flames3.cel":          {W: unknown, H: unknown},
-	"missiles/flames4.cel":          {W: unknown, H: unknown},
-	"missiles/flames5.cel":          {W: unknown, H: unknown},
-	"missiles/flames6.cel":          {W: unknown, H: unknown},
-	"missiles/flames7.cel":          {W: unknown, H: unknown},
-	"missiles/flames8.cel":          {W: unknown, H: unknown},
-	"missiles/flames9.cel":          {W: unknown, H: unknown},
-	"missiles/flaml1.cel":           {W: unknown, H: unknown},
-	"missiles/flaml2.cel":           {W: unknown, H: unknown},
-	"missiles/flaml3.cel":           {W: unknown, H: unknown},
-	"missiles/flaml4.cel":           {W: unknown, H: unknown},
-	"missiles/flaml5.cel":           {W: unknown, H: unknown},
-	"missiles/flaml6.cel":           {W: unknown, H: unknown},
-	"missiles/flaml7.cel":           {W: unknown, H: unknown},
-	"missiles/flaml8.cel":           {W: unknown, H: unknown},
-	"missiles/flams1.cel":           {W: unknown, H: unknown},
-	"missiles/flams2.cel":           {W: unknown, H: unknown},
-	"missiles/flams3.cel":           {W: unknown, H: unknown},
-	"missiles/flams4.cel":           {W: unknown, H: unknown},
-	"missiles/flams5.cel":           {W: unknown, H: unknown},
-	"missiles/flams6.cel":           {W: unknown, H: unknown},
-	"missiles/flams7.cel":           {W: unknown, H: unknown},
-	"missiles/flams8.cel":           {W: unknown, H: unknown},
-	"missiles/mindmace.cel":         {W: unknown, H: unknown},
-	"missiles/sentfr.cel":           {W: unknown, H: unknown},
-	"missiles/sentout.cel":          {W: unknown, H: unknown},
-	"missiles/sentup.cel":           {W: unknown, H: unknown},
+	"levels/l1data/l1.cel":      {W: unknown, H: unknown},
+	"levels/l1data/l1s.cel":     {W: unknown, H: unknown},
+	"levels/l2data/l2.cel":      {W: unknown, H: unknown},
+	"levels/l2data/l2s.cel":     {W: unknown, H: unknown},
+	"levels/l3data/l3.cel":      {W: unknown, H: unknown},
+	"levels/l4data/l4.cel":      {W: unknown, H: unknown},
+	"levels/towndata/town.cel":  {W: unknown, H: unknown},
+	"levels/towndata/towns.cel": {W: unknown, H: unknown},
+	// NOTE: Unused?
+	"missiles/flamel1.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel1.cel starts with the
+		// following header: 0A 00 4D 01 29 03 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel10.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel10.cel starts with the
+		// following header: 0A 00 FA 00 22 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel11.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel11.cel starts with the
+		// following header: 0A 00 92 01 24 04 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel12.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel12.cel starts with the
+		// following header: 0A 00 86 00 1C 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel13.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel13.cel starts with the
+		// following header: 0A 00 F0 01 83 05 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel14.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel14.cel starts with the
+		// following header: 0A 00 E0 00 29 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel15.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel15.cel starts with the
+		// following header: 0A 00 E9 01 3B 04 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel16.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel16.cel starts with the
+		// following header: 0A 00 62 01 4B 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel2.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel2.cel starts with the
+		// following header: 0A 00 23 01 35 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel3.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel3.cel starts with the
+		// following header: 0A 00 C4 00 50 04 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel4.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel4.cel starts with the
+		// following header: 0A 00 39 00 08 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel5.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel5.cel starts with the
+		// following header: 0A 00 45 00 82 05 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel6.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel6.cel starts with the
+		// following header: 0A 00 32 00 01 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel7.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel7.cel starts with the
+		// following header: 0A 00 C2 00 25 04 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel8.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel8.cel starts with the
+		// following header: 0A 00 ED 00 23 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel9.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel9.cel starts with the
+		// following header: 0A 00 FF 00 1F 03 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames1.cel": {
+		// The contents of frame 0 at offset 0x18 in flames1.cel starts with the
+		// following header: 0A 00 2A 00 7D 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames10.cel": {
+		// The contents of frame 0 at offset 0x18 in flames10.cel starts with the
+		// following header: 0A 00 5E 00 89 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames11.cel": {
+		// The contents of frame 0 at offset 0x18 in flames11.cel starts with the
+		// following header: 0A 00 7D 00 A0 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames12.cel": {
+		// The contents of frame 0 at offset 0x18 in flames12.cel starts with the
+		// following header: 0A 00 2D 00 66 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames13.cel": {
+		// The contents of frame 0 at offset 0x18 in flames13.cel starts with the
+		// following header: 0A 00 54 00 C8 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames14.cel": {
+		// The contents of frame 0 at offset 0x18 in flames14.cel starts with the
+		// following header: 0A 00 2A 00 6B 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames15.cel": {
+		// The contents of frame 0 at offset 0x18 in flames15.cel starts with the
+		// following header: 0A 00 2A 00 94 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames16.cel": {
+		// The contents of frame 0 at offset 0x18 in flames16.cel starts with the
+		// following header: 0A 00 2A 00 80 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames2.cel": {
+		// The contents of frame 0 at offset 0x18 in flames2.cel starts with the
+		// following header: 0A 00 2A 00 7A 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames3.cel": {
+		// The contents of frame 0 at offset 0x18 in flames3.cel starts with the
+		// following header: 0A 00 2A 00 A9 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames4.cel": {
+		// The contents of frame 0 at offset 0x18 in flames4.cel starts with the
+		// following header: 0A 00 2A 00 63 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames5.cel": {
+		// The contents of frame 0 at offset 0x18 in flames5.cel starts with the
+		// following header: 0A 00 2A 00 AD 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames6.cel": {
+		// The contents of frame 0 at offset 0x18 in flames6.cel starts with the
+		// following header: 0A 00 2A 00 69 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames7.cel": {
+		// The contents of frame 0 at offset 0x18 in flames7.cel starts with the
+		// following header: 0A 00 31 00 90 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames8.cel": {
+		// The contents of frame 0 at offset 0x18 in flames8.cel starts with the
+		// following header: 0A 00 4C 00 86 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames9.cel": {
+		// The contents of frame 0 at offset 0x18 in flames9.cel starts with the
+		// following header: 0A 00 66 00 98 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flaml1.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml1.cel starts with the
+		// following header: 0A 00 32 00 21 03 6E 03 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml2.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml2.cel starts with the
+		// following header: 0A 00 2A 00 9F 04 33 05 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml3.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml3.cel starts with the
+		// following header: 0A 00 2A 00 20 06 89 06 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml4.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml4.cel starts with the
+		// following header: 0A 00 2A 00 35 04 2B 05 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml5.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml5.cel starts with the
+		// following header: 0A 00 2A 00 07 03 72 03 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml6.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml6.cel starts with the
+		// following header: 0A 00 3E 00 B1 04 E5 04 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml7.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml7.cel starts with the
+		// following header: 0A 00 2A 00 33 06 53 06 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flaml8.cel": {
+		// The contents of frame 0 at offset 0x24 in flaml8.cel starts with the
+		// following header: 0A 00 B7 00 3C 05 67 05 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams1.cel": {
+		// The contents of frame 0 at offset 0x3C in flams1.cel starts with the
+		// following header: 0A 00 2A 00 69 00 8C 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams2.cel": {
+		// The contents of frame 0 at offset 0x3C in flams2.cel starts with the
+		// following header: 0A 00 2A 00 69 00 99 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams3.cel": {
+		// The contents of frame 0 at offset 0x3C in flams3.cel starts with the
+		// following header: 0A 00 2A 00 88 00 A8 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams4.cel": {
+		// The contents of frame 0 at offset 0x3C in flams4.cel starts with the
+		// following header: 0A 00 2A 00 77 00 97 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams5.cel": {
+		// The contents of frame 0 at offset 0x3C in flams5.cel starts with the
+		// following header: 0A 00 2A 00 7E 00 9E 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams6.cel": {
+		// The contents of frame 0 at offset 0x3C in flams6.cel starts with the
+		// following header: 0A 00 2A 00 7C 00 9C 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams7.cel": {
+		// The contents of frame 0 at offset 0x3C in flams7.cel starts with the
+		// following header: 0A 00 2A 00 92 00 B2 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/flams8.cel": {
+		// The contents of frame 0 at offset 0x3C in flams8.cel starts with the
+		// following header: 0A 00 2A 00 73 00 93 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"missiles/mindmace.cel": {
+		// The contents of frame 0 at offset 0x28 in mindmace.cel starts with the
+		// following header: 0A 00 2A 00 A6 01 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/sentfr.cel": {
+		// The contents of frame 0 at offset 0x14 in sentfr.cel starts with the
+		// following header: 0A 00 E7 02 34 0C 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/sentout.cel": {
+		// The contents of frame 0 at offset 0x40 in sentout.cel starts with the
+		// following header: 0A 00 4A 00 B2 05 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/sentup.cel": {
+		// The contents of frame 0 at offset 0x44 in sentup.cel starts with the
+		// following header: 0A 00 3F 00 5F 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
 	"monsters/acid/acidpud.cel":     {W: unknown, H: unknown},
 	"monsters/magma/magball1.cel":   {W: unknown, H: unknown},
 	"monsters/magma/magball2.cel":   {W: unknown, H: unknown},
