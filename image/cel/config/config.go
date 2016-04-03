@@ -23,6 +23,8 @@ type Config struct {
 // unknown tracks unknown data.
 const unknown = 0
 
+// TODO: Add palette paths.
+
 // Confs specifies the data required for decoding
 var Confs = map[string]*Config{
 	// CEL images.
@@ -846,14 +848,44 @@ var Confs = map[string]*Config{
 		W:      96,  // ref: 0x4219E1
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
-	"levels/l1data/l1.cel":      {W: unknown, H: unknown},
-	"levels/l1data/l1s.cel":     {W: unknown, H: unknown},
-	"levels/l2data/l2.cel":      {W: unknown, H: unknown},
-	"levels/l2data/l2s.cel":     {W: unknown, H: unknown},
-	"levels/l3data/l3.cel":      {W: unknown, H: unknown},
-	"levels/l4data/l4.cel":      {W: unknown, H: unknown},
-	"levels/towndata/town.cel":  {W: unknown, H: unknown},
-	"levels/towndata/towns.cel": {W: unknown, H: unknown},
+	"levels/l1data/l1.cel": {
+		W: unknown,
+		H: unknown,
+	},
+	"levels/l1data/l1s.cel": {
+		// The contents of frame 0 at offset 0x28 in l1s.cel starts with the
+		// following header: 0A 00 D5 00 EC 02 1A 07 8C 09.
+		Header: 10,
+		W:      64,  // ref: 0x455835
+		H:      160, // h = npixels/w = 10240/64 = 160
+	},
+	"levels/l2data/l2.cel": {
+		W: unknown,
+		H: unknown,
+	},
+	"levels/l2data/l2s.cel": {
+		// The contents of frame 0 at offset 0x20 in l2s.cel starts with the
+		// following header: 0A 00 2A 00 57 00 40 01 7D 02.
+		Header: 10,
+		W:      64,  // ref: 0x455835
+		H:      160, // h = npixels/w = 10240/64 = 160
+	},
+	"levels/l3data/l3.cel": {
+		W: unknown,
+		H: unknown,
+	},
+	"levels/l4data/l4.cel": {
+		W: unknown,
+		H: unknown,
+	},
+	"levels/towndata/town.cel": {
+		W: unknown,
+		H: unknown,
+	},
+	"levels/towndata/towns.cel": {
+		W: 64,  // ref: 0x455835
+		H: 224, // h = npixels/w = 14336/64 = 224
+	},
 	// NOTE: Unused?
 	"missiles/flamel1.cel": {
 		// The contents of frame 0 at offset 0x24 in flamel1.cel starts with the
