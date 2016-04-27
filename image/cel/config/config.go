@@ -1302,27 +1302,173 @@ var Confs = map[string]*Config{
 		W:      96,
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
-	"monsters/acid/acidpud.cel":     {W: unknown, H: unknown},
-	"monsters/magma/magball1.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball2.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball3.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball4.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball5.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball6.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball7.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magball8.cel":   {W: unknown, H: unknown},
-	"monsters/magma/magblos.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos1.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos2.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos3.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos4.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos5.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos6.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos7.cel":    {W: unknown, H: unknown},
-	"monsters/rhino/rhinos8.cel":    {W: unknown, H: unknown},
-	"monsters/succ/flare.cel":       {W: unknown, H: unknown},
-	"monsters/succ/flarexp.cel":     {W: unknown, H: unknown},
-	"monsters/thin/lghning.cel":     {W: unknown, H: unknown},
+	// NOTE: Unused?
+	"monsters/acid/acidpud.cel": {
+		// The contents of frame 0 at offset 0x28 in acidpud.cel starts with the
+		// following header: 0A 00 43 06 EC 06 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball1.cel": {
+		// The contents of frame 0 at offset 0x48 in magball1.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 53 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball2.cel": {
+		// The contents of frame 0 at offset 0x48 in magball2.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 82 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball3.cel": {
+		// The contents of frame 0 at offset 0x48 in magball3.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 88 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball4.cel": {
+		// The contents of frame 0 at offset 0x48 in magball4.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 70 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball5.cel": {
+		// The contents of frame 0 at offset 0x48 in magball5.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 6E 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball6.cel": {
+		// The contents of frame 0 at offset 0x48 in magball6.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 7D 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball7.cel": {
+		// The contents of frame 0 at offset 0x48 in magball7.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 99 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magball8.cel": {
+		// The contents of frame 0 at offset 0x48 in magball8.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 81 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/magma/magblos.cel": {
+		// The contents of frame 0 at offset 0x30 in magblos.cel starts with the
+		// following header: 0A 00 58 00 3B 01 5B 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos1.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos1.cel starts with the
+		// following header: 0A 00 D0 02 77 09 87 0D 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos2.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos2.cel starts with the
+		// following header: 0A 00 9C 03 FB 09 25 0D 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos3.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos3.cel starts with the
+		// following header: 0A 00 29 04 0F 08 B6 0B 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos4.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos4.cel starts with the
+		// following header: 0A 00 A6 04 A3 0A EF 0E 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos5.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos5.cel starts with the
+		// following header: 0A 00 F7 03 AA 0A D5 0E 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos6.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos6.cel starts with the
+		// following header: 0A 00 94 04 69 0A A1 0E 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos7.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos7.cel starts with the
+		// following header: 0A 00 81 03 05 07 9D 0A 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/rhino/rhinos8.cel": {
+		// The contents of frame 0 at offset 0x20 in rhinos8.cel starts with the
+		// following header: 0A 00 A0 03 9D 09 DB 0C 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	// NOTE: Unused?
+	"monsters/succ/flare.cel": {
+		// The contents of frame 0 at offset 0x48 in flare.cel starts with the
+		// following header: 0A 00 55 00 21 03 80 03 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"monsters/succ/flarexp.cel": {
+		// The contents of frame 0 at offset 0x24 in flarexp.cel starts with the
+		// following header: 0A 00 2A 00 4D 00 6D 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"monsters/thin/lghning.cel": {
+		// The contents of frame 0 at offset 0x28 in lghning.cel starts with the
+		// following header: 0A 00 72 00 F1 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x4219E1
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
 	"monsters/unrav/unravw.cel":     {W: unknown, H: unknown},
 	"objects/altboy.cel":            {W: unknown, H: unknown},
 	"objects/angel.cel":             {W: unknown, H: unknown},
