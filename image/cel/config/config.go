@@ -1474,56 +1474,56 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x0C in altboy.cel starts with the
 		// following header: 0A 00 2A 06 35 0D 64 0D 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/angel.cel": {
 		// The contents of frame 0 at offset 0x10 in angel.cel starts with the
 		// following header: 0A 00 4E 05 40 09 E8 0E 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/armstand.cel": {
 		// The contents of frame 0 at offset 0x10 in armstand.cel starts with the
 		// following header: 0A 00 A4 01 CE 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/banner.cel": {
 		// The contents of frame 0 at offset 0x14 in banner.cel starts with the
 		// following header: 0A 00 C1 02 6F 07 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/barrel.cel": {
 		// The contents of frame 0 at offset 0x2C in barrel.cel starts with the
 		// following header: 0A 00 F2 02 FE 04 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/barrelex.cel": {
 		// The contents of frame 0 at offset 0x30 in barrelex.cel starts with the
 		// following header: 0A 00 F2 02 FE 04 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/bcase.cel": {
 		// The contents of frame 0 at offset 0x28 in bcase.cel starts with the
 		// following header: 0A 00 7E 02 4F 08 8C 0A 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/bkslbrnt.cel": {
 		// The contents of frame 0 at offset 0x20 in bkslbrnt.cel starts with the
 		// following header: 0A 00 99 02 AA 04 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
@@ -1538,21 +1538,21 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x30 in bloodfnt.cel starts with the
 		// following header: 0A 00 BF 05 24 0A 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/book1.cel": {
 		// The contents of frame 0 at offset 0x20 in book1.cel starts with the
 		// following header: 0A 00 77 02 91 04 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/book2.cel": {
 		// The contents of frame 0 at offset 0x20 in book2.cel starts with the
 		// following header: 0A 00 B8 01 2D 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
@@ -1567,7 +1567,7 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x30 in burncros.cel starts with the
 		// following header: 0A 00 FA 01 46 0C A3 12 B3 15.
 		Header: 10,
-		W:      160, // ref: 0x49F450
+		W:      160, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	// NOTE: Unused?
@@ -1590,63 +1590,63 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x18 in candle2.cel starts with the
 		// following header: 0A 00 58 01 32 02 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/cauldren.cel": {
 		// The contents of frame 0 at offset 0x14 in cauldren.cel starts with the
 		// following header: 0A 00 50 05 58 09 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/chest1.cel": {
 		// The contents of frame 0 at offset 0x20 in chest1.cel starts with the
 		// following header: 0A 00 6C 02 8C 02 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/chest2.cel": {
 		// The contents of frame 0 at offset 0x20 in chest2.cel starts with the
 		// following header: 0A 00 50 03 B7 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/chest3.cel": {
 		// The contents of frame 0 at offset 0x20 in chest3.cel starts with the
 		// following header: 0A 00 9F 04 76 05 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/cruxsk1.cel": {
 		// The contents of frame 0 at offset 0x44 in cruxsk1.cel starts with the
 		// following header: 0A 00 EC 00 8F 03 89 06 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/cruxsk2.cel": {
 		// The contents of frame 0 at offset 0x44 in cruxsk2.cel starts with the
 		// following header: 0A 00 09 01 93 03 8C 06 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/cruxsk3.cel": {
 		// The contents of frame 0 at offset 0x44 in cruxsk3.cel starts with the
 		// following header: 0A 00 01 01 5D 03 5C 06 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/decap.cel": {
 		// The contents of frame 0 at offset 0x28 in decap.cel starts with the
 		// following header: 0A 00 D8 01 0C 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
@@ -1685,7 +1685,7 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x58 in flame1.cel starts with the
 		// following header: 0A 00 C5 00 E5 00 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
@@ -1708,105 +1708,105 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x30 in goatshrn.cel starts with the
 		// following header: 0A 00 30 05 D6 07 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/l1braz.cel": {
 		// The contents of frame 0 at offset 0x70 in l1braz.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 79 02 99 03.
 		Header: 10,
-		W:      64,  // ref: 0x49F450
+		W:      64,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      160, // h = npixels/w = 10240/64 = 160
 	},
 	"objects/l1doors.cel": {
 		// The contents of frame 0 at offset 0x18 in l1doors.cel starts with the
 		// following header: 0A 00 32 02 78 06 5F 08 7F 08.
 		Header: 10,
-		W:      64,  // ref: 0x49F450
+		W:      64,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      160, // h = npixels/w = 10240/64 = 160
 	},
 	"objects/l2doors.cel": {
 		// The contents of frame 0 at offset 0x18 in l2doors.cel starts with the
 		// following header: 0A 00 2C 01 2C 04 9D 05 00 00.
 		Header: 10,
-		W:      64,  // ref: 0x49F450
+		W:      64,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 8192/64 = 128
 	},
 	"objects/l3doors.cel": {
 		// The contents of frame 0 at offset 0x18 in l3doors.cel starts with the
 		// following header: 0A 00 04 02 3F 06 94 08 00 00.
 		Header: 10,
-		W:      64,  // ref: 0x49F450
+		W:      64,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 8192/64 = 128
 	},
 	"objects/lever.cel": {
 		// The contents of frame 0 at offset 0x10 in lever.cel starts with the
 		// following header: 0A 00 EA 01 70 02 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/lshrineg.cel": {
 		// The contents of frame 0 at offset 0x60 in lshrineg.cel starts with the
 		// following header: 0A 00 D7 01 33 06 F3 0A 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/lzstand.cel": {
 		// The contents of frame 0 at offset 0x10 in lzstand.cel starts with the
 		// following header: 0A 00 6B 03 49 06 B2 06 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/mcirl.cel": {
 		// The contents of frame 0 at offset 0x18 in mcirl.cel starts with the
 		// following header: 0A 00 55 07 D7 09 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/mfountn.cel": {
 		// The contents of frame 0 at offset 0x30 in mfountn.cel starts with the
 		// following header: 0A 00 E9 07 D4 11 F4 11 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/miniwatr.cel": {
 		// The contents of frame 0 at offset 0x30 in miniwatr.cel starts with the
 		// following header: 0A 00 2A 00 5A 00 D7 04 00 00.
 		Header: 10,
-		W:      64,  // ref: 0x49F450
+		W:      64,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 8192/64 = 128
 	},
 	"objects/mushptch.cel": {
 		// The contents of frame 0 at offset 0x10 in mushptch.cel starts with the
 		// following header: 0A 00 27 02 ED 06 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/nude2.cel": {
 		// The contents of frame 0 at offset 0x20 in nude2.cel starts with the
 		// following header: 0A 00 6D 00 F5 01 DE 03 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/pedistl.cel": {
 		// The contents of frame 0 at offset 0x18 in pedistl.cel starts with the
 		// following header: 0A 00 08 02 0D 04 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/pfountn.cel": {
 		// The contents of frame 0 at offset 0x30 in pfountn.cel starts with the
 		// following header: 0A 00 97 05 EB 0E 0B 0F 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	// NOTE: Unused?
@@ -1814,49 +1814,49 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x30 in prsrplt1.cel starts with the
 		// following header: 0A 00 F9 02 19 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/rockstan.cel": {
 		// The contents of frame 0 at offset 0x0C in rockstan.cel starts with the
 		// following header: 0A 00 3C 01 1A 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/rshrineg.cel": {
 		// The contents of frame 0 at offset 0x60 in rshrineg.cel starts with the
 		// following header: 0A 00 67 01 C8 05 85 0A 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/sarc.cel": {
 		// The contents of frame 0 at offset 0x1C in sarc.cel starts with the
 		// following header: 0A 00 6B 08 12 13 00 00 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"objects/skulfire.cel": {
 		// The contents of frame 0 at offset 0x34 in skulfire.cel starts with the
 		// following header: 0A 00 3B 02 16 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/skulpile.cel": {
 		// The contents of frame 0 at offset 0x0C in skulpile.cel starts with the
 		// following header: 0A 00 F5 01 15 02 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/skulstik.cel": {
 		// The contents of frame 0 at offset 0x1C in skulstik.cel starts with the
 		// following header: 0A 00 B8 01 69 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
@@ -1864,7 +1864,7 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x10 in switch2.cel starts with the
 		// following header: 0A 00 4F 01 A9 01 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
@@ -1872,49 +1872,49 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x10 in switch4.cel starts with the
 		// following header: 0A 00 2B 02 C0 02 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/switch4.cel": {
 		// The contents of frame 0 at offset 0x10 in switch4.cel starts with the
 		// following header: 0A 00 2B 02 C0 02 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/tfountn.cel": {
 		// The contents of frame 0 at offset 0x28 in tfountn.cel starts with the
 		// following header: 0A 00 77 04 1E 0B 00 00 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"objects/tnudem.cel": {
 		// The contents of frame 0 at offset 0x18 in tnudem.cel starts with the
 		// following header: 0A 00 86 01 D2 04 FD 05 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/tnudew.cel": {
 		// The contents of frame 0 at offset 0x14 in tnudew.cel starts with the
 		// following header: 0A 00 7A 02 33 05 AD 06 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"objects/traphole.cel": {
 		// The contents of frame 0 at offset 0x10 in traphole.cel starts with the
 		// following header: 0A 00 2A 00 C4 00 E4 00 04 01.
 		Header: 10,
-		W:      64,  // ref: 0x49F450
+		W:      64,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      144, // h = npixels/w = 9216/64 = 144
 	},
 	"objects/tsoul.cel": {
 		// The contents of frame 0 at offset 0x20 in tsoul.cel starts with the
 		// following header: 0A 00 FE 01 78 04 00 00 00 00.
 		Header: 10,
-		W:      128, // ref: 0x49F450
+		W:      128, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	// NOTE: Unused?
@@ -1933,64 +1933,126 @@ var Confs = map[string]*Config{
 		W:      128,
 		H:      160, // h = npixels/w = 20480/128 = 160
 	},
-
 	// NOTE: Unused?
 	"objects/waterjug.cel": {
 		// The contents of frame 0 at offset 0x18 in waterjug.cel starts with the
 		// following header: 0A 00 3C 02 05 03 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/weapstnd.cel": {
 		// The contents of frame 0 at offset 0x18 in weapstnd.cel starts with the
 		// following header: 0A 00 8D 05 4F 0B 00 00 00 00.
 		Header: 10,
-		W:      96, // ref: 0x49F450
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"objects/wtorch1.cel": {
 		// The contents of frame 0 at offset 0x2C in wtorch1.cel starts with the
 		// following header: 0A 00 2A 00 49 01 D8 02 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/wtorch2.cel": {
 		// The contents of frame 0 at offset 0x2C in wtorch2.cel starts with the
 		// following header: 0A 00 2A 00 4A 01 E3 02 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/wtorch3.cel": {
 		// The contents of frame 0 at offset 0x2C in wtorch3.cel starts with the
 		// following header: 0A 00 2A 00 E7 00 6F 02 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"objects/wtorch4.cel": {
 		// The contents of frame 0 at offset 0x2C in wtorch4.cel starts with the
 		// following header: 0A 00 2A 00 EB 00 6D 02 00 00.
 		Header: 10,
-		W:      96,  // ref: 0x49F450
+		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
-	"towners/animals/cow.cel":       {W: unknown, H: unknown},
-	"towners/butch/deadguy.cel":     {W: unknown, H: unknown},
-	"towners/drunk/twndrunk.cel":    {W: unknown, H: unknown},
-	"towners/healer/healer.cel":     {W: unknown, H: unknown},
-	"towners/priest/priest8.cel":    {W: unknown, H: unknown},
-	"towners/smith/smithn.cel":      {W: unknown, H: unknown},
-	"towners/smith/smithw.cel":      {W: unknown, H: unknown},
-	"towners/strytell/strytell.cel": {W: unknown, H: unknown},
-	"towners/townboy/pegkid1.cel":   {W: unknown, H: unknown},
-	"towners/townwmn1/witch.cel":    {W: unknown, H: unknown},
-	"towners/townwmn1/wmnn.cel":     {W: unknown, H: unknown},
-	"towners/townwmn1/wmnw.cel":     {W: unknown, H: unknown},
-	"towners/twnf/twnfn.cel":        {W: unknown, H: unknown},
-	"towners/twnf/twnfw.cel":        {W: unknown, H: unknown},
+	// TODO: Continue here.
+	"towners/animals/cow.cel": {W: unknown, H: unknown},
+	"towners/butch/deadguy.cel": {
+		// The contents of frame 0 at offset 0x28 in deadguy.cel starts with the
+		// following header: 0A 00 FC 03 55 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x46044A
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+
+	"towners/drunk/twndrunk.cel": {
+		// The contents of frame 0 at offset 0x50 in twndrunk.cel starts with the
+		// following header: 0A 00 8B 02 8D 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x4607AC
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/healer/healer.cel": {
+		// The contents of frame 0 at offset 0x58 in healer.cel starts with the
+		// following header: 0A 00 BB 01 1A 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x46068D
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"towners/priest/priest8.cel": {
+		// The contents of frame 0 at offset 0x8C in priest8.cel starts with the
+		// following header: 0A 00 E6 01 A7 04 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/smith/smithn.cel": {
+		// The contents of frame 0 at offset 0x48 in smithn.cel starts with the
+		// following header: 0A 00 21 02 7D 05 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x460324
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/smith/smithw.cel": {W: unknown, H: unknown},
+	"towners/strytell/strytell.cel": {
+		// The contents of frame 0 at offset 0x6C in strytell.cel starts with the
+		// following header: 0A 00 E6 01 54 05 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x46071D
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/townboy/pegkid1.cel": {
+		// The contents of frame 0 at offset 0x58 in pegkid1.cel starts with the
+		// following header: 0A 00 4E 01 00 00 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x4605FA
+		H:      64, // h = npixels/w = 6144/96 = 64
+	},
+	"towners/townwmn1/witch.cel": {
+		// The contents of frame 0 at offset 0x54 in witch.cel starts with the
+		// following header: 0A 00 9D 01 23 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x4604DA
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/townwmn1/wmnn.cel": {
+		// The contents of frame 0 at offset 0x50 in wmnn.cel starts with the
+		// following header: 0A 00 80 01 9C 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x460569
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/townwmn1/wmnw.cel": {W: unknown, H: unknown},
+	"towners/twnf/twnfn.cel": {
+		// The contents of frame 0 at offset 0x48 in twnfn.cel starts with the
+		// following header: 0A 00 9B 01 46 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x4603BA
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"towners/twnf/twnfw.cel": {W: unknown, H: unknown},
 }
 
 // RelPaths maps from CEL file names to "diabdat.mpq" relative paths.
