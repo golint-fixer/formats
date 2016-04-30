@@ -1469,77 +1469,514 @@ var Confs = map[string]*Config{
 		W:      96, // ref: 0x4219E1
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
-	"monsters/unrav/unravw.cel":     {W: unknown, H: unknown},
-	"objects/altboy.cel":            {W: unknown, H: unknown},
-	"objects/angel.cel":             {W: unknown, H: unknown},
-	"objects/armstand.cel":          {W: unknown, H: unknown},
-	"objects/banner.cel":            {W: unknown, H: unknown},
-	"objects/barrel.cel":            {W: unknown, H: unknown},
-	"objects/barrelex.cel":          {W: unknown, H: unknown},
-	"objects/bcase.cel":             {W: unknown, H: unknown},
-	"objects/bkslbrnt.cel":          {W: unknown, H: unknown},
-	"objects/bkurns.cel":            {W: unknown, H: unknown},
-	"objects/bloodfnt.cel":          {W: unknown, H: unknown},
-	"objects/book1.cel":             {W: unknown, H: unknown},
-	"objects/book2.cel":             {W: unknown, H: unknown},
-	"objects/bshelf.cel":            {W: unknown, H: unknown},
-	"objects/burncros.cel":          {W: unknown, H: unknown},
-	"objects/candlabr.cel":          {W: unknown, H: unknown},
-	"objects/candle.cel":            {W: unknown, H: unknown},
-	"objects/candle2.cel":           {W: unknown, H: unknown},
-	"objects/cauldren.cel":          {W: unknown, H: unknown},
-	"objects/chest1.cel":            {W: unknown, H: unknown},
-	"objects/chest2.cel":            {W: unknown, H: unknown},
-	"objects/chest3.cel":            {W: unknown, H: unknown},
-	"objects/cruxsk1.cel":           {W: unknown, H: unknown},
-	"objects/cruxsk2.cel":           {W: unknown, H: unknown},
-	"objects/cruxsk3.cel":           {W: unknown, H: unknown},
-	"objects/decap.cel":             {W: unknown, H: unknown},
-	"objects/dirtfall.cel":          {W: unknown, H: unknown},
-	"objects/explod1.cel":           {W: unknown, H: unknown},
-	"objects/explod2.cel":           {W: unknown, H: unknown},
-	"objects/firewal1.cel":          {W: unknown, H: unknown},
-	"objects/flame1.cel":            {W: unknown, H: unknown},
-	"objects/flame3.cel":            {W: unknown, H: unknown},
-	"objects/ghost.cel":             {W: unknown, H: unknown},
-	"objects/goatshrn.cel":          {W: unknown, H: unknown},
-	"objects/l1braz.cel":            {W: unknown, H: unknown},
-	"objects/l1doors.cel":           {W: unknown, H: unknown},
-	"objects/l2doors.cel":           {W: unknown, H: unknown},
-	"objects/l3doors.cel":           {W: unknown, H: unknown},
-	"objects/lever.cel":             {W: unknown, H: unknown},
-	"objects/lshrineg.cel":          {W: unknown, H: unknown},
-	"objects/lzstand.cel":           {W: unknown, H: unknown},
-	"objects/mcirl.cel":             {W: unknown, H: unknown},
-	"objects/mfountn.cel":           {W: unknown, H: unknown},
-	"objects/miniwatr.cel":          {W: unknown, H: unknown},
-	"objects/mushptch.cel":          {W: unknown, H: unknown},
-	"objects/nude2.cel":             {W: unknown, H: unknown},
-	"objects/pedistl.cel":           {W: unknown, H: unknown},
-	"objects/pfountn.cel":           {W: unknown, H: unknown},
-	"objects/prsrplt1.cel":          {W: unknown, H: unknown},
-	"objects/rockstan.cel":          {W: unknown, H: unknown},
-	"objects/rshrineg.cel":          {W: unknown, H: unknown},
-	"objects/sarc.cel":              {W: unknown, H: unknown},
-	"objects/skulfire.cel":          {W: unknown, H: unknown},
-	"objects/skulpile.cel":          {W: unknown, H: unknown},
-	"objects/skulstik.cel":          {W: unknown, H: unknown},
-	"objects/switch2.cel":           {W: unknown, H: unknown},
-	"objects/switch3.cel":           {W: unknown, H: unknown},
-	"objects/switch4.cel":           {W: unknown, H: unknown},
-	"objects/tfountn.cel":           {W: unknown, H: unknown},
-	"objects/tnudem.cel":            {W: unknown, H: unknown},
-	"objects/tnudew.cel":            {W: unknown, H: unknown},
-	"objects/traphole.cel":          {W: unknown, H: unknown},
-	"objects/tsoul.cel":             {W: unknown, H: unknown},
-	"objects/vapor1.cel":            {W: unknown, H: unknown},
-	"objects/water.cel":             {W: unknown, H: unknown},
-	"objects/waterjug.cel":          {W: unknown, H: unknown},
-	"objects/weapstnd.cel":          {W: unknown, H: unknown},
-	"objects/wtorch1.cel":           {W: unknown, H: unknown},
-	"objects/wtorch2.cel":           {W: unknown, H: unknown},
-	"objects/wtorch3.cel":           {W: unknown, H: unknown},
-	"objects/wtorch4.cel":           {W: unknown, H: unknown},
+	"monsters/unrav/unravw.cel": {W: unknown, H: unknown},
+	"objects/altboy.cel": {
+		// The contents of frame 0 at offset 0x0C in altboy.cel starts with the
+		// following header: 0A 00 2A 06 35 0D 64 0D 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/angel.cel": {
+		// The contents of frame 0 at offset 0x10 in angel.cel starts with the
+		// following header: 0A 00 4E 05 40 09 E8 0E 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/armstand.cel": {
+		// The contents of frame 0 at offset 0x10 in armstand.cel starts with the
+		// following header: 0A 00 A4 01 CE 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/banner.cel": {
+		// The contents of frame 0 at offset 0x14 in banner.cel starts with the
+		// following header: 0A 00 C1 02 6F 07 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/barrel.cel": {
+		// The contents of frame 0 at offset 0x2C in barrel.cel starts with the
+		// following header: 0A 00 F2 02 FE 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/barrelex.cel": {
+		// The contents of frame 0 at offset 0x30 in barrelex.cel starts with the
+		// following header: 0A 00 F2 02 FE 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/bcase.cel": {
+		// The contents of frame 0 at offset 0x28 in bcase.cel starts with the
+		// following header: 0A 00 7E 02 4F 08 8C 0A 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/bkslbrnt.cel": {
+		// The contents of frame 0 at offset 0x20 in bkslbrnt.cel starts with the
+		// following header: 0A 00 99 02 AA 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/bkurns.cel": {
+		// The contents of frame 0 at offset 0x30 in bkurns.cel starts with the
+		// following header: 0A 00 C5 01 98 02 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/bloodfnt.cel": {
+		// The contents of frame 0 at offset 0x30 in bloodfnt.cel starts with the
+		// following header: 0A 00 BF 05 24 0A 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/book1.cel": {
+		// The contents of frame 0 at offset 0x20 in book1.cel starts with the
+		// following header: 0A 00 77 02 91 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/book2.cel": {
+		// The contents of frame 0 at offset 0x20 in book2.cel starts with the
+		// following header: 0A 00 B8 01 2D 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/bshelf.cel": {
+		// The contents of frame 0 at offset 0x18 in bshelf.cel starts with the
+		// following header: 0A 00 DA 02 02 06 22 06 00 00.
+		Header: 10,
+		W:      96,
+		H:      128, // h = npixels/w = 12288/96 = 96
+	},
+	"objects/burncros.cel": {
+		// The contents of frame 0 at offset 0x30 in burncros.cel starts with the
+		// following header: 0A 00 FA 01 46 0C A3 12 B3 15.
+		Header: 10,
+		W:      160, // ref: 0x49F450
+		H:      160, // h = npixels/w = 25600/160 = 160
+	},
+	// NOTE: Unused?
+	"objects/candlabr.cel": {
+		// The contents of frame 0 at offset 0x0C in candlabr.cel starts with the
+		// following header: 0A 00 6B 01 72 02 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/candle.cel": {
+		// The contents of frame 0 at offset 0x2C in candle.cel starts with the
+		// following header: 0A 00 57 01 2F 02 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/candle2.cel": {
+		// The contents of frame 0 at offset 0x18 in candle2.cel starts with the
+		// following header: 0A 00 58 01 32 02 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/cauldren.cel": {
+		// The contents of frame 0 at offset 0x14 in cauldren.cel starts with the
+		// following header: 0A 00 50 05 58 09 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/chest1.cel": {
+		// The contents of frame 0 at offset 0x20 in chest1.cel starts with the
+		// following header: 0A 00 6C 02 8C 02 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/chest2.cel": {
+		// The contents of frame 0 at offset 0x20 in chest2.cel starts with the
+		// following header: 0A 00 50 03 B7 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/chest3.cel": {
+		// The contents of frame 0 at offset 0x20 in chest3.cel starts with the
+		// following header: 0A 00 9F 04 76 05 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/cruxsk1.cel": {
+		// The contents of frame 0 at offset 0x44 in cruxsk1.cel starts with the
+		// following header: 0A 00 EC 00 8F 03 89 06 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/cruxsk2.cel": {
+		// The contents of frame 0 at offset 0x44 in cruxsk2.cel starts with the
+		// following header: 0A 00 09 01 93 03 8C 06 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/cruxsk3.cel": {
+		// The contents of frame 0 at offset 0x44 in cruxsk3.cel starts with the
+		// following header: 0A 00 01 01 5D 03 5C 06 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/decap.cel": {
+		// The contents of frame 0 at offset 0x28 in decap.cel starts with the
+		// following header: 0A 00 D8 01 0C 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/dirtfall.cel": {
+		// The contents of frame 0 at offset 0x30 in dirtfall.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 95 00 C8 00.
+		Header: 10,
+		W:      96,
+		H:      160, // h = npixels/w = 15360/96 = 160
+	},
+	// NOTE: Unused?
+	"objects/explod1.cel": {
+		// The contents of frame 0 at offset 0x34 in explod1.cel starts with the
+		// following header: 0A 00 2A 00 EB 00 BF 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"objects/explod2.cel": {
+		// The contents of frame 0 at offset 0x34 in explod2.cel starts with the
+		// following header: 0A 00 2A 00 BB 00 5F 01 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"objects/firewal1.cel": {
+		// The contents of frame 0 at offset 0x3C in firewal1.cel starts with the
+		// following header: 0A 00 35 07 4B 12 4A 17 00 00.
+		Header: 10,
+		W:      160,
+		H:      128, // h = npixels/w = 20480/160 = 128
+	},
+	"objects/flame1.cel": {
+		// The contents of frame 0 at offset 0x58 in flame1.cel starts with the
+		// following header: 0A 00 C5 00 E5 00 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/flame3.cel": {
+		// The contents of frame 0 at offset 0x60 in flame3.cel starts with the
+		// following header: 0A 00 4C 02 9A 06 AD 08 00 00.
+		Header: 10,
+		W:      96,
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	// NOTE: Unused?
+	"objects/ghost.cel": {
+		// The contents of frame 0 at offset 0x40 in ghost.cel starts with the
+		// following header: 0A 00 3A 02 49 08 F6 0A 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/goatshrn.cel": {
+		// The contents of frame 0 at offset 0x30 in goatshrn.cel starts with the
+		// following header: 0A 00 30 05 D6 07 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/l1braz.cel": {
+		// The contents of frame 0 at offset 0x70 in l1braz.cel starts with the
+		// following header: 0A 00 2A 00 4A 00 79 02 99 03.
+		Header: 10,
+		W:      64,  // ref: 0x49F450
+		H:      160, // h = npixels/w = 10240/64 = 160
+	},
+	"objects/l1doors.cel": {
+		// The contents of frame 0 at offset 0x18 in l1doors.cel starts with the
+		// following header: 0A 00 32 02 78 06 5F 08 7F 08.
+		Header: 10,
+		W:      64,  // ref: 0x49F450
+		H:      160, // h = npixels/w = 10240/64 = 160
+	},
+	"objects/l2doors.cel": {
+		// The contents of frame 0 at offset 0x18 in l2doors.cel starts with the
+		// following header: 0A 00 2C 01 2C 04 9D 05 00 00.
+		Header: 10,
+		W:      64,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 8192/64 = 128
+	},
+	"objects/l3doors.cel": {
+		// The contents of frame 0 at offset 0x18 in l3doors.cel starts with the
+		// following header: 0A 00 04 02 3F 06 94 08 00 00.
+		Header: 10,
+		W:      64,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 8192/64 = 128
+	},
+	"objects/lever.cel": {
+		// The contents of frame 0 at offset 0x10 in lever.cel starts with the
+		// following header: 0A 00 EA 01 70 02 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/lshrineg.cel": {
+		// The contents of frame 0 at offset 0x60 in lshrineg.cel starts with the
+		// following header: 0A 00 D7 01 33 06 F3 0A 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/lzstand.cel": {
+		// The contents of frame 0 at offset 0x10 in lzstand.cel starts with the
+		// following header: 0A 00 6B 03 49 06 B2 06 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/mcirl.cel": {
+		// The contents of frame 0 at offset 0x18 in mcirl.cel starts with the
+		// following header: 0A 00 55 07 D7 09 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/mfountn.cel": {
+		// The contents of frame 0 at offset 0x30 in mfountn.cel starts with the
+		// following header: 0A 00 E9 07 D4 11 F4 11 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/miniwatr.cel": {
+		// The contents of frame 0 at offset 0x30 in miniwatr.cel starts with the
+		// following header: 0A 00 2A 00 5A 00 D7 04 00 00.
+		Header: 10,
+		W:      64,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 8192/64 = 128
+	},
+	"objects/mushptch.cel": {
+		// The contents of frame 0 at offset 0x10 in mushptch.cel starts with the
+		// following header: 0A 00 27 02 ED 06 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/nude2.cel": {
+		// The contents of frame 0 at offset 0x20 in nude2.cel starts with the
+		// following header: 0A 00 6D 00 F5 01 DE 03 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/pedistl.cel": {
+		// The contents of frame 0 at offset 0x18 in pedistl.cel starts with the
+		// following header: 0A 00 08 02 0D 04 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/pfountn.cel": {
+		// The contents of frame 0 at offset 0x30 in pfountn.cel starts with the
+		// following header: 0A 00 97 05 EB 0E 0B 0F 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"objects/prsrplt1.cel": {
+		// The contents of frame 0 at offset 0x30 in prsrplt1.cel starts with the
+		// following header: 0A 00 F9 02 19 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/rockstan.cel": {
+		// The contents of frame 0 at offset 0x0C in rockstan.cel starts with the
+		// following header: 0A 00 3C 01 1A 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/rshrineg.cel": {
+		// The contents of frame 0 at offset 0x60 in rshrineg.cel starts with the
+		// following header: 0A 00 67 01 C8 05 85 0A 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/sarc.cel": {
+		// The contents of frame 0 at offset 0x1C in sarc.cel starts with the
+		// following header: 0A 00 6B 08 12 13 00 00 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      96,  // h = npixels/w = 12288/128 = 96
+	},
+	"objects/skulfire.cel": {
+		// The contents of frame 0 at offset 0x34 in skulfire.cel starts with the
+		// following header: 0A 00 3B 02 16 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/skulpile.cel": {
+		// The contents of frame 0 at offset 0x0C in skulpile.cel starts with the
+		// following header: 0A 00 F5 01 15 02 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/skulstik.cel": {
+		// The contents of frame 0 at offset 0x1C in skulstik.cel starts with the
+		// following header: 0A 00 B8 01 69 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/switch2.cel": {
+		// The contents of frame 0 at offset 0x10 in switch2.cel starts with the
+		// following header: 0A 00 4F 01 A9 01 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"objects/switch3.cel": {
+		// The contents of frame 0 at offset 0x10 in switch4.cel starts with the
+		// following header: 0A 00 2B 02 C0 02 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/switch4.cel": {
+		// The contents of frame 0 at offset 0x10 in switch4.cel starts with the
+		// following header: 0A 00 2B 02 C0 02 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/tfountn.cel": {
+		// The contents of frame 0 at offset 0x28 in tfountn.cel starts with the
+		// following header: 0A 00 77 04 1E 0B 00 00 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      96,  // h = npixels/w = 12288/128 = 96
+	},
+	"objects/tnudem.cel": {
+		// The contents of frame 0 at offset 0x18 in tnudem.cel starts with the
+		// following header: 0A 00 86 01 D2 04 FD 05 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/tnudew.cel": {
+		// The contents of frame 0 at offset 0x14 in tnudew.cel starts with the
+		// following header: 0A 00 7A 02 33 05 AD 06 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	"objects/traphole.cel": {
+		// The contents of frame 0 at offset 0x10 in traphole.cel starts with the
+		// following header: 0A 00 2A 00 C4 00 E4 00 04 01.
+		Header: 10,
+		W:      64,  // ref: 0x49F450
+		H:      144, // h = npixels/w = 9216/64 = 144
+	},
+	"objects/tsoul.cel": {
+		// The contents of frame 0 at offset 0x20 in tsoul.cel starts with the
+		// following header: 0A 00 FE 01 78 04 00 00 00 00.
+		Header: 10,
+		W:      128, // ref: 0x49F450
+		H:      96,  // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"objects/vapor1.cel": {
+		// The contents of frame 0 at offset 0x3C in vapor1.cel starts with the
+		// following header: 0A 00 3B 07 50 11 75 15 00 00.
+		Header: 10,
+		W:      128,
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
+	// NOTE: Unused?
+	"objects/water.cel": {
+		// The contents of frame 0 at offset 0x30 in water.cel starts with the
+		// following header: 0A 00 2A 00 2A 05 B1 10 76 11.
+		Header: 10,
+		W:      128,
+		H:      160, // h = npixels/w = 20480/128 = 160
+	},
+
+	// NOTE: Unused?
+	"objects/waterjug.cel": {
+		// The contents of frame 0 at offset 0x18 in waterjug.cel starts with the
+		// following header: 0A 00 3C 02 05 03 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/weapstnd.cel": {
+		// The contents of frame 0 at offset 0x18 in weapstnd.cel starts with the
+		// following header: 0A 00 8D 05 4F 0B 00 00 00 00.
+		Header: 10,
+		W:      96, // ref: 0x49F450
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	"objects/wtorch1.cel": {
+		// The contents of frame 0 at offset 0x2C in wtorch1.cel starts with the
+		// following header: 0A 00 2A 00 49 01 D8 02 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/wtorch2.cel": {
+		// The contents of frame 0 at offset 0x2C in wtorch2.cel starts with the
+		// following header: 0A 00 2A 00 4A 01 E3 02 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/wtorch3.cel": {
+		// The contents of frame 0 at offset 0x2C in wtorch3.cel starts with the
+		// following header: 0A 00 2A 00 E7 00 6F 02 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
+	"objects/wtorch4.cel": {
+		// The contents of frame 0 at offset 0x2C in wtorch4.cel starts with the
+		// following header: 0A 00 2A 00 EB 00 6D 02 00 00.
+		Header: 10,
+		W:      96,  // ref: 0x49F450
+		H:      128, // h = npixels/w = 12288/96 = 128
+	},
 	"towners/animals/cow.cel":       {W: unknown, H: unknown},
 	"towners/butch/deadguy.cel":     {W: unknown, H: unknown},
 	"towners/drunk/twndrunk.cel":    {W: unknown, H: unknown},
