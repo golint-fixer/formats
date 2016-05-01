@@ -69,9 +69,9 @@ func TestDecodeAll(t *testing.T) {
 
 	for _, g := range golden {
 		// Get CEL file config.
-		conf, ok := config.Confs[g.relCelPath]
-		if !ok {
-			t.Errorf("unable to locate config for %q", g.relCelPath)
+		conf, err := config.Get(filepath.Base(g.relCelPath))
+		if err != nil {
+			t.Errorf("unable to locate config for %q; %v", g.relCelPath, err)
 			continue
 		}
 		// TODO: Remove temporary hack when the config package containg accurate
