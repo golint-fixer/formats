@@ -926,62 +926,6 @@ var confs = map[string]*Config{
 		H:      96, // h = npixels/w = 12288/128 = 96
 	},
 	// NOTE: Unused?
-	"missiles/flamel10.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel10.cel starts with the
-		// following header: 0A 00 FA 00 22 03 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flamel11.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel11.cel starts with the
-		// following header: 0A 00 92 01 24 04 00 00 00 00.
-		Header: 10,
-		W:      128,
-		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flamel12.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel12.cel starts with the
-		// following header: 0A 00 86 00 1C 03 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flamel13.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel13.cel starts with the
-		// following header: 0A 00 F0 01 83 05 00 00 00 00.
-		Header: 10,
-		W:      128,
-		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flamel14.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel14.cel starts with the
-		// following header: 0A 00 E0 00 29 03 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flamel15.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel15.cel starts with the
-		// following header: 0A 00 E9 01 3B 04 00 00 00 00.
-		Header: 10,
-		W:      128,
-		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flamel16.cel": {
-		// The contents of frame 0 at offset 0x24 in flamel16.cel starts with the
-		// following header: 0A 00 62 01 4B 03 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
 	"missiles/flamel2.cel": {
 		// The contents of frame 0 at offset 0x24 in flamel2.cel starts with the
 		// following header: 0A 00 23 01 35 03 00 00 00 00.
@@ -1046,68 +990,68 @@ var confs = map[string]*Config{
 		H:      96, // h = npixels/w = 12288/128 = 96
 	},
 	// NOTE: Unused?
+	"missiles/flamel10.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel10.cel starts with the
+		// following header: 0A 00 FA 00 22 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel11.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel11.cel starts with the
+		// following header: 0A 00 92 01 24 04 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel12.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel12.cel starts with the
+		// following header: 0A 00 86 00 1C 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel13.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel13.cel starts with the
+		// following header: 0A 00 F0 01 83 05 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel14.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel14.cel starts with the
+		// following header: 0A 00 E0 00 29 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel15.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel15.cel starts with the
+		// following header: 0A 00 E9 01 3B 04 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flamel16.cel": {
+		// The contents of frame 0 at offset 0x24 in flamel16.cel starts with the
+		// following header: 0A 00 62 01 4B 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
 	"missiles/flames1.cel": {
 		// The contents of frame 0 at offset 0x18 in flames1.cel starts with the
 		// following header: 0A 00 2A 00 7D 00 00 00 00 00.
 		Header: 10,
 		W:      128,
 		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames10.cel": {
-		// The contents of frame 0 at offset 0x18 in flames10.cel starts with the
-		// following header: 0A 00 5E 00 89 00 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames11.cel": {
-		// The contents of frame 0 at offset 0x18 in flames11.cel starts with the
-		// following header: 0A 00 7D 00 A0 00 00 00 00 00.
-		Header: 10,
-		W:      128,
-		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames12.cel": {
-		// The contents of frame 0 at offset 0x18 in flames12.cel starts with the
-		// following header: 0A 00 2D 00 66 00 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames13.cel": {
-		// The contents of frame 0 at offset 0x18 in flames13.cel starts with the
-		// following header: 0A 00 54 00 C8 00 00 00 00 00.
-		Header: 10,
-		W:      128,
-		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames14.cel": {
-		// The contents of frame 0 at offset 0x18 in flames14.cel starts with the
-		// following header: 0A 00 2A 00 6B 00 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames15.cel": {
-		// The contents of frame 0 at offset 0x18 in flames15.cel starts with the
-		// following header: 0A 00 2A 00 94 00 00 00 00 00.
-		Header: 10,
-		W:      128,
-		H:      96, // h = npixels/w = 12288/128 = 96
-	},
-	// NOTE: Unused?
-	"missiles/flames16.cel": {
-		// The contents of frame 0 at offset 0x18 in flames16.cel starts with the
-		// following header: 0A 00 2A 00 80 00 00 00 00 00.
-		Header: 10,
-		W:      96,
-		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
 	"missiles/flames2.cel": {
@@ -1172,6 +1116,62 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128,
 		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames10.cel": {
+		// The contents of frame 0 at offset 0x18 in flames10.cel starts with the
+		// following header: 0A 00 5E 00 89 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames11.cel": {
+		// The contents of frame 0 at offset 0x18 in flames11.cel starts with the
+		// following header: 0A 00 7D 00 A0 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames12.cel": {
+		// The contents of frame 0 at offset 0x18 in flames12.cel starts with the
+		// following header: 0A 00 2D 00 66 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames13.cel": {
+		// The contents of frame 0 at offset 0x18 in flames13.cel starts with the
+		// following header: 0A 00 54 00 C8 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames14.cel": {
+		// The contents of frame 0 at offset 0x18 in flames14.cel starts with the
+		// following header: 0A 00 2A 00 6B 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames15.cel": {
+		// The contents of frame 0 at offset 0x18 in flames15.cel starts with the
+		// following header: 0A 00 2A 00 94 00 00 00 00 00.
+		Header: 10,
+		W:      128,
+		H:      96, // h = npixels/w = 12288/128 = 96
+	},
+	// NOTE: Unused?
+	"missiles/flames16.cel": {
+		// The contents of frame 0 at offset 0x18 in flames16.cel starts with the
+		// following header: 0A 00 2A 00 80 00 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
 	"missiles/flaml1.cel": {
@@ -2267,13 +2267,6 @@ var RelPaths = map[string]string{
 	"town.cel":     "levels/towndata/town.cel",
 	"towns.cel":    "levels/towndata/towns.cel",
 	"flamel1.cel":  "missiles/flamel1.cel",
-	"flamel10.cel": "missiles/flamel10.cel",
-	"flamel11.cel": "missiles/flamel11.cel",
-	"flamel12.cel": "missiles/flamel12.cel",
-	"flamel13.cel": "missiles/flamel13.cel",
-	"flamel14.cel": "missiles/flamel14.cel",
-	"flamel15.cel": "missiles/flamel15.cel",
-	"flamel16.cel": "missiles/flamel16.cel",
 	"flamel2.cel":  "missiles/flamel2.cel",
 	"flamel3.cel":  "missiles/flamel3.cel",
 	"flamel4.cel":  "missiles/flamel4.cel",
@@ -2282,14 +2275,14 @@ var RelPaths = map[string]string{
 	"flamel7.cel":  "missiles/flamel7.cel",
 	"flamel8.cel":  "missiles/flamel8.cel",
 	"flamel9.cel":  "missiles/flamel9.cel",
+	"flamel10.cel": "missiles/flamel10.cel",
+	"flamel11.cel": "missiles/flamel11.cel",
+	"flamel12.cel": "missiles/flamel12.cel",
+	"flamel13.cel": "missiles/flamel13.cel",
+	"flamel14.cel": "missiles/flamel14.cel",
+	"flamel15.cel": "missiles/flamel15.cel",
+	"flamel16.cel": "missiles/flamel16.cel",
 	"flames1.cel":  "missiles/flames1.cel",
-	"flames10.cel": "missiles/flames10.cel",
-	"flames11.cel": "missiles/flames11.cel",
-	"flames12.cel": "missiles/flames12.cel",
-	"flames13.cel": "missiles/flames13.cel",
-	"flames14.cel": "missiles/flames14.cel",
-	"flames15.cel": "missiles/flames15.cel",
-	"flames16.cel": "missiles/flames16.cel",
 	"flames2.cel":  "missiles/flames2.cel",
 	"flames3.cel":  "missiles/flames3.cel",
 	"flames4.cel":  "missiles/flames4.cel",
@@ -2298,6 +2291,13 @@ var RelPaths = map[string]string{
 	"flames7.cel":  "missiles/flames7.cel",
 	"flames8.cel":  "missiles/flames8.cel",
 	"flames9.cel":  "missiles/flames9.cel",
+	"flames10.cel": "missiles/flames10.cel",
+	"flames11.cel": "missiles/flames11.cel",
+	"flames12.cel": "missiles/flames12.cel",
+	"flames13.cel": "missiles/flames13.cel",
+	"flames14.cel": "missiles/flames14.cel",
+	"flames15.cel": "missiles/flames15.cel",
+	"flames16.cel": "missiles/flames16.cel",
 	"flaml1.cel":   "missiles/flaml1.cel",
 	"flaml2.cel":   "missiles/flaml2.cel",
 	"flaml3.cel":   "missiles/flaml3.cel",
@@ -2427,13 +2427,6 @@ var RelPaths = map[string]string{
 
 	// CL2 files.
 	"acidbf1.cl2":  "missiles/acidbf1.cl2",
-	"acidbf10.cl2": "missiles/acidbf10.cl2",
-	"acidbf11.cl2": "missiles/acidbf11.cl2",
-	"acidbf12.cl2": "missiles/acidbf12.cl2",
-	"acidbf13.cl2": "missiles/acidbf13.cl2",
-	"acidbf14.cl2": "missiles/acidbf14.cl2",
-	"acidbf15.cl2": "missiles/acidbf15.cl2",
-	"acidbf16.cl2": "missiles/acidbf16.cl2",
 	"acidbf2.cl2":  "missiles/acidbf2.cl2",
 	"acidbf3.cl2":  "missiles/acidbf3.cl2",
 	"acidbf4.cl2":  "missiles/acidbf4.cl2",
@@ -2442,6 +2435,13 @@ var RelPaths = map[string]string{
 	"acidbf7.cl2":  "missiles/acidbf7.cl2",
 	"acidbf8.cl2":  "missiles/acidbf8.cl2",
 	"acidbf9.cl2":  "missiles/acidbf9.cl2",
+	"acidbf10.cl2": "missiles/acidbf10.cl2",
+	"acidbf11.cl2": "missiles/acidbf11.cl2",
+	"acidbf12.cl2": "missiles/acidbf12.cl2",
+	"acidbf13.cl2": "missiles/acidbf13.cl2",
+	"acidbf14.cl2": "missiles/acidbf14.cl2",
+	"acidbf15.cl2": "missiles/acidbf15.cl2",
+	"acidbf16.cl2": "missiles/acidbf16.cl2",
 	"acidpud1.cl2": "missiles/acidpud1.cl2",
 	"acidpud2.cl2": "missiles/acidpud2.cl2",
 	"acidspla.cl2": "missiles/acidspla.cl2",
@@ -2472,13 +2472,6 @@ var RelPaths = map[string]string{
 	"doomexp.cl2":  "missiles/doomexp.cl2",
 	"ethrshld.cl2": "missiles/ethrshld.cl2",
 	"farrow1.cl2":  "missiles/farrow1.cl2",
-	"farrow10.cl2": "missiles/farrow10.cl2",
-	"farrow11.cl2": "missiles/farrow11.cl2",
-	"farrow12.cl2": "missiles/farrow12.cl2",
-	"farrow13.cl2": "missiles/farrow13.cl2",
-	"farrow14.cl2": "missiles/farrow14.cl2",
-	"farrow15.cl2": "missiles/farrow15.cl2",
-	"farrow16.cl2": "missiles/farrow16.cl2",
 	"farrow2.cl2":  "missiles/farrow2.cl2",
 	"farrow3.cl2":  "missiles/farrow3.cl2",
 	"farrow4.cl2":  "missiles/farrow4.cl2",
@@ -2487,15 +2480,15 @@ var RelPaths = map[string]string{
 	"farrow7.cl2":  "missiles/farrow7.cl2",
 	"farrow8.cl2":  "missiles/farrow8.cl2",
 	"farrow9.cl2":  "missiles/farrow9.cl2",
+	"farrow10.cl2": "missiles/farrow10.cl2",
+	"farrow11.cl2": "missiles/farrow11.cl2",
+	"farrow12.cl2": "missiles/farrow12.cl2",
+	"farrow13.cl2": "missiles/farrow13.cl2",
+	"farrow14.cl2": "missiles/farrow14.cl2",
+	"farrow15.cl2": "missiles/farrow15.cl2",
+	"farrow16.cl2": "missiles/farrow16.cl2",
 	"firarwex.cl2": "missiles/firarwex.cl2",
 	"fireba1.cl2":  "missiles/fireba1.cl2",
-	"fireba10.cl2": "missiles/fireba10.cl2",
-	"fireba11.cl2": "missiles/fireba11.cl2",
-	"fireba12.cl2": "missiles/fireba12.cl2",
-	"fireba13.cl2": "missiles/fireba13.cl2",
-	"fireba14.cl2": "missiles/fireba14.cl2",
-	"fireba15.cl2": "missiles/fireba15.cl2",
-	"fireba16.cl2": "missiles/fireba16.cl2",
 	"fireba2.cl2":  "missiles/fireba2.cl2",
 	"fireba3.cl2":  "missiles/fireba3.cl2",
 	"fireba4.cl2":  "missiles/fireba4.cl2",
@@ -2504,6 +2497,13 @@ var RelPaths = map[string]string{
 	"fireba7.cl2":  "missiles/fireba7.cl2",
 	"fireba8.cl2":  "missiles/fireba8.cl2",
 	"fireba9.cl2":  "missiles/fireba9.cl2",
+	"fireba10.cl2": "missiles/fireba10.cl2",
+	"fireba11.cl2": "missiles/fireba11.cl2",
+	"fireba12.cl2": "missiles/fireba12.cl2",
+	"fireba13.cl2": "missiles/fireba13.cl2",
+	"fireba14.cl2": "missiles/fireba14.cl2",
+	"fireba15.cl2": "missiles/fireba15.cl2",
+	"fireba16.cl2": "missiles/fireba16.cl2",
 	"fireplar.cl2": "missiles/fireplar.cl2",
 	"firerun1.cl2": "missiles/firerun1.cl2",
 	"firerun2.cl2": "missiles/firerun2.cl2",
@@ -2521,13 +2521,6 @@ var RelPaths = map[string]string{
 	"guard2.cl2":   "missiles/guard2.cl2",
 	"guard3.cl2":   "missiles/guard3.cl2",
 	"holy1.cl2":    "missiles/holy1.cl2",
-	"holy10.cl2":   "missiles/holy10.cl2",
-	"holy11.cl2":   "missiles/holy11.cl2",
-	"holy12.cl2":   "missiles/holy12.cl2",
-	"holy13.cl2":   "missiles/holy13.cl2",
-	"holy14.cl2":   "missiles/holy14.cl2",
-	"holy15.cl2":   "missiles/holy15.cl2",
-	"holy16.cl2":   "missiles/holy16.cl2",
 	"holy2.cl2":    "missiles/holy2.cl2",
 	"holy3.cl2":    "missiles/holy3.cl2",
 	"holy4.cl2":    "missiles/holy4.cl2",
@@ -2536,17 +2529,17 @@ var RelPaths = map[string]string{
 	"holy7.cl2":    "missiles/holy7.cl2",
 	"holy8.cl2":    "missiles/holy8.cl2",
 	"holy9.cl2":    "missiles/holy9.cl2",
+	"holy10.cl2":   "missiles/holy10.cl2",
+	"holy11.cl2":   "missiles/holy11.cl2",
+	"holy12.cl2":   "missiles/holy12.cl2",
+	"holy13.cl2":   "missiles/holy13.cl2",
+	"holy14.cl2":   "missiles/holy14.cl2",
+	"holy15.cl2":   "missiles/holy15.cl2",
+	"holy16.cl2":   "missiles/holy16.cl2",
 	"holyexpl.cl2": "missiles/holyexpl.cl2",
 	"inferno.cl2":  "missiles/inferno.cl2",
 	"krull.cl2":    "missiles/krull.cl2",
 	"larrow1.cl2":  "missiles/larrow1.cl2",
-	"larrow10.cl2": "missiles/larrow10.cl2",
-	"larrow11.cl2": "missiles/larrow11.cl2",
-	"larrow12.cl2": "missiles/larrow12.cl2",
-	"larrow13.cl2": "missiles/larrow13.cl2",
-	"larrow14.cl2": "missiles/larrow14.cl2",
-	"larrow15.cl2": "missiles/larrow15.cl2",
-	"larrow16.cl2": "missiles/larrow16.cl2",
 	"larrow2.cl2":  "missiles/larrow2.cl2",
 	"larrow3.cl2":  "missiles/larrow3.cl2",
 	"larrow4.cl2":  "missiles/larrow4.cl2",
@@ -2555,6 +2548,13 @@ var RelPaths = map[string]string{
 	"larrow7.cl2":  "missiles/larrow7.cl2",
 	"larrow8.cl2":  "missiles/larrow8.cl2",
 	"larrow9.cl2":  "missiles/larrow9.cl2",
+	"larrow10.cl2": "missiles/larrow10.cl2",
+	"larrow11.cl2": "missiles/larrow11.cl2",
+	"larrow12.cl2": "missiles/larrow12.cl2",
+	"larrow13.cl2": "missiles/larrow13.cl2",
+	"larrow14.cl2": "missiles/larrow14.cl2",
+	"larrow15.cl2": "missiles/larrow15.cl2",
+	"larrow16.cl2": "missiles/larrow16.cl2",
 	"lghning.cl2":  "missiles/lghning.cl2",
 	"magball1.cl2": "missiles/magball1.cl2",
 	"magball2.cl2": "missiles/magball2.cl2",
@@ -2646,17 +2646,17 @@ var RelPaths = map[string]string{
 	"falln.cl2":    "monsters/falsword/falln.cl2",
 	"falls.cl2":    "monsters/falsword/falls.cl2",
 	"fallw.cl2":    "monsters/falsword/fallw.cl2",
+	"fatca.cl2":    "monsters/fatc/fatca.cl2",
+	"fatcd.cl2":    "monsters/fatc/fatcd.cl2",
+	"fatch.cl2":    "monsters/fatc/fatch.cl2",
+	"fatcn.cl2":    "monsters/fatc/fatcn.cl2",
+	"fatcw.cl2":    "monsters/fatc/fatcw.cl2",
 	"fata.cl2":     "monsters/fat/fata.cl2",
 	"fatd.cl2":     "monsters/fat/fatd.cl2",
 	"fath.cl2":     "monsters/fat/fath.cl2",
 	"fatn.cl2":     "monsters/fat/fatn.cl2",
 	"fats.cl2":     "monsters/fat/fats.cl2",
 	"fatw.cl2":     "monsters/fat/fatw.cl2",
-	"fatca.cl2":    "monsters/fatc/fatca.cl2",
-	"fatcd.cl2":    "monsters/fatc/fatcd.cl2",
-	"fatch.cl2":    "monsters/fatc/fatch.cl2",
-	"fatcn.cl2":    "monsters/fatc/fatcn.cl2",
-	"fatcw.cl2":    "monsters/fatc/fatcw.cl2",
 	"firema.cl2":   "monsters/fireman/firema.cl2",
 	"firemd.cl2":   "monsters/fireman/firemd.cl2",
 	"firemh.cl2":   "monsters/fireman/firemh.cl2",
