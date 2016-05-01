@@ -256,14 +256,158 @@ func decodeType3(data []byte, w, h int, pal color.Palette) image.Image {
 
 // decodeType4 decodes the pixel data of a type 4 CEL frame of the specified
 // dimensions, using colours from the provided palette.
+//
+// A type 4 CEL frame corresponds to a 32x32 image of a right-facing trapezoid,
+// having pixel data arranged as follows, where 'x' represents an explicit
+// regular pixel (colour index into the palette), '0' an explicit transparent
+// pixel, and ' ' an implicit transparent pixel. Note the below illustration
+// specifies the pixels as they occur within the file, the output image will be
+// upside-down.
+//
+//    +--------------------------------+
+//    |                            00xx|
+//    |                            xxxx|
+//    |                        00xxxxxx|
+//    |                        xxxxxxxx|
+//    |                    00xxxxxxxxxx|
+//    |                    xxxxxxxxxxxx|
+//    |                00xxxxxxxxxxxxxx|
+//    |                xxxxxxxxxxxxxxxx|
+//    |            00xxxxxxxxxxxxxxxxxx|
+//    |            xxxxxxxxxxxxxxxxxxxx|
+//    |        00xxxxxxxxxxxxxxxxxxxxxx|
+//    |        xxxxxxxxxxxxxxxxxxxxxxxx|
+//    |    00xxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |    xxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    +--------------------------------+
+//
 func decodeType4(data []byte, w, h int, pal color.Palette) image.Image {
-	panic("cel.decodeType4: not yet implemented")
+	img := image.NewRGBA(image.Rect(0, 0, w, h))
+	drawPixel := pixelDrawer(img, w, h)
+	ns := []int{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32}
+	pos := 0
+	for i, n := range ns {
+		// Even lines begin with two explicit transparent pixels.
+		if i%2 == 0 {
+			for j := 0; j < 2; j++ {
+				if data[pos] != 0 {
+					panic(fmt.Sprintf("explicit transparent pixel mismatch; expected 0x00, got 0x%02X", data[pos]))
+				}
+				pos++
+			}
+		}
+		// Transparent pixels.
+		for j := n; j < levelFrameWidth; j++ {
+			drawPixel(color.Transparent)
+		}
+		// Regular pixels.
+		for j := 0; j < n; j++ {
+			drawPixel(pal[data[pos]])
+			pos++
+		}
+	}
+	// Regular pixels.
+	for _, b := range data[pos:] {
+		drawPixel(pal[b])
+		pos++
+	}
+	return img
 }
 
 // decodeType5 decodes the pixel data of a type 5 CEL frame of the specified
 // dimensions, using colours from the provided palette.
+//
+// A type 5 CEL frame corresponds to a 32x32 image of a left-facing trapezoid,
+// having pixel data arranged as follows, where 'x' represents an explicit
+// regular pixel (colour index into the palette), '0' an explicit transparent
+// pixel, and ' ' an implicit transparent pixel. Note the below illustration
+// specifies the pixels as they occur within the file, the output image will be
+// upside-down.
+//
+//    +--------------------------------+
+//    |xx00                            |
+//    |xxxx                            |
+//    |xxxxxx00                        |
+//    |xxxxxxxx                        |
+//    |xxxxxxxxxx00                    |
+//    |xxxxxxxxxxxx                    |
+//    |xxxxxxxxxxxxxx00                |
+//    |xxxxxxxxxxxxxxxx                |
+//    |xxxxxxxxxxxxxxxxxx00            |
+//    |xxxxxxxxxxxxxxxxxxxx            |
+//    |xxxxxxxxxxxxxxxxxxxxxx00        |
+//    |xxxxxxxxxxxxxxxxxxxxxxxx        |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxx00    |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxx    |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    +--------------------------------+
+//
 func decodeType5(data []byte, w, h int, pal color.Palette) image.Image {
-	panic("cel.decodeType5: not yet implemented")
+	img := image.NewRGBA(image.Rect(0, 0, w, h))
+	drawPixel := pixelDrawer(img, w, h)
+	ns := []int{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32}
+	pos := 0
+	for i, n := range ns {
+		// Regular pixels.
+		for j := 0; j < n; j++ {
+			drawPixel(pal[data[pos]])
+			pos++
+		}
+		// Even lines end with two explicit transparent pixels.
+		if i%2 == 0 {
+			for j := 0; j < 2; j++ {
+				if data[pos] != 0 {
+					panic(fmt.Sprintf("explicit transparent pixel mismatch; expected 0x00, got 0x%02X", data[pos]))
+				}
+				pos++
+			}
+		}
+		// Transparent pixels.
+		for j := n; j < levelFrameWidth; j++ {
+			drawPixel(color.Transparent)
+		}
+	}
+	// Regular pixels.
+	for _, b := range data[pos:] {
+		drawPixel(pal[b])
+		pos++
+	}
+	return img
 }
 
 // TODO: Add high-level description of how type 6 pixel data is encoded.
