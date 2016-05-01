@@ -10,7 +10,7 @@ import (
 
 func TestConfs(t *testing.T) {
 	var relCelPaths []string
-	for relCelPath := range confs {
+	for _, relCelPath := range RelPaths {
 		relCelPaths = append(relCelPaths, relCelPath)
 	}
 	sort.Strings(relCelPaths)
@@ -23,7 +23,11 @@ func TestConfs(t *testing.T) {
 		}
 
 		// Get config and frame numbers with specific image dimensions.
-		conf := confs[relCelPath]
+		conf, ok := confs[relCelPath]
+		if !ok {
+			t.Errorf("unable to locate config for %q", relCelPath)
+			continue
+		}
 
 		// TODO: Check if this test is redundant, and may therefore be removed.
 
