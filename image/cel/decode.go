@@ -26,6 +26,9 @@ func getDecoder(conf *config.Config, frameNum int) func(data []byte, w, h int, p
 	return decoders[conf.GetDecoderType(frameNum)]
 }
 
+// levelFrameWidth specifies the frame width of level CELs.
+const levelFrameWidth = 32
+
 // decodeType0 decodes the pixel data of a type 0 CEL frame of the specified
 // dimensions, using colours from the provided palette.
 //
@@ -153,23 +156,24 @@ func decodeType1(data []byte, w, h int, pal color.Palette) image.Image {
 func decodeType2(data []byte, w, h int, pal color.Palette) image.Image {
 	img := image.NewRGBA(image.Rect(0, 0, w, h))
 	drawPixel := pixelDrawer(img, w, h)
-	ns := []int{4, 4, 8, 8, 12, 12, 16, 16, 20, 20, 24, 24, 28, 28, 32, 32, 32, 28, 28, 24, 24, 20, 20, 16, 16, 12, 12, 8, 8, 4, 4, 0}
+	ns := []int{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0}
 	pos := 0
 	for i, n := range ns {
+		// Even lines end with two explicit transparent pixels.
 		if i%2 == 0 {
-			// Even lines start with two explicit transparent pixels.
-			if data[pos] != 0 || data[pos+1] != 0 {
-				panic(fmt.Sprintf("explicit transparent pixel mismatch; expected 0x00 0x00, got 0x%02X 0x%02X", data[pos], data[pos+1]))
+			for j := 0; j < 2; j++ {
+				if data[pos] != 0 {
+					panic(fmt.Sprintf("explicit transparent pixel mismatch; expected 0x00, got 0x%02X", data[pos]))
+				}
+				pos++
 			}
-			n -= 2 // Skip explicit transparent pixels.
-			pos += 2
 		}
-		for i := n; i < 32; i++ {
-			// Transparent pixels.
+		// Transparent pixels.
+		for j := n; j < levelFrameWidth; j++ {
 			drawPixel(color.Transparent)
 		}
-		for i := 0; i < n; i++ {
-			// Regular pixels.
+		// Regular pixels.
+		for j := 0; j < n; j++ {
 			drawPixel(pal[data[pos]])
 			pos++
 		}
@@ -179,8 +183,75 @@ func decodeType2(data []byte, w, h int, pal color.Palette) image.Image {
 
 // decodeType3 decodes the pixel data of a type 3 CEL frame of the specified
 // dimensions, using colours from the provided palette.
+//
+// A type 3 CEL frame corresponds to a 32x32 image of a right-facing triangle,
+// having pixel data arranged as follows, where 'x' represents an explicit
+// regular pixel (colour index into the palette), '0' an explicit transparent
+// pixel, and ' ' an implicit transparent pixel. Note the below illustration
+// specifies the pixels as they occur within the file, the output image will be
+// upside-down.
+//
+//    +--------------------------------+
+//    |xx00                            |
+//    |xxxx                            |
+//    |xxxxxx00                        |
+//    |xxxxxxxx                        |
+//    |xxxxxxxxxx00                    |
+//    |xxxxxxxxxxxx                    |
+//    |xxxxxxxxxxxxxx00                |
+//    |xxxxxxxxxxxxxxxx                |
+//    |xxxxxxxxxxxxxxxxxx00            |
+//    |xxxxxxxxxxxxxxxxxxxx            |
+//    |xxxxxxxxxxxxxxxxxxxxxx00        |
+//    |xxxxxxxxxxxxxxxxxxxxxxxx        |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxx00    |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxx    |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00|
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxxxx    |
+//    |xxxxxxxxxxxxxxxxxxxxxxxxxx00    |
+//    |xxxxxxxxxxxxxxxxxxxxxxxx        |
+//    |xxxxxxxxxxxxxxxxxxxxxx00        |
+//    |xxxxxxxxxxxxxxxxxxxx            |
+//    |xxxxxxxxxxxxxxxxxx00            |
+//    |xxxxxxxxxxxxxxxx                |
+//    |xxxxxxxxxxxxxx00                |
+//    |xxxxxxxxxxxx                    |
+//    |xxxxxxxxxx00                    |
+//    |xxxxxxxx                        |
+//    |xxxxxx00                        |
+//    |xxxx                            |
+//    |xx00                            |
+//    |                                |
+//    +--------------------------------+
+//
 func decodeType3(data []byte, w, h int, pal color.Palette) image.Image {
-	panic("cel.decodeType3: not yet implemented")
+	img := image.NewRGBA(image.Rect(0, 0, w, h))
+	drawPixel := pixelDrawer(img, w, h)
+	ns := []int{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0}
+	pos := 0
+	for i, n := range ns {
+		// Regular pixels.
+		for j := 0; j < n; j++ {
+			drawPixel(pal[data[pos]])
+			pos++
+		}
+		// Even lines end with two explicit transparent pixels.
+		if i%2 == 0 {
+			for j := 0; j < 2; j++ {
+				if data[pos] != 0 {
+					panic(fmt.Sprintf("explicit transparent pixel mismatch; expected 0x00, got 0x%02X", data[pos]))
+				}
+				pos++
+			}
+		}
+		// Transparent pixels.
+		for j := n; j < levelFrameWidth; j++ {
+			drawPixel(color.Transparent)
+		}
+	}
+	return img
 }
 
 // decodeType4 decodes the pixel data of a type 4 CEL frame of the specified
