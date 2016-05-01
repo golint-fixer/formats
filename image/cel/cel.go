@@ -1,7 +1,5 @@
 // TODO: Add high-level description of the CEL file format.
 
-//go:generate go run gen.go
-
 // Package cel implements a CEL and CL2 image decoder.
 //
 // Below follows a pseudo-code description of the CEL file format.
@@ -30,49 +28,94 @@
 package cel
 
 import (
-	"bufio"
+	"bytes"
 	"encoding/binary"
 	"fmt"
 	"image"
 	"image/color"
 	"image/draw"
-	"io"
-	"os"
+	"io/ioutil"
 	"path/filepath"
 
 	"github.com/mewkiz/pkg/errutil"
 	"github.com/sanctuary/formats/image/cel/config"
 )
 
+// DecodeArchive decodes the given CEL archive using colours from the provided
+// palette, and returns the sequential frames of the embedded CEL images.
+func DecodeArchive(path string, pal color.Palette) ([][]image.Image, error) {
+	// Locate image config data.
+	name := filepath.Base(path)
+	conf, err := config.Get(name)
+	if err != nil {
+		return nil, errutil.Err(err)
+	}
+	if conf.Nimgs == 0 {
+		return nil, errutil.Newf("cel.DecodeArchive: invalid call for CEL image %q; use cel.DecodeAll instead")
+	}
+
+	// Read file contents.
+	archive, err := ioutil.ReadFile(path)
+	if err != nil {
+		return nil, errutil.Err(err)
+	}
+
+	// Read the contents of each embedded CEL image.
+	cels, err := readCELs(archive)
+	if err != nil {
+		return nil, errutil.Err(err)
+	}
+
+	// Decode embedded CEL images.
+	archiveImgs := make([][]image.Image, len(cels))
+	for i, cel := range cels {
+		archiveImgs[i], err = decodeAll(cel, pal, conf)
+		if err != nil {
+			return nil, errutil.Err(err)
+		}
+	}
+
+	return archiveImgs, nil
+}
+
 // DecodeAll decodes the given CEL image using colours from the provided
 // palette, and returns the sequential frames.
 func DecodeAll(path string, pal color.Palette) ([]image.Image, error) {
+	// Locate image config data.
+	name := filepath.Base(path)
+	conf, err := config.Get(name)
+	if err != nil {
+		return nil, errutil.Err(err)
+	}
+	if conf.Nimgs != 0 {
+		return nil, errutil.Newf("cel.DecodeAll: invalid call for CEL archive %q; use cel.DecodeArchive instead")
+	}
+
+	// Read file contents.
+	cel, err := ioutil.ReadFile(path)
+	if err != nil {
+		return nil, errutil.Err(err)
+	}
+
+	// Decode CEL image frames.
+	return decodeAll(cel, pal, conf)
+}
+
+// decodeAll decodes the given CEL image using colours from the provided
+// palette, and returns the sequential frames.
+func decodeAll(cel []byte, pal color.Palette, conf *config.Config) ([]image.Image, error) {
 	// Read the contents of each frame.
-	frames, err := readFrames(path)
+	frames, err := readFrames(cel)
 	if err != nil {
 		return nil, errutil.Err(err)
 	}
 
 	// Decode frames.
 	var imgs []image.Image
-	name := filepath.Base(path)
 	for frameNum, frame := range frames {
-		// Determine decoder type based on file name.
-		decode := getDecoder(name, frameNum)
+		// Determine decoder type based on image config and frame number.
+		decode := getDecoder(conf, frameNum)
 
-		// Locate image config data.
-		relPath, ok := config.RelPaths[name]
-		if !ok {
-			return nil, errutil.Newf("cel.DecodeAll: unable to locate relative path of %q", name)
-		}
-		conf, ok := config.Confs[relPath]
-		if !ok {
-			return nil, errutil.Newf("cel.DecodeAll: unable to locate CEL config for %q", name)
-		}
-		if conf.Nimgs != 0 {
-			// TODO: Implement support for CEL archives.
-			panic(fmt.Sprintf("cel.DecodeAll: support for CEL archives not yet implemented; unable to extract %q", name))
-		}
 		// Use image dimensions for the specific frame number if present.
 		w, ok := conf.FrameWidth[frameNum]
 		if !ok {
@@ -94,26 +137,45 @@ func DecodeAll(path string, pal color.Palette) ([]image.Image, error) {
 	return imgs, nil
 }
 
-// readFrames returns the contents of each frame width the given CEL image.
-func readFrames(path string) (frames [][]byte, err error) {
-	// Open file for reading.
-	fr, err := os.Open(path)
-	if err != nil {
+// readCELs returns the contents of each embedded CEL image within the given CEL
+// archive.
+func readCELs(archive []byte) (cels [][]byte, err error) {
+	// Read CEL archive header.
+	//
+	//    celOffsets [8]uint32 // Offset to each embedded CEL image.
+	const ncels = 8
+	celOffsets := make([]uint32, ncels+1)
+	r := bytes.NewReader(archive)
+	if err := binary.Read(r, binary.LittleEndian, celOffsets[:ncels]); err != nil {
 		return nil, errutil.Err(err)
 	}
-	defer fr.Close()
-	br := bufio.NewReader(fr)
 
+	// Append end offset of the last embedded CEL image.
+	celOffsets[ncels] = uint32(len(archive))
+
+	// Read the contents of each embedded CEL image.
+	cels = make([][]byte, ncels)
+	for i := range cels {
+		start, end := celOffsets[i], celOffsets[i+1]
+		cels[i] = archive[start:end]
+	}
+
+	return cels, nil
+}
+
+// readFrames returns the contents of each frame within the given CEL image.
+func readFrames(cel []byte) (frames [][]byte, err error) {
 	// Read CEL header.
 	//
 	//    nframes      uint32            // Number of frames.
 	//    frameOffsets [nframes+1]uint32 // Offset to each frame.
+	r := bytes.NewReader(cel)
 	var nframes uint32
-	if err := binary.Read(br, binary.LittleEndian, &nframes); err != nil {
+	if err := binary.Read(r, binary.LittleEndian, &nframes); err != nil {
 		return nil, errutil.Err(err)
 	}
 	frameOffsets := make([]uint32, nframes+1)
-	if err := binary.Read(br, binary.LittleEndian, frameOffsets); err != nil {
+	if err := binary.Read(r, binary.LittleEndian, frameOffsets); err != nil {
 		return nil, errutil.Err(err)
 	}
 
@@ -121,11 +183,7 @@ func readFrames(path string) (frames [][]byte, err error) {
 	frames = make([][]byte, nframes)
 	for i := range frames {
 		start, end := frameOffsets[i], frameOffsets[i+1]
-		size := end - start
-		frames[i] = make([]byte, size)
-		if _, err := io.ReadFull(br, frames[i]); err != nil {
-			return nil, errutil.Err(err)
-		}
+		frames[i] = cel[start:end]
 	}
 
 	return frames, nil

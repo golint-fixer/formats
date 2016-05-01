@@ -1,16 +1,17 @@
-package config_test
+package config
 
 import (
 	"fmt"
 	"sort"
 	"testing"
-
-	"github.com/sanctuary/formats/image/cel/config"
 )
+
+// TODO: Extend the test case to verify that npixelsMapping contains the same
+// paths as confs.
 
 func TestConfs(t *testing.T) {
 	var relCelPaths []string
-	for relCelPath := range config.Confs {
+	for relCelPath := range confs {
 		relCelPaths = append(relCelPaths, relCelPath)
 	}
 	sort.Strings(relCelPaths)
@@ -23,7 +24,7 @@ func TestConfs(t *testing.T) {
 		}
 
 		// Get config and frame numbers with specific image dimensions.
-		conf := config.Confs[relCelPath]
+		conf := confs[relCelPath]
 
 		// TODO: Check if this test is redundant, and may therefore be removed.
 
@@ -78,17 +79,6 @@ func TestConfs(t *testing.T) {
 		}
 	}
 }
-
-// TODO: Add once supported.
-//
-// * "monsters/unrav/unravw.cel"
-
-// TODO: Add once support for CEL archives has been added.
-//
-// * "towners/animals/cow.cel"
-// * "towners/smith/smithw.cel"
-// * "towners/townwmn1/wmnw.cel"
-// * "towners/twnf/twnfw.cel"
 
 // npixelsMapping maps from CEL file name to pixel count. The pixel count slice
 // maps from frame number to pixel count of the given frame. If each frame of
@@ -286,6 +276,7 @@ var npixelsMapping = map[string][]int{
 	"monsters/succ/flare.cel":       {16384},
 	"monsters/succ/flarexp.cel":     {16384},
 	"monsters/thin/lghning.cel":     {9216},
+	"monsters/unrav/unravw.cel":     {9216},
 	"objects/altboy.cel":            {16384},
 	"objects/angel.cel":             {12288},
 	"objects/armstand.cel":          {9216},
@@ -356,14 +347,18 @@ var npixelsMapping = map[string][]int{
 	"objects/wtorch2.cel":           {12288},
 	"objects/wtorch3.cel":           {12288},
 	"objects/wtorch4.cel":           {12288},
+	"towners/animals/cow.cel":       {16384},
 	"towners/butch/deadguy.cel":     {9216},
 	"towners/drunk/twndrunk.cel":    {9216},
 	"towners/healer/healer.cel":     {9216},
 	"towners/priest/priest8.cel":    {9216},
 	"towners/smith/smithn.cel":      {9216},
+	"towners/smith/smithw.cel":      {9216},
 	"towners/strytell/strytell.cel": {9216},
 	"towners/townboy/pegkid1.cel":   {6144},
 	"towners/townwmn1/witch.cel":    {9216},
 	"towners/townwmn1/wmnn.cel":     {9216},
+	"towners/townwmn1/wmnw.cel":     {9216},
 	"towners/twnf/twnfn.cel":        {9216},
+	"towners/twnf/twnfw.cel":        {9216},
 }

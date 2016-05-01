@@ -1,5 +1,25 @@
+//go:generate go run gen.go
+
 // Package config specifies the data required for decoding CEL images.
 package config
+
+import "github.com/mewkiz/pkg/errutil"
+
+// Get returns the image config data of the given CEL image.
+func Get(name string) (*Config, error) {
+	relPath, ok := RelPaths[name]
+	if !ok {
+		return nil, errutil.Newf("config.Get: unable to locate relative path of %q", name)
+	}
+	conf, ok := confs[relPath]
+	if !ok {
+		return nil, errutil.Newf("config.Get: unable to locate CEL config for %q", name)
+	}
+	conf.GetDecoderType = func(frameNum int) int {
+		return getDecoderType(name, frameNum)
+	}
+	return conf, nil
+}
 
 // A Config specifies the data required for decoding a given CEL image.
 type Config struct {
@@ -16,6 +36,17 @@ type Config struct {
 	Pals []string
 	// Colour transition paths.
 	Trns []string
+	// GetDecoderType returns the CEL frame decoder type of the given frame
+	// number. The decoder type may be one of the following.
+	//
+	//    (0) cel.decodeType0
+	//    (1) cel.decodeType1
+	//    (2) cel.decodeType2
+	//    (3) cel.decodeType3
+	//    (4) cel.decodeType4
+	//    (5) cel.decodeType5
+	//    (6) cel.decodeType6
+	GetDecoderType func(frameNum int) int
 }
 
 // TODO: Remove unknown once no longer needed.
@@ -25,8 +56,8 @@ const unknown = 0
 
 // TODO: Add palette paths.
 
-// Confs specifies the data required for decoding
-var Confs = map[string]*Config{
+// confs specifies the data required for decoding
+var confs = map[string]*Config{
 	// CEL images.
 	"ctrlpan/golddrop.cel": {
 		W: 261, // ref: 0x406B12
@@ -1469,7 +1500,19 @@ var Confs = map[string]*Config{
 		W:      96, // ref: 0x4219E1
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
-	"monsters/unrav/unravw.cel": {W: unknown, H: unknown},
+	// NOTE: Unused?
+	"monsters/unrav/unravw.cel": {
+		// The contents of the archive header at offset 0 in unravw.cel (after
+		// fix, see https://github.com/mewrnd/blizzconv/issues/2):
+		//    20 00 00 00  07 27 00 00  C5 49 00 00  A3 6B 00 00
+		//    C3 86 00 00  26 A9 00 00  4C D0 00 00  93 ED 00 00
+		Nimgs: 8,
+		// The contents of frame 0 at offset 0x38 in unravw.cel starts with the
+		// following header: 0A 00 B2 01 8C 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
 	"objects/altboy.cel": {
 		// The contents of frame 0 at offset 0x0C in altboy.cel starts with the
 		// following header: 0A 00 2A 06 35 0D 64 0D 00 00.
@@ -1973,11 +2016,20 @@ var Confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C in wtorch4.cel starts with the
 		// following header: 0A 00 2A 00 EB 00 6D 02 00 00.
 		Header: 10,
-		W:      96,  // ref: cross-referencing 0x49F450 and 0x4A0554
-		H:      128, // h = npixels/w = 12288/96 = 128
+		W:      96, // ref: cross-referencing 0x49F450 and 0x4A0554
+		H:      128,
 	},
-	// TODO: Continue here.
-	"towners/animals/cow.cel": {W: unknown, H: unknown},
+	"towners/animals/cow.cel": {
+		// The contents of the archive header at offset 0 in cow.cel:
+		//    20 00 00 00  D7 49 00 00  F1 C2 00 00  3B 48 01 00
+		//    9F C1 01 00  28 1B 02 00  A6 90 02 00  8C 10 03 00
+		Nimgs: 8,
+		// The contents of frame 0 at offset 0x38 in cow.cel starts with the
+		// following header: 0A 00 94 00 0C 04 D5 05 00 00.
+		Header: 10,
+		W:      128, // ref: 0x460861
+		H:      128, // h = npixels/w = 16384/128 = 128
+	},
 	"towners/butch/deadguy.cel": {
 		// The contents of frame 0 at offset 0x28 in deadguy.cel starts with the
 		// following header: 0A 00 FC 03 55 04 00 00 00 00.
@@ -2015,7 +2067,18 @@ var Confs = map[string]*Config{
 		W:      96, // ref: 0x460324
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
-	"towners/smith/smithw.cel": {W: unknown, H: unknown},
+	// NOTE: Unused?
+	"towners/smith/smithw.cel": {
+		// The contents of the archive header at offset 0 in smithw.cel:
+		//    20 00 00 00  6B 38 00 00  03 6B 00 00  DE 98 00 00
+		//    01 CA 00 00  93 FE 00 00  C5 2F 01 00  B5 5C 01 00
+		Nimgs: 8,
+		// The contents of frame 0 at offset 0x28 in smithw.cel starts with the
+		// following header: 0A 00 65 02 2F 06 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
 	"towners/strytell/strytell.cel": {
 		// The contents of frame 0 at offset 0x6C in strytell.cel starts with the
 		// following header: 0A 00 E6 01 54 05 00 00 00 00.
@@ -2044,7 +2107,18 @@ var Confs = map[string]*Config{
 		W:      96, // ref: 0x460569
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
-	"towners/townwmn1/wmnw.cel": {W: unknown, H: unknown},
+	// NOTE: Unused?
+	"towners/townwmn1/wmnw.cel": {
+		// The contents of the archive header at offset 0 in wmnw.cel:
+		//    20 00 00 00  0E 24 00 00  6B 44 00 00  51 60 00 00
+		//    13 80 00 00  D1 A3 00 00  0F C3 00 00  A6 DE 00 00
+		Nimgs: 8,
+		// The contents of frame 0 at offset 0x28 in wmnw.cel starts with the
+		// following header: 0A 00 9D 01 DF 03 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
 	"towners/twnf/twnfn.cel": {
 		// The contents of frame 0 at offset 0x48 in twnfn.cel starts with the
 		// following header: 0A 00 9B 01 46 04 00 00 00 00.
@@ -2052,7 +2126,18 @@ var Confs = map[string]*Config{
 		W:      96, // ref: 0x4603BA
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
-	"towners/twnf/twnfw.cel": {W: unknown, H: unknown},
+	// NOTE: Unused?
+	"towners/twnf/twnfw.cel": {
+		// The contents of the archive header at offset 0 in twnfw.cel:
+		//    20 00 00 00  B3 2B 00 00  96 53 00 00  A3 75 00 00
+		//    BC 9C 00 00  1A C7 00 00  E9 ED 00 00  47 0F 01 00
+		Nimgs: 8,
+		// The contents of frame 0 at offset 0x28 in twnfw.cel starts with the
+		// following header: 0A 00 E0 01 A8 04 00 00 00 00.
+		Header: 10,
+		W:      96,
+		H:      96, // h = npixels/w = 9216/96 = 96
+	},
 }
 
 // RelPaths maps from CEL file names to "diabdat.mpq" relative paths.
