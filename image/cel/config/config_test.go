@@ -1,7 +1,6 @@
 package config
 
 import (
-	"fmt"
 	"sort"
 	"testing"
 )
@@ -72,9 +71,6 @@ func TestConfs(t *testing.T) {
 			if got != want {
 				t.Errorf("%q: pixel count mismatch for frame number %d; expected %d, got %d", relCelPath, frameNum, want, got)
 				continue
-			} else {
-				// TODO: Remove once the image configs have matured.
-				fmt.Println("PASS:", relCelPath)
 			}
 		}
 	}
@@ -200,8 +196,13 @@ var npixelsMapping = map[string][]int{
 	"items/swrdflip.cel":            {15360},
 	"items/wand.cel":                {15360},
 	"items/wshield.cel":             {12288},
+	"levels/l1data/l1.cel":          {1024},
 	"levels/l1data/l1s.cel":         {10240},
+	"levels/l2data/l2.cel":          {1024},
 	"levels/l2data/l2s.cel":         {10240},
+	"levels/l3data/l3.cel":          {1024},
+	"levels/l4data/l4.cel":          {1024},
+	"levels/towndata/town.cel":      {1024},
 	"levels/towndata/towns.cel":     {14336},
 	"missiles/flamel1.cel":          {12288},
 	"missiles/flamel10.cel":         {9216},
