@@ -880,8 +880,8 @@ var confs = map[string]*Config{
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"levels/l1data/l1.cel": {
-		W: unknown,
-		H: unknown,
+		W: 32, // ref: 0x418F12
+		H: 32, // h = npixels/w = 1024/32 = 32
 	},
 	"levels/l1data/l1s.cel": {
 		// The contents of frame 0 at offset 0x28 in l1s.cel starts with the
@@ -891,8 +891,8 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 10240/64 = 160
 	},
 	"levels/l2data/l2.cel": {
-		W: unknown,
-		H: unknown,
+		W: 32, // ref: 0x418F12
+		H: 32, // h = npixels/w = 1024/32 = 32
 	},
 	"levels/l2data/l2s.cel": {
 		// The contents of frame 0 at offset 0x20 in l2s.cel starts with the
@@ -902,16 +902,16 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 10240/64 = 160
 	},
 	"levels/l3data/l3.cel": {
-		W: unknown,
-		H: unknown,
+		W: 32, // ref: 0x418F12
+		H: 32, // h = npixels/w = 1024/32 = 32
 	},
 	"levels/l4data/l4.cel": {
-		W: unknown,
-		H: unknown,
+		W: 32, // ref: 0x418F12
+		H: 32, // h = npixels/w = 1024/32 = 32
 	},
 	"levels/towndata/town.cel": {
-		W: unknown,
-		H: unknown,
+		W: 32, // ref: 0x4632D5
+		H: 32, // h = npixels/w = 1024/32 = 32
 	},
 	"levels/towndata/towns.cel": {
 		W: 64,  // ref: 0x455835

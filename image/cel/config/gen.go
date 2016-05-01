@@ -66,7 +66,9 @@ func parseMin(mpqDir, levelName string) (*minMapping, error) {
 	m := make(map[int]int)
 	for _, piece := range pieces {
 		for _, block := range piece.Blocks {
-			m[block.FrameNum] = block.FrameType
+			if block.FrameNum > 0 {
+				m[block.FrameNum-1] = block.FrameType
+			}
 		}
 	}
 	mapping := &minMapping{
