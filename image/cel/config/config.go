@@ -2143,1183 +2143,1188 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C in acidbf1.cl2 starts with the
 		// following header: 0A 00 59 00 B8 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf2.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf2.cl2 starts with the
 		// following header: 0A 00 61 00 CA 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf3.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf3.cl2 starts with the
 		// following header: 0A 00 6C 00 DD 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf4.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf4.cl2 starts with the
 		// following header: 0A 00 76 00 E3 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf5.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf5.cl2 starts with the
 		// following header: 0A 00 7C 00 EF 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf6.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf6.cl2 starts with the
 		// following header: 0A 00 8E 00 F0 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf7.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf7.cl2 starts with the
 		// following header: 0A 00 8B 00 E1 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf8.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf8.cl2 starts with the
 		// following header: 0A 00 82 00 D5 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf9.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf9.cl2 starts with the
 		// following header: 0A 00 79 00 D0 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf10.cl2": {
 		// The contents of frame 0 at offset 0x2C in acidbf10.cl2 starts with the
 		// following header: 0A 00 79 00 C8 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf11.cl2": {
 		// The contents of frame 0 at offset 0x2C in acidbf11.cl2 starts with the
 		// following header: 0A 00 7D 00 D0 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf12.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf12.cl2 starts with the
 		// following header: 0A 00 74 00 D1 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf13.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf13.cl2 starts with the
 		// following header: 0A 00 72 00 E9 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf14.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf14.cl2 starts with the
 		// following header: 0A 00 69 00 E5 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf15.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf15.cl2 starts with the
 		// following header: 0A 00 62 00 D8 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidbf16.cl2": {
 		// The contents of frame 0 at offset 0x28 in acidbf16.cl2 starts with the
 		// following header: 0A 00 5D 00 CA 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidpud1.cl2": {
 		// The contents of frame 0 at offset 0x2C in acidpud1.cl2 starts with the
 		// following header: 0A 00 3B 01 54 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidpud2.cl2": {
 		// The contents of frame 0 at offset 0x18 in acidpud2.cl2 starts with the
 		// following header: 0A 00 B0 01 C9 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/acidspla.cl2": {
 		// The contents of frame 0 at offset 0x2C in acidspla.cl2 starts with the
 		// following header: 0A 00 B3 00 44 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/arrows.cl2": {
 		// The contents of frame 0 at offset 0x48 in arrows.cl2 starts with the
 		// following header: 0A 00 23 00 6E 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/bigexp.cl2": {
 		// The contents of frame 0 at offset 0x48 in bigexp.cl2 starts with the
 		// following header: 0A 00 0D 01 F1 02 1A 03 43 03.
 		Header: 10,
-		W:      unknown,
+		W:      160, // ref: 0x4950B8
 		H:      unknown,
 	},
+	// NOTE: Unused?
 	"missiles/blodbur0.cl2": {
 		// The contents of frame 0 at offset 0x28 in blodbur0.cl2 starts with the
 		// following header: 0A 00 2B 00 F6 01 85 02 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // TODO: Verify frame width.
 		H:      unknown,
 	},
 	"missiles/blodbur1.cl2": {
 		// The contents of frame 0 at offset 0x28 in blodbur1.cl2 starts with the
 		// following header: 0A 00 33 00 C1 01 E2 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/blodbur2.cl2": {
 		// The contents of frame 0 at offset 0x28 in blodbur2.cl2 starts with the
 		// following header: 0A 00 2B 00 F6 01 85 02 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
+	// NOTE: Unused?
 	"missiles/blodburs.cl2": {
 		// The contents of frame 0 at offset 0x28 in blodburs.cl2 starts with the
 		// following header: 0A 00 33 00 C1 01 E2 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // TODO: Verify frame width.
 		H:      unknown,
 	},
 	"missiles/blood1.cl2": {
 		// The contents of frame 0 at offset 0x44 in blood1.cl2 starts with the
 		// following header: 0A 00 23 00 52 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/blood2.cl2": {
 		// The contents of frame 0 at offset 0x28 in blood2.cl2 starts with the
 		// following header: 0A 00 33 00 C1 01 E2 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/blood3.cl2": {
 		// The contents of frame 0 at offset 0x28 in blood3.cl2 starts with the
 		// following header: 0A 00 2B 00 F6 01 85 02 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/blood4.cl2": {
 		// The contents of frame 0 at offset 0x44 in blood4.cl2 starts with the
 		// following header: 0A 00 2B 00 93 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/bluexbk.cl2": {
 		// The contents of frame 0 at offset 0x54 in bluexbk.cl2 starts with the
 		// following header: 0A 00 33 00 62 00 8B 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      160, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/bluexfr.cl2": {
 		// The contents of frame 0 at offset 0x54 in bluexfr.cl2 starts with the
 		// following header: 0A 00 33 00 62 00 8B 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      160, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/bone1.cl2": {
 		// The contents of frame 0 at offset 0x28 in bone1.cl2 starts with the
 		// following header: 0A 00 2B 00 1B 01 45 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/bone2.cl2": {
 		// The contents of frame 0 at offset 0x28 in bone2.cl2 starts with the
 		// following header: 0A 00 6D 00 3B 01 5E 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/bone3.cl2": {
 		// The contents of frame 0 at offset 0x28 in bone3.cl2 starts with the
 		// following header: 0A 00 6D 00 8C 01 B6 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom1.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom1.cl2 starts with the
 		// following header: 0A 00 23 00 30 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom2.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom2.cl2 starts with the
 		// following header: 0A 00 23 00 0B 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom3.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom3.cl2 starts with the
 		// following header: 0A 00 23 00 36 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom4.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom4.cl2 starts with the
 		// following header: 0A 00 23 00 FF 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom5.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom5.cl2 starts with the
 		// following header: 0A 00 23 00 DB 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom6.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom6.cl2 starts with the
 		// following header: 0A 00 23 00 15 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom7.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom7.cl2 starts with the
 		// following header: 0A 00 23 00 32 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom8.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom8.cl2 starts with the
 		// following header: 0A 00 23 00 13 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/doom9.cl2": {
 		// The contents of frame 0 at offset 0x44 in doom9.cl2 starts with the
 		// following header: 0A 00 62 00 85 00 9E 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
+	// NOTE: Unused?
 	"missiles/doomexp.cl2": {
 		// The contents of frame 0 at offset 0x44 in doomexp.cl2 starts with the
 		// following header: 0A 00 62 00 85 00 9E 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // TODO: Verify frame width.
 		H:      unknown,
 	},
 	"missiles/ethrshld.cl2": {
 		// The contents of frame 0 at offset 0x0C in ethrshld.cl2 starts with the
 		// following header: 0A 00 23 00 3C 00 81 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow1.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow1.cl2 starts with the
 		// following header: 0A 00 23 00 8C 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow2.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow2.cl2 starts with the
 		// following header: 0A 00 23 00 93 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow3.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow3.cl2 starts with the
 		// following header: 0A 00 23 00 96 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow4.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow4.cl2 starts with the
 		// following header: 0A 00 23 00 95 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow5.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow5.cl2 starts with the
 		// following header: 0A 00 23 00 70 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow6.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow6.cl2 starts with the
 		// following header: 0A 00 23 00 49 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow7.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow7.cl2 starts with the
 		// following header: 0A 00 23 00 4B 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow8.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow8.cl2 starts with the
 		// following header: 0A 00 23 00 4B 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow9.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow9.cl2 starts with the
 		// following header: 0A 00 23 00 4C 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow10.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow10.cl2 starts with the
 		// following header: 0A 00 23 00 54 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow11.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow11.cl2 starts with the
 		// following header: 0A 00 23 00 59 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow12.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow12.cl2 starts with the
 		// following header: 0A 00 23 00 83 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow13.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow13.cl2 starts with the
 		// following header: 0A 00 23 00 A2 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow14.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow14.cl2 starts with the
 		// following header: 0A 00 23 00 AA 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow15.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow15.cl2 starts with the
 		// following header: 0A 00 23 00 9E 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/farrow16.cl2": {
 		// The contents of frame 0 at offset 0x18 in farrow16.cl2 starts with the
 		// following header: 0A 00 23 00 8E 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firarwex.cl2": {
 		// The contents of frame 0 at offset 0x20 in firarwex.cl2 starts with the
 		// following header: 0A 00 DA 00 00 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      64, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba1.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba1.cl2 starts with the
 		// following header: 0A 00 81 00 3A 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba2.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba2.cl2 starts with the
 		// following header: 0A 00 82 00 3F 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba3.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba3.cl2 starts with the
 		// following header: 0A 00 8C 00 3B 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba4.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba4.cl2 starts with the
 		// following header: 0A 00 6F 00 BC 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba5.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba5.cl2 starts with the
 		// following header: 0A 00 A7 00 AF 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba6.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba6.cl2 starts with the
 		// following header: 0A 00 8A 00 AD 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba7.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba7.cl2 starts with the
 		// following header: 0A 00 1C 01 A0 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba8.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba8.cl2 starts with the
 		// following header: 0A 00 E7 00 D1 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba9.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba9.cl2 starts with the
 		// following header: 0A 00 C1 00 C5 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba10.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba10.cl2 starts with the
 		// following header: 0A 00 E7 00 D1 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba11.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba11.cl2 starts with the
 		// following header: 0A 00 1C 01 A0 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba12.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba12.cl2 starts with the
 		// following header: 0A 00 0F 01 AD 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba13.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba13.cl2 starts with the
 		// following header: 0A 00 DF 00 AF 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba14.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba14.cl2 starts with the
 		// following header: 0A 00 11 01 BB 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba15.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba15.cl2 starts with the
 		// following header: 0A 00 6A 00 3A 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireba16.cl2": {
 		// The contents of frame 0 at offset 0x40 in fireba16.cl2 starts with the
 		// following header: 0A 00 82 00 3F 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/fireplar.cl2": {
 		// The contents of frame 0 at offset 0x4C in fireplar.cl2 starts with the
 		// following header: 0A 00 DD 02 11 05 3A 05 63 05.
 		Header: 10,
-		W:      unknown,
+		W:      160, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun1.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun1.cl2 starts with the
 		// following header: 0A 00 13 01 FA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun2.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun2.cl2 starts with the
 		// following header: 0A 00 2D 01 DC 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun3.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun3.cl2 starts with the
 		// following header: 0A 00 4F 01 D3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun4.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun4.cl2 starts with the
 		// following header: 0A 00 0E 01 70 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun5.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun5.cl2 starts with the
 		// following header: 0A 00 E7 00 50 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun6.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun6.cl2 starts with the
 		// following header: 0A 00 1F 01 93 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun7.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun7.cl2 starts with the
 		// following header: 0A 00 40 01 9F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firerun8.cl2": {
 		// The contents of frame 0 at offset 0x38 in firerun8.cl2 starts with the
 		// following header: 0A 00 49 01 B4 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firewal1.cl2": {
 		// The contents of frame 0 at offset 0x3C in firewal1.cl2 starts with the
 		// following header: 0A 00 2F 00 50 00 71 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/firewal2.cl2": {
 		// The contents of frame 0 at offset 0x3C in firewal2.cl2 starts with the
 		// following header: 0A 00 CE 04 E7 0C 61 0E 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/flare.cl2": {
 		// The contents of frame 0 at offset 0x48 in flare.cl2 starts with the
 		// following header: 0A 00 4B 00 F6 02 4D 03 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/flareexp.cl2": {
 		// The contents of frame 0 at offset 0x24 in flareexp.cl2 starts with the
 		// following header: 0A 00 2B 00 4E 00 6F 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/guard1.cl2": {
 		// The contents of frame 0 at offset 0x44 in guard1.cl2 starts with the
 		// following header: 0A 00 10 01 2B 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/guard2.cl2": {
 		// The contents of frame 0 at offset 0x40 in guard2.cl2 starts with the
 		// following header: 0A 00 18 04 0E 08 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/guard3.cl2": {
 		// The contents of frame 0 at offset 0x14 in guard3.cl2 starts with the
 		// following header: 0A 00 23 04 68 08 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy1.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy1.cl2 starts with the
 		// following header: 0A 00 80 00 33 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy2.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy2.cl2 starts with the
 		// following header: 0A 00 81 00 3A 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy3.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy3.cl2 starts with the
 		// following header: 0A 00 89 00 33 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy4.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy4.cl2 starts with the
 		// following header: 0A 00 64 00 A0 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy5.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy5.cl2 starts with the
 		// following header: 0A 00 94 00 95 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy6.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy6.cl2 starts with the
 		// following header: 0A 00 75 00 96 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy7.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy7.cl2 starts with the
 		// following header: 0A 00 08 01 8C 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy8.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy8.cl2 starts with the
 		// following header: 0A 00 E2 00 CC 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy9.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy9.cl2 starts with the
 		// following header: 0A 00 C1 00 C3 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy10.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy10.cl2 starts with the
 		// following header: 0A 00 E2 00 CC 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy11.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy11.cl2 starts with the
 		// following header: 0A 00 08 01 8C 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy12.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy12.cl2 starts with the
 		// following header: 0A 00 FA 00 96 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy13.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy13.cl2 starts with the
 		// following header: 0A 00 CB 00 95 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy14.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy14.cl2 starts with the
 		// following header: 0A 00 FD 00 9F 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy15.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy15.cl2 starts with the
 		// following header: 0A 00 67 00 32 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holy16.cl2": {
 		// The contents of frame 0 at offset 0x40 in holy16.cl2 starts with the
 		// following header: 0A 00 81 00 3A 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/holyexpl.cl2": {
 		// The contents of frame 0 at offset 0x28 in holyexpl.cl2 starts with the
 		// following header: 0A 00 33 00 22 01 4B 01 74 01.
 		Header: 10,
-		W:      unknown,
+		W:      160, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/inferno.cl2": {
 		// The contents of frame 0 at offset 0x58 in inferno.cl2 starts with the
 		// following header: 0A 00 31 00 A3 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/krull.cl2": {
 		// The contents of frame 0 at offset 0x40 in krull.cl2 starts with the
 		// following header: 0A 00 59 00 72 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow1.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow1.cl2 starts with the
 		// following header: 0A 00 23 00 9F 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow2.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow2.cl2 starts with the
 		// following header: 0A 00 23 00 A2 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow3.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow3.cl2 starts with the
 		// following header: 0A 00 23 00 B0 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow4.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow4.cl2 starts with the
 		// following header: 0A 00 23 00 BC 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow5.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow5.cl2 starts with the
 		// following header: 0A 00 23 00 A1 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow6.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow6.cl2 starts with the
 		// following header: 0A 00 23 00 60 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow7.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow7.cl2 starts with the
 		// following header: 0A 00 23 00 51 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow8.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow8.cl2 starts with the
 		// following header: 0A 00 23 00 4C 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow9.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow9.cl2 starts with the
 		// following header: 0A 00 23 00 4C 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow10.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow10.cl2 starts with the
 		// following header: 0A 00 23 00 48 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow11.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow11.cl2 starts with the
 		// following header: 0A 00 23 00 54 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow12.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow12.cl2 starts with the
 		// following header: 0A 00 23 00 96 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow13.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow13.cl2 starts with the
 		// following header: 0A 00 23 00 C8 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow14.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow14.cl2 starts with the
 		// following header: 0A 00 23 00 C6 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow15.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow15.cl2 starts with the
 		// following header: 0A 00 23 00 B0 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/larrow16.cl2": {
 		// The contents of frame 0 at offset 0x18 in larrow16.cl2 starts with the
 		// following header: 0A 00 23 00 84 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/lghning.cl2": {
 		// The contents of frame 0 at offset 0x28 in lghning.cl2 starts with the
 		// following header: 0A 00 7F 00 87 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball1.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball1.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 41 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball2.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball2.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 72 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball3.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball3.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 76 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball4.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball4.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 5F 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball5.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball5.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 4F 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball6.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball6.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 69 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball7.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball7.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 7A 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magball8.cl2": {
 		// The contents of frame 0 at offset 0x48 in magball8.cl2 starts with the
 		// following header: 0A 00 2B 00 4C 00 6E 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/magblos.cl2": {
 		// The contents of frame 0 at offset 0x30 in magblos.cl2 starts with the
 		// following header: 0A 00 52 00 29 01 4A 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/manashld.cl2": {
 		// The contents of frame 0 at offset 0x0C in manashld.cl2 starts with the
 		// following header: 0A 00 23 00 3C 00 55 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/metlhit1.cl2": {
 		// The contents of frame 0 at offset 0x30 in metlhit1.cl2 starts with the
 		// following header: 0A 00 23 00 61 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/metlhit2.cl2": {
 		// The contents of frame 0 at offset 0x30 in metlhit2.cl2 starts with the
 		// following header: 0A 00 23 00 71 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/metlhit3.cl2": {
 		// The contents of frame 0 at offset 0x30 in metlhit3.cl2 starts with the
 		// following header: 0A 00 23 00 8F 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/miniltng.cl2": {
 		// The contents of frame 0 at offset 0x28 in miniltng.cl2 starts with the
 		// following header: 0A 00 E7 00 00 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      64, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/newexp.cl2": {
 		// The contents of frame 0 at offset 0x44 in newexp.cl2 starts with the
 		// following header: 0A 00 3C 00 55 00 6E 00 87 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
+	// NOTE: Unused?
 	"missiles/portal.cl2": {
 		// The contents of frame 0 at offset 0x48 in portal.cl2 starts with the
 		// following header: 0A 00 96 02 0F 06 7C 09 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // TODO: Verify frame width.
 		H:      unknown,
 	},
 	"missiles/portal1.cl2": {
 		// The contents of frame 0 at offset 0x48 in portal1.cl2 starts with the
 		// following header: 0A 00 73 00 FE 00 5F 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/portal2.cl2": {
 		// The contents of frame 0 at offset 0x48 in portal2.cl2 starts with the
 		// following header: 0A 00 96 02 0F 06 7C 09 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
+	// NOTE: Unused?
 	"missiles/portalu.cl2": {
 		// The contents of frame 0 at offset 0x48 in portalu.cl2 starts with the
 		// following header: 0A 00 73 00 FE 00 5F 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // TODO: Verify frame width.
 		H:      unknown,
 	},
 	"missiles/ressur1.cl2": {
 		// The contents of frame 0 at offset 0x48 in ressur1.cl2 starts with the
 		// following header: 0A 00 23 00 3C 00 55 00 6E 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/rportal1.cl2": {
 		// The contents of frame 0 at offset 0x48 in rportal1.cl2 starts with the
 		// following header: 0A 00 4B 00 AC 00 0D 01 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/rportal2.cl2": {
 		// The contents of frame 0 at offset 0x48 in rportal2.cl2 starts with the
 		// following header: 0A 00 4F 02 6F 05 81 08 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/scbsexpb.cl2": {
 		// The contents of frame 0 at offset 0x24 in scbsexpb.cl2 starts with the
 		// following header: 0A 00 2B 00 4E 00 6F 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/scbsexpc.cl2": {
 		// The contents of frame 0 at offset 0x24 in scbsexpc.cl2 starts with the
 		// following header: 0A 00 2B 00 4E 00 6F 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/scbsexpd.cl2": {
 		// The contents of frame 0 at offset 0x24 in scbsexpd.cl2 starts with the
 		// following header: 0A 00 2B 00 4E 00 6F 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/scubmisb.cl2": {
 		// The contents of frame 0 at offset 0x48 in scubmisb.cl2 starts with the
 		// following header: 0A 00 27 01 FA 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/scubmisc.cl2": {
 		// The contents of frame 0 at offset 0x48 in scubmisc.cl2 starts with the
 		// following header: 0A 00 1D 01 BF 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/scubmisd.cl2": {
 		// The contents of frame 0 at offset 0x48 in scubmisd.cl2 starts with the
 		// following header: 0A 00 27 01 FA 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/shatter1.cl2": {
 		// The contents of frame 0 at offset 0x38 in shatter1.cl2 starts with the
 		// following header: 0A 00 2B 00 02 02 D6 03 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      128, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball1.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball1.cl2 starts with the
 		// following header: 0A 00 23 00 F3 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball2.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball2.cl2 starts with the
 		// following header: 0A 00 23 00 04 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball3.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball3.cl2 starts with the
 		// following header: 0A 00 23 00 37 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball4.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball4.cl2 starts with the
 		// following header: 0A 00 23 00 EF 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball5.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball5.cl2 starts with the
 		// following header: 0A 00 23 00 0A 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball6.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball6.cl2 starts with the
 		// following header: 0A 00 23 00 60 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball7.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball7.cl2 starts with the
 		// following header: 0A 00 23 00 9E 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball8.cl2": {
 		// The contents of frame 0 at offset 0x48 in sklball8.cl2 starts with the
 		// following header: 0A 00 23 00 66 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/sklball9.cl2": {
 		// The contents of frame 0 at offset 0x28 in sklball9.cl2 starts with the
 		// following header: 0A 00 23 00 CC 01 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"missiles/thinlght.cl2": {
 		// The contents of frame 0 at offset 0x28 in thinlght.cl2 starts with the
 		// following header: 0A 00 66 00 B9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
+		W:      96, // ref: 0x4950B8
 		H:      unknown,
 	},
 	"monsters/acid/acida.cl2": {
