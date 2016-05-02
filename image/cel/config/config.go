@@ -2341,8 +2341,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x44 in blood4.cl2 starts with the
 		// following header: 0A 00 2B 00 93 00 00 00 00 00.
 		Header: 10,
-		W:      128, // ref: 0x4950B8
-		H:      96,  // h = npixels/w = 12288/128 = 96
+		W:      96,  // ref: 0x4950B8
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"missiles/bluexbk.cl2": {
 		// The contents of frame 0 at offset 0x54 in bluexbk.cl2 starts with the
