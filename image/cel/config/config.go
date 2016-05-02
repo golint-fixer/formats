@@ -4066,8 +4066,12 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in firema.cl2 starts with the
 		// following header: 0A 00 E4 01 72 04 93 04 00 00.
 		Header: 10,
-		W:      128, // ref: 0x497E08
-		H:      128, // h = npixels/w = 16384/128 = 128
+		// NOTE: The frame width should be 128 according to 0x497E08, but 96
+		// produces correct rendering.
+		W: 96,
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"monsters/fireman/firemd.cl2": {
 		// The contents of the archive header at offset 0 in firemd.cl2:
