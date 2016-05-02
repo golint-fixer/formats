@@ -56,6 +56,13 @@ const unknown = 0
 
 // TODO: Add palette paths.
 
+// TODO: Check which MPQ-archive contains "monsters\worm\worm%c.cl2", and add
+// its config.
+//
+//    {
+//       W: 160, // ref: 0x4219E1
+//    }
+
 // confs specifies the data required for decoding
 var confs = map[string]*Config{
 	// CEL files.
@@ -1501,6 +1508,8 @@ var confs = map[string]*Config{
 		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	// NOTE: Unused?
+	// TODO: Check if unravw.cel is simply a CL2 image with the wrong file
+	// extension.
 	"monsters/unrav/unravw.cel": {
 		// The contents of the archive header at offset 0 in unravw.cel (after
 		// fix, see https://github.com/mewrnd/blizzconv/issues/2):
@@ -3335,8 +3344,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in acida.cl2 starts with the
 		// following header: 0A 00 3B 02 61 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/acid/acidd.cl2": {
 		// The contents of the archive header at offset 0 in acidd.cl2:
@@ -3346,8 +3355,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in acidd.cl2 starts with the
 		// following header: 0A 00 17 02 95 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/acid/acidh.cl2": {
 		// The contents of the archive header at offset 0 in acidh.cl2:
@@ -3357,8 +3366,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in acidh.cl2 starts with the
 		// following header: 0A 00 F7 01 74 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/acid/acidn.cl2": {
 		// The contents of the archive header at offset 0 in acidn.cl2:
@@ -3368,8 +3377,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in acidn.cl2 starts with the
 		// following header: 0A 00 46 02 7D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/acid/acids.cl2": {
 		// The contents of the archive header at offset 0 in acids.cl2:
@@ -3379,8 +3388,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in acids.cl2 starts with the
 		// following header: 0A 00 3D 02 6F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/acid/acidw.cl2": {
 		// The contents of the archive header at offset 0 in acidw.cl2:
@@ -3390,8 +3399,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in acidw.cl2 starts with the
 		// following header: 0A 00 4B 02 81 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/bat/bata.cl2": {
 		// The contents of the archive header at offset 0 in bata.cl2:
@@ -3401,8 +3410,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in bata.cl2 starts with the
 		// following header: 0A 00 5B 00 46 01 0B 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/bat/batd.cl2": {
 		// The contents of the archive header at offset 0 in batd.cl2:
@@ -3412,8 +3421,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in batd.cl2 starts with the
 		// following header: 0A 00 2A 00 CE 00 9F 02 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/bat/bath.cl2": {
 		// The contents of the archive header at offset 0 in bath.cl2:
@@ -3423,8 +3432,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x160 in bath.cl2 starts with the
 		// following header: 0A 00 3C 00 08 01 AC 02 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/bat/batn.cl2": {
 		// The contents of the archive header at offset 0 in batn.cl2:
@@ -3434,8 +3443,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x160 in batn.cl2 starts with the
 		// following header: 0A 00 36 00 D4 00 8A 02 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/bat/batw.cl2": {
 		// The contents of the archive header at offset 0 in batw.cl2:
@@ -3445,8 +3454,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in batw.cl2 starts with the
 		// following header: 0A 00 29 00 BE 00 34 02 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/bigfall/fallga.cl2": {
 		// The contents of the archive header at offset 0 in fallga.cl2:
@@ -3456,8 +3465,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in fallga.cl2 starts with the
 		// following header: 0A 00 DB 02 AE 05 CF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/bigfall/fallgd.cl2": {
 		// The contents of the archive header at offset 0 in fallgd.cl2:
@@ -3467,8 +3476,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x260 in fallgd.cl2 starts with the
 		// following header: 0A 00 2F 03 CC 05 ED 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/bigfall/fallgh.cl2": {
 		// The contents of the archive header at offset 0 in fallgh.cl2:
@@ -3478,8 +3487,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in fallgh.cl2 starts with the
 		// following header: 0A 00 E9 02 BF 05 E0 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/bigfall/fallgn.cl2": {
 		// The contents of the archive header at offset 0 in fallgn.cl2:
@@ -3489,8 +3498,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in fallgn.cl2 starts with the
 		// following header: 0A 00 E1 02 B8 05 D9 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/bigfall/fallgw.cl2": {
 		// The contents of the archive header at offset 0 in fallgw.cl2:
@@ -3500,8 +3509,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in fallgw.cl2 starts with the
 		// following header: 0A 00 F2 02 A8 05 C9 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/black/blacka.cl2": {
 		// The contents of the archive header at offset 0 in blacka.cl2:
@@ -3511,8 +3520,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in blacka.cl2 starts with the
 		// following header: 0A 00 E6 01 A4 05 82 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/black/blackd.cl2": {
 		// The contents of the archive header at offset 0 in blackd.cl2:
@@ -3522,8 +3531,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in blackd.cl2 starts with the
 		// following header: 0A 00 16 03 0A 07 42 0B F1 0B.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/black/blackh.cl2": {
 		// The contents of the archive header at offset 0 in blackh.cl2:
@@ -3533,8 +3542,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in blackh.cl2 starts with the
 		// following header: 0A 00 E4 01 AA 05 94 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/black/blackn.cl2": {
 		// The contents of the archive header at offset 0 in blackn.cl2:
@@ -3544,8 +3553,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in blackn.cl2 starts with the
 		// following header: 0A 00 E6 01 A5 05 89 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/black/blackw.cl2": {
 		// The contents of the archive header at offset 0 in blackw.cl2:
@@ -3555,8 +3564,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in blackw.cl2 starts with the
 		// following header: 0A 00 FB 01 11 06 2F 09 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/darkmage/dmagea.cl2": {
 		// The contents of the archive header at offset 0 in dmagea.cl2:
@@ -3566,8 +3575,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2E0 in dmagea.cl2 starts with the
 		// following header: 0A 00 26 01 F9 03 AF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/darkmage/dmaged.cl2": {
 		// The contents of the archive header at offset 0 in dmaged.cl2:
@@ -3577,8 +3586,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x320 in dmaged.cl2 starts with the
 		// following header: 0A 00 0D 01 0B 03 5C 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/darkmage/dmageh.cl2": {
 		// The contents of the archive header at offset 0 in dmageh.cl2:
@@ -3588,8 +3597,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in dmageh.cl2 starts with the
 		// following header: 0A 00 8A 01 7C 04 F3 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/darkmage/dmagen.cl2": {
 		// The contents of the archive header at offset 0 in dmagen.cl2:
@@ -3599,8 +3608,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in dmagen.cl2 starts with the
 		// following header: 0A 00 3B 01 14 04 C7 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/darkmage/dmages.cl2": {
 		// The contents of the archive header at offset 0 in dmages.cl2:
@@ -3610,8 +3619,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in dmages.cl2 starts with the
 		// following header: 0A 00 3E 01 10 04 A6 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/darkmage/dmagew.cl2": {
 		// The contents of the archive header at offset 0 in dmagew.cl2 (after
@@ -3628,8 +3637,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in demskla.cl2 starts with the
 		// following header: 0A 00 EC 01 C1 04 A2 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/demskel/demskld.cl2": {
 		// The contents of the archive header at offset 0 in demskld.cl2:
@@ -3639,8 +3648,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in demskld.cl2 starts with the
 		// following header: 0A 00 53 02 B3 05 6B 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/demskel/demsklh.cl2": {
 		// The contents of the archive header at offset 0 in demsklh.cl2:
@@ -3650,8 +3659,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in demsklh.cl2 starts with the
 		// following header: 0A 00 BC 01 62 04 7B 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/demskel/demskln.cl2": {
 		// The contents of the archive header at offset 0 in demskln.cl2:
@@ -3661,8 +3670,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in demskln.cl2 starts with the
 		// following header: 0A 00 18 02 27 05 55 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/demskel/demskls.cl2": {
 		// The contents of the archive header at offset 0 in demskls.cl2:
@@ -3672,8 +3681,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in demskls.cl2 starts with the
 		// following header: 0A 00 EA 01 C0 04 A3 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/demskel/demsklw.cl2": {
 		// The contents of the archive header at offset 0 in demsklw.cl2:
@@ -3683,8 +3692,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in demsklw.cl2 starts with the
 		// following header: 0A 00 D3 01 8D 04 83 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/diablo/diabloa.cl2": {
 		// The contents of the archive header at offset 0 in diabloa.cl2:
@@ -3694,8 +3703,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in diabloa.cl2 starts with the
 		// following header: 0A 00 E8 02 72 07 42 0F 5B 15.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/diablo/diablod.cl2": {
 		// The contents of the archive header at offset 0 in diablod.cl2:
@@ -3705,8 +3714,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in diablod.cl2 starts with the
 		// following header: 0A 00 D0 04 55 0B E9 13 83 1B.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/diablo/diabloh.cl2": {
 		// The contents of the archive header at offset 0 in diabloh.cl2:
@@ -3716,8 +3725,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in diabloh.cl2 starts with the
 		// following header: 0A 00 E2 02 7C 07 38 0F 58 15.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/diablo/diablon.cl2": {
 		// The contents of the archive header at offset 0 in diablon.cl2:
@@ -3727,8 +3736,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in diablon.cl2 starts with the
 		// following header: 0A 00 CD 02 5C 07 1C 0F 41 15.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/diablo/diablos.cl2": {
 		// The contents of the archive header at offset 0 in diablos.cl2:
@@ -3738,8 +3747,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in diablos.cl2 starts with the
 		// following header: 0A 00 D2 02 61 07 3D 0F 64 15.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/diablo/diablow.cl2": {
 		// The contents of the archive header at offset 0 in diablow.cl2:
@@ -3749,8 +3758,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in diablow.cl2 starts with the
 		// following header: 0A 00 C1 02 55 08 E5 10 3C 15.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/falspear/phalla.cl2": {
 		// The contents of the archive header at offset 0 in phalla.cl2:
@@ -3760,8 +3769,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in phalla.cl2 starts with the
 		// following header: 0A 00 AC 01 30 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falspear/phalld.cl2": {
 		// The contents of the archive header at offset 0 in phalld.cl2:
@@ -3771,8 +3780,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in phalld.cl2 starts with the
 		// following header: 0A 00 A5 01 2A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falspear/phallh.cl2": {
 		// The contents of the archive header at offset 0 in phallh.cl2:
@@ -3782,8 +3791,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in phallh.cl2 starts with the
 		// following header: 0A 00 A7 01 26 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falspear/phalln.cl2": {
 		// The contents of the archive header at offset 0 in phalln.cl2:
@@ -3793,8 +3802,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in phalln.cl2 starts with the
 		// following header: 0A 00 A7 01 24 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falspear/phalls.cl2": {
 		// The contents of the archive header at offset 0 in phalls.cl2:
@@ -3804,8 +3813,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in phalls.cl2 starts with the
 		// following header: 0A 00 A8 01 2A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falspear/phallw.cl2": {
 		// The contents of the archive header at offset 0 in phallw.cl2:
@@ -3815,8 +3824,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in phallw.cl2 starts with the
 		// following header: 0A 00 A7 01 24 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falsword/falla.cl2": {
 		// The contents of the archive header at offset 0 in falla.cl2:
@@ -3826,8 +3835,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in falla.cl2 starts with the
 		// following header: 0A 00 AB 02 FE 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falsword/falld.cl2": {
 		// The contents of the archive header at offset 0 in falld.cl2:
@@ -3837,8 +3846,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in falld.cl2 starts with the
 		// following header: 0A 00 9A 02 EB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falsword/fallh.cl2": {
 		// The contents of the archive header at offset 0 in fallh.cl2:
@@ -3848,8 +3857,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in fallh.cl2 starts with the
 		// following header: 0A 00 AC 02 00 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falsword/falln.cl2": {
 		// The contents of the archive header at offset 0 in falln.cl2:
@@ -3859,8 +3868,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in falln.cl2 starts with the
 		// following header: 0A 00 AC 02 FF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falsword/falls.cl2": {
 		// The contents of the archive header at offset 0 in falls.cl2:
@@ -3870,8 +3879,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in falls.cl2 starts with the
 		// following header: 0A 00 AB 02 FE 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/falsword/fallw.cl2": {
 		// The contents of the archive header at offset 0 in fallw.cl2:
@@ -3881,8 +3890,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in fallw.cl2 starts with the
 		// following header: 0A 00 96 02 01 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fatc/fatca.cl2": {
 		// The contents of the archive header at offset 0 in fatca.cl2:
@@ -3892,8 +3901,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in fatca.cl2 starts with the
 		// following header: 0A 00 69 02 1E 08 44 09 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fatc/fatcd.cl2": {
 		// The contents of the archive header at offset 0 in fatcd.cl2:
@@ -3903,8 +3912,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in fatcd.cl2 starts with the
 		// following header: 0A 00 5F 02 DA 07 6A 09 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fatc/fatch.cl2": {
 		// The contents of the archive header at offset 0 in fatch.cl2:
@@ -3914,8 +3923,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in fatch.cl2 starts with the
 		// following header: 0A 00 61 02 12 08 6C 09 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fatc/fatcn.cl2": {
 		// The contents of the archive header at offset 0 in fatcn.cl2:
@@ -3925,8 +3934,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in fatcn.cl2 starts with the
 		// following header: 0A 00 70 02 16 08 39 09 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fatc/fatcw.cl2": {
 		// The contents of the archive header at offset 0 in fatcw.cl2:
@@ -3936,8 +3945,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in fatcw.cl2 starts with the
 		// following header: 0A 00 38 02 B5 07 AC 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fat/fata.cl2": {
 		// The contents of the archive header at offset 0 in fata.cl2:
@@ -3947,8 +3956,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in fata.cl2 starts with the
 		// following header: 0A 00 40 02 37 07 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fat/fatd.cl2": {
 		// The contents of the archive header at offset 0 in fatd.cl2:
@@ -3958,8 +3967,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in fatd.cl2 starts with the
 		// following header: 0A 00 39 02 54 07 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fat/fath.cl2": {
 		// The contents of the archive header at offset 0 in fath.cl2:
@@ -3969,8 +3978,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in fath.cl2 starts with the
 		// following header: 0A 00 2C 02 43 07 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fat/fatn.cl2": {
 		// The contents of the archive header at offset 0 in fatn.cl2:
@@ -3980,8 +3989,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in fatn.cl2 starts with the
 		// following header: 0A 00 42 02 85 07 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fat/fats.cl2": {
 		// The contents of the archive header at offset 0 in fats.cl2:
@@ -3991,8 +4000,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in fats.cl2 starts with the
 		// following header: 0A 00 2E 02 35 07 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fat/fatw.cl2": {
 		// The contents of the archive header at offset 0 in fatw.cl2:
@@ -4002,8 +4011,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in fatw.cl2 starts with the
 		// following header: 0A 00 44 02 9E 07 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/fireman/firema.cl2": {
 		// The contents of the archive header at offset 0 in firema.cl2:
@@ -4013,8 +4022,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in firema.cl2 starts with the
 		// following header: 0A 00 E4 01 72 04 93 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fireman/firemd.cl2": {
 		// The contents of the archive header at offset 0 in firemd.cl2:
@@ -4024,8 +4033,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in firemd.cl2 starts with the
 		// following header: 0A 00 2B 00 94 01 74 04 BA 04.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      160, // h = npixels/w = 20480/128 = 160
 	},
 	"monsters/fireman/firemh.cl2": {
 		// The contents of the archive header at offset 0 in firemh.cl2:
@@ -4035,8 +4044,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in firemh.cl2 starts with the
 		// following header: 0A 00 2B 00 7E 01 3E 04 82 04.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      160, // h = npixels/w = 20480/128 = 160
 	},
 	"monsters/fireman/firemn.cl2": {
 		// The contents of the archive header at offset 0 in firemn.cl2:
@@ -4046,8 +4055,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in firemn.cl2 starts with the
 		// following header: 0A 00 77 01 50 04 98 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fireman/firems.cl2": {
 		// The contents of the archive header at offset 0 in firems.cl2:
@@ -4057,8 +4066,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x320 in firems.cl2 starts with the
 		// following header: 0A 00 D5 00 F6 00 17 01 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/fireman/firemw.cl2": {
 		// The contents of the archive header at offset 0 in firemw.cl2:
@@ -4068,8 +4077,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2A0 in firemw.cl2 starts with the
 		// following header: 0A 00 00 01 21 01 42 01 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/gargoyle/gargoa.cl2": {
 		// The contents of the archive header at offset 0 in gargoa.cl2:
@@ -4079,8 +4088,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in gargoa.cl2 starts with the
 		// following header: 0A 00 9B 00 0E 03 89 05 35 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/gargoyle/gargod.cl2": {
 		// The contents of the archive header at offset 0 in gargod.cl2:
@@ -4090,8 +4099,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in gargod.cl2 starts with the
 		// following header: 0A 00 9C 00 03 03 78 05 2B 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/gargoyle/gargoh.cl2": {
 		// The contents of the archive header at offset 0 in gargoh.cl2:
@@ -4101,8 +4110,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in gargoh.cl2 starts with the
 		// following header: 0A 00 B6 00 07 03 FF 05 58 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/gargoyle/gargon.cl2": {
 		// The contents of the archive header at offset 0 in gargon.cl2:
@@ -4112,8 +4121,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in gargon.cl2 starts with the
 		// following header: 0A 00 88 00 E5 02 5A 05 01 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/gargoyle/gargos.cl2": {
 		// The contents of the archive header at offset 0 in gargos.cl2:
@@ -4123,8 +4132,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in gargos.cl2 starts with the
 		// following header: 0A 00 FF 02 1A 05 64 05 8D 05.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/gargoyle/gargow.cl2": {
 		// The contents of the archive header at offset 0 in gargow.cl2:
@@ -4134,8 +4143,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in gargow.cl2 starts with the
 		// following header: 0A 00 86 00 BD 02 15 05 76 06.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/goatbow/goatba.cl2": {
 		// The contents of the archive header at offset 0 in goatba.cl2:
@@ -4145,8 +4154,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in goatba.cl2 starts with the
 		// following header: 0A 00 38 01 61 04 0B 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatbow/goatbd.cl2": {
 		// The contents of the archive header at offset 0 in goatbd.cl2:
@@ -4156,8 +4165,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in goatbd.cl2 starts with the
 		// following header: 0A 00 FA 00 DA 03 84 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatbow/goatbh.cl2": {
 		// The contents of the archive header at offset 0 in goatbh.cl2:
@@ -4167,8 +4176,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in goatbh.cl2 starts with the
 		// following header: 0A 00 42 01 94 04 C4 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatbow/goatbn.cl2": {
 		// The contents of the archive header at offset 0 in goatbn.cl2:
@@ -4178,8 +4187,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in goatbn.cl2 starts with the
 		// following header: 0A 00 42 01 99 04 C9 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatbow/goatbw.cl2": {
 		// The contents of the archive header at offset 0 in goatbw.cl2:
@@ -4189,8 +4198,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in goatbw.cl2 starts with the
 		// following header: 0A 00 26 01 95 04 83 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatlord/goatla.cl2": {
 		// The contents of the archive header at offset 0 in goatla.cl2:
@@ -4200,8 +4209,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in goatla.cl2 starts with the
 		// following header: 0A 00 38 01 C5 05 73 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/goatlord/goatld.cl2": {
 		// The contents of the archive header at offset 0 in goatld.cl2:
@@ -4211,8 +4220,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in goatld.cl2 starts with the
 		// following header: 0A 00 44 01 CE 05 35 0A 9C 0B.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/goatlord/goatlh.cl2": {
 		// The contents of the archive header at offset 0 in goatlh.cl2:
@@ -4222,8 +4231,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x160 in goatlh.cl2 starts with the
 		// following header: 0A 00 37 01 C0 05 6F 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/goatlord/goatln.cl2": {
 		// The contents of the archive header at offset 0 in goatln.cl2:
@@ -4233,8 +4242,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in goatln.cl2 starts with the
 		// following header: 0A 00 3D 01 CE 05 9B 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/goatlord/goatlw.cl2": {
 		// The contents of the archive header at offset 0 in goatlw.cl2:
@@ -4244,8 +4253,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in goatlw.cl2 starts with the
 		// following header: 0A 00 48 01 25 05 07 09 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/goatmace/goata.cl2": {
 		// The contents of the archive header at offset 0 in goata.cl2:
@@ -4255,8 +4264,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in goata.cl2 starts with the
 		// following header: 0A 00 73 01 2E 05 31 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatmace/goatd.cl2": {
 		// The contents of the archive header at offset 0 in goatd.cl2:
@@ -4266,8 +4275,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in goatd.cl2 starts with the
 		// following header: 0A 00 74 01 45 05 B4 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatmace/goath.cl2": {
 		// The contents of the archive header at offset 0 in goath.cl2:
@@ -4277,8 +4286,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in goath.cl2 starts with the
 		// following header: 0A 00 73 01 2D 05 2F 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatmace/goatn.cl2": {
 		// The contents of the archive header at offset 0 in goatn.cl2:
@@ -4288,8 +4297,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in goatn.cl2 starts with the
 		// following header: 0A 00 7E 01 3D 05 3F 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatmace/goats.cl2": {
 		// The contents of the archive header at offset 0 in goats.cl2:
@@ -4299,8 +4308,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in goats.cl2 starts with the
 		// following header: 0A 00 79 01 48 05 4D 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/goatmace/goatw.cl2": {
 		// The contents of the archive header at offset 0 in goatw.cl2:
@@ -4310,8 +4319,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in goatw.cl2 starts with the
 		// following header: 0A 00 2F 01 C4 04 AA 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/golem/golema.cl2": {
 		// The contents of the archive header at offset 0 in golema.cl2:
@@ -4321,22 +4330,22 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in golema.cl2 starts with the
 		// following header: 0A 00 BE 01 48 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x497E08
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"monsters/golem/golemd.cl2": {
 		// The contents of frame 0 at offset 0x38 in golemd.cl2 starts with the
 		// following header: 0A 00 A7 00 C3 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x497E08
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"monsters/golem/golems.cl2": {
 		// The contents of frame 0 at offset 0x58 in golems.cl2 starts with the
 		// following header: 0A 00 F0 02 09 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x497E08
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"monsters/golem/golemw.cl2": {
 		// The contents of the archive header at offset 0 in golemw.cl2:
@@ -4346,8 +4355,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in golemw.cl2 starts with the
 		// following header: 0A 00 70 01 5D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x497E08
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"monsters/mage/magea.cl2": {
 		// The contents of the archive header at offset 0 in magea.cl2:
@@ -4357,8 +4366,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in magea.cl2 starts with the
 		// following header: 0A 00 B5 01 DE 04 0C 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/mage/maged.cl2": {
 		// The contents of the archive header at offset 0 in maged.cl2:
@@ -4368,8 +4377,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x3C0 in maged.cl2 starts with the
 		// following header: 0A 00 E0 01 3A 05 81 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/mage/mageh.cl2": {
 		// The contents of the archive header at offset 0 in mageh.cl2:
@@ -4379,8 +4388,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in mageh.cl2 starts with the
 		// following header: 0A 00 A9 01 D9 04 0D 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/mage/magen.cl2": {
 		// The contents of the archive header at offset 0 in magen.cl2:
@@ -4390,8 +4399,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in magen.cl2 starts with the
 		// following header: 0A 00 AF 01 DB 04 0C 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/mage/mages.cl2": {
 		// The contents of the archive header at offset 0 in mages.cl2:
@@ -4401,8 +4410,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in mages.cl2 starts with the
 		// following header: 0A 00 59 02 85 05 BA 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/mage/magew.cl2": {
 		// The contents of the archive header at offset 0 in magew.cl2:
@@ -4412,8 +4421,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x60 in magew.cl2 starts with the
 		// following header: 0A 00 30 00 51 00 72 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/magma/magmaa.cl2": {
 		// The contents of the archive header at offset 0 in magmaa.cl2:
@@ -4423,8 +4432,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in magmaa.cl2 starts with the
 		// following header: 0A 00 05 02 00 07 50 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/magma/magmad.cl2": {
 		// The contents of the archive header at offset 0 in magmad.cl2:
@@ -4434,8 +4443,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in magmad.cl2 starts with the
 		// following header: 0A 00 05 02 67 06 7C 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/magma/magmah.cl2": {
 		// The contents of the archive header at offset 0 in magmah.cl2:
@@ -4445,8 +4454,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in magmah.cl2 starts with the
 		// following header: 0A 00 0B 02 0C 07 63 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/magma/magman.cl2": {
 		// The contents of the archive header at offset 0 in magman.cl2:
@@ -4456,8 +4465,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in magman.cl2 starts with the
 		// following header: 0A 00 14 02 17 07 45 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/magma/magmas.cl2": {
 		// The contents of the archive header at offset 0 in magmas.cl2:
@@ -4467,8 +4476,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in magmas.cl2 starts with the
 		// following header: 0A 00 07 02 07 07 54 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/magma/magmaw.cl2": {
 		// The contents of the archive header at offset 0 in magmaw.cl2:
@@ -4478,8 +4487,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in magmaw.cl2 starts with the
 		// following header: 0A 00 04 02 F8 06 4F 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/mega/megaa.cl2": {
 		// The contents of the archive header at offset 0 in megaa.cl2:
@@ -4489,8 +4498,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in megaa.cl2 starts with the
 		// following header: 0A 00 ED 02 F9 08 DC 11 3B 13.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/mega/megad.cl2": {
 		// The contents of the archive header at offset 0 in megad.cl2:
@@ -4500,8 +4509,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in megad.cl2 starts with the
 		// following header: 0A 00 33 03 D3 09 DF 13 60 15.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/mega/megah.cl2": {
 		// The contents of the archive header at offset 0 in megah.cl2:
@@ -4511,8 +4520,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x60 in megah.cl2 starts with the
 		// following header: 0A 00 5D 02 94 07 F3 0F 1E 11.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/mega/megan.cl2": {
 		// The contents of the archive header at offset 0 in megan.cl2:
@@ -4522,8 +4531,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in megan.cl2 starts with the
 		// following header: 0A 00 5E 02 19 08 28 0F 24 11.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/mega/megas.cl2": {
 		// The contents of the archive header at offset 0 in megas.cl2:
@@ -4533,8 +4542,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xE0 in megas.cl2 starts with the
 		// following header: 0A 00 5E 02 2E 08 0D 11 26 13.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/mega/megaw.cl2": {
 		// The contents of the archive header at offset 0 in megaw.cl2:
@@ -4544,8 +4553,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in megaw.cl2 starts with the
 		// following header: 0A 00 3E 02 42 07 14 0F A2 11.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/rhino/rhinoa.cl2": {
 		// The contents of the archive header at offset 0 in rhinoa.cl2:
@@ -4555,8 +4564,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in rhinoa.cl2 starts with the
 		// following header: 0A 00 E1 01 53 07 E2 0B 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/rhino/rhinod.cl2": {
 		// The contents of the archive header at offset 0 in rhinod.cl2:
@@ -4566,8 +4575,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhinod.cl2 starts with the
 		// following header: 0A 00 A6 01 8B 05 A9 0B 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/rhino/rhinoh.cl2": {
 		// The contents of the archive header at offset 0 in rhinoh.cl2:
@@ -4577,8 +4586,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in rhinoh.cl2 starts with the
 		// following header: 0A 00 E4 01 4C 07 EC 0B 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/rhino/rhinon.cl2": {
 		// The contents of the archive header at offset 0 in rhinon.cl2:
@@ -4588,8 +4597,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhinon.cl2 starts with the
 		// following header: 0A 00 E2 01 4F 07 E4 0B 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/rhino/rhinos.cl2": {
 		// The contents of the archive header at offset 0 in rhinos.cl2:
@@ -4599,8 +4608,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in rhinos.cl2 starts with the
 		// following header: 0A 00 E0 01 2B 07 DB 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/rhino/rhinow.cl2": {
 		// The contents of the archive header at offset 0 in rhinow.cl2:
@@ -4610,8 +4619,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhinow.cl2 starts with the
 		// following header: 0A 00 E3 01 54 07 58 0C 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/scav/scava.cl2": {
 		// The contents of the archive header at offset 0 in scava.cl2:
@@ -4621,8 +4630,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in scava.cl2 starts with the
 		// following header: 0A 00 70 01 2B 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/scav/scavd.cl2": {
 		// The contents of the archive header at offset 0 in scavd.cl2:
@@ -4632,8 +4641,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in scavd.cl2 starts with the
 		// following header: 0A 00 6B 01 25 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/scav/scavh.cl2": {
 		// The contents of the archive header at offset 0 in scavh.cl2:
@@ -4643,8 +4652,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in scavh.cl2 starts with the
 		// following header: 0A 00 6D 01 2A 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/scav/scavn.cl2": {
 		// The contents of the archive header at offset 0 in scavn.cl2:
@@ -4654,8 +4663,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in scavn.cl2 starts with the
 		// following header: 0A 00 70 01 30 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/scav/scavs.cl2": {
 		// The contents of the archive header at offset 0 in scavs.cl2:
@@ -4665,8 +4674,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in scavs.cl2 starts with the
 		// following header: 0A 00 7F 01 54 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/scav/scavw.cl2": {
 		// The contents of the archive header at offset 0 in scavw.cl2:
@@ -4676,8 +4685,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in scavw.cl2 starts with the
 		// following header: 0A 00 4E 01 32 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelaxe/sklaxa.cl2": {
 		// The contents of the archive header at offset 0 in sklaxa.cl2:
@@ -4687,8 +4696,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in sklaxa.cl2 starts with the
 		// following header: 0A 00 7F 01 CC 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelaxe/sklaxd.cl2": {
 		// The contents of the archive header at offset 0 in sklaxd.cl2:
@@ -4698,8 +4707,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x260 in sklaxd.cl2 starts with the
 		// following header: 0A 00 B6 00 97 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelaxe/sklaxh.cl2": {
 		// The contents of the archive header at offset 0 in sklaxh.cl2:
@@ -4709,8 +4718,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in sklaxh.cl2 starts with the
 		// following header: 0A 00 93 01 E2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelaxe/sklaxn.cl2": {
 		// The contents of the archive header at offset 0 in sklaxn.cl2:
@@ -4720,8 +4729,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sklaxn.cl2 starts with the
 		// following header: 0A 00 72 01 B7 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelaxe/sklaxs.cl2": {
 		// The contents of the archive header at offset 0 in sklaxs.cl2:
@@ -4731,8 +4740,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sklaxs.cl2 starts with the
 		// following header: 0A 00 16 02 37 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelaxe/sklaxw.cl2": {
 		// The contents of the archive header at offset 0 in sklaxw.cl2:
@@ -4742,8 +4751,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sklaxw.cl2 starts with the
 		// following header: 0A 00 97 01 E5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelbow/sklbwa.cl2": {
 		// The contents of the archive header at offset 0 in sklbwa.cl2:
@@ -4753,8 +4762,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sklbwa.cl2 starts with the
 		// following header: 0A 00 35 01 58 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelbow/sklbwd.cl2": {
 		// The contents of the archive header at offset 0 in sklbwd.cl2:
@@ -4764,8 +4773,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sklbwd.cl2 starts with the
 		// following header: 0A 00 31 01 4F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelbow/sklbwh.cl2": {
 		// The contents of the archive header at offset 0 in sklbwh.cl2:
@@ -4775,8 +4784,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xE0 in sklbwh.cl2 starts with the
 		// following header: 0A 00 4C 01 2A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelbow/sklbwn.cl2": {
 		// The contents of the archive header at offset 0 in sklbwn.cl2:
@@ -4786,8 +4795,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x160 in sklbwn.cl2 starts with the
 		// following header: 0A 00 31 01 58 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelbow/sklbws.cl2": {
 		// The contents of the archive header at offset 0 in sklbws.cl2:
@@ -4797,8 +4806,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sklbws.cl2 starts with the
 		// following header: 0A 00 07 02 28 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelbow/sklbww.cl2": {
 		// The contents of the archive header at offset 0 in sklbww.cl2:
@@ -4808,8 +4817,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sklbww.cl2 starts with the
 		// following header: 0A 00 5B 01 06 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelsd/sklsra.cl2": {
 		// The contents of the archive header at offset 0 in sklsra.cl2:
@@ -4819,8 +4828,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sklsra.cl2 starts with the
 		// following header: 0A 00 9C 01 DB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelsd/sklsrd.cl2": {
 		// The contents of the archive header at offset 0 in sklsrd.cl2:
@@ -4830,8 +4839,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in sklsrd.cl2 starts with the
 		// following header: 0A 00 B8 00 B8 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelsd/sklsrh.cl2": {
 		// The contents of the archive header at offset 0 in sklsrh.cl2:
@@ -4841,8 +4850,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in sklsrh.cl2 starts with the
 		// following header: 0A 00 79 01 C0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelsd/sklsrn.cl2": {
 		// The contents of the archive header at offset 0 in sklsrn.cl2:
@@ -4852,8 +4861,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in sklsrn.cl2 starts with the
 		// following header: 0A 00 8B 01 D0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelsd/sklsrs.cl2": {
 		// The contents of the archive header at offset 0 in sklsrs.cl2:
@@ -4863,8 +4872,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sklsrs.cl2 starts with the
 		// following header: 0A 00 16 02 37 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/skelsd/sklsrw.cl2": {
 		// The contents of the archive header at offset 0 in sklsrw.cl2:
@@ -4874,8 +4883,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sklsrw.cl2 starts with the
 		// following header: 0A 00 57 01 B5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/sking/skinga.cl2": {
 		// The contents of the archive header at offset 0 in skinga.cl2:
@@ -4885,8 +4894,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in skinga.cl2 starts with the
 		// following header: 0A 00 A8 01 EB 03 83 07 2C 08.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/sking/skingd.cl2": {
 		// The contents of the archive header at offset 0 in skingd.cl2:
@@ -4896,8 +4905,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in skingd.cl2 starts with the
 		// following header: 0A 00 4C 01 08 04 85 08 4E 09.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/sking/skingh.cl2": {
 		// The contents of the archive header at offset 0 in skingh.cl2:
@@ -4907,8 +4916,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in skingh.cl2 starts with the
 		// following header: 0A 00 83 01 E0 03 F9 07 F1 08.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/sking/skingn.cl2": {
 		// The contents of the archive header at offset 0 in skingn.cl2:
@@ -4918,8 +4927,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in skingn.cl2 starts with the
 		// following header: 0A 00 A4 01 EC 03 8B 07 36 08.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/sking/skings.cl2": {
 		// The contents of the archive header at offset 0 in skings.cl2:
@@ -4929,8 +4938,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in skings.cl2 starts with the
 		// following header: 0A 00 A7 01 EC 03 82 07 2C 08.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/sking/skingw.cl2": {
 		// The contents of the archive header at offset 0 in skingw.cl2:
@@ -4940,8 +4949,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in skingw.cl2 starts with the
 		// following header: 0A 00 50 01 98 03 61 07 F3 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/snake/snakea.cl2": {
 		// The contents of the archive header at offset 0 in snakea.cl2:
@@ -4951,8 +4960,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in snakea.cl2 starts with the
 		// following header: 0A 00 17 03 B1 06 05 07 2E 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/snake/snaked.cl2": {
 		// The contents of the archive header at offset 0 in snaked.cl2:
@@ -4962,8 +4971,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in snaked.cl2 starts with the
 		// following header: 0A 00 31 02 C1 05 ED 08 5A 09.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/snake/snakeh.cl2": {
 		// The contents of the archive header at offset 0 in snakeh.cl2:
@@ -4973,8 +4982,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in snakeh.cl2 starts with the
 		// following header: 0A 00 2A 02 DF 05 5B 09 C2 09.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/snake/snaken.cl2": {
 		// The contents of the archive header at offset 0 in snaken.cl2:
@@ -4984,8 +4993,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in snaken.cl2 starts with the
 		// following header: 0A 00 24 02 D1 05 45 09 A8 09.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/snake/snakes.cl2": {
 		// The contents of the archive header at offset 0 in snakes.cl2:
@@ -4995,8 +5004,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in snakes.cl2 starts with the
 		// following header: 0A 00 28 02 CD 05 4C 09 AC 09.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/snake/snakew.cl2": {
 		// The contents of the archive header at offset 0 in snakew.cl2:
@@ -5006,8 +5015,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in snakew.cl2 starts with the
 		// following header: 0A 00 DA 03 9B 06 E6 06 0F 07.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 25600/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      160, // h = npixels/w = 25600/160 = 160
 	},
 	"monsters/sneak/sneaka.cl2": {
 		// The contents of the archive header at offset 0 in sneaka.cl2:
@@ -5017,8 +5026,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sneaka.cl2 starts with the
 		// following header: 0A 00 32 02 FA 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/sneak/sneakd.cl2": {
 		// The contents of the archive header at offset 0 in sneakd.cl2:
@@ -5028,8 +5037,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in sneakd.cl2 starts with the
 		// following header: 0A 00 F8 01 95 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/sneak/sneakh.cl2": {
 		// The contents of the archive header at offset 0 in sneakh.cl2:
@@ -5039,8 +5048,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sneakh.cl2 starts with the
 		// following header: 0A 00 2F 02 00 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/sneak/sneakn.cl2": {
 		// The contents of the archive header at offset 0 in sneakn.cl2:
@@ -5050,8 +5059,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sneakn.cl2 starts with the
 		// following header: 0A 00 1B 02 ED 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/sneak/sneaks.cl2": {
 		// The contents of the archive header at offset 0 in sneaks.cl2:
@@ -5061,8 +5070,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in sneaks.cl2 starts with the
 		// following header: 0A 00 6D 00 BD 00 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/sneak/sneakw.cl2": {
 		// The contents of the archive header at offset 0 in sneakw.cl2:
@@ -5072,8 +5081,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sneakw.cl2 starts with the
 		// following header: 0A 00 EF 01 4B 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/succ/scbsa.cl2": {
 		// The contents of the archive header at offset 0 in scbsa.cl2:
@@ -5083,8 +5092,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in scbsa.cl2 starts with the
 		// following header: 0A 00 71 01 89 04 FB 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/succ/scbsd.cl2": {
 		// The contents of the archive header at offset 0 in scbsd.cl2:
@@ -5094,8 +5103,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in scbsd.cl2 starts with the
 		// following header: 0A 00 4E 01 74 04 D9 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/succ/scbsh.cl2": {
 		// The contents of the archive header at offset 0 in scbsh.cl2:
@@ -5105,8 +5114,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in scbsh.cl2 starts with the
 		// following header: 0A 00 74 01 91 04 08 07 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/succ/scbsn.cl2": {
 		// The contents of the archive header at offset 0 in scbsn.cl2:
@@ -5116,8 +5125,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in scbsn.cl2 starts with the
 		// following header: 0A 00 6F 01 85 04 EC 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/succ/scbsw.cl2": {
 		// The contents of the archive header at offset 0 in scbsw.cl2:
@@ -5127,8 +5136,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in scbsw.cl2 starts with the
 		// following header: 0A 00 12 01 88 03 D7 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/thin/thina.cl2": {
 		// The contents of the archive header at offset 0 in thina.cl2:
@@ -5138,8 +5147,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in thina.cl2 starts with the
 		// following header: 0A 00 29 02 6A 07 71 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/thin/thind.cl2": {
 		// The contents of the archive header at offset 0 in thind.cl2:
@@ -5149,8 +5158,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x260 in thind.cl2 starts with the
 		// following header: 0A 00 C1 01 2F 05 23 08 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/thin/thinh.cl2": {
 		// The contents of the archive header at offset 0 in thinh.cl2:
@@ -5160,8 +5169,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in thinh.cl2 starts with the
 		// following header: 0A 00 DE 01 E1 06 C6 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/thin/thinn.cl2": {
 		// The contents of the archive header at offset 0 in thinn.cl2:
@@ -5171,8 +5180,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in thinn.cl2 starts with the
 		// following header: 0A 00 40 02 47 07 E5 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/thin/thins.cl2": {
 		// The contents of the archive header at offset 0 in thins.cl2:
@@ -5182,8 +5191,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x200 in thins.cl2 starts with the
 		// following header: 0A 00 1F 02 55 07 59 0B 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/thin/thinw.cl2": {
 		// The contents of the archive header at offset 0 in thinw.cl2:
@@ -5193,8 +5202,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in thinw.cl2 starts with the
 		// following header: 0A 00 A9 01 37 07 03 0A 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 20480/unknown = baz
+		W:      160, // ref: 0x497E08
+		H:      128, // h = npixels/w = 20480/160 = 128
 	},
 	"monsters/tsneak/tsneaka.cl2": {
 		// The contents of the archive header at offset 0 in tsneaka.cl2:
@@ -5204,8 +5213,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in tsneaka.cl2 starts with the
 		// following header: 0A 00 AF 01 24 05 47 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/tsneak/tsneakd.cl2": {
 		// The contents of the archive header at offset 0 in tsneakd.cl2:
@@ -5215,8 +5224,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in tsneakd.cl2 starts with the
 		// following header: 0A 00 AD 01 25 05 48 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/tsneak/tsneakh.cl2": {
 		// The contents of the archive header at offset 0 in tsneakh.cl2:
@@ -5226,8 +5235,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in tsneakh.cl2 starts with the
 		// following header: 0A 00 B0 01 22 05 45 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/tsneak/tsneakn.cl2": {
 		// The contents of the archive header at offset 0 in tsneakn.cl2:
@@ -5237,8 +5246,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in tsneakn.cl2 starts with the
 		// following header: 0A 00 B9 01 2F 05 52 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/tsneak/tsneakw.cl2": {
 		// The contents of the archive header at offset 0 in tsneakw.cl2:
@@ -5248,8 +5257,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in tsneakw.cl2 starts with the
 		// following header: 0A 00 B4 01 A0 04 CB 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"monsters/unrav/unrava.cl2": {
 		// The contents of the archive header at offset 0 in unrava.cl2:
@@ -5259,8 +5268,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in unrava.cl2 starts with the
 		// following header: 0A 00 99 01 62 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x497E08
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"monsters/unrav/unravd.cl2": {
 		// The contents of the archive header at offset 0 in unravd.cl2:
@@ -5270,8 +5279,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in unravd.cl2 starts with the
 		// following header: 0A 00 7A 00 52 02 CC 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/unrav/unravh.cl2": {
 		// The contents of the archive header at offset 0 in unravh.cl2:
@@ -5281,8 +5290,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xE0 in unravh.cl2 starts with the
 		// following header: 0A 00 53 00 C6 01 6B 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/unrav/unravn.cl2": {
 		// The contents of the archive header at offset 0 in unravn.cl2:
@@ -5292,8 +5301,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in unravn.cl2 starts with the
 		// following header: 0A 00 67 00 FD 01 BD 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/unrav/unravs.cl2": {
 		// The contents of the archive header at offset 0 in unravs.cl2:
@@ -5303,8 +5312,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1E0 in unravs.cl2 starts with the
 		// following header: 0A 00 63 00 0D 02 B1 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x497E08
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"monsters/zombie/zombiea.cl2": {
 		// The contents of the archive header at offset 0 in zombiea.cl2:
@@ -5314,8 +5323,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in zombiea.cl2 starts with the
 		// following header: 0A 00 CC 01 38 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/zombie/zombied.cl2": {
 		// The contents of the archive header at offset 0 in zombied.cl2:
@@ -5325,8 +5334,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in zombied.cl2 starts with the
 		// following header: 0A 00 AA 01 23 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/zombie/zombieh.cl2": {
 		// The contents of the archive header at offset 0 in zombieh.cl2:
@@ -5336,8 +5345,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in zombieh.cl2 starts with the
 		// following header: 0A 00 A6 01 E5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/zombie/zombien.cl2": {
 		// The contents of the archive header at offset 0 in zombien.cl2:
@@ -5347,8 +5356,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1A0 in zombien.cl2 starts with the
 		// following header: 0A 00 B0 01 16 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/zombie/zombies.cl2": {
 		// The contents of the archive header at offset 0 in zombies.cl2:
@@ -5358,8 +5367,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in zombies.cl2 starts with the
 		// following header: 0A 00 FA 00 73 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"monsters/zombie/zombiew.cl2": {
 		// The contents of the archive header at offset 0 in zombiew.cl2:
@@ -5369,8 +5378,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in zombiew.cl2 starts with the
 		// following header: 0A 00 B5 01 0F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x497E08
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/rogue/rha/rhaas.cl2": {
 		// The contents of the archive header at offset 0 in rhaas.cl2:
