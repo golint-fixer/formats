@@ -5547,10 +5547,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in rhbat.cl2 starts with the
 		// following header: 0A 00 56 01 AB 03 32 04 00 00.
 		Header: 10,
-		W:      96, // ref: 0x44B120
-		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
-		// is 96.
-		H: 171, // h = npixels/w = 16384/96 = 170.66
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhb/rhbaw.cl2": {
 		// The contents of the archive header at offset 0 in rhbaw.cl2:
@@ -6484,10 +6482,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in rlbat.cl2 starts with the
 		// following header: 0A 00 5B 01 AA 03 0A 04 00 00.
 		Header: 10,
-		W:      96, // ref: 0x44B120
-		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
-		// is 96.
-		H: 171, // h = npixels/w = 16384/96 = 170.66
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rlb/rlbaw.cl2": {
 		// The contents of the archive header at offset 0 in rlbaw.cl2:
@@ -7421,10 +7417,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in rmbat.cl2 starts with the
 		// following header: 0A 00 6F 01 B5 03 15 04 00 00.
 		Header: 10,
-		W:      96, // ref: 0x44B120
-		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
-		// is 96.
-		H: 171, // h = npixels/w = 16384/96 = 170.66
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmb/rmbaw.cl2": {
 		// The contents of the archive header at offset 0 in rmbaw.cl2:
@@ -8358,10 +8352,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shbat.cl2 starts with the
 		// following header: 0A 00 90 01 82 04 32 05 00 00.
 		Header: 10,
-		W:      96, // ref: 0x44B120
-		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
-		// is 96.
-		H: 171, // h = npixels/w = 16384/96 = 170.66
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shb/shbaw.cl2": {
 		// The contents of the archive header at offset 0 in shbaw.cl2:
@@ -9295,10 +9287,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slbat.cl2 starts with the
 		// following header: 0A 00 A5 01 8F 04 2A 05 00 00.
 		Header: 10,
-		W:      96, // ref: 0x44B120
-		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
-		// is 96.
-		H: 171, // h = npixels/w = 16384/96 = 170.66
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slb/slbaw.cl2": {
 		// The contents of the archive header at offset 0 in slbaw.cl2:
@@ -10232,10 +10222,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smbat.cl2 starts with the
 		// following header: 0A 00 A5 01 7B 04 10 05 00 00.
 		Header: 10,
-		W:      96, // ref: 0x44B120
-		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
-		// is 96.
-		H: 171, // h = npixels/w = 16384/96 = 170.66
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smb/smbaw.cl2": {
 		// The contents of the archive header at offset 0 in smbaw.cl2:
