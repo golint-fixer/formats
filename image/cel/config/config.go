@@ -54,6 +54,48 @@ type Config struct {
 // unknown tracks unknown data.
 const unknown = 0
 
+// NOTE: The embedded CEL image 5 and 6 are identical of
+// "monsters/darkmage/dmageh.cl2", thus one direction of the hit animation is
+// missing.
+
+// NOTE: The last three frames of the hit animation of fire man (i.e.
+// "monsters/fireman/firemh.cl2") are displaced.
+
+// NOTE: The embedded CEL image 3 and 4 use incorrect camera angles
+// "monsters/gargoyle/gargod.cl2", thus two directions of the death animation
+// are strange.
+
+// NOTE: The embedded CEL image of "monsters/goatbow/goatbd.cl2" only show the
+// death animation of goat archers from three camera directions (the embedded
+// CEL images 0 and 1; 2 and 3; and 4, 5, 6 and 7, correspond to one direction
+// each).
+
+// NOTE: The embedded CEL images 3 and 5 of the death animation for goat lords
+// (i.e. "monsters/goatlord/goatld.cl2") are displaced, thus affecting two
+// directions.
+
+// NOTE: The death animation of mages (i.e. "monsters/mage/maged.cl2") is
+// identical from each direction.
+
+// NOTE: The walk animation of mages (i.e. "monsters/mage/magew.cl2") contains a
+// single fully-transparent frame for each direction.
+
+// NOTE: The embedded CEL image 0 and 1 are identical of
+// "monsters/magma/magmad.cl2", thus one direction of the death animation is
+// missing.
+
+// NOTE: The hit animation of balrogs (i.e. "monsters/mega/megah.cl2") is
+// identical from each direction.
+
+// NOTE: The death animation of rhinos (i.e. "monsters/rhino/rhinod.cl2") have
+// strange camera angles, thus not covering each direction correctly.
+
+// NOTE: The frames of the attack animation of unravelers (i.e.
+// "monsters/unrav/unrava.cl2") are displaced.
+
+// NOTE: The death animation of zombies (i.e. "monsters/zombie/zombied.cl2")
+// have strange camera angles, thus not covering each direction correctly.
+
 // TODO: Add palette paths.
 
 // TODO: Check which MPQ-archive contains "monsters\worm\worm%c.cl2", and add
@@ -2300,7 +2342,7 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x28 in blodbur0.cl2 starts with the
 		// following header: 0A 00 2B 00 F6 01 85 02 00 00.
 		Header: 10,
-		W:      128, // TODO: Verify frame width.
+		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"missiles/blodbur1.cl2": {
@@ -2322,7 +2364,7 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x28 in blodburs.cl2 starts with the
 		// following header: 0A 00 33 00 C1 01 E2 01 00 00.
 		Header: 10,
-		W:      128, // TODO: Verify frame width.
+		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"missiles/blood1.cl2": {
@@ -2456,7 +2498,7 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x44 in doomexp.cl2 starts with the
 		// following header: 0A 00 62 00 85 00 9E 00 00 00.
 		Header: 10,
-		W:      96,  // TODO: Verify frame width.
+		W:      96,
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"missiles/ethrshld.cl2": {
@@ -3171,7 +3213,7 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x48 in portal.cl2 starts with the
 		// following header: 0A 00 96 02 0F 06 7C 09 00 00.
 		Header: 10,
-		W:      96,  // TODO: Verify frame width.
+		W:      96,
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"missiles/portal1.cl2": {
@@ -3193,7 +3235,7 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x48 in portalu.cl2 starts with the
 		// following header: 0A 00 73 00 FE 00 5F 01 00 00.
 		Header: 10,
-		W:      96,  // TODO: Verify frame width.
+		W:      96,
 		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"missiles/ressur1.cl2": {
@@ -3628,6 +3670,8 @@ var confs = map[string]*Config{
 		//    20 00 00 00  28 00 00 00  30 00 00 00  38 00 00 00
 		//    40 00 00 00  48 00 00 00  50 00 00 00  58 00 00 00
 		Nimgs: 8,
+		// NOTE: The dark mage has no walk animation, each direction contains 0
+		// frames.
 	},
 	"monsters/demskel/demskla.cl2": {
 		// The contents of the archive header at offset 0 in demskla.cl2:
@@ -5381,6 +5425,7 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
+
 	"plrgfx/rogue/rha/rhaas.cl2": {
 		// The contents of the archive header at offset 0 in rhaas.cl2:
 		//    20 00 00 00  48 00 00 00  70 00 00 00  98 00 00 00
