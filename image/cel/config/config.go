@@ -5429,7 +5429,6 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
-
 	"plrgfx/rogue/rha/rhaas.cl2": {
 		// The contents of the archive header at offset 0 in rhaas.cl2:
 		//    20 00 00 00  48 00 00 00  70 00 00 00  98 00 00 00
@@ -5438,8 +5437,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhaas.cl2 starts with the
 		// following header: 0A 00 18 01 D9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhaat.cl2": {
 		// The contents of the archive header at offset 0 in rhaat.cl2:
@@ -5449,8 +5448,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x300 in rhaat.cl2 starts with the
 		// following header: 0A 00 17 01 DB 03 71 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rha/rhaaw.cl2": {
 		// The contents of the archive header at offset 0 in rhaaw.cl2:
@@ -5460,8 +5459,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhaaw.cl2 starts with the
 		// following header: 0A 00 FD 00 EE 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhafm.cl2": {
 		// The contents of the archive header at offset 0 in rhafm.cl2:
@@ -5471,8 +5470,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhafm.cl2 starts with the
 		// following header: 0A 00 1D 01 DB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhaht.cl2": {
 		// The contents of the archive header at offset 0 in rhaht.cl2:
@@ -5482,8 +5481,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhaht.cl2 starts with the
 		// following header: 0A 00 1C 01 23 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhalm.cl2": {
 		// The contents of the archive header at offset 0 in rhalm.cl2:
@@ -5493,8 +5492,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhalm.cl2 starts with the
 		// following header: 0A 00 17 01 D9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhaqm.cl2": {
 		// The contents of the archive header at offset 0 in rhaqm.cl2:
@@ -5504,8 +5503,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhaqm.cl2 starts with the
 		// following header: 0A 00 20 01 E6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhast.cl2": {
 		// The contents of the archive header at offset 0 in rhast.cl2:
@@ -5515,8 +5514,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhast.cl2 starts with the
 		// following header: 0A 00 18 01 BF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rha/rhawl.cl2": {
 		// The contents of the archive header at offset 0 in rhawl.cl2:
@@ -5526,8 +5525,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhawl.cl2 starts with the
 		// following header: 0A 00 F0 00 6C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbas.cl2": {
 		// The contents of the archive header at offset 0 in rhbas.cl2:
@@ -5537,8 +5536,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhbas.cl2 starts with the
 		// following header: 0A 00 46 01 9B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbat.cl2": {
 		// The contents of the archive header at offset 0 in rhbat.cl2:
@@ -5548,8 +5547,10 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in rhbat.cl2 starts with the
 		// following header: 0A 00 56 01 AB 03 32 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      96, // ref: 0x44B120
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"plrgfx/rogue/rhb/rhbaw.cl2": {
 		// The contents of the archive header at offset 0 in rhbaw.cl2:
@@ -5559,8 +5560,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhbaw.cl2 starts with the
 		// following header: 0A 00 EB 00 3B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbfm.cl2": {
 		// The contents of the archive header at offset 0 in rhbfm.cl2:
@@ -5570,8 +5571,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhbfm.cl2 starts with the
 		// following header: 0A 00 07 01 46 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbht.cl2": {
 		// The contents of the archive header at offset 0 in rhbht.cl2:
@@ -5581,8 +5582,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhbht.cl2 starts with the
 		// following header: 0A 00 4B 01 35 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhblm.cl2": {
 		// The contents of the archive header at offset 0 in rhblm.cl2:
@@ -5592,8 +5593,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhblm.cl2 starts with the
 		// following header: 0A 00 07 01 4D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbqm.cl2": {
 		// The contents of the archive header at offset 0 in rhbqm.cl2:
@@ -5603,8 +5604,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhbqm.cl2 starts with the
 		// following header: 0A 00 01 01 42 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbst.cl2": {
 		// The contents of the archive header at offset 0 in rhbst.cl2:
@@ -5614,8 +5615,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhbst.cl2 starts with the
 		// following header: 0A 00 0F 01 A2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhb/rhbwl.cl2": {
 		// The contents of the archive header at offset 0 in rhbwl.cl2:
@@ -5625,8 +5626,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhbwl.cl2 starts with the
 		// following header: 0A 00 F0 00 58 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdas.cl2": {
 		// The contents of the archive header at offset 0 in rhdas.cl2:
@@ -5636,8 +5637,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhdas.cl2 starts with the
 		// following header: 0A 00 44 01 18 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdat.cl2": {
 		// The contents of the archive header at offset 0 in rhdat.cl2:
@@ -5647,8 +5648,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhdat.cl2 starts with the
 		// following header: 0A 00 34 01 2B 04 C0 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhd/rhdaw.cl2": {
 		// The contents of the archive header at offset 0 in rhdaw.cl2:
@@ -5658,8 +5659,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhdaw.cl2 starts with the
 		// following header: 0A 00 F5 00 98 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdbl.cl2": {
 		// The contents of the archive header at offset 0 in rhdbl.cl2:
@@ -5669,8 +5670,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rhdbl.cl2 starts with the
 		// following header: 0A 00 F0 00 9F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdfm.cl2": {
 		// The contents of the archive header at offset 0 in rhdfm.cl2:
@@ -5680,8 +5681,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhdfm.cl2 starts with the
 		// following header: 0A 00 2B 01 F2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdht.cl2": {
 		// The contents of the archive header at offset 0 in rhdht.cl2:
@@ -5691,8 +5692,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhdht.cl2 starts with the
 		// following header: 0A 00 E3 00 59 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdlm.cl2": {
 		// The contents of the archive header at offset 0 in rhdlm.cl2:
@@ -5702,8 +5703,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhdlm.cl2 starts with the
 		// following header: 0A 00 37 01 F0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdqm.cl2": {
 		// The contents of the archive header at offset 0 in rhdqm.cl2:
@@ -5713,8 +5714,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhdqm.cl2 starts with the
 		// following header: 0A 00 31 01 E5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdst.cl2": {
 		// The contents of the archive header at offset 0 in rhdst.cl2:
@@ -5724,8 +5725,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhdst.cl2 starts with the
 		// following header: 0A 00 08 01 D2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhd/rhdwl.cl2": {
 		// The contents of the archive header at offset 0 in rhdwl.cl2:
@@ -5735,8 +5736,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhdwl.cl2 starts with the
 		// following header: 0A 00 EF 00 9B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhas.cl2": {
 		// The contents of the archive header at offset 0 in rhhas.cl2:
@@ -5746,8 +5747,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhhas.cl2 starts with the
 		// following header: 0A 00 11 01 15 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhat.cl2": {
 		// The contents of the archive header at offset 0 in rhhat.cl2:
@@ -5757,8 +5758,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhhat.cl2 starts with the
 		// following header: 0A 00 2A 01 25 04 BA 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhh/rhhaw.cl2": {
 		// The contents of the archive header at offset 0 in rhhaw.cl2:
@@ -5768,8 +5769,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhhaw.cl2 starts with the
 		// following header: 0A 00 15 01 C1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhbl.cl2": {
 		// The contents of the archive header at offset 0 in rhhbl.cl2:
@@ -5779,8 +5780,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rhhbl.cl2 starts with the
 		// following header: 0A 00 E3 00 41 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhfm.cl2": {
 		// The contents of the archive header at offset 0 in rhhfm.cl2:
@@ -5790,8 +5791,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhhfm.cl2 starts with the
 		// following header: 0A 00 37 01 03 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhht.cl2": {
 		// The contents of the archive header at offset 0 in rhhht.cl2:
@@ -5801,8 +5802,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhhht.cl2 starts with the
 		// following header: 0A 00 35 01 CA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhlm.cl2": {
 		// The contents of the archive header at offset 0 in rhhlm.cl2:
@@ -5812,8 +5813,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhhlm.cl2 starts with the
 		// following header: 0A 00 3C 01 01 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhqm.cl2": {
 		// The contents of the archive header at offset 0 in rhhqm.cl2:
@@ -5823,8 +5824,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhhqm.cl2 starts with the
 		// following header: 0A 00 3D 01 F7 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhst.cl2": {
 		// The contents of the archive header at offset 0 in rhhst.cl2:
@@ -5834,8 +5835,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhhst.cl2 starts with the
 		// following header: 0A 00 19 01 F7 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhh/rhhwl.cl2": {
 		// The contents of the archive header at offset 0 in rhhwl.cl2:
@@ -5845,8 +5846,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhhwl.cl2 starts with the
 		// following header: 0A 00 0E 01 D3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmas.cl2": {
 		// The contents of the archive header at offset 0 in rhmas.cl2:
@@ -5856,8 +5857,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhmas.cl2 starts with the
 		// following header: 0A 00 20 01 CF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmat.cl2": {
 		// The contents of the archive header at offset 0 in rhmat.cl2:
@@ -5867,8 +5868,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhmat.cl2 starts with the
 		// following header: 0A 00 35 01 D7 03 6D 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhm/rhmaw.cl2": {
 		// The contents of the archive header at offset 0 in rhmaw.cl2:
@@ -5878,8 +5879,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhmaw.cl2 starts with the
 		// following header: 0A 00 16 01 99 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmfm.cl2": {
 		// The contents of the archive header at offset 0 in rhmfm.cl2:
@@ -5889,8 +5890,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhmfm.cl2 starts with the
 		// following header: 0A 00 37 01 B0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmht.cl2": {
 		// The contents of the archive header at offset 0 in rhmht.cl2:
@@ -5900,8 +5901,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhmht.cl2 starts with the
 		// following header: 0A 00 33 01 88 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmlm.cl2": {
 		// The contents of the archive header at offset 0 in rhmlm.cl2:
@@ -5911,8 +5912,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhmlm.cl2 starts with the
 		// following header: 0A 00 47 01 CF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmqm.cl2": {
 		// The contents of the archive header at offset 0 in rhmqm.cl2:
@@ -5922,8 +5923,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhmqm.cl2 starts with the
 		// following header: 0A 00 39 01 B9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmst.cl2": {
 		// The contents of the archive header at offset 0 in rhmst.cl2:
@@ -5933,8 +5934,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhmst.cl2 starts with the
 		// following header: 0A 00 1F 01 C7 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhm/rhmwl.cl2": {
 		// The contents of the archive header at offset 0 in rhmwl.cl2:
@@ -5944,8 +5945,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhmwl.cl2 starts with the
 		// following header: 0A 00 0C 01 93 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnas.cl2": {
 		// The contents of the archive header at offset 0 in rhnas.cl2:
@@ -5955,8 +5956,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhnas.cl2 starts with the
 		// following header: 0A 00 27 01 00 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnat.cl2": {
 		// The contents of the archive header at offset 0 in rhnat.cl2:
@@ -5966,8 +5967,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhnat.cl2 starts with the
 		// following header: 0A 00 21 01 B3 03 49 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhn/rhnaw.cl2": {
 		// The contents of the archive header at offset 0 in rhnaw.cl2:
@@ -5977,8 +5978,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhnaw.cl2 starts with the
 		// following header: 0A 00 F3 00 74 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhndt.cl2": {
 		// The contents of the archive header at offset 0 in rhndt.cl2:
@@ -5988,8 +5989,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhndt.cl2 starts with the
 		// following header: 0A 00 2E 01 8D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/rogue/rhn/rhnfm.cl2": {
 		// The contents of the archive header at offset 0 in rhnfm.cl2:
@@ -5999,8 +6000,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhnfm.cl2 starts with the
 		// following header: 0A 00 1E 01 81 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnht.cl2": {
 		// The contents of the archive header at offset 0 in rhnht.cl2:
@@ -6010,8 +6011,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhnht.cl2 starts with the
 		// following header: 0A 00 17 01 E6 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnlm.cl2": {
 		// The contents of the archive header at offset 0 in rhnlm.cl2:
@@ -6021,8 +6022,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhnlm.cl2 starts with the
 		// following header: 0A 00 F7 00 24 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnqm.cl2": {
 		// The contents of the archive header at offset 0 in rhnqm.cl2:
@@ -6032,8 +6033,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhnqm.cl2 starts with the
 		// following header: 0A 00 F7 00 27 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnst.cl2": {
 		// The contents of the archive header at offset 0 in rhnst.cl2:
@@ -6043,8 +6044,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhnst.cl2 starts with the
 		// following header: 0A 00 0E 01 A5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhn/rhnwl.cl2": {
 		// The contents of the archive header at offset 0 in rhnwl.cl2:
@@ -6054,8 +6055,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhnwl.cl2 starts with the
 		// following header: 0A 00 F1 00 4D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhsas.cl2": {
 		// The contents of the archive header at offset 0 in rhsas.cl2:
@@ -6065,8 +6066,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhsas.cl2 starts with the
 		// following header: 0A 00 3E 01 F0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhsat.cl2": {
 		// The contents of the archive header at offset 0 in rhsat.cl2:
@@ -6076,8 +6077,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhsat.cl2 starts with the
 		// following header: 0A 00 23 01 A2 03 3A 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhs/rhsaw.cl2": {
 		// The contents of the archive header at offset 0 in rhsaw.cl2:
@@ -6087,8 +6088,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhsaw.cl2 starts with the
 		// following header: 0A 00 F0 00 70 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhsfm.cl2": {
 		// The contents of the archive header at offset 0 in rhsfm.cl2:
@@ -6098,8 +6099,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhsfm.cl2 starts with the
 		// following header: 0A 00 1B 01 90 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhsht.cl2": {
 		// The contents of the archive header at offset 0 in rhsht.cl2:
@@ -6109,8 +6110,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhsht.cl2 starts with the
 		// following header: 0A 00 FC 00 1D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhslm.cl2": {
 		// The contents of the archive header at offset 0 in rhslm.cl2:
@@ -6120,8 +6121,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhslm.cl2 starts with the
 		// following header: 0A 00 25 01 A9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhsqm.cl2": {
 		// The contents of the archive header at offset 0 in rhsqm.cl2:
@@ -6131,8 +6132,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhsqm.cl2 starts with the
 		// following header: 0A 00 16 01 7F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhsst.cl2": {
 		// The contents of the archive header at offset 0 in rhsst.cl2:
@@ -6142,8 +6143,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhsst.cl2 starts with the
 		// following header: 0A 00 18 01 B2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhs/rhswl.cl2": {
 		// The contents of the archive header at offset 0 in rhswl.cl2:
@@ -6153,8 +6154,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhswl.cl2 starts with the
 		// following header: 0A 00 F1 00 6C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtas.cl2": {
 		// The contents of the archive header at offset 0 in rhtas.cl2:
@@ -6164,8 +6165,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhtas.cl2 starts with the
 		// following header: 0A 00 1F 01 3B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtat.cl2": {
 		// The contents of the archive header at offset 0 in rhtat.cl2:
@@ -6175,8 +6176,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhtat.cl2 starts with the
 		// following header: 0A 00 1B 01 38 03 BF 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rht/rhtaw.cl2": {
 		// The contents of the archive header at offset 0 in rhtaw.cl2:
@@ -6186,8 +6187,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhtaw.cl2 starts with the
 		// following header: 0A 00 FF 00 24 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtfm.cl2": {
 		// The contents of the archive header at offset 0 in rhtfm.cl2:
@@ -6197,8 +6198,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhtfm.cl2 starts with the
 		// following header: 0A 00 E5 00 EC 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtht.cl2": {
 		// The contents of the archive header at offset 0 in rhtht.cl2:
@@ -6208,8 +6209,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rhtht.cl2 starts with the
 		// following header: 0A 00 FA 00 57 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtlm.cl2": {
 		// The contents of the archive header at offset 0 in rhtlm.cl2:
@@ -6219,8 +6220,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhtlm.cl2 starts with the
 		// following header: 0A 00 F6 00 FF 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtqm.cl2": {
 		// The contents of the archive header at offset 0 in rhtqm.cl2:
@@ -6230,8 +6231,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhtqm.cl2 starts with the
 		// following header: 0A 00 02 01 09 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtst.cl2": {
 		// The contents of the archive header at offset 0 in rhtst.cl2:
@@ -6241,8 +6242,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhtst.cl2 starts with the
 		// following header: 0A 00 47 01 BA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rht/rhtwl.cl2": {
 		// The contents of the archive header at offset 0 in rhtwl.cl2:
@@ -6252,8 +6253,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhtwl.cl2 starts with the
 		// following header: 0A 00 14 01 A2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhuas.cl2": {
 		// The contents of the archive header at offset 0 in rhuas.cl2:
@@ -6263,8 +6264,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhuas.cl2 starts with the
 		// following header: 0A 00 15 01 AA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhuat.cl2": {
 		// The contents of the archive header at offset 0 in rhuat.cl2:
@@ -6274,8 +6275,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rhuat.cl2 starts with the
 		// following header: 0A 00 22 01 B7 03 4C 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rhu/rhuaw.cl2": {
 		// The contents of the archive header at offset 0 in rhuaw.cl2:
@@ -6285,8 +6286,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhuaw.cl2 starts with the
 		// following header: 0A 00 F3 00 8F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhubl.cl2": {
 		// The contents of the archive header at offset 0 in rhubl.cl2:
@@ -6296,8 +6297,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rhubl.cl2 starts with the
 		// following header: 0A 00 DA 00 2A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhufm.cl2": {
 		// The contents of the archive header at offset 0 in rhufm.cl2:
@@ -6307,8 +6308,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhufm.cl2 starts with the
 		// following header: 0A 00 F4 00 E3 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhuht.cl2": {
 		// The contents of the archive header at offset 0 in rhuht.cl2:
@@ -6318,8 +6319,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhuht.cl2 starts with the
 		// following header: 0A 00 ED 00 1C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhulm.cl2": {
 		// The contents of the archive header at offset 0 in rhulm.cl2:
@@ -6329,8 +6330,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rhulm.cl2 starts with the
 		// following header: 0A 00 02 01 E9 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhuqm.cl2": {
 		// The contents of the archive header at offset 0 in rhuqm.cl2:
@@ -6340,8 +6341,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x260 in rhuqm.cl2 starts with the
 		// following header: 0A 00 F3 00 DC 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhust.cl2": {
 		// The contents of the archive header at offset 0 in rhust.cl2:
@@ -6351,8 +6352,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rhust.cl2 starts with the
 		// following header: 0A 00 13 01 EA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rhu/rhuwl.cl2": {
 		// The contents of the archive header at offset 0 in rhuwl.cl2:
@@ -6362,8 +6363,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rhuwl.cl2 starts with the
 		// following header: 0A 00 F2 00 8F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlaas.cl2": {
 		// The contents of the archive header at offset 0 in rlaas.cl2:
@@ -6373,8 +6374,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlaas.cl2 starts with the
 		// following header: 0A 00 4A 01 07 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlaat.cl2": {
 		// The contents of the archive header at offset 0 in rlaat.cl2:
@@ -6384,8 +6385,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x300 in rlaat.cl2 starts with the
 		// following header: 0A 00 4A 01 09 04 6C 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rla/rlaaw.cl2": {
 		// The contents of the archive header at offset 0 in rlaaw.cl2:
@@ -6395,8 +6396,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlaaw.cl2 starts with the
 		// following header: 0A 00 10 01 F9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlafm.cl2": {
 		// The contents of the archive header at offset 0 in rlafm.cl2:
@@ -6406,8 +6407,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlafm.cl2 starts with the
 		// following header: 0A 00 42 01 F5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlaht.cl2": {
 		// The contents of the archive header at offset 0 in rlaht.cl2:
@@ -6417,8 +6418,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rlaht.cl2 starts with the
 		// following header: 0A 00 32 01 41 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlalm.cl2": {
 		// The contents of the archive header at offset 0 in rlalm.cl2:
@@ -6428,8 +6429,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlalm.cl2 starts with the
 		// following header: 0A 00 4B 01 06 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlaqm.cl2": {
 		// The contents of the archive header at offset 0 in rlaqm.cl2:
@@ -6439,8 +6440,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlaqm.cl2 starts with the
 		// following header: 0A 00 52 01 F1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlast.cl2": {
 		// The contents of the archive header at offset 0 in rlast.cl2:
@@ -6450,8 +6451,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlast.cl2 starts with the
 		// following header: 0A 00 3B 01 E8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rla/rlawl.cl2": {
 		// The contents of the archive header at offset 0 in rlawl.cl2:
@@ -6461,8 +6462,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlawl.cl2 starts with the
 		// following header: 0A 00 09 01 7D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbas.cl2": {
 		// The contents of the archive header at offset 0 in rlbas.cl2:
@@ -6472,8 +6473,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlbas.cl2 starts with the
 		// following header: 0A 00 34 01 8A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbat.cl2": {
 		// The contents of the archive header at offset 0 in rlbat.cl2:
@@ -6483,8 +6484,10 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in rlbat.cl2 starts with the
 		// following header: 0A 00 5B 01 AA 03 0A 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      96, // ref: 0x44B120
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"plrgfx/rogue/rlb/rlbaw.cl2": {
 		// The contents of the archive header at offset 0 in rlbaw.cl2:
@@ -6494,8 +6497,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlbaw.cl2 starts with the
 		// following header: 0A 00 05 01 49 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbfm.cl2": {
 		// The contents of the archive header at offset 0 in rlbfm.cl2:
@@ -6505,8 +6508,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlbfm.cl2 starts with the
 		// following header: 0A 00 36 01 8B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbht.cl2": {
 		// The contents of the archive header at offset 0 in rlbht.cl2:
@@ -6516,8 +6519,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rlbht.cl2 starts with the
 		// following header: 0A 00 62 01 51 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlblm.cl2": {
 		// The contents of the archive header at offset 0 in rlblm.cl2:
@@ -6527,8 +6530,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlblm.cl2 starts with the
 		// following header: 0A 00 33 01 89 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbqm.cl2": {
 		// The contents of the archive header at offset 0 in rlbqm.cl2:
@@ -6538,8 +6541,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlbqm.cl2 starts with the
 		// following header: 0A 00 16 01 68 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbst.cl2": {
 		// The contents of the archive header at offset 0 in rlbst.cl2:
@@ -6549,8 +6552,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlbst.cl2 starts with the
 		// following header: 0A 00 2F 01 D2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlb/rlbwl.cl2": {
 		// The contents of the archive header at offset 0 in rlbwl.cl2:
@@ -6560,8 +6563,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlbwl.cl2 starts with the
 		// following header: 0A 00 09 01 56 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldas.cl2": {
 		// The contents of the archive header at offset 0 in rldas.cl2:
@@ -6571,8 +6574,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rldas.cl2 starts with the
 		// following header: 0A 00 45 01 B7 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldat.cl2": {
 		// The contents of the archive header at offset 0 in rldat.cl2:
@@ -6582,8 +6585,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rldat.cl2 starts with the
 		// following header: 0A 00 3E 01 B9 03 1C 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rld/rldaw.cl2": {
 		// The contents of the archive header at offset 0 in rldaw.cl2:
@@ -6593,8 +6596,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rldaw.cl2 starts with the
 		// following header: 0A 00 FE 00 83 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldbl.cl2": {
 		// The contents of the archive header at offset 0 in rldbl.cl2:
@@ -6604,8 +6607,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rldbl.cl2 starts with the
 		// following header: 0A 00 43 01 97 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldfm.cl2": {
 		// The contents of the archive header at offset 0 in rldfm.cl2:
@@ -6615,8 +6618,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rldfm.cl2 starts with the
 		// following header: 0A 00 3D 01 B6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldht.cl2": {
 		// The contents of the archive header at offset 0 in rldht.cl2:
@@ -6626,8 +6629,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rldht.cl2 starts with the
 		// following header: 0A 00 39 01 55 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldlm.cl2": {
 		// The contents of the archive header at offset 0 in rldlm.cl2:
@@ -6637,8 +6640,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rldlm.cl2 starts with the
 		// following header: 0A 00 41 01 B1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldqm.cl2": {
 		// The contents of the archive header at offset 0 in rldqm.cl2:
@@ -6648,8 +6651,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rldqm.cl2 starts with the
 		// following header: 0A 00 2A 01 83 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldst.cl2": {
 		// The contents of the archive header at offset 0 in rldst.cl2:
@@ -6659,8 +6662,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rldst.cl2 starts with the
 		// following header: 0A 00 36 01 DA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rld/rldwl.cl2": {
 		// The contents of the archive header at offset 0 in rldwl.cl2:
@@ -6670,8 +6673,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rldwl.cl2 starts with the
 		// following header: 0A 00 05 01 6A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhas.cl2": {
 		// The contents of the archive header at offset 0 in rlhas.cl2:
@@ -6681,8 +6684,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlhas.cl2 starts with the
 		// following header: 0A 00 64 01 E2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhat.cl2": {
 		// The contents of the archive header at offset 0 in rlhat.cl2:
@@ -6692,8 +6695,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rlhat.cl2 starts with the
 		// following header: 0A 00 61 01 F2 03 57 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rlh/rlhaw.cl2": {
 		// The contents of the archive header at offset 0 in rlhaw.cl2:
@@ -6703,8 +6706,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlhaw.cl2 starts with the
 		// following header: 0A 00 25 01 B1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhbl.cl2": {
 		// The contents of the archive header at offset 0 in rlhbl.cl2:
@@ -6714,8 +6717,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rlhbl.cl2 starts with the
 		// following header: 0A 00 4B 01 BA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhfm.cl2": {
 		// The contents of the archive header at offset 0 in rlhfm.cl2:
@@ -6725,8 +6728,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlhfm.cl2 starts with the
 		// following header: 0A 00 46 01 B0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhht.cl2": {
 		// The contents of the archive header at offset 0 in rlhht.cl2:
@@ -6736,8 +6739,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rlhht.cl2 starts with the
 		// following header: 0A 00 46 01 59 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhlm.cl2": {
 		// The contents of the archive header at offset 0 in rlhlm.cl2:
@@ -6747,8 +6750,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlhlm.cl2 starts with the
 		// following header: 0A 00 47 01 AF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhqm.cl2": {
 		// The contents of the archive header at offset 0 in rlhqm.cl2:
@@ -6758,8 +6761,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlhqm.cl2 starts with the
 		// following header: 0A 00 49 01 AB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhst.cl2": {
 		// The contents of the archive header at offset 0 in rlhst.cl2:
@@ -6769,8 +6772,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlhst.cl2 starts with the
 		// following header: 0A 00 3D 01 DF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlh/rlhwl.cl2": {
 		// The contents of the archive header at offset 0 in rlhwl.cl2:
@@ -6780,8 +6783,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlhwl.cl2 starts with the
 		// following header: 0A 00 27 01 B4 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmas.cl2": {
 		// The contents of the archive header at offset 0 in rlmas.cl2:
@@ -6791,8 +6794,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlmas.cl2 starts with the
 		// following header: 0A 00 45 01 EE 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmat.cl2": {
 		// The contents of the archive header at offset 0 in rlmat.cl2:
@@ -6802,8 +6805,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rlmat.cl2 starts with the
 		// following header: 0A 00 51 01 F9 03 5D 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rlm/rlmaw.cl2": {
 		// The contents of the archive header at offset 0 in rlmaw.cl2:
@@ -6813,8 +6816,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlmaw.cl2 starts with the
 		// following header: 0A 00 21 01 AA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmfm.cl2": {
 		// The contents of the archive header at offset 0 in rlmfm.cl2:
@@ -6824,8 +6827,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlmfm.cl2 starts with the
 		// following header: 0A 00 5D 01 EC 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmht.cl2": {
 		// The contents of the archive header at offset 0 in rlmht.cl2:
@@ -6835,8 +6838,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rlmht.cl2 starts with the
 		// following header: 0A 00 52 01 BB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmlm.cl2": {
 		// The contents of the archive header at offset 0 in rlmlm.cl2:
@@ -6846,8 +6849,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlmlm.cl2 starts with the
 		// following header: 0A 00 60 01 F8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmqm.cl2": {
 		// The contents of the archive header at offset 0 in rlmqm.cl2:
@@ -6857,8 +6860,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlmqm.cl2 starts with the
 		// following header: 0A 00 43 01 C8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmst.cl2": {
 		// The contents of the archive header at offset 0 in rlmst.cl2:
@@ -6868,8 +6871,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlmst.cl2 starts with the
 		// following header: 0A 00 43 01 ED 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlm/rlmwl.cl2": {
 		// The contents of the archive header at offset 0 in rlmwl.cl2:
@@ -6879,8 +6882,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlmwl.cl2 starts with the
 		// following header: 0A 00 29 01 A3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnas.cl2": {
 		// The contents of the archive header at offset 0 in rlnas.cl2:
@@ -6890,8 +6893,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlnas.cl2 starts with the
 		// following header: 0A 00 3B 01 1B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnat.cl2": {
 		// The contents of the archive header at offset 0 in rlnat.cl2:
@@ -6901,8 +6904,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rlnat.cl2 starts with the
 		// following header: 0A 00 48 01 D3 03 35 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rln/rlnaw.cl2": {
 		// The contents of the archive header at offset 0 in rlnaw.cl2:
@@ -6912,8 +6915,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlnaw.cl2 starts with the
 		// following header: 0A 00 F5 00 6B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlndt.cl2": {
 		// The contents of the archive header at offset 0 in rlndt.cl2:
@@ -6923,8 +6926,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlndt.cl2 starts with the
 		// following header: 0A 00 57 01 CA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/rogue/rln/rlnfm.cl2": {
 		// The contents of the archive header at offset 0 in rlnfm.cl2:
@@ -6934,8 +6937,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlnfm.cl2 starts with the
 		// following header: 0A 00 37 01 16 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnht.cl2": {
 		// The contents of the archive header at offset 0 in rlnht.cl2:
@@ -6945,8 +6948,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rlnht.cl2 starts with the
 		// following header: 0A 00 42 01 0C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnlm.cl2": {
 		// The contents of the archive header at offset 0 in rlnlm.cl2:
@@ -6956,8 +6959,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlnlm.cl2 starts with the
 		// following header: 0A 00 3B 01 17 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnqm.cl2": {
 		// The contents of the archive header at offset 0 in rlnqm.cl2:
@@ -6967,8 +6970,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlnqm.cl2 starts with the
 		// following header: 0A 00 27 01 F8 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnst.cl2": {
 		// The contents of the archive header at offset 0 in rlnst.cl2:
@@ -6978,8 +6981,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlnst.cl2 starts with the
 		// following header: 0A 00 30 01 D3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rln/rlnwl.cl2": {
 		// The contents of the archive header at offset 0 in rlnwl.cl2:
@@ -6989,8 +6992,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlnwl.cl2 starts with the
 		// following header: 0A 00 F7 00 2D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlsas.cl2": {
 		// The contents of the archive header at offset 0 in rlsas.cl2:
@@ -7000,8 +7003,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlsas.cl2 starts with the
 		// following header: 0A 00 3F 01 D5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlsat.cl2": {
 		// The contents of the archive header at offset 0 in rlsat.cl2:
@@ -7011,8 +7014,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rlsat.cl2 starts with the
 		// following header: 0A 00 3D 01 D0 03 31 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rls/rlsaw.cl2": {
 		// The contents of the archive header at offset 0 in rlsaw.cl2:
@@ -7022,8 +7025,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlsaw.cl2 starts with the
 		// following header: 0A 00 F9 00 79 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlsfm.cl2": {
 		// The contents of the archive header at offset 0 in rlsfm.cl2:
@@ -7033,8 +7036,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlsfm.cl2 starts with the
 		// following header: 0A 00 40 01 DA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlsht.cl2": {
 		// The contents of the archive header at offset 0 in rlsht.cl2:
@@ -7044,8 +7047,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rlsht.cl2 starts with the
 		// following header: 0A 00 54 01 AA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlslm.cl2": {
 		// The contents of the archive header at offset 0 in rlslm.cl2:
@@ -7055,8 +7058,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlslm.cl2 starts with the
 		// following header: 0A 00 01 01 C6 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlsqm.cl2": {
 		// The contents of the archive header at offset 0 in rlsqm.cl2:
@@ -7066,8 +7069,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlsqm.cl2 starts with the
 		// following header: 0A 00 54 01 CA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlsst.cl2": {
 		// The contents of the archive header at offset 0 in rlsst.cl2:
@@ -7077,8 +7080,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlsst.cl2 starts with the
 		// following header: 0A 00 36 01 D8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rls/rlswl.cl2": {
 		// The contents of the archive header at offset 0 in rlswl.cl2:
@@ -7088,8 +7091,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rlswl.cl2 starts with the
 		// following header: 0A 00 FB 00 53 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltas.cl2": {
 		// The contents of the archive header at offset 0 in rltas.cl2:
@@ -7099,8 +7102,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rltas.cl2 starts with the
 		// following header: 0A 00 2A 01 3E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltat.cl2": {
 		// The contents of the archive header at offset 0 in rltat.cl2:
@@ -7110,8 +7113,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rltat.cl2 starts with the
 		// following header: 0A 00 2F 01 44 03 A6 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rlt/rltaw.cl2": {
 		// The contents of the archive header at offset 0 in rltaw.cl2:
@@ -7121,8 +7124,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rltaw.cl2 starts with the
 		// following header: 0A 00 12 01 33 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltfm.cl2": {
 		// The contents of the archive header at offset 0 in rltfm.cl2:
@@ -7132,8 +7135,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rltfm.cl2 starts with the
 		// following header: 0A 00 28 01 40 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltht.cl2": {
 		// The contents of the archive header at offset 0 in rltht.cl2:
@@ -7143,8 +7146,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rltht.cl2 starts with the
 		// following header: 0A 00 14 01 79 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltlm.cl2": {
 		// The contents of the archive header at offset 0 in rltlm.cl2:
@@ -7154,8 +7157,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rltlm.cl2 starts with the
 		// following header: 0A 00 26 01 39 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltqm.cl2": {
 		// The contents of the archive header at offset 0 in rltqm.cl2:
@@ -7165,8 +7168,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rltqm.cl2 starts with the
 		// following header: 0A 00 1A 01 21 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltst.cl2": {
 		// The contents of the archive header at offset 0 in rltst.cl2:
@@ -7176,8 +7179,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rltst.cl2 starts with the
 		// following header: 0A 00 4E 01 C5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlt/rltwl.cl2": {
 		// The contents of the archive header at offset 0 in rltwl.cl2:
@@ -7187,8 +7190,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rltwl.cl2 starts with the
 		// following header: 0A 00 2C 01 99 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rluas.cl2": {
 		// The contents of the archive header at offset 0 in rluas.cl2:
@@ -7198,8 +7201,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rluas.cl2 starts with the
 		// following header: 0A 00 3A 01 78 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rluat.cl2": {
 		// The contents of the archive header at offset 0 in rluat.cl2:
@@ -7209,8 +7212,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rluat.cl2 starts with the
 		// following header: 0A 00 3B 01 79 03 DD 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rlu/rluaw.cl2": {
 		// The contents of the archive header at offset 0 in rluaw.cl2:
@@ -7220,8 +7223,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rluaw.cl2 starts with the
 		// following header: 0A 00 FB 00 77 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rlubl.cl2": {
 		// The contents of the archive header at offset 0 in rlubl.cl2:
@@ -7231,8 +7234,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rlubl.cl2 starts with the
 		// following header: 0A 00 37 01 6C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rlufm.cl2": {
 		// The contents of the archive header at offset 0 in rlufm.cl2:
@@ -7242,8 +7245,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlufm.cl2 starts with the
 		// following header: 0A 00 32 01 66 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rluht.cl2": {
 		// The contents of the archive header at offset 0 in rluht.cl2:
@@ -7253,8 +7256,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rluht.cl2 starts with the
 		// following header: 0A 00 4F 01 6F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rlulm.cl2": {
 		// The contents of the archive header at offset 0 in rlulm.cl2:
@@ -7264,8 +7267,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rlulm.cl2 starts with the
 		// following header: 0A 00 3E 01 7E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rluqm.cl2": {
 		// The contents of the archive header at offset 0 in rluqm.cl2:
@@ -7275,8 +7278,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rluqm.cl2 starts with the
 		// following header: 0A 00 27 01 59 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rlust.cl2": {
 		// The contents of the archive header at offset 0 in rlust.cl2:
@@ -7286,8 +7289,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rlust.cl2 starts with the
 		// following header: 0A 00 37 01 DD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rlu/rluwl.cl2": {
 		// The contents of the archive header at offset 0 in rluwl.cl2:
@@ -7297,8 +7300,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rluwl.cl2 starts with the
 		// following header: 0A 00 06 01 6F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmaas.cl2": {
 		// The contents of the archive header at offset 0 in rmaas.cl2:
@@ -7308,8 +7311,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmaas.cl2 starts with the
 		// following header: 0A 00 48 01 11 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmaat.cl2": {
 		// The contents of the archive header at offset 0 in rmaat.cl2:
@@ -7319,8 +7322,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x300 in rmaat.cl2 starts with the
 		// following header: 0A 00 4C 01 16 04 7E 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rma/rmaaw.cl2": {
 		// The contents of the archive header at offset 0 in rmaaw.cl2:
@@ -7330,8 +7333,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmaaw.cl2 starts with the
 		// following header: 0A 00 0D 01 09 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmafm.cl2": {
 		// The contents of the archive header at offset 0 in rmafm.cl2:
@@ -7341,8 +7344,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmafm.cl2 starts with the
 		// following header: 0A 00 46 01 18 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmaht.cl2": {
 		// The contents of the archive header at offset 0 in rmaht.cl2:
@@ -7352,8 +7355,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmaht.cl2 starts with the
 		// following header: 0A 00 31 01 30 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmalm.cl2": {
 		// The contents of the archive header at offset 0 in rmalm.cl2:
@@ -7363,8 +7366,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmalm.cl2 starts with the
 		// following header: 0A 00 4B 01 20 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmaqm.cl2": {
 		// The contents of the archive header at offset 0 in rmaqm.cl2:
@@ -7374,8 +7377,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmaqm.cl2 starts with the
 		// following header: 0A 00 45 01 11 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmast.cl2": {
 		// The contents of the archive header at offset 0 in rmast.cl2:
@@ -7385,8 +7388,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmast.cl2 starts with the
 		// following header: 0A 00 38 01 F7 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rma/rmawl.cl2": {
 		// The contents of the archive header at offset 0 in rmawl.cl2:
@@ -7396,8 +7399,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmawl.cl2 starts with the
 		// following header: 0A 00 FF 00 87 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbas.cl2": {
 		// The contents of the archive header at offset 0 in rmbas.cl2:
@@ -7407,8 +7410,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmbas.cl2 starts with the
 		// following header: 0A 00 4F 01 9C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbat.cl2": {
 		// The contents of the archive header at offset 0 in rmbat.cl2:
@@ -7418,8 +7421,10 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in rmbat.cl2 starts with the
 		// following header: 0A 00 6F 01 B5 03 15 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      96, // ref: 0x44B120
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"plrgfx/rogue/rmb/rmbaw.cl2": {
 		// The contents of the archive header at offset 0 in rmbaw.cl2:
@@ -7429,8 +7434,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmbaw.cl2 starts with the
 		// following header: 0A 00 0A 01 52 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbfm.cl2": {
 		// The contents of the archive header at offset 0 in rmbfm.cl2:
@@ -7440,8 +7445,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmbfm.cl2 starts with the
 		// following header: 0A 00 3A 01 90 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbht.cl2": {
 		// The contents of the archive header at offset 0 in rmbht.cl2:
@@ -7451,8 +7456,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmbht.cl2 starts with the
 		// following header: 0A 00 68 01 59 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmblm.cl2": {
 		// The contents of the archive header at offset 0 in rmblm.cl2:
@@ -7462,8 +7467,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmblm.cl2 starts with the
 		// following header: 0A 00 3F 01 8E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbqm.cl2": {
 		// The contents of the archive header at offset 0 in rmbqm.cl2:
@@ -7473,8 +7478,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmbqm.cl2 starts with the
 		// following header: 0A 00 3A 01 80 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbst.cl2": {
 		// The contents of the archive header at offset 0 in rmbst.cl2:
@@ -7484,8 +7489,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmbst.cl2 starts with the
 		// following header: 0A 00 26 01 D2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmb/rmbwl.cl2": {
 		// The contents of the archive header at offset 0 in rmbwl.cl2:
@@ -7495,8 +7500,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmbwl.cl2 starts with the
 		// following header: 0A 00 FF 00 76 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdas.cl2": {
 		// The contents of the archive header at offset 0 in rmdas.cl2:
@@ -7506,8 +7511,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmdas.cl2 starts with the
 		// following header: 0A 00 67 01 5F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdat.cl2": {
 		// The contents of the archive header at offset 0 in rmdat.cl2:
@@ -7517,8 +7522,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmdat.cl2 starts with the
 		// following header: 0A 00 56 01 2E 04 92 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmd/rmdaw.cl2": {
 		// The contents of the archive header at offset 0 in rmdaw.cl2:
@@ -7528,8 +7533,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmdaw.cl2 starts with the
 		// following header: 0A 00 F8 00 9C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdbl.cl2": {
 		// The contents of the archive header at offset 0 in rmdbl.cl2:
@@ -7539,8 +7544,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rmdbl.cl2 starts with the
 		// following header: 0A 00 09 01 BD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdfm.cl2": {
 		// The contents of the archive header at offset 0 in rmdfm.cl2:
@@ -7550,8 +7555,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmdfm.cl2 starts with the
 		// following header: 0A 00 60 01 2C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdht.cl2": {
 		// The contents of the archive header at offset 0 in rmdht.cl2:
@@ -7561,8 +7566,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmdht.cl2 starts with the
 		// following header: 0A 00 FF 00 83 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdlm.cl2": {
 		// The contents of the archive header at offset 0 in rmdlm.cl2:
@@ -7572,8 +7577,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmdlm.cl2 starts with the
 		// following header: 0A 00 5C 01 2E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdqm.cl2": {
 		// The contents of the archive header at offset 0 in rmdqm.cl2:
@@ -7583,8 +7588,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmdqm.cl2 starts with the
 		// following header: 0A 00 5B 01 1D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdst.cl2": {
 		// The contents of the archive header at offset 0 in rmdst.cl2:
@@ -7594,8 +7599,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmdst.cl2 starts with the
 		// following header: 0A 00 2F 01 05 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmd/rmdwl.cl2": {
 		// The contents of the archive header at offset 0 in rmdwl.cl2:
@@ -7605,8 +7610,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmdwl.cl2 starts with the
 		// following header: 0A 00 03 01 9B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhas.cl2": {
 		// The contents of the archive header at offset 0 in rmhas.cl2:
@@ -7616,8 +7621,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmhas.cl2 starts with the
 		// following header: 0A 00 3B 01 17 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhat.cl2": {
 		// The contents of the archive header at offset 0 in rmhat.cl2:
@@ -7627,8 +7632,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmhat.cl2 starts with the
 		// following header: 0A 00 51 01 27 04 8E 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmh/rmhaw.cl2": {
 		// The contents of the archive header at offset 0 in rmhaw.cl2:
@@ -7638,8 +7643,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmhaw.cl2 starts with the
 		// following header: 0A 00 21 01 D6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhbl.cl2": {
 		// The contents of the archive header at offset 0 in rmhbl.cl2:
@@ -7649,8 +7654,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rmhbl.cl2 starts with the
 		// following header: 0A 00 FA 00 38 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhfm.cl2": {
 		// The contents of the archive header at offset 0 in rmhfm.cl2:
@@ -7660,8 +7665,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmhfm.cl2 starts with the
 		// following header: 0A 00 5E 01 11 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhht.cl2": {
 		// The contents of the archive header at offset 0 in rmhht.cl2:
@@ -7671,8 +7676,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmhht.cl2 starts with the
 		// following header: 0A 00 5F 01 E2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhlm.cl2": {
 		// The contents of the archive header at offset 0 in rmhlm.cl2:
@@ -7682,8 +7687,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmhlm.cl2 starts with the
 		// following header: 0A 00 63 01 0D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhqm.cl2": {
 		// The contents of the archive header at offset 0 in rmhqm.cl2:
@@ -7693,8 +7698,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmhqm.cl2 starts with the
 		// following header: 0A 00 62 01 0F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhst.cl2": {
 		// The contents of the archive header at offset 0 in rmhst.cl2:
@@ -7704,8 +7709,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmhst.cl2 starts with the
 		// following header: 0A 00 47 01 1F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmh/rmhwl.cl2": {
 		// The contents of the archive header at offset 0 in rmhwl.cl2:
@@ -7715,8 +7720,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmhwl.cl2 starts with the
 		// following header: 0A 00 20 01 D0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmas.cl2": {
 		// The contents of the archive header at offset 0 in rmmas.cl2:
@@ -7726,8 +7731,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmmas.cl2 starts with the
 		// following header: 0A 00 3F 01 F1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmat.cl2": {
 		// The contents of the archive header at offset 0 in rmmat.cl2:
@@ -7737,8 +7742,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmmat.cl2 starts with the
 		// following header: 0A 00 54 01 05 04 69 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmm/rmmaw.cl2": {
 		// The contents of the archive header at offset 0 in rmmaw.cl2:
@@ -7748,8 +7753,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmmaw.cl2 starts with the
 		// following header: 0A 00 1D 01 AB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmfm.cl2": {
 		// The contents of the archive header at offset 0 in rmmfm.cl2:
@@ -7759,8 +7764,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmmfm.cl2 starts with the
 		// following header: 0A 00 65 01 07 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmht.cl2": {
 		// The contents of the archive header at offset 0 in rmmht.cl2:
@@ -7770,8 +7775,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmmht.cl2 starts with the
 		// following header: 0A 00 5C 01 D8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmlm.cl2": {
 		// The contents of the archive header at offset 0 in rmmlm.cl2:
@@ -7781,8 +7786,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmmlm.cl2 starts with the
 		// following header: 0A 00 63 01 01 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmqm.cl2": {
 		// The contents of the archive header at offset 0 in rmmqm.cl2:
@@ -7792,8 +7797,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmmqm.cl2 starts with the
 		// following header: 0A 00 51 01 C2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmst.cl2": {
 		// The contents of the archive header at offset 0 in rmmst.cl2:
@@ -7803,8 +7808,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmmst.cl2 starts with the
 		// following header: 0A 00 40 01 F4 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmm/rmmwl.cl2": {
 		// The contents of the archive header at offset 0 in rmmwl.cl2:
@@ -7814,8 +7819,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmmwl.cl2 starts with the
 		// following header: 0A 00 25 01 B8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnas.cl2": {
 		// The contents of the archive header at offset 0 in rmnas.cl2:
@@ -7825,8 +7830,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmnas.cl2 starts with the
 		// following header: 0A 00 40 01 1C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnat.cl2": {
 		// The contents of the archive header at offset 0 in rmnat.cl2:
@@ -7836,8 +7841,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmnat.cl2 starts with the
 		// following header: 0A 00 47 01 DF 03 4A 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmn/rmnaw.cl2": {
 		// The contents of the archive header at offset 0 in rmnaw.cl2:
@@ -7847,8 +7852,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmnaw.cl2 starts with the
 		// following header: 0A 00 F6 00 77 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmndt.cl2": {
 		// The contents of the archive header at offset 0 in rmndt.cl2:
@@ -7858,8 +7863,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmndt.cl2 starts with the
 		// following header: 0A 00 54 01 E1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/rogue/rmn/rmnfm.cl2": {
 		// The contents of the archive header at offset 0 in rmnfm.cl2:
@@ -7869,8 +7874,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmnfm.cl2 starts with the
 		// following header: 0A 00 3E 01 1F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnht.cl2": {
 		// The contents of the archive header at offset 0 in rmnht.cl2:
@@ -7880,8 +7885,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmnht.cl2 starts with the
 		// following header: 0A 00 3C 01 0A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnlm.cl2": {
 		// The contents of the archive header at offset 0 in rmnlm.cl2:
@@ -7891,8 +7896,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmnlm.cl2 starts with the
 		// following header: 0A 00 43 01 1B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnqm.cl2": {
 		// The contents of the archive header at offset 0 in rmnqm.cl2:
@@ -7902,8 +7907,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmnqm.cl2 starts with the
 		// following header: 0A 00 3A 01 17 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnst.cl2": {
 		// The contents of the archive header at offset 0 in rmnst.cl2:
@@ -7913,8 +7918,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmnst.cl2 starts with the
 		// following header: 0A 00 31 01 DD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmn/rmnwl.cl2": {
 		// The contents of the archive header at offset 0 in rmnwl.cl2:
@@ -7924,8 +7929,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmnwl.cl2 starts with the
 		// following header: 0A 00 F7 00 5A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmsas.cl2": {
 		// The contents of the archive header at offset 0 in rmsas.cl2:
@@ -7935,8 +7940,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmsas.cl2 starts with the
 		// following header: 0A 00 5F 01 06 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmsat.cl2": {
 		// The contents of the archive header at offset 0 in rmsat.cl2:
@@ -7946,8 +7951,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmsat.cl2 starts with the
 		// following header: 0A 00 5B 01 FD 03 64 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rms/rmsaw.cl2": {
 		// The contents of the archive header at offset 0 in rmsaw.cl2:
@@ -7957,8 +7962,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmsaw.cl2 starts with the
 		// following header: 0A 00 FA 00 83 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmsfm.cl2": {
 		// The contents of the archive header at offset 0 in rmsfm.cl2:
@@ -7968,8 +7973,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmsfm.cl2 starts with the
 		// following header: 0A 00 41 01 F9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmsht.cl2": {
 		// The contents of the archive header at offset 0 in rmsht.cl2:
@@ -7979,8 +7984,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmsht.cl2 starts with the
 		// following header: 0A 00 07 01 1C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmslm.cl2": {
 		// The contents of the archive header at offset 0 in rmslm.cl2:
@@ -7990,8 +7995,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmslm.cl2 starts with the
 		// following header: 0A 00 3B 01 EC 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmsqm.cl2": {
 		// The contents of the archive header at offset 0 in rmsqm.cl2:
@@ -8001,8 +8006,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmsqm.cl2 starts with the
 		// following header: 0A 00 39 01 E2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmsst.cl2": {
 		// The contents of the archive header at offset 0 in rmsst.cl2:
@@ -8012,8 +8017,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmsst.cl2 starts with the
 		// following header: 0A 00 2C 01 E3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rms/rmswl.cl2": {
 		// The contents of the archive header at offset 0 in rmswl.cl2:
@@ -8023,8 +8028,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmswl.cl2 starts with the
 		// following header: 0A 00 FD 00 81 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtas.cl2": {
 		// The contents of the archive header at offset 0 in rmtas.cl2:
@@ -8034,8 +8039,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmtas.cl2 starts with the
 		// following header: 0A 00 2A 01 43 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtat.cl2": {
 		// The contents of the archive header at offset 0 in rmtat.cl2:
@@ -8045,8 +8050,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmtat.cl2 starts with the
 		// following header: 0A 00 27 01 38 03 99 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmt/rmtaw.cl2": {
 		// The contents of the archive header at offset 0 in rmtaw.cl2:
@@ -8056,8 +8061,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmtaw.cl2 starts with the
 		// following header: 0A 00 06 01 33 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtfm.cl2": {
 		// The contents of the archive header at offset 0 in rmtfm.cl2:
@@ -8067,8 +8072,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmtfm.cl2 starts with the
 		// following header: 0A 00 2F 01 4D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtht.cl2": {
 		// The contents of the archive header at offset 0 in rmtht.cl2:
@@ -8078,8 +8083,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmtht.cl2 starts with the
 		// following header: 0A 00 1B 01 92 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtlm.cl2": {
 		// The contents of the archive header at offset 0 in rmtlm.cl2:
@@ -8089,8 +8094,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmtlm.cl2 starts with the
 		// following header: 0A 00 2A 01 39 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtqm.cl2": {
 		// The contents of the archive header at offset 0 in rmtqm.cl2:
@@ -8100,8 +8105,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmtqm.cl2 starts with the
 		// following header: 0A 00 23 01 37 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtst.cl2": {
 		// The contents of the archive header at offset 0 in rmtst.cl2:
@@ -8111,8 +8116,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmtst.cl2 starts with the
 		// following header: 0A 00 5A 01 E0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmt/rmtwl.cl2": {
 		// The contents of the archive header at offset 0 in rmtwl.cl2:
@@ -8122,8 +8127,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmtwl.cl2 starts with the
 		// following header: 0A 00 23 01 A9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmuas.cl2": {
 		// The contents of the archive header at offset 0 in rmuas.cl2:
@@ -8133,8 +8138,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmuas.cl2 starts with the
 		// following header: 0A 00 3F 01 2E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmuat.cl2": {
 		// The contents of the archive header at offset 0 in rmuat.cl2:
@@ -8144,8 +8149,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x280 in rmuat.cl2 starts with the
 		// following header: 0A 00 3A 01 B7 03 1E 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/rogue/rmu/rmuaw.cl2": {
 		// The contents of the archive header at offset 0 in rmuaw.cl2:
@@ -8155,8 +8160,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmuaw.cl2 starts with the
 		// following header: 0A 00 F8 00 9C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmubl.cl2": {
 		// The contents of the archive header at offset 0 in rmubl.cl2:
@@ -8166,8 +8171,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0xC0 in rmubl.cl2 starts with the
 		// following header: 0A 00 34 01 65 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmufm.cl2": {
 		// The contents of the archive header at offset 0 in rmufm.cl2:
@@ -8177,8 +8182,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmufm.cl2 starts with the
 		// following header: 0A 00 3B 01 B8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmuht.cl2": {
 		// The contents of the archive header at offset 0 in rmuht.cl2:
@@ -8188,8 +8193,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x120 in rmuht.cl2 starts with the
 		// following header: 0A 00 3A 01 61 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmulm.cl2": {
 		// The contents of the archive header at offset 0 in rmulm.cl2:
@@ -8199,8 +8204,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmulm.cl2 starts with the
 		// following header: 0A 00 30 01 AC 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmuqm.cl2": {
 		// The contents of the archive header at offset 0 in rmuqm.cl2:
@@ -8210,8 +8215,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in rmuqm.cl2 starts with the
 		// following header: 0A 00 35 01 B6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmust.cl2": {
 		// The contents of the archive header at offset 0 in rmust.cl2:
@@ -8221,8 +8226,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in rmust.cl2 starts with the
 		// following header: 0A 00 2E 01 FD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/rogue/rmu/rmuwl.cl2": {
 		// The contents of the archive header at offset 0 in rmuwl.cl2:
@@ -8232,8 +8237,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in rmuwl.cl2 starts with the
 		// following header: 0A 00 04 01 A5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sha/shaas.cl2": {
 		// The contents of the archive header at offset 0 in shaas.cl2:
@@ -8243,8 +8248,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shaas.cl2 starts with the
 		// following header: 0A 00 8E 01 CE 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sha/shaat.cl2": {
 		// The contents of the archive header at offset 0 in shaat.cl2:
@@ -8254,8 +8259,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in shaat.cl2 starts with the
 		// following header: 0A 00 8D 01 CD 04 71 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sha/shaaw.cl2": {
 		// The contents of the archive header at offset 0 in shaaw.cl2:
@@ -8265,8 +8270,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shaaw.cl2 starts with the
 		// following header: 0A 00 A3 01 0B 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sha/shafm.cl2": {
 		// The contents of the archive header at offset 0 in shafm.cl2:
@@ -8276,8 +8281,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shafm.cl2 starts with the
 		// following header: 0A 00 A0 01 BC 04 5B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sha/shaht.cl2": {
 		// The contents of the archive header at offset 0 in shaht.cl2:
@@ -8287,8 +8292,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shaht.cl2 starts with the
 		// following header: 0A 00 83 01 F8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sha/shalm.cl2": {
 		// The contents of the archive header at offset 0 in shalm.cl2:
@@ -8298,8 +8303,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shalm.cl2 starts with the
 		// following header: 0A 00 9A 01 C3 04 68 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sha/shaqm.cl2": {
 		// The contents of the archive header at offset 0 in shaqm.cl2:
@@ -8309,8 +8314,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shaqm.cl2 starts with the
 		// following header: 0A 00 98 01 CD 04 78 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sha/shast.cl2": {
 		// The contents of the archive header at offset 0 in shast.cl2:
@@ -8320,8 +8325,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shast.cl2 starts with the
 		// following header: 0A 00 73 01 76 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sha/shawl.cl2": {
 		// The contents of the archive header at offset 0 in shawl.cl2:
@@ -8331,8 +8336,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shawl.cl2 starts with the
 		// following header: 0A 00 4E 01 60 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shb/shbas.cl2": {
 		// The contents of the archive header at offset 0 in shbas.cl2:
@@ -8342,8 +8347,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shbas.cl2 starts with the
 		// following header: 0A 00 8B 01 77 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shb/shbat.cl2": {
 		// The contents of the archive header at offset 0 in shbat.cl2:
@@ -8353,8 +8358,10 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shbat.cl2 starts with the
 		// following header: 0A 00 90 01 82 04 32 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      96, // ref: 0x44B120
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"plrgfx/sorceror/shb/shbaw.cl2": {
 		// The contents of the archive header at offset 0 in shbaw.cl2:
@@ -8364,8 +8371,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shbaw.cl2 starts with the
 		// following header: 0A 00 AD 01 E4 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shb/shbfm.cl2": {
 		// The contents of the archive header at offset 0 in shbfm.cl2:
@@ -8375,8 +8382,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shbfm.cl2 starts with the
 		// following header: 0A 00 B1 01 7F 04 27 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shb/shbht.cl2": {
 		// The contents of the archive header at offset 0 in shbht.cl2:
@@ -8386,8 +8393,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shbht.cl2 starts with the
 		// following header: 0A 00 8F 01 EC 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shb/shblm.cl2": {
 		// The contents of the archive header at offset 0 in shblm.cl2:
@@ -8397,8 +8404,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shblm.cl2 starts with the
 		// following header: 0A 00 97 01 A0 04 4F 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shb/shbqm.cl2": {
 		// The contents of the archive header at offset 0 in shbqm.cl2:
@@ -8408,8 +8415,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shbqm.cl2 starts with the
 		// following header: 0A 00 A0 01 A9 04 57 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shb/shbst.cl2": {
 		// The contents of the archive header at offset 0 in shbst.cl2:
@@ -8419,8 +8426,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shbst.cl2 starts with the
 		// following header: 0A 00 76 01 81 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shb/shbwl.cl2": {
 		// The contents of the archive header at offset 0 in shbwl.cl2:
@@ -8430,8 +8437,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shbwl.cl2 starts with the
 		// following header: 0A 00 4A 01 33 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shd/shdas.cl2": {
 		// The contents of the archive header at offset 0 in shdas.cl2:
@@ -8441,8 +8448,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shdas.cl2 starts with the
 		// following header: 0A 00 E0 01 7B 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shd/shdat.cl2": {
 		// The contents of the archive header at offset 0 in shdat.cl2:
@@ -8452,8 +8459,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in shdat.cl2 starts with the
 		// following header: 0A 00 E0 01 94 05 1C 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shd/shdaw.cl2": {
 		// The contents of the archive header at offset 0 in shdaw.cl2:
@@ -8463,8 +8470,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shdaw.cl2 starts with the
 		// following header: 0A 00 BE 01 72 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shd/shdbl.cl2": {
 		// The contents of the archive header at offset 0 in shdbl.cl2:
@@ -8474,8 +8481,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in shdbl.cl2 starts with the
 		// following header: 0A 00 81 01 D7 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shd/shdfm.cl2": {
 		// The contents of the archive header at offset 0 in shdfm.cl2:
@@ -8485,8 +8492,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shdfm.cl2 starts with the
 		// following header: 0A 00 EA 01 71 05 E3 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shd/shdht.cl2": {
 		// The contents of the archive header at offset 0 in shdht.cl2:
@@ -8496,8 +8503,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shdht.cl2 starts with the
 		// following header: 0A 00 95 01 81 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shd/shdlm.cl2": {
 		// The contents of the archive header at offset 0 in shdlm.cl2:
@@ -8507,8 +8514,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shdlm.cl2 starts with the
 		// following header: 0A 00 DF 01 72 05 E9 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shd/shdqm.cl2": {
 		// The contents of the archive header at offset 0 in shdqm.cl2:
@@ -8518,8 +8525,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shdqm.cl2 starts with the
 		// following header: 0A 00 E6 01 8C 05 04 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shd/shdst.cl2": {
 		// The contents of the archive header at offset 0 in shdst.cl2:
@@ -8529,8 +8536,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shdst.cl2 starts with the
 		// following header: 0A 00 78 01 B6 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shd/shdwl.cl2": {
 		// The contents of the archive header at offset 0 in shdwl.cl2:
@@ -8540,8 +8547,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shdwl.cl2 starts with the
 		// following header: 0A 00 53 01 7E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shh/shhas.cl2": {
 		// The contents of the archive header at offset 0 in shhas.cl2:
@@ -8551,8 +8558,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shhas.cl2 starts with the
 		// following header: 0A 00 C4 01 59 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shh/shhat.cl2": {
 		// The contents of the archive header at offset 0 in shhat.cl2:
@@ -8562,8 +8569,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in shhat.cl2 starts with the
 		// following header: 0A 00 C0 01 67 05 EE 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shh/shhaw.cl2": {
 		// The contents of the archive header at offset 0 in shhaw.cl2:
@@ -8573,8 +8580,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shhaw.cl2 starts with the
 		// following header: 0A 00 AC 01 4D 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shh/shhbl.cl2": {
 		// The contents of the archive header at offset 0 in shhbl.cl2:
@@ -8584,8 +8591,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in shhbl.cl2 starts with the
 		// following header: 0A 00 86 01 86 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shh/shhfm.cl2": {
 		// The contents of the archive header at offset 0 in shhfm.cl2:
@@ -8595,8 +8602,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shhfm.cl2 starts with the
 		// following header: 0A 00 C3 01 49 05 CB 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shh/shhht.cl2": {
 		// The contents of the archive header at offset 0 in shhht.cl2:
@@ -8606,8 +8613,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shhht.cl2 starts with the
 		// following header: 0A 00 8C 01 72 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shh/shhlm.cl2": {
 		// The contents of the archive header at offset 0 in shhlm.cl2:
@@ -8617,8 +8624,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shhlm.cl2 starts with the
 		// following header: 0A 00 BE 01 5C 05 E7 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shh/shhqm.cl2": {
 		// The contents of the archive header at offset 0 in shhqm.cl2:
@@ -8628,8 +8635,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shhqm.cl2 starts with the
 		// following header: 0A 00 C3 01 5C 05 E4 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shh/shhst.cl2": {
 		// The contents of the archive header at offset 0 in shhst.cl2:
@@ -8639,8 +8646,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shhst.cl2 starts with the
 		// following header: 0A 00 81 01 C0 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shh/shhwl.cl2": {
 		// The contents of the archive header at offset 0 in shhwl.cl2:
@@ -8650,8 +8657,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shhwl.cl2 starts with the
 		// following header: 0A 00 56 01 94 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shm/shmas.cl2": {
 		// The contents of the archive header at offset 0 in shmas.cl2:
@@ -8661,8 +8668,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shmas.cl2 starts with the
 		// following header: 0A 00 BE 01 F3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shm/shmat.cl2": {
 		// The contents of the archive header at offset 0 in shmat.cl2:
@@ -8672,8 +8679,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in shmat.cl2 starts with the
 		// following header: 0A 00 B9 01 FF 04 85 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shm/shmaw.cl2": {
 		// The contents of the archive header at offset 0 in shmaw.cl2:
@@ -8683,8 +8690,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shmaw.cl2 starts with the
 		// following header: 0A 00 A9 01 ED 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shm/shmfm.cl2": {
 		// The contents of the archive header at offset 0 in shmfm.cl2:
@@ -8694,8 +8701,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shmfm.cl2 starts with the
 		// following header: 0A 00 CB 01 F5 04 76 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shm/shmht.cl2": {
 		// The contents of the archive header at offset 0 in shmht.cl2:
@@ -8705,8 +8712,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shmht.cl2 starts with the
 		// following header: 0A 00 88 01 27 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shm/shmlm.cl2": {
 		// The contents of the archive header at offset 0 in shmlm.cl2:
@@ -8716,8 +8723,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shmlm.cl2 starts with the
 		// following header: 0A 00 BC 01 04 05 8E 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shm/shmqm.cl2": {
 		// The contents of the archive header at offset 0 in shmqm.cl2:
@@ -8727,8 +8734,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shmqm.cl2 starts with the
 		// following header: 0A 00 B9 01 F8 04 7D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shm/shmst.cl2": {
 		// The contents of the archive header at offset 0 in shmst.cl2:
@@ -8738,8 +8745,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shmst.cl2 starts with the
 		// following header: 0A 00 77 01 89 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shm/shmwl.cl2": {
 		// The contents of the archive header at offset 0 in shmwl.cl2:
@@ -8749,8 +8756,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shmwl.cl2 starts with the
 		// following header: 0A 00 41 01 37 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shn/shnas.cl2": {
 		// The contents of the archive header at offset 0 in shnas.cl2:
@@ -8760,8 +8767,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shnas.cl2 starts with the
 		// following header: 0A 00 AC 01 9A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shn/shnat.cl2": {
 		// The contents of the archive header at offset 0 in shnat.cl2:
@@ -8771,8 +8778,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shnat.cl2 starts with the
 		// following header: 0A 00 A9 01 A1 04 32 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shn/shnaw.cl2": {
 		// The contents of the archive header at offset 0 in shnaw.cl2:
@@ -8782,8 +8789,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shnaw.cl2 starts with the
 		// following header: 0A 00 A7 01 AD 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shn/shndt.cl2": {
 		// The contents of the archive header at offset 0 in shndt.cl2:
@@ -8793,8 +8800,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shndt.cl2 starts with the
 		// following header: 0A 00 2D 01 2D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/sorceror/shn/shnfm.cl2": {
 		// The contents of the archive header at offset 0 in shnfm.cl2:
@@ -8804,8 +8811,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shnfm.cl2 starts with the
 		// following header: 0A 00 B2 01 98 04 1B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shn/shnht.cl2": {
 		// The contents of the archive header at offset 0 in shnht.cl2:
@@ -8815,8 +8822,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shnht.cl2 starts with the
 		// following header: 0A 00 7B 01 D4 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shn/shnlm.cl2": {
 		// The contents of the archive header at offset 0 in shnlm.cl2:
@@ -8826,8 +8833,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shnlm.cl2 starts with the
 		// following header: 0A 00 AE 01 9C 04 25 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shn/shnqm.cl2": {
 		// The contents of the archive header at offset 0 in shnqm.cl2:
@@ -8837,8 +8844,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shnqm.cl2 starts with the
 		// following header: 0A 00 B4 01 AE 04 37 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shn/shnst.cl2": {
 		// The contents of the archive header at offset 0 in shnst.cl2:
@@ -8848,8 +8855,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shnst.cl2 starts with the
 		// following header: 0A 00 71 01 7B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shn/shnwl.cl2": {
 		// The contents of the archive header at offset 0 in shnwl.cl2:
@@ -8859,8 +8866,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shnwl.cl2 starts with the
 		// following header: 0A 00 4B 01 39 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shs/shsas.cl2": {
 		// The contents of the archive header at offset 0 in shsas.cl2:
@@ -8870,8 +8877,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shsas.cl2 starts with the
 		// following header: 0A 00 E0 01 4B 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shs/shsat.cl2": {
 		// The contents of the archive header at offset 0 in shsat.cl2:
@@ -8881,8 +8888,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in shsat.cl2 starts with the
 		// following header: 0A 00 DF 01 59 05 E0 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shs/shsaw.cl2": {
 		// The contents of the archive header at offset 0 in shsaw.cl2:
@@ -8892,8 +8899,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shsaw.cl2 starts with the
 		// following header: 0A 00 C0 01 46 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shs/shsfm.cl2": {
 		// The contents of the archive header at offset 0 in shsfm.cl2:
@@ -8903,8 +8910,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shsfm.cl2 starts with the
 		// following header: 0A 00 E6 01 44 05 C6 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shs/shsht.cl2": {
 		// The contents of the archive header at offset 0 in shsht.cl2:
@@ -8914,8 +8921,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shsht.cl2 starts with the
 		// following header: 0A 00 92 01 56 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shs/shslm.cl2": {
 		// The contents of the archive header at offset 0 in shslm.cl2:
@@ -8925,8 +8932,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shslm.cl2 starts with the
 		// following header: 0A 00 DA 01 43 05 CA 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shs/shsqm.cl2": {
 		// The contents of the archive header at offset 0 in shsqm.cl2:
@@ -8936,8 +8943,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shsqm.cl2 starts with the
 		// following header: 0A 00 E4 01 57 05 DF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shs/shsst.cl2": {
 		// The contents of the archive header at offset 0 in shsst.cl2:
@@ -8947,8 +8954,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shsst.cl2 starts with the
 		// following header: 0A 00 75 01 85 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shs/shswl.cl2": {
 		// The contents of the archive header at offset 0 in shswl.cl2:
@@ -8958,8 +8965,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shswl.cl2 starts with the
 		// following header: 0A 00 38 01 40 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sht/shtas.cl2": {
 		// The contents of the archive header at offset 0 in shtas.cl2:
@@ -8969,8 +8976,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shtas.cl2 starts with the
 		// following header: 0A 00 8C 01 B3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sht/shtat.cl2": {
 		// The contents of the archive header at offset 0 in shtat.cl2:
@@ -8980,8 +8987,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in shtat.cl2 starts with the
 		// following header: 0A 00 8D 01 BE 04 62 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sht/shtaw.cl2": {
 		// The contents of the archive header at offset 0 in shtaw.cl2:
@@ -8991,8 +8998,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shtaw.cl2 starts with the
 		// following header: 0A 00 A7 01 06 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sht/shtfm.cl2": {
 		// The contents of the archive header at offset 0 in shtfm.cl2:
@@ -9002,8 +9009,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shtfm.cl2 starts with the
 		// following header: 0A 00 97 01 A8 04 4B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sht/shtht.cl2": {
 		// The contents of the archive header at offset 0 in shtht.cl2:
@@ -9013,8 +9020,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shtht.cl2 starts with the
 		// following header: 0A 00 53 01 2C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sht/shtlm.cl2": {
 		// The contents of the archive header at offset 0 in shtlm.cl2:
@@ -9024,8 +9031,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shtlm.cl2 starts with the
 		// following header: 0A 00 8D 01 AF 04 56 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sht/shtqm.cl2": {
 		// The contents of the archive header at offset 0 in shtqm.cl2:
@@ -9035,8 +9042,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shtqm.cl2 starts with the
 		// following header: 0A 00 88 01 B8 04 5F 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sht/shtst.cl2": {
 		// The contents of the archive header at offset 0 in shtst.cl2:
@@ -9046,8 +9053,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shtst.cl2 starts with the
 		// following header: 0A 00 C4 01 CA 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sht/shtwl.cl2": {
 		// The contents of the archive header at offset 0 in shtwl.cl2:
@@ -9057,8 +9064,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shtwl.cl2 starts with the
 		// following header: 0A 00 5C 01 54 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shu/shuas.cl2": {
 		// The contents of the archive header at offset 0 in shuas.cl2:
@@ -9068,8 +9075,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shuas.cl2 starts with the
 		// following header: 0A 00 BA 01 08 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shu/shuat.cl2": {
 		// The contents of the archive header at offset 0 in shuat.cl2:
@@ -9079,8 +9086,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in shuat.cl2 starts with the
 		// following header: 0A 00 B6 01 0A 05 91 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shu/shuaw.cl2": {
 		// The contents of the archive header at offset 0 in shuaw.cl2:
@@ -9090,8 +9097,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shuaw.cl2 starts with the
 		// following header: 0A 00 AA 01 D1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shu/shubl.cl2": {
 		// The contents of the archive header at offset 0 in shubl.cl2:
@@ -9101,8 +9108,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in shubl.cl2 starts with the
 		// following header: 0A 00 79 01 31 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shu/shufm.cl2": {
 		// The contents of the archive header at offset 0 in shufm.cl2:
@@ -9112,8 +9119,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shufm.cl2 starts with the
 		// following header: 0A 00 BF 01 00 05 72 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shu/shuht.cl2": {
 		// The contents of the archive header at offset 0 in shuht.cl2:
@@ -9123,8 +9130,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shuht.cl2 starts with the
 		// following header: 0A 00 7D 01 A5 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shu/shulm.cl2": {
 		// The contents of the archive header at offset 0 in shulm.cl2:
@@ -9134,8 +9141,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shulm.cl2 starts with the
 		// following header: 0A 00 BB 01 08 05 7A 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shu/shuqm.cl2": {
 		// The contents of the archive header at offset 0 in shuqm.cl2:
@@ -9145,8 +9152,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in shuqm.cl2 starts with the
 		// following header: 0A 00 B6 01 06 05 7A 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/shu/shust.cl2": {
 		// The contents of the archive header at offset 0 in shust.cl2:
@@ -9156,8 +9163,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in shust.cl2 starts with the
 		// following header: 0A 00 77 01 AA 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/shu/shuwl.cl2": {
 		// The contents of the archive header at offset 0 in shuwl.cl2:
@@ -9167,8 +9174,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in shuwl.cl2 starts with the
 		// following header: 0A 00 49 01 48 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sla/slaas.cl2": {
 		// The contents of the archive header at offset 0 in slaas.cl2:
@@ -9178,8 +9185,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slaas.cl2 starts with the
 		// following header: 0A 00 8E 01 C3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sla/slaat.cl2": {
 		// The contents of the archive header at offset 0 in slaat.cl2:
@@ -9189,8 +9196,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in slaat.cl2 starts with the
 		// following header: 0A 00 92 01 C8 04 51 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sla/slaaw.cl2": {
 		// The contents of the archive header at offset 0 in slaaw.cl2:
@@ -9200,8 +9207,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slaaw.cl2 starts with the
 		// following header: 0A 00 A5 01 0C 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sla/slafm.cl2": {
 		// The contents of the archive header at offset 0 in slafm.cl2:
@@ -9211,8 +9218,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slafm.cl2 starts with the
 		// following header: 0A 00 DC 01 17 05 8C 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sla/slaht.cl2": {
 		// The contents of the archive header at offset 0 in slaht.cl2:
@@ -9222,8 +9229,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slaht.cl2 starts with the
 		// following header: 0A 00 71 01 D5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sla/slalm.cl2": {
 		// The contents of the archive header at offset 0 in slalm.cl2:
@@ -9233,8 +9240,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slalm.cl2 starts with the
 		// following header: 0A 00 BE 01 01 05 7A 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sla/slaqm.cl2": {
 		// The contents of the archive header at offset 0 in slaqm.cl2:
@@ -9244,8 +9251,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slaqm.cl2 starts with the
 		// following header: 0A 00 B7 01 EB 04 62 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sla/slast.cl2": {
 		// The contents of the archive header at offset 0 in slast.cl2:
@@ -9255,8 +9262,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slast.cl2 starts with the
 		// following header: 0A 00 7A 01 8B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sla/slawl.cl2": {
 		// The contents of the archive header at offset 0 in slawl.cl2:
@@ -9266,8 +9273,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slawl.cl2 starts with the
 		// following header: 0A 00 54 01 6C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slb/slbas.cl2": {
 		// The contents of the archive header at offset 0 in slbas.cl2:
@@ -9277,8 +9284,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slbas.cl2 starts with the
 		// following header: 0A 00 A1 01 8E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slb/slbat.cl2": {
 		// The contents of the archive header at offset 0 in slbat.cl2:
@@ -9288,8 +9295,10 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slbat.cl2 starts with the
 		// following header: 0A 00 A5 01 8F 04 2A 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      96, // ref: 0x44B120
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"plrgfx/sorceror/slb/slbaw.cl2": {
 		// The contents of the archive header at offset 0 in slbaw.cl2:
@@ -9299,8 +9308,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slbaw.cl2 starts with the
 		// following header: 0A 00 A1 01 D2 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slb/slbfm.cl2": {
 		// The contents of the archive header at offset 0 in slbfm.cl2:
@@ -9310,8 +9319,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slbfm.cl2 starts with the
 		// following header: 0A 00 96 01 80 04 1D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slb/slbht.cl2": {
 		// The contents of the archive header at offset 0 in slbht.cl2:
@@ -9321,8 +9330,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slbht.cl2 starts with the
 		// following header: 0A 00 8F 01 E1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slb/slblm.cl2": {
 		// The contents of the archive header at offset 0 in slblm.cl2:
@@ -9332,8 +9341,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slblm.cl2 starts with the
 		// following header: 0A 00 A5 01 A2 04 3D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slb/slbqm.cl2": {
 		// The contents of the archive header at offset 0 in slbqm.cl2:
@@ -9343,8 +9352,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slbqm.cl2 starts with the
 		// following header: 0A 00 AB 01 B6 04 50 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slb/slbst.cl2": {
 		// The contents of the archive header at offset 0 in slbst.cl2:
@@ -9354,8 +9363,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slbst.cl2 starts with the
 		// following header: 0A 00 7C 01 93 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slb/slbwl.cl2": {
 		// The contents of the archive header at offset 0 in slbwl.cl2:
@@ -9365,8 +9374,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slbwl.cl2 starts with the
 		// following header: 0A 00 53 01 68 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sld/sldas.cl2": {
 		// The contents of the archive header at offset 0 in sldas.cl2:
@@ -9376,8 +9385,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sldas.cl2 starts with the
 		// following header: 0A 00 E3 01 52 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sld/sldat.cl2": {
 		// The contents of the archive header at offset 0 in sldat.cl2:
@@ -9387,8 +9396,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sldat.cl2 starts with the
 		// following header: 0A 00 E4 01 50 05 BF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sld/sldaw.cl2": {
 		// The contents of the archive header at offset 0 in sldaw.cl2:
@@ -9398,8 +9407,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sldaw.cl2 starts with the
 		// following header: 0A 00 A3 01 2F 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sld/sldbl.cl2": {
 		// The contents of the archive header at offset 0 in sldbl.cl2:
@@ -9409,8 +9418,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in sldbl.cl2 starts with the
 		// following header: 0A 00 AE 01 B4 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sld/sldfm.cl2": {
 		// The contents of the archive header at offset 0 in sldfm.cl2:
@@ -9420,8 +9429,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sldfm.cl2 starts with the
 		// following header: 0A 00 15 02 99 05 08 06 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sld/sldht.cl2": {
 		// The contents of the archive header at offset 0 in sldht.cl2:
@@ -9431,8 +9440,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sldht.cl2 starts with the
 		// following header: 0A 00 87 01 33 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sld/sldlm.cl2": {
 		// The contents of the archive header at offset 0 in sldlm.cl2:
@@ -9442,8 +9451,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sldlm.cl2 starts with the
 		// following header: 0A 00 FD 01 80 05 EF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sld/sldqm.cl2": {
 		// The contents of the archive header at offset 0 in sldqm.cl2:
@@ -9453,8 +9462,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sldqm.cl2 starts with the
 		// following header: 0A 00 F6 01 70 05 DC 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sld/sldst.cl2": {
 		// The contents of the archive header at offset 0 in sldst.cl2:
@@ -9464,8 +9473,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in sldst.cl2 starts with the
 		// following header: 0A 00 7D 01 A7 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sld/sldwl.cl2": {
 		// The contents of the archive header at offset 0 in sldwl.cl2:
@@ -9475,8 +9484,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sldwl.cl2 starts with the
 		// following header: 0A 00 41 01 70 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slh/slhas.cl2": {
 		// The contents of the archive header at offset 0 in slhas.cl2:
@@ -9486,8 +9495,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slhas.cl2 starts with the
 		// following header: 0A 00 BC 01 07 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slh/slhat.cl2": {
 		// The contents of the archive header at offset 0 in slhat.cl2:
@@ -9497,8 +9506,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in slhat.cl2 starts with the
 		// following header: 0A 00 C1 01 0A 05 78 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slh/slhaw.cl2": {
 		// The contents of the archive header at offset 0 in slhaw.cl2:
@@ -9508,8 +9517,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slhaw.cl2 starts with the
 		// following header: 0A 00 A6 01 07 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slh/slhbl.cl2": {
 		// The contents of the archive header at offset 0 in slhbl.cl2:
@@ -9519,8 +9528,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in slhbl.cl2 starts with the
 		// following header: 0A 00 98 01 63 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slh/slhfm.cl2": {
 		// The contents of the archive header at offset 0 in slhfm.cl2:
@@ -9530,8 +9539,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slhfm.cl2 starts with the
 		// following header: 0A 00 AA 01 C0 04 28 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slh/slhht.cl2": {
 		// The contents of the archive header at offset 0 in slhht.cl2:
@@ -9541,8 +9550,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slhht.cl2 starts with the
 		// following header: 0A 00 87 01 19 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slh/slhlm.cl2": {
 		// The contents of the archive header at offset 0 in slhlm.cl2:
@@ -9552,8 +9561,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slhlm.cl2 starts with the
 		// following header: 0A 00 CC 01 2F 05 9D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slh/slhqm.cl2": {
 		// The contents of the archive header at offset 0 in slhqm.cl2:
@@ -9563,8 +9572,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slhqm.cl2 starts with the
 		// following header: 0A 00 98 01 D2 04 41 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slh/slhst.cl2": {
 		// The contents of the archive header at offset 0 in slhst.cl2:
@@ -9574,8 +9583,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slhst.cl2 starts with the
 		// following header: 0A 00 84 01 B2 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slh/slhwl.cl2": {
 		// The contents of the archive header at offset 0 in slhwl.cl2:
@@ -9585,8 +9594,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slhwl.cl2 starts with the
 		// following header: 0A 00 5C 01 94 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slm/slmas.cl2": {
 		// The contents of the archive header at offset 0 in slmas.cl2:
@@ -9596,8 +9605,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slmas.cl2 starts with the
 		// following header: 0A 00 BC 01 EC 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slm/slmat.cl2": {
 		// The contents of the archive header at offset 0 in slmat.cl2:
@@ -9607,8 +9616,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in slmat.cl2 starts with the
 		// following header: 0A 00 C6 01 F7 04 66 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slm/slmaw.cl2": {
 		// The contents of the archive header at offset 0 in slmaw.cl2:
@@ -9618,8 +9627,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slmaw.cl2 starts with the
 		// following header: 0A 00 A6 01 E5 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slm/slmfm.cl2": {
 		// The contents of the archive header at offset 0 in slmfm.cl2:
@@ -9629,8 +9638,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slmfm.cl2 starts with the
 		// following header: 0A 00 E2 01 50 05 BE 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slm/slmht.cl2": {
 		// The contents of the archive header at offset 0 in slmht.cl2:
@@ -9640,8 +9649,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slmht.cl2 starts with the
 		// following header: 0A 00 74 01 09 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slm/slmlm.cl2": {
 		// The contents of the archive header at offset 0 in slmlm.cl2:
@@ -9651,8 +9660,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slmlm.cl2 starts with the
 		// following header: 0A 00 CA 01 2A 05 98 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slm/slmqm.cl2": {
 		// The contents of the archive header at offset 0 in slmqm.cl2:
@@ -9662,8 +9671,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slmqm.cl2 starts with the
 		// following header: 0A 00 CF 01 31 05 9D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slm/slmst.cl2": {
 		// The contents of the archive header at offset 0 in slmst.cl2:
@@ -9673,8 +9682,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slmst.cl2 starts with the
 		// following header: 0A 00 86 01 AB 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slm/slmwl.cl2": {
 		// The contents of the archive header at offset 0 in slmwl.cl2:
@@ -9684,8 +9693,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slmwl.cl2 starts with the
 		// following header: 0A 00 55 01 81 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sln/slnas.cl2": {
 		// The contents of the archive header at offset 0 in slnas.cl2:
@@ -9695,8 +9704,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slnas.cl2 starts with the
 		// following header: 0A 00 B4 01 9D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sln/slnat.cl2": {
 		// The contents of the archive header at offset 0 in slnat.cl2:
@@ -9706,8 +9715,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slnat.cl2 starts with the
 		// following header: 0A 00 B4 01 A1 04 0E 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sln/slnaw.cl2": {
 		// The contents of the archive header at offset 0 in slnaw.cl2:
@@ -9717,8 +9726,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slnaw.cl2 starts with the
 		// following header: 0A 00 6B 01 84 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sln/slndt.cl2": {
 		// The contents of the archive header at offset 0 in slndt.cl2:
@@ -9728,8 +9737,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slndt.cl2 starts with the
 		// following header: 0A 00 09 01 01 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/sorceror/sln/slnfm.cl2": {
 		// The contents of the archive header at offset 0 in slnfm.cl2:
@@ -9739,8 +9748,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slnfm.cl2 starts with the
 		// following header: 0A 00 BA 01 A9 04 16 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sln/slnht.cl2": {
 		// The contents of the archive header at offset 0 in slnht.cl2:
@@ -9750,8 +9759,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slnht.cl2 starts with the
 		// following header: 0A 00 6D 01 C5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sln/slnlm.cl2": {
 		// The contents of the archive header at offset 0 in slnlm.cl2:
@@ -9761,8 +9770,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slnlm.cl2 starts with the
 		// following header: 0A 00 B1 01 90 04 FC 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sln/slnqm.cl2": {
 		// The contents of the archive header at offset 0 in slnqm.cl2:
@@ -9772,8 +9781,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slnqm.cl2 starts with the
 		// following header: 0A 00 B9 01 A7 04 15 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sln/slnst.cl2": {
 		// The contents of the archive header at offset 0 in slnst.cl2:
@@ -9783,8 +9792,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slnst.cl2 starts with the
 		// following header: 0A 00 7B 01 92 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sln/slnwl.cl2": {
 		// The contents of the archive header at offset 0 in slnwl.cl2:
@@ -9794,8 +9803,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slnwl.cl2 starts with the
 		// following header: 0A 00 4E 01 5D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sls/slsas.cl2": {
 		// The contents of the archive header at offset 0 in slsas.cl2:
@@ -9805,8 +9814,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slsas.cl2 starts with the
 		// following header: 0A 00 E8 01 4A 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sls/slsat.cl2": {
 		// The contents of the archive header at offset 0 in slsat.cl2:
@@ -9816,8 +9825,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in slsat.cl2 starts with the
 		// following header: 0A 00 E8 01 45 05 B3 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sls/slsaw.cl2": {
 		// The contents of the archive header at offset 0 in slsaw.cl2:
@@ -9827,8 +9836,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slsaw.cl2 starts with the
 		// following header: 0A 00 BE 01 3E 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sls/slsfm.cl2": {
 		// The contents of the archive header at offset 0 in slsfm.cl2:
@@ -9838,8 +9847,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slsfm.cl2 starts with the
 		// following header: 0A 00 C3 01 F5 04 61 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sls/slsht.cl2": {
 		// The contents of the archive header at offset 0 in slsht.cl2:
@@ -9849,8 +9858,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slsht.cl2 starts with the
 		// following header: 0A 00 8A 01 41 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sls/slslm.cl2": {
 		// The contents of the archive header at offset 0 in slslm.cl2:
@@ -9860,8 +9869,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slslm.cl2 starts with the
 		// following header: 0A 00 E1 01 41 05 B0 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sls/slsqm.cl2": {
 		// The contents of the archive header at offset 0 in slsqm.cl2:
@@ -9871,8 +9880,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slsqm.cl2 starts with the
 		// following header: 0A 00 C5 01 10 05 7C 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sls/slsst.cl2": {
 		// The contents of the archive header at offset 0 in slsst.cl2:
@@ -9882,8 +9891,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slsst.cl2 starts with the
 		// following header: 0A 00 80 01 9B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sls/slswl.cl2": {
 		// The contents of the archive header at offset 0 in slswl.cl2:
@@ -9893,8 +9902,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in slswl.cl2 starts with the
 		// following header: 0A 00 51 01 74 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slt/sltas.cl2": {
 		// The contents of the archive header at offset 0 in sltas.cl2:
@@ -9904,8 +9913,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sltas.cl2 starts with the
 		// following header: 0A 00 83 01 72 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slt/sltat.cl2": {
 		// The contents of the archive header at offset 0 in sltat.cl2:
@@ -9915,8 +9924,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sltat.cl2 starts with the
 		// following header: 0A 00 8C 01 6F 04 FD 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slt/sltaw.cl2": {
 		// The contents of the archive header at offset 0 in sltaw.cl2:
@@ -9926,8 +9935,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sltaw.cl2 starts with the
 		// following header: 0A 00 9B 01 D7 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slt/sltfm.cl2": {
 		// The contents of the archive header at offset 0 in sltfm.cl2:
@@ -9937,8 +9946,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sltfm.cl2 starts with the
 		// following header: 0A 00 77 01 4D 04 D9 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slt/sltht.cl2": {
 		// The contents of the archive header at offset 0 in sltht.cl2:
@@ -9948,8 +9957,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sltht.cl2 starts with the
 		// following header: 0A 00 50 01 FA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slt/sltlm.cl2": {
 		// The contents of the archive header at offset 0 in sltlm.cl2:
@@ -9959,8 +9968,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sltlm.cl2 starts with the
 		// following header: 0A 00 81 01 67 04 F4 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slt/sltqm.cl2": {
 		// The contents of the archive header at offset 0 in sltqm.cl2:
@@ -9970,8 +9979,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sltqm.cl2 starts with the
 		// following header: 0A 00 82 01 71 04 FE 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slt/sltst.cl2": {
 		// The contents of the archive header at offset 0 in sltst.cl2:
@@ -9981,8 +9990,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in sltst.cl2 starts with the
 		// following header: 0A 00 9B 01 BE 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slt/sltwl.cl2": {
 		// The contents of the archive header at offset 0 in sltwl.cl2:
@@ -9992,8 +10001,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sltwl.cl2 starts with the
 		// following header: 0A 00 59 01 84 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slu/sluas.cl2": {
 		// The contents of the archive header at offset 0 in sluas.cl2:
@@ -10003,8 +10012,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sluas.cl2 starts with the
 		// following header: 0A 00 B2 01 B8 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slu/sluat.cl2": {
 		// The contents of the archive header at offset 0 in sluat.cl2:
@@ -10014,8 +10023,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in sluat.cl2 starts with the
 		// following header: 0A 00 B4 01 BA 04 28 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slu/sluaw.cl2": {
 		// The contents of the archive header at offset 0 in sluaw.cl2:
@@ -10025,8 +10034,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sluaw.cl2 starts with the
 		// following header: 0A 00 91 01 2C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slu/slubl.cl2": {
 		// The contents of the archive header at offset 0 in slubl.cl2:
@@ -10036,8 +10045,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in slubl.cl2 starts with the
 		// following header: 0A 00 95 01 1A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slu/slufm.cl2": {
 		// The contents of the archive header at offset 0 in slufm.cl2:
@@ -10047,8 +10056,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slufm.cl2 starts with the
 		// following header: 0A 00 95 01 7F 04 ED 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slu/sluht.cl2": {
 		// The contents of the archive header at offset 0 in sluht.cl2:
@@ -10058,8 +10067,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sluht.cl2 starts with the
 		// following header: 0A 00 6A 01 99 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slu/slulm.cl2": {
 		// The contents of the archive header at offset 0 in slulm.cl2:
@@ -10069,8 +10078,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in slulm.cl2 starts with the
 		// following header: 0A 00 95 01 91 04 FF 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slu/sluqm.cl2": {
 		// The contents of the archive header at offset 0 in sluqm.cl2:
@@ -10080,8 +10089,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in sluqm.cl2 starts with the
 		// following header: 0A 00 9E 01 A9 04 16 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/slu/slust.cl2": {
 		// The contents of the archive header at offset 0 in slust.cl2:
@@ -10091,8 +10100,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in slust.cl2 starts with the
 		// following header: 0A 00 74 01 93 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/slu/sluwl.cl2": {
 		// The contents of the archive header at offset 0 in sluwl.cl2:
@@ -10102,8 +10111,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in sluwl.cl2 starts with the
 		// following header: 0A 00 4B 01 6B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sma/smaas.cl2": {
 		// The contents of the archive header at offset 0 in smaas.cl2:
@@ -10113,8 +10122,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smaas.cl2 starts with the
 		// following header: 0A 00 89 01 A2 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sma/smaat.cl2": {
 		// The contents of the archive header at offset 0 in smaat.cl2:
@@ -10124,8 +10133,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x340 in smaat.cl2 starts with the
 		// following header: 0A 00 90 01 AF 04 37 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sma/smaaw.cl2": {
 		// The contents of the archive header at offset 0 in smaaw.cl2:
@@ -10135,8 +10144,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smaaw.cl2 starts with the
 		// following header: 0A 00 97 01 EC 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sma/smafm.cl2": {
 		// The contents of the archive header at offset 0 in smafm.cl2:
@@ -10146,8 +10155,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smafm.cl2 starts with the
 		// following header: 0A 00 BB 01 C4 04 3C 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sma/smaht.cl2": {
 		// The contents of the archive header at offset 0 in smaht.cl2:
@@ -10157,8 +10166,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smaht.cl2 starts with the
 		// following header: 0A 00 67 01 C0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sma/smalm.cl2": {
 		// The contents of the archive header at offset 0 in smalm.cl2:
@@ -10168,8 +10177,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smalm.cl2 starts with the
 		// following header: 0A 00 B9 01 E0 04 59 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sma/smaqm.cl2": {
 		// The contents of the archive header at offset 0 in smaqm.cl2:
@@ -10179,8 +10188,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smaqm.cl2 starts with the
 		// following header: 0A 00 B9 01 DE 04 5B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sma/smast.cl2": {
 		// The contents of the archive header at offset 0 in smast.cl2:
@@ -10190,8 +10199,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smast.cl2 starts with the
 		// following header: 0A 00 77 01 7E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sma/smawl.cl2": {
 		// The contents of the archive header at offset 0 in smawl.cl2:
@@ -10201,8 +10210,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smawl.cl2 starts with the
 		// following header: 0A 00 26 01 1A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smb/smbas.cl2": {
 		// The contents of the archive header at offset 0 in smbas.cl2:
@@ -10212,8 +10221,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smbas.cl2 starts with the
 		// following header: 0A 00 93 01 5E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smb/smbat.cl2": {
 		// The contents of the archive header at offset 0 in smbat.cl2:
@@ -10223,8 +10232,10 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smbat.cl2 starts with the
 		// following header: 0A 00 A5 01 7B 04 10 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      96, // ref: 0x44B120
+		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
+		// is 96.
+		H: 171, // h = npixels/w = 16384/96 = 170.66
 	},
 	"plrgfx/sorceror/smb/smbaw.cl2": {
 		// The contents of the archive header at offset 0 in smbaw.cl2:
@@ -10234,8 +10245,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smbaw.cl2 starts with the
 		// following header: 0A 00 A1 01 A6 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smb/smbfm.cl2": {
 		// The contents of the archive header at offset 0 in smbfm.cl2:
@@ -10245,8 +10256,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smbfm.cl2 starts with the
 		// following header: 0A 00 A5 01 57 04 E8 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smb/smbht.cl2": {
 		// The contents of the archive header at offset 0 in smbht.cl2:
@@ -10256,8 +10267,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smbht.cl2 starts with the
 		// following header: 0A 00 8A 01 C3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smb/smblm.cl2": {
 		// The contents of the archive header at offset 0 in smblm.cl2:
@@ -10267,8 +10278,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smblm.cl2 starts with the
 		// following header: 0A 00 A4 01 93 04 26 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smb/smbqm.cl2": {
 		// The contents of the archive header at offset 0 in smbqm.cl2:
@@ -10278,8 +10289,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smbqm.cl2 starts with the
 		// following header: 0A 00 A8 01 91 04 2C 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smb/smbst.cl2": {
 		// The contents of the archive header at offset 0 in smbst.cl2:
@@ -10289,8 +10300,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smbst.cl2 starts with the
 		// following header: 0A 00 69 01 75 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smb/smbwl.cl2": {
 		// The contents of the archive header at offset 0 in smbwl.cl2:
@@ -10300,8 +10311,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smbwl.cl2 starts with the
 		// following header: 0A 00 28 01 0E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smd/smdas.cl2": {
 		// The contents of the archive header at offset 0 in smdas.cl2:
@@ -10311,8 +10322,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smdas.cl2 starts with the
 		// following header: 0A 00 DF 01 6B 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smd/smdat.cl2": {
 		// The contents of the archive header at offset 0 in smdat.cl2:
@@ -10322,8 +10333,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in smdat.cl2 starts with the
 		// following header: 0A 00 DF 01 6F 05 DF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smd/smdaw.cl2": {
 		// The contents of the archive header at offset 0 in smdaw.cl2:
@@ -10333,8 +10344,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smdaw.cl2 starts with the
 		// following header: 0A 00 B2 01 54 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smd/smdbl.cl2": {
 		// The contents of the archive header at offset 0 in smdbl.cl2:
@@ -10344,8 +10355,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in smdbl.cl2 starts with the
 		// following header: 0A 00 7A 01 C0 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smd/smdfm.cl2": {
 		// The contents of the archive header at offset 0 in smdfm.cl2:
@@ -10355,8 +10366,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smdfm.cl2 starts with the
 		// following header: 0A 00 E3 01 5E 05 C6 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smd/smdht.cl2": {
 		// The contents of the archive header at offset 0 in smdht.cl2:
@@ -10366,8 +10377,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smdht.cl2 starts with the
 		// following header: 0A 00 8D 01 53 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smd/smdlm.cl2": {
 		// The contents of the archive header at offset 0 in smdlm.cl2:
@@ -10377,8 +10388,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smdlm.cl2 starts with the
 		// following header: 0A 00 E0 01 6B 05 D7 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smd/smdqm.cl2": {
 		// The contents of the archive header at offset 0 in smdqm.cl2:
@@ -10388,8 +10399,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smdqm.cl2 starts with the
 		// following header: 0A 00 D7 01 66 05 D5 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smd/smdst.cl2": {
 		// The contents of the archive header at offset 0 in smdst.cl2:
@@ -10399,8 +10410,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smdst.cl2 starts with the
 		// following header: 0A 00 73 01 AC 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smd/smdwl.cl2": {
 		// The contents of the archive header at offset 0 in smdwl.cl2:
@@ -10410,8 +10421,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smdwl.cl2 starts with the
 		// following header: 0A 00 2E 01 60 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smh/smhas.cl2": {
 		// The contents of the archive header at offset 0 in smhas.cl2:
@@ -10421,8 +10432,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smhas.cl2 starts with the
 		// following header: 0A 00 BF 01 43 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smh/smhat.cl2": {
 		// The contents of the archive header at offset 0 in smhat.cl2:
@@ -10432,8 +10443,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in smhat.cl2 starts with the
 		// following header: 0A 00 C0 01 42 05 B3 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smh/smhaw.cl2": {
 		// The contents of the archive header at offset 0 in smhaw.cl2:
@@ -10443,8 +10454,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smhaw.cl2 starts with the
 		// following header: 0A 00 A2 01 2C 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smh/smhbl.cl2": {
 		// The contents of the archive header at offset 0 in smhbl.cl2:
@@ -10454,8 +10465,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in smhbl.cl2 starts with the
 		// following header: 0A 00 7B 01 5C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smh/smhfm.cl2": {
 		// The contents of the archive header at offset 0 in smhfm.cl2:
@@ -10465,8 +10476,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smhfm.cl2 starts with the
 		// following header: 0A 00 CB 01 49 05 B4 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smh/smhht.cl2": {
 		// The contents of the archive header at offset 0 in smhht.cl2:
@@ -10476,8 +10487,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smhht.cl2 starts with the
 		// following header: 0A 00 82 01 48 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smh/smhlm.cl2": {
 		// The contents of the archive header at offset 0 in smhlm.cl2:
@@ -10487,8 +10498,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smhlm.cl2 starts with the
 		// following header: 0A 00 C2 01 4D 05 BE 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smh/smhqm.cl2": {
 		// The contents of the archive header at offset 0 in smhqm.cl2:
@@ -10498,8 +10509,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smhqm.cl2 starts with the
 		// following header: 0A 00 C2 01 45 05 BC 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smh/smhst.cl2": {
 		// The contents of the archive header at offset 0 in smhst.cl2:
@@ -10509,8 +10520,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smhst.cl2 starts with the
 		// following header: 0A 00 7F 01 C3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smh/smhwl.cl2": {
 		// The contents of the archive header at offset 0 in smhwl.cl2:
@@ -10520,8 +10531,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smhwl.cl2 starts with the
 		// following header: 0A 00 39 01 76 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smm/smmas.cl2": {
 		// The contents of the archive header at offset 0 in smmas.cl2:
@@ -10531,8 +10542,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smmas.cl2 starts with the
 		// following header: 0A 00 BB 01 DD 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smm/smmat.cl2": {
 		// The contents of the archive header at offset 0 in smmat.cl2:
@@ -10542,8 +10553,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in smmat.cl2 starts with the
 		// following header: 0A 00 BF 01 EA 04 60 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smm/smmaw.cl2": {
 		// The contents of the archive header at offset 0 in smmaw.cl2:
@@ -10553,8 +10564,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smmaw.cl2 starts with the
 		// following header: 0A 00 A0 01 CB 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smm/smmfm.cl2": {
 		// The contents of the archive header at offset 0 in smmfm.cl2:
@@ -10564,8 +10575,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smmfm.cl2 starts with the
 		// following header: 0A 00 CA 01 E0 04 4B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smm/smmht.cl2": {
 		// The contents of the archive header at offset 0 in smmht.cl2:
@@ -10575,8 +10586,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smmht.cl2 starts with the
 		// following header: 0A 00 77 01 F5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smm/smmlm.cl2": {
 		// The contents of the archive header at offset 0 in smmlm.cl2:
@@ -10586,8 +10597,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smmlm.cl2 starts with the
 		// following header: 0A 00 C8 01 2A 05 9A 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smm/smmqm.cl2": {
 		// The contents of the archive header at offset 0 in smmqm.cl2:
@@ -10597,8 +10608,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smmqm.cl2 starts with the
 		// following header: 0A 00 C0 01 EC 04 5E 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smm/smmst.cl2": {
 		// The contents of the archive header at offset 0 in smmst.cl2:
@@ -10608,8 +10619,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smmst.cl2 starts with the
 		// following header: 0A 00 79 01 94 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smm/smmwl.cl2": {
 		// The contents of the archive header at offset 0 in smmwl.cl2:
@@ -10619,8 +10630,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smmwl.cl2 starts with the
 		// following header: 0A 00 2B 01 24 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smn/smnas.cl2": {
 		// The contents of the archive header at offset 0 in smnas.cl2:
@@ -10630,8 +10641,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smnas.cl2 starts with the
 		// following header: 0A 00 AE 01 87 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smn/smnat.cl2": {
 		// The contents of the archive header at offset 0 in smnat.cl2:
@@ -10641,8 +10652,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smnat.cl2 starts with the
 		// following header: 0A 00 AD 01 AE 04 1C 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smn/smnaw.cl2": {
 		// The contents of the archive header at offset 0 in smnaw.cl2:
@@ -10652,8 +10663,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smnaw.cl2 starts with the
 		// following header: 0A 00 9D 01 96 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smn/smndt.cl2": {
 		// The contents of the archive header at offset 0 in smndt.cl2:
@@ -10663,8 +10674,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smndt.cl2 starts with the
 		// following header: 0A 00 25 01 0C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/sorceror/smn/smnfm.cl2": {
 		// The contents of the archive header at offset 0 in smnfm.cl2:
@@ -10674,8 +10685,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smnfm.cl2 starts with the
 		// following header: 0A 00 B8 01 85 04 F1 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smn/smnht.cl2": {
 		// The contents of the archive header at offset 0 in smnht.cl2:
@@ -10685,8 +10696,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smnht.cl2 starts with the
 		// following header: 0A 00 6A 01 9F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smn/smnlm.cl2": {
 		// The contents of the archive header at offset 0 in smnlm.cl2:
@@ -10696,8 +10707,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smnlm.cl2 starts with the
 		// following header: 0A 00 B6 01 9C 04 0B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smn/smnqm.cl2": {
 		// The contents of the archive header at offset 0 in smnqm.cl2:
@@ -10707,8 +10718,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smnqm.cl2 starts with the
 		// following header: 0A 00 AF 01 9A 04 0D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smn/smnst.cl2": {
 		// The contents of the archive header at offset 0 in smnst.cl2:
@@ -10718,8 +10729,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smnst.cl2 starts with the
 		// following header: 0A 00 74 01 6E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smn/smnwl.cl2": {
 		// The contents of the archive header at offset 0 in smnwl.cl2:
@@ -10729,8 +10740,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smnwl.cl2 starts with the
 		// following header: 0A 00 3B 01 09 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sms/smsas.cl2": {
 		// The contents of the archive header at offset 0 in smsas.cl2:
@@ -10740,8 +10751,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smsas.cl2 starts with the
 		// following header: 0A 00 E3 01 3C 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sms/smsat.cl2": {
 		// The contents of the archive header at offset 0 in smsat.cl2:
@@ -10751,8 +10762,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in smsat.cl2 starts with the
 		// following header: 0A 00 DB 01 31 05 A4 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sms/smsaw.cl2": {
 		// The contents of the archive header at offset 0 in smsaw.cl2:
@@ -10762,8 +10773,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smsaw.cl2 starts with the
 		// following header: 0A 00 AE 01 22 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sms/smsfm.cl2": {
 		// The contents of the archive header at offset 0 in smsfm.cl2:
@@ -10773,8 +10784,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smsfm.cl2 starts with the
 		// following header: 0A 00 F2 01 32 05 9D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sms/smsht.cl2": {
 		// The contents of the archive header at offset 0 in smsht.cl2:
@@ -10784,8 +10795,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smsht.cl2 starts with the
 		// following header: 0A 00 8D 01 3B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sms/smslm.cl2": {
 		// The contents of the archive header at offset 0 in smslm.cl2:
@@ -10795,8 +10806,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smslm.cl2 starts with the
 		// following header: 0A 00 DF 01 3A 05 AF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sms/smsqm.cl2": {
 		// The contents of the archive header at offset 0 in smsqm.cl2:
@@ -10806,8 +10817,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smsqm.cl2 starts with the
 		// following header: 0A 00 DF 01 37 05 AA 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/sms/smsst.cl2": {
 		// The contents of the archive header at offset 0 in smsst.cl2:
@@ -10817,8 +10828,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smsst.cl2 starts with the
 		// following header: 0A 00 73 01 81 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/sms/smswl.cl2": {
 		// The contents of the archive header at offset 0 in smswl.cl2:
@@ -10828,8 +10839,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smswl.cl2 starts with the
 		// following header: 0A 00 22 01 12 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smt/smtas.cl2": {
 		// The contents of the archive header at offset 0 in smtas.cl2:
@@ -10839,8 +10850,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smtas.cl2 starts with the
 		// following header: 0A 00 91 01 A6 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smt/smtat.cl2": {
 		// The contents of the archive header at offset 0 in smtat.cl2:
@@ -10850,8 +10861,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in smtat.cl2 starts with the
 		// following header: 0A 00 90 01 9F 04 29 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smt/smtaw.cl2": {
 		// The contents of the archive header at offset 0 in smtaw.cl2:
@@ -10861,8 +10872,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smtaw.cl2 starts with the
 		// following header: 0A 00 9C 01 D1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smt/smtfm.cl2": {
 		// The contents of the archive header at offset 0 in smtfm.cl2:
@@ -10872,8 +10883,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smtfm.cl2 starts with the
 		// following header: 0A 00 93 01 6E 04 F7 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smt/smtht.cl2": {
 		// The contents of the archive header at offset 0 in smtht.cl2:
@@ -10883,8 +10894,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smtht.cl2 starts with the
 		// following header: 0A 00 48 01 FF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smt/smtlm.cl2": {
 		// The contents of the archive header at offset 0 in smtlm.cl2:
@@ -10894,8 +10905,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smtlm.cl2 starts with the
 		// following header: 0A 00 86 01 8A 04 14 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smt/smtqm.cl2": {
 		// The contents of the archive header at offset 0 in smtqm.cl2:
@@ -10905,8 +10916,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smtqm.cl2 starts with the
 		// following header: 0A 00 81 01 8A 04 17 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smt/smtst.cl2": {
 		// The contents of the archive header at offset 0 in smtst.cl2:
@@ -10916,8 +10927,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smtst.cl2 starts with the
 		// following header: 0A 00 BB 01 C9 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smt/smtwl.cl2": {
 		// The contents of the archive header at offset 0 in smtwl.cl2:
@@ -10927,8 +10938,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smtwl.cl2 starts with the
 		// following header: 0A 00 27 01 0A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smu/smuas.cl2": {
 		// The contents of the archive header at offset 0 in smuas.cl2:
@@ -10938,8 +10949,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smuas.cl2 starts with the
 		// following header: 0A 00 B0 01 F1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smu/smuat.cl2": {
 		// The contents of the archive header at offset 0 in smuat.cl2:
@@ -10949,8 +10960,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in smuat.cl2 starts with the
 		// following header: 0A 00 B4 01 FF 04 6F 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smu/smuaw.cl2": {
 		// The contents of the archive header at offset 0 in smuaw.cl2:
@@ -10960,8 +10971,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smuaw.cl2 starts with the
 		// following header: 0A 00 9A 01 B5 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smu/smubl.cl2": {
 		// The contents of the archive header at offset 0 in smubl.cl2:
@@ -10971,8 +10982,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in smubl.cl2 starts with the
 		// following header: 0A 00 69 01 04 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smu/smufm.cl2": {
 		// The contents of the archive header at offset 0 in smufm.cl2:
@@ -10982,8 +10993,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smufm.cl2 starts with the
 		// following header: 0A 00 B8 01 E1 04 4D 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smu/smuht.cl2": {
 		// The contents of the archive header at offset 0 in smuht.cl2:
@@ -10993,8 +11004,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smuht.cl2 starts with the
 		// following header: 0A 00 72 01 73 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smu/smulm.cl2": {
 		// The contents of the archive header at offset 0 in smulm.cl2:
@@ -11004,8 +11015,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smulm.cl2 starts with the
 		// following header: 0A 00 AE 01 F4 04 68 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smu/smuqm.cl2": {
 		// The contents of the archive header at offset 0 in smuqm.cl2:
@@ -11015,8 +11026,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x1C0 in smuqm.cl2 starts with the
 		// following header: 0A 00 B8 01 00 05 75 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B1A9
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/sorceror/smu/smust.cl2": {
 		// The contents of the archive header at offset 0 in smust.cl2:
@@ -11026,8 +11037,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in smust.cl2 starts with the
 		// following header: 0A 00 7A 01 A3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/sorceror/smu/smuwl.cl2": {
 		// The contents of the archive header at offset 0 in smuwl.cl2:
@@ -11037,8 +11048,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in smuwl.cl2 starts with the
 		// following header: 0A 00 4C 01 63 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whaas.cl2": {
 		// The contents of the archive header at offset 0 in whaas.cl2:
@@ -11048,8 +11059,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whaas.cl2 starts with the
 		// following header: 0A 00 42 01 0E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whaat.cl2": {
 		// The contents of the archive header at offset 0 in whaat.cl2:
@@ -11059,8 +11070,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whaat.cl2 starts with the
 		// following header: 0A 00 49 01 2F 04 C6 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wha/whaaw.cl2": {
 		// The contents of the archive header at offset 0 in whaaw.cl2:
@@ -11070,8 +11081,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whaaw.cl2 starts with the
 		// following header: 0A 00 68 01 3F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whafm.cl2": {
 		// The contents of the archive header at offset 0 in whafm.cl2:
@@ -11081,8 +11092,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whafm.cl2 starts with the
 		// following header: 0A 00 4E 01 50 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whaht.cl2": {
 		// The contents of the archive header at offset 0 in whaht.cl2:
@@ -11092,8 +11103,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whaht.cl2 starts with the
 		// following header: 0A 00 49 01 27 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whalm.cl2": {
 		// The contents of the archive header at offset 0 in whalm.cl2:
@@ -11103,8 +11114,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whalm.cl2 starts with the
 		// following header: 0A 00 43 01 29 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whaqm.cl2": {
 		// The contents of the archive header at offset 0 in whaqm.cl2:
@@ -11114,8 +11125,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whaqm.cl2 starts with the
 		// following header: 0A 00 BB 01 8D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whast.cl2": {
 		// The contents of the archive header at offset 0 in whast.cl2:
@@ -11125,8 +11136,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whast.cl2 starts with the
 		// following header: 0A 00 5B 01 C9 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wha/whawl.cl2": {
 		// The contents of the archive header at offset 0 in whawl.cl2:
@@ -11136,8 +11147,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whawl.cl2 starts with the
 		// following header: 0A 00 48 01 8B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbas.cl2": {
 		// The contents of the archive header at offset 0 in whbas.cl2:
@@ -11147,8 +11158,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whbas.cl2 starts with the
 		// following header: 0A 00 1B 01 F0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbat.cl2": {
 		// The contents of the archive header at offset 0 in whbat.cl2:
@@ -11158,8 +11169,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whbat.cl2 starts with the
 		// following header: 0A 00 2A 02 B6 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x44B120
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"plrgfx/warrior/whb/whbaw.cl2": {
 		// The contents of the archive header at offset 0 in whbaw.cl2:
@@ -11169,8 +11180,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whbaw.cl2 starts with the
 		// following header: 0A 00 61 01 3F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbfm.cl2": {
 		// The contents of the archive header at offset 0 in whbfm.cl2:
@@ -11180,8 +11191,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whbfm.cl2 starts with the
 		// following header: 0A 00 3C 01 71 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbht.cl2": {
 		// The contents of the archive header at offset 0 in whbht.cl2:
@@ -11191,8 +11202,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whbht.cl2 starts with the
 		// following header: 0A 00 3A 01 17 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whblm.cl2": {
 		// The contents of the archive header at offset 0 in whblm.cl2:
@@ -11202,8 +11213,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whblm.cl2 starts with the
 		// following header: 0A 00 26 01 40 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbqm.cl2": {
 		// The contents of the archive header at offset 0 in whbqm.cl2:
@@ -11213,8 +11224,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whbqm.cl2 starts with the
 		// following header: 0A 00 B7 01 91 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbst.cl2": {
 		// The contents of the archive header at offset 0 in whbst.cl2:
@@ -11224,8 +11235,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whbst.cl2 starts with the
 		// following header: 0A 00 4A 01 9E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whb/whbwl.cl2": {
 		// The contents of the archive header at offset 0 in whbwl.cl2:
@@ -11235,8 +11246,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whbwl.cl2 starts with the
 		// following header: 0A 00 2C 01 7E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdas.cl2": {
 		// The contents of the archive header at offset 0 in whdas.cl2:
@@ -11246,8 +11257,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whdas.cl2 starts with the
 		// following header: 0A 00 75 01 96 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdat.cl2": {
 		// The contents of the archive header at offset 0 in whdat.cl2:
@@ -11257,8 +11268,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whdat.cl2 starts with the
 		// following header: 0A 00 81 01 E8 04 E4 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/whd/whdaw.cl2": {
 		// The contents of the archive header at offset 0 in whdaw.cl2:
@@ -11268,8 +11279,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whdaw.cl2 starts with the
 		// following header: 0A 00 5C 01 32 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdbl.cl2": {
 		// The contents of the archive header at offset 0 in whdbl.cl2:
@@ -11279,8 +11290,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in whdbl.cl2 starts with the
 		// following header: 0A 00 84 01 CF 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdfm.cl2": {
 		// The contents of the archive header at offset 0 in whdfm.cl2:
@@ -11290,8 +11301,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whdfm.cl2 starts with the
 		// following header: 0A 00 82 01 A8 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdht.cl2": {
 		// The contents of the archive header at offset 0 in whdht.cl2:
@@ -11301,8 +11312,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whdht.cl2 starts with the
 		// following header: 0A 00 3A 01 3D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdlm.cl2": {
 		// The contents of the archive header at offset 0 in whdlm.cl2:
@@ -11312,8 +11323,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whdlm.cl2 starts with the
 		// following header: 0A 00 60 01 83 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdqm.cl2": {
 		// The contents of the archive header at offset 0 in whdqm.cl2:
@@ -11323,8 +11334,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whdqm.cl2 starts with the
 		// following header: 0A 00 C5 01 E3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdst.cl2": {
 		// The contents of the archive header at offset 0 in whdst.cl2:
@@ -11334,8 +11345,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whdst.cl2 starts with the
 		// following header: 0A 00 53 01 D9 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whd/whdwl.cl2": {
 		// The contents of the archive header at offset 0 in whdwl.cl2:
@@ -11345,8 +11356,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whdwl.cl2 starts with the
 		// following header: 0A 00 0A 01 75 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhas.cl2": {
 		// The contents of the archive header at offset 0 in whhas.cl2:
@@ -11356,8 +11367,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whhas.cl2 starts with the
 		// following header: 0A 00 70 01 51 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhat.cl2": {
 		// The contents of the archive header at offset 0 in whhat.cl2:
@@ -11367,8 +11378,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whhat.cl2 starts with the
 		// following header: 0A 00 7A 01 96 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/whh/whhaw.cl2": {
 		// The contents of the archive header at offset 0 in whhaw.cl2:
@@ -11378,8 +11389,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whhaw.cl2 starts with the
 		// following header: 0A 00 61 01 01 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhbl.cl2": {
 		// The contents of the archive header at offset 0 in whhbl.cl2:
@@ -11389,8 +11400,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in whhbl.cl2 starts with the
 		// following header: 0A 00 73 01 82 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhfm.cl2": {
 		// The contents of the archive header at offset 0 in whhfm.cl2:
@@ -11400,8 +11411,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whhfm.cl2 starts with the
 		// following header: 0A 00 69 01 6C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhht.cl2": {
 		// The contents of the archive header at offset 0 in whhht.cl2:
@@ -11411,8 +11422,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whhht.cl2 starts with the
 		// following header: 0A 00 39 01 21 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhlm.cl2": {
 		// The contents of the archive header at offset 0 in whhlm.cl2:
@@ -11422,8 +11433,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whhlm.cl2 starts with the
 		// following header: 0A 00 5B 01 4C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhqm.cl2": {
 		// The contents of the archive header at offset 0 in whhqm.cl2:
@@ -11433,8 +11444,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whhqm.cl2 starts with the
 		// following header: 0A 00 CB 01 BD 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhst.cl2": {
 		// The contents of the archive header at offset 0 in whhst.cl2:
@@ -11444,8 +11455,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whhst.cl2 starts with the
 		// following header: 0A 00 94 01 2C 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whh/whhwl.cl2": {
 		// The contents of the archive header at offset 0 in whhwl.cl2:
@@ -11455,8 +11466,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whhwl.cl2 starts with the
 		// following header: 0A 00 2A 01 B5 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmas.cl2": {
 		// The contents of the archive header at offset 0 in whmas.cl2:
@@ -11466,8 +11477,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whmas.cl2 starts with the
 		// following header: 0A 00 44 01 95 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmat.cl2": {
 		// The contents of the archive header at offset 0 in whmat.cl2:
@@ -11477,8 +11488,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x260 in whmat.cl2 starts with the
 		// following header: 0A 00 40 01 8C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/whm/whmaw.cl2": {
 		// The contents of the archive header at offset 0 in whmaw.cl2:
@@ -11488,8 +11499,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whmaw.cl2 starts with the
 		// following header: 0A 00 68 01 EC 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmfm.cl2": {
 		// The contents of the archive header at offset 0 in whmfm.cl2:
@@ -11499,8 +11510,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whmfm.cl2 starts with the
 		// following header: 0A 00 49 01 AE 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmht.cl2": {
 		// The contents of the archive header at offset 0 in whmht.cl2:
@@ -11510,8 +11521,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whmht.cl2 starts with the
 		// following header: 0A 00 38 01 9E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmlm.cl2": {
 		// The contents of the archive header at offset 0 in whmlm.cl2:
@@ -11521,8 +11532,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whmlm.cl2 starts with the
 		// following header: 0A 00 40 01 97 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmqm.cl2": {
 		// The contents of the archive header at offset 0 in whmqm.cl2:
@@ -11532,8 +11543,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whmqm.cl2 starts with the
 		// following header: 0A 00 B9 01 F3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmst.cl2": {
 		// The contents of the archive header at offset 0 in whmst.cl2:
@@ -11543,8 +11554,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whmst.cl2 starts with the
 		// following header: 0A 00 85 01 D3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whm/whmwl.cl2": {
 		// The contents of the archive header at offset 0 in whmwl.cl2:
@@ -11554,8 +11565,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whmwl.cl2 starts with the
 		// following header: 0A 00 21 01 64 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnas.cl2": {
 		// The contents of the archive header at offset 0 in whnas.cl2:
@@ -11565,8 +11576,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whnas.cl2 starts with the
 		// following header: 0A 00 29 01 29 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnat.cl2": {
 		// The contents of the archive header at offset 0 in whnat.cl2:
@@ -11576,8 +11587,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whnat.cl2 starts with the
 		// following header: 0A 00 35 01 58 03 D7 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/whn/whnaw.cl2": {
 		// The contents of the archive header at offset 0 in whnaw.cl2:
@@ -11587,8 +11598,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whnaw.cl2 starts with the
 		// following header: 0A 00 5E 01 3A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whndt.cl2": {
 		// The contents of the archive header at offset 0 in whndt.cl2:
@@ -11598,8 +11609,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in whndt.cl2 starts with the
 		// following header: 0A 00 CD 01 86 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/whn/whnfm.cl2": {
 		// The contents of the archive header at offset 0 in whnfm.cl2:
@@ -11609,8 +11620,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whnfm.cl2 starts with the
 		// following header: 0A 00 2A 01 38 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnht.cl2": {
 		// The contents of the archive header at offset 0 in whnht.cl2:
@@ -11620,8 +11631,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whnht.cl2 starts with the
 		// following header: 0A 00 30 01 62 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnlm.cl2": {
 		// The contents of the archive header at offset 0 in whnlm.cl2:
@@ -11631,8 +11642,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whnlm.cl2 starts with the
 		// following header: 0A 00 32 01 53 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnqm.cl2": {
 		// The contents of the archive header at offset 0 in whnqm.cl2:
@@ -11642,8 +11653,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whnqm.cl2 starts with the
 		// following header: 0A 00 7E 01 4C 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnst.cl2": {
 		// The contents of the archive header at offset 0 in whnst.cl2:
@@ -11653,8 +11664,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whnst.cl2 starts with the
 		// following header: 0A 00 43 01 6D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whn/whnwl.cl2": {
 		// The contents of the archive header at offset 0 in whnwl.cl2:
@@ -11664,8 +11675,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whnwl.cl2 starts with the
 		// following header: 0A 00 F8 00 0F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whsas.cl2": {
 		// The contents of the archive header at offset 0 in whsas.cl2:
@@ -11675,8 +11686,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whsas.cl2 starts with the
 		// following header: 0A 00 3F 01 C8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whsat.cl2": {
 		// The contents of the archive header at offset 0 in whsat.cl2:
@@ -11686,8 +11697,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whsat.cl2 starts with the
 		// following header: 0A 00 46 01 DB 03 DB 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/whs/whsaw.cl2": {
 		// The contents of the archive header at offset 0 in whsaw.cl2:
@@ -11697,8 +11708,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whsaw.cl2 starts with the
 		// following header: 0A 00 65 01 33 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whsfm.cl2": {
 		// The contents of the archive header at offset 0 in whsfm.cl2:
@@ -11708,8 +11719,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whsfm.cl2 starts with the
 		// following header: 0A 00 50 01 FA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whsht.cl2": {
 		// The contents of the archive header at offset 0 in whsht.cl2:
@@ -11719,8 +11730,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whsht.cl2 starts with the
 		// following header: 0A 00 36 01 C4 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whslm.cl2": {
 		// The contents of the archive header at offset 0 in whslm.cl2:
@@ -11730,8 +11741,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whslm.cl2 starts with the
 		// following header: 0A 00 4B 01 E2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whsqm.cl2": {
 		// The contents of the archive header at offset 0 in whsqm.cl2:
@@ -11741,8 +11752,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whsqm.cl2 starts with the
 		// following header: 0A 00 B1 01 2D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whsst.cl2": {
 		// The contents of the archive header at offset 0 in whsst.cl2:
@@ -11752,8 +11763,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whsst.cl2 starts with the
 		// following header: 0A 00 49 01 78 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whs/whswl.cl2": {
 		// The contents of the archive header at offset 0 in whswl.cl2:
@@ -11763,8 +11774,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whswl.cl2 starts with the
 		// following header: 0A 00 21 01 56 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtas.cl2": {
 		// The contents of the archive header at offset 0 in whtas.cl2:
@@ -11774,8 +11785,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whtas.cl2 starts with the
 		// following header: 0A 00 44 01 2C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtat.cl2": {
 		// The contents of the archive header at offset 0 in whtat.cl2:
@@ -11785,8 +11796,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whtat.cl2 starts with the
 		// following header: 0A 00 4C 01 11 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/wht/whtaw.cl2": {
 		// The contents of the archive header at offset 0 in whtaw.cl2:
@@ -11796,8 +11807,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whtaw.cl2 starts with the
 		// following header: 0A 00 69 01 8A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtfm.cl2": {
 		// The contents of the archive header at offset 0 in whtfm.cl2:
@@ -11807,8 +11818,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whtfm.cl2 starts with the
 		// following header: 0A 00 7E 01 51 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtht.cl2": {
 		// The contents of the archive header at offset 0 in whtht.cl2:
@@ -11818,8 +11829,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whtht.cl2 starts with the
 		// following header: 0A 00 51 01 DD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtlm.cl2": {
 		// The contents of the archive header at offset 0 in whtlm.cl2:
@@ -11829,8 +11840,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whtlm.cl2 starts with the
 		// following header: 0A 00 64 01 1B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtqm.cl2": {
 		// The contents of the archive header at offset 0 in whtqm.cl2:
@@ -11840,8 +11851,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whtqm.cl2 starts with the
 		// following header: 0A 00 DC 01 84 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtst.cl2": {
 		// The contents of the archive header at offset 0 in whtst.cl2:
@@ -11851,8 +11862,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whtst.cl2 starts with the
 		// following header: 0A 00 B6 01 07 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wht/whtwl.cl2": {
 		// The contents of the archive header at offset 0 in whtwl.cl2:
@@ -11862,8 +11873,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whtwl.cl2 starts with the
 		// following header: 0A 00 56 01 A2 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whuas.cl2": {
 		// The contents of the archive header at offset 0 in whuas.cl2:
@@ -11873,8 +11884,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in whuas.cl2 starts with the
 		// following header: 0A 00 7A 01 60 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whuat.cl2": {
 		// The contents of the archive header at offset 0 in whuat.cl2:
@@ -11884,8 +11895,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in whuat.cl2 starts with the
 		// following header: 0A 00 59 01 37 04 B8 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/whu/whuaw.cl2": {
 		// The contents of the archive header at offset 0 in whuaw.cl2:
@@ -11895,8 +11906,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whuaw.cl2 starts with the
 		// following header: 0A 00 3F 01 E9 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whubl.cl2": {
 		// The contents of the archive header at offset 0 in whubl.cl2:
@@ -11906,8 +11917,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in whubl.cl2 starts with the
 		// following header: 0A 00 7A 01 96 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whufm.cl2": {
 		// The contents of the archive header at offset 0 in whufm.cl2:
@@ -11917,8 +11928,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whufm.cl2 starts with the
 		// following header: 0A 00 31 01 AE 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whuht.cl2": {
 		// The contents of the archive header at offset 0 in whuht.cl2:
@@ -11928,8 +11939,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in whuht.cl2 starts with the
 		// following header: 0A 00 33 01 0F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whulm.cl2": {
 		// The contents of the archive header at offset 0 in whulm.cl2:
@@ -11939,8 +11950,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whulm.cl2 starts with the
 		// following header: 0A 00 56 01 30 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whuqm.cl2": {
 		// The contents of the archive header at offset 0 in whuqm.cl2:
@@ -11950,8 +11961,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whuqm.cl2 starts with the
 		// following header: 0A 00 B6 01 6E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whust.cl2": {
 		// The contents of the archive header at offset 0 in whust.cl2:
@@ -11961,8 +11972,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in whust.cl2 starts with the
 		// following header: 0A 00 56 01 D1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/whu/whuwl.cl2": {
 		// The contents of the archive header at offset 0 in whuwl.cl2:
@@ -11972,8 +11983,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in whuwl.cl2 starts with the
 		// following header: 0A 00 10 01 76 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlaas.cl2": {
 		// The contents of the archive header at offset 0 in wlaas.cl2:
@@ -11983,8 +11994,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wlaas.cl2 starts with the
 		// following header: 0A 00 30 01 8E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlaat.cl2": {
 		// The contents of the archive header at offset 0 in wlaat.cl2:
@@ -11994,8 +12005,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlaat.cl2 starts with the
 		// following header: 0A 00 32 01 89 03 15 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wla/wlaaw.cl2": {
 		// The contents of the archive header at offset 0 in wlaaw.cl2:
@@ -12005,8 +12016,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlaaw.cl2 starts with the
 		// following header: 0A 00 5D 01 F6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlafm.cl2": {
 		// The contents of the archive header at offset 0 in wlafm.cl2:
@@ -12016,8 +12027,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlafm.cl2 starts with the
 		// following header: 0A 00 34 01 03 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlaht.cl2": {
 		// The contents of the archive header at offset 0 in wlaht.cl2:
@@ -12027,8 +12038,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wlaht.cl2 starts with the
 		// following header: 0A 00 1C 01 94 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlalm.cl2": {
 		// The contents of the archive header at offset 0 in wlalm.cl2:
@@ -12038,8 +12049,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlalm.cl2 starts with the
 		// following header: 0A 00 24 01 87 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlaqm.cl2": {
 		// The contents of the archive header at offset 0 in wlaqm.cl2:
@@ -12049,8 +12060,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlaqm.cl2 starts with the
 		// following header: 0A 00 A2 01 3A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlast.cl2": {
 		// The contents of the archive header at offset 0 in wlast.cl2:
@@ -12060,8 +12071,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlast.cl2 starts with the
 		// following header: 0A 00 84 01 A1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wla/wlawl.cl2": {
 		// The contents of the archive header at offset 0 in wlawl.cl2:
@@ -12071,8 +12082,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlawl.cl2 starts with the
 		// following header: 0A 00 12 01 FD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbas.cl2": {
 		// The contents of the archive header at offset 0 in wlbas.cl2:
@@ -12082,8 +12093,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlbas.cl2 starts with the
 		// following header: 0A 00 1C 01 A3 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbat.cl2": {
 		// The contents of the archive header at offset 0 in wlbat.cl2:
@@ -12093,8 +12104,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wlbat.cl2 starts with the
 		// following header: 0A 00 44 02 8A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x44B120
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"plrgfx/warrior/wlb/wlbaw.cl2": {
 		// The contents of the archive header at offset 0 in wlbaw.cl2:
@@ -12104,8 +12115,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlbaw.cl2 starts with the
 		// following header: 0A 00 4D 01 EA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbfm.cl2": {
 		// The contents of the archive header at offset 0 in wlbfm.cl2:
@@ -12115,8 +12126,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlbfm.cl2 starts with the
 		// following header: 0A 00 30 01 31 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbht.cl2": {
 		// The contents of the archive header at offset 0 in wlbht.cl2:
@@ -12126,8 +12137,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wlbht.cl2 starts with the
 		// following header: 0A 00 24 01 99 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlblm.cl2": {
 		// The contents of the archive header at offset 0 in wlblm.cl2:
@@ -12137,8 +12148,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlblm.cl2 starts with the
 		// following header: 0A 00 2A 01 CA 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbqm.cl2": {
 		// The contents of the archive header at offset 0 in wlbqm.cl2:
@@ -12148,8 +12159,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlbqm.cl2 starts with the
 		// following header: 0A 00 BC 01 8C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbst.cl2": {
 		// The contents of the archive header at offset 0 in wlbst.cl2:
@@ -12159,8 +12170,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlbst.cl2 starts with the
 		// following header: 0A 00 62 01 80 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlb/wlbwl.cl2": {
 		// The contents of the archive header at offset 0 in wlbwl.cl2:
@@ -12170,8 +12181,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlbwl.cl2 starts with the
 		// following header: 0A 00 F7 00 E1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldas.cl2": {
 		// The contents of the archive header at offset 0 in wldas.cl2:
@@ -12181,8 +12192,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wldas.cl2 starts with the
 		// following header: 0A 00 68 01 8E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldat.cl2": {
 		// The contents of the archive header at offset 0 in wldat.cl2:
@@ -12192,8 +12203,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wldat.cl2 starts with the
 		// following header: 0A 00 76 01 E4 04 9B 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wld/wldaw.cl2": {
 		// The contents of the archive header at offset 0 in wldaw.cl2:
@@ -12203,8 +12214,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wldaw.cl2 starts with the
 		// following header: 0A 00 59 01 C7 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldbl.cl2": {
 		// The contents of the archive header at offset 0 in wldbl.cl2:
@@ -12214,8 +12225,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in wldbl.cl2 starts with the
 		// following header: 0A 00 77 01 BD 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldfm.cl2": {
 		// The contents of the archive header at offset 0 in wldfm.cl2:
@@ -12225,8 +12236,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wldfm.cl2 starts with the
 		// following header: 0A 00 73 01 E1 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldht.cl2": {
 		// The contents of the archive header at offset 0 in wldht.cl2:
@@ -12236,8 +12247,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wldht.cl2 starts with the
 		// following header: 0A 00 62 01 95 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldlm.cl2": {
 		// The contents of the archive header at offset 0 in wldlm.cl2:
@@ -12247,8 +12258,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wldlm.cl2 starts with the
 		// following header: 0A 00 69 01 D2 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldqm.cl2": {
 		// The contents of the archive header at offset 0 in wldqm.cl2:
@@ -12258,8 +12269,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wldqm.cl2 starts with the
 		// following header: 0A 00 D9 01 4C 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldst.cl2": {
 		// The contents of the archive header at offset 0 in wldst.cl2:
@@ -12269,8 +12280,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wldst.cl2 starts with the
 		// following header: 0A 00 52 01 8B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wld/wldwl.cl2": {
 		// The contents of the archive header at offset 0 in wldwl.cl2:
@@ -12280,8 +12291,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wldwl.cl2 starts with the
 		// following header: 0A 00 FC 00 0C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhas.cl2": {
 		// The contents of the archive header at offset 0 in wlhas.cl2:
@@ -12291,8 +12302,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wlhas.cl2 starts with the
 		// following header: 0A 00 21 01 4A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhat.cl2": {
 		// The contents of the archive header at offset 0 in wlhat.cl2:
@@ -12302,8 +12313,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wlhat.cl2 starts with the
 		// following header: 0A 00 1F 01 50 04 F6 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wlh/wlhaw.cl2": {
 		// The contents of the archive header at offset 0 in wlhaw.cl2:
@@ -12313,8 +12324,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlhaw.cl2 starts with the
 		// following header: 0A 00 49 01 84 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhbl.cl2": {
 		// The contents of the archive header at offset 0 in wlhbl.cl2:
@@ -12324,8 +12335,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in wlhbl.cl2 starts with the
 		// following header: 0A 00 09 01 40 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhfm.cl2": {
 		// The contents of the archive header at offset 0 in wlhfm.cl2:
@@ -12335,8 +12346,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlhfm.cl2 starts with the
 		// following header: 0A 00 2B 01 7E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhht.cl2": {
 		// The contents of the archive header at offset 0 in wlhht.cl2:
@@ -12346,8 +12357,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wlhht.cl2 starts with the
 		// following header: 0A 00 16 01 F2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhlm.cl2": {
 		// The contents of the archive header at offset 0 in wlhlm.cl2:
@@ -12357,8 +12368,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlhlm.cl2 starts with the
 		// following header: 0A 00 28 01 4E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhqm.cl2": {
 		// The contents of the archive header at offset 0 in wlhqm.cl2:
@@ -12368,8 +12379,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlhqm.cl2 starts with the
 		// following header: 0A 00 CB 01 2C 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhst.cl2": {
 		// The contents of the archive header at offset 0 in wlhst.cl2:
@@ -12379,8 +12390,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlhst.cl2 starts with the
 		// following header: 0A 00 68 01 C6 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlh/wlhwl.cl2": {
 		// The contents of the archive header at offset 0 in wlhwl.cl2:
@@ -12390,8 +12401,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlhwl.cl2 starts with the
 		// following header: 0A 00 18 01 22 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmas.cl2": {
 		// The contents of the archive header at offset 0 in wlmas.cl2:
@@ -12401,8 +12412,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wlmas.cl2 starts with the
 		// following header: 0A 00 26 01 09 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmat.cl2": {
 		// The contents of the archive header at offset 0 in wlmat.cl2:
@@ -12412,8 +12423,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wlmat.cl2 starts with the
 		// following header: 0A 00 26 01 FF 02 A4 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wlm/wlmaw.cl2": {
 		// The contents of the archive header at offset 0 in wlmaw.cl2:
@@ -12423,8 +12434,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlmaw.cl2 starts with the
 		// following header: 0A 00 4E 01 98 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmfm.cl2": {
 		// The contents of the archive header at offset 0 in wlmfm.cl2:
@@ -12434,8 +12445,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlmfm.cl2 starts with the
 		// following header: 0A 00 3A 01 61 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmht.cl2": {
 		// The contents of the archive header at offset 0 in wlmht.cl2:
@@ -12445,8 +12456,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wlmht.cl2 starts with the
 		// following header: 0A 00 16 01 14 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmlm.cl2": {
 		// The contents of the archive header at offset 0 in wlmlm.cl2:
@@ -12456,8 +12467,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlmlm.cl2 starts with the
 		// following header: 0A 00 20 01 07 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmqm.cl2": {
 		// The contents of the archive header at offset 0 in wlmqm.cl2:
@@ -12467,8 +12478,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlmqm.cl2 starts with the
 		// following header: 0A 00 A3 01 98 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmst.cl2": {
 		// The contents of the archive header at offset 0 in wlmst.cl2:
@@ -12478,8 +12489,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlmst.cl2 starts with the
 		// following header: 0A 00 62 01 8C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlm/wlmwl.cl2": {
 		// The contents of the archive header at offset 0 in wlmwl.cl2:
@@ -12489,8 +12500,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlmwl.cl2 starts with the
 		// following header: 0A 00 10 01 D2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnas.cl2": {
 		// The contents of the archive header at offset 0 in wlnas.cl2:
@@ -12500,8 +12511,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wlnas.cl2 starts with the
 		// following header: 0A 00 0F 01 ED 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnat.cl2": {
 		// The contents of the archive header at offset 0 in wlnat.cl2:
@@ -12511,8 +12522,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wlnat.cl2 starts with the
 		// following header: 0A 00 15 01 E8 02 4C 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wln/wlnaw.cl2": {
 		// The contents of the archive header at offset 0 in wlnaw.cl2:
@@ -12522,8 +12533,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlnaw.cl2 starts with the
 		// following header: 0A 00 47 01 EF 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlndt.cl2": {
 		// The contents of the archive header at offset 0 in wlndt.cl2:
@@ -12533,8 +12544,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlndt.cl2 starts with the
 		// following header: 0A 00 0A 01 CE 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/wln/wlnfm.cl2": {
 		// The contents of the archive header at offset 0 in wlnfm.cl2:
@@ -12544,8 +12555,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlnfm.cl2 starts with the
 		// following header: 0A 00 15 01 F6 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnht.cl2": {
 		// The contents of the archive header at offset 0 in wlnht.cl2:
@@ -12555,8 +12566,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wlnht.cl2 starts with the
 		// following header: 0A 00 14 01 D0 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnlm.cl2": {
 		// The contents of the archive header at offset 0 in wlnlm.cl2:
@@ -12566,8 +12577,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2E0 in wlnlm.cl2 starts with the
 		// following header: 0A 00 1C 01 D5 02 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnqm.cl2": {
 		// The contents of the archive header at offset 0 in wlnqm.cl2:
@@ -12577,8 +12588,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlnqm.cl2 starts with the
 		// following header: 0A 00 84 01 26 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnst.cl2": {
 		// The contents of the archive header at offset 0 in wlnst.cl2:
@@ -12588,8 +12599,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlnst.cl2 starts with the
 		// following header: 0A 00 5B 01 3E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wln/wlnwl.cl2": {
 		// The contents of the archive header at offset 0 in wlnwl.cl2:
@@ -12599,8 +12610,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlnwl.cl2 starts with the
 		// following header: 0A 00 EC 00 97 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlsas.cl2": {
 		// The contents of the archive header at offset 0 in wlsas.cl2:
@@ -12610,8 +12621,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wlsas.cl2 starts with the
 		// following header: 0A 00 71 01 94 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlsat.cl2": {
 		// The contents of the archive header at offset 0 in wlsat.cl2:
@@ -12621,8 +12632,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wlsat.cl2 starts with the
 		// following header: 0A 00 6B 01 8E 03 43 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wls/wlsaw.cl2": {
 		// The contents of the archive header at offset 0 in wlsaw.cl2:
@@ -12632,8 +12643,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlsaw.cl2 starts with the
 		// following header: 0A 00 60 01 19 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlsfm.cl2": {
 		// The contents of the archive header at offset 0 in wlsfm.cl2:
@@ -12643,8 +12654,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlsfm.cl2 starts with the
 		// following header: 0A 00 72 01 BB 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlsht.cl2": {
 		// The contents of the archive header at offset 0 in wlsht.cl2:
@@ -12654,8 +12665,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wlsht.cl2 starts with the
 		// following header: 0A 00 5F 01 5D 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlslm.cl2": {
 		// The contents of the archive header at offset 0 in wlslm.cl2:
@@ -12665,8 +12676,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlslm.cl2 starts with the
 		// following header: 0A 00 71 01 9B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlsqm.cl2": {
 		// The contents of the archive header at offset 0 in wlsqm.cl2:
@@ -12676,8 +12687,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlsqm.cl2 starts with the
 		// following header: 0A 00 DD 01 07 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlsst.cl2": {
 		// The contents of the archive header at offset 0 in wlsst.cl2:
@@ -12687,8 +12698,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlsst.cl2 starts with the
 		// following header: 0A 00 58 01 5F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wls/wlswl.cl2": {
 		// The contents of the archive header at offset 0 in wlswl.cl2:
@@ -12698,8 +12709,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wlswl.cl2 starts with the
 		// following header: 0A 00 EB 00 C0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltas.cl2": {
 		// The contents of the archive header at offset 0 in wltas.cl2:
@@ -12709,8 +12720,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wltas.cl2 starts with the
 		// following header: 0A 00 48 01 90 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltat.cl2": {
 		// The contents of the archive header at offset 0 in wltat.cl2:
@@ -12720,8 +12731,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wltat.cl2 starts with the
 		// following header: 0A 00 53 01 A8 03 39 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wlt/wltaw.cl2": {
 		// The contents of the archive header at offset 0 in wltaw.cl2:
@@ -12731,8 +12742,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wltaw.cl2 starts with the
 		// following header: 0A 00 52 01 23 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltfm.cl2": {
 		// The contents of the archive header at offset 0 in wltfm.cl2:
@@ -12742,8 +12753,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wltfm.cl2 starts with the
 		// following header: 0A 00 7D 01 19 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltht.cl2": {
 		// The contents of the archive header at offset 0 in wltht.cl2:
@@ -12753,8 +12764,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wltht.cl2 starts with the
 		// following header: 0A 00 46 01 83 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltlm.cl2": {
 		// The contents of the archive header at offset 0 in wltlm.cl2:
@@ -12764,8 +12775,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wltlm.cl2 starts with the
 		// following header: 0A 00 72 01 C5 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltqm.cl2": {
 		// The contents of the archive header at offset 0 in wltqm.cl2:
@@ -12775,8 +12786,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wltqm.cl2 starts with the
 		// following header: 0A 00 EF 01 50 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltst.cl2": {
 		// The contents of the archive header at offset 0 in wltst.cl2:
@@ -12786,8 +12797,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wltst.cl2 starts with the
 		// following header: 0A 00 B7 01 AF 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlt/wltwl.cl2": {
 		// The contents of the archive header at offset 0 in wltwl.cl2:
@@ -12797,8 +12808,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wltwl.cl2 starts with the
 		// following header: 0A 00 48 01 43 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wluas.cl2": {
 		// The contents of the archive header at offset 0 in wluas.cl2:
@@ -12808,8 +12819,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wluas.cl2 starts with the
 		// following header: 0A 00 1E 01 30 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wluat.cl2": {
 		// The contents of the archive header at offset 0 in wluat.cl2:
@@ -12819,8 +12830,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wluat.cl2 starts with the
 		// following header: 0A 00 1A 01 41 04 A2 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wlu/wluaw.cl2": {
 		// The contents of the archive header at offset 0 in wluaw.cl2:
@@ -12830,8 +12841,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wluaw.cl2 starts with the
 		// following header: 0A 00 37 01 66 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wlubl.cl2": {
 		// The contents of the archive header at offset 0 in wlubl.cl2:
@@ -12841,8 +12852,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in wlubl.cl2 starts with the
 		// following header: 0A 00 06 01 2A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wlufm.cl2": {
 		// The contents of the archive header at offset 0 in wlufm.cl2:
@@ -12852,8 +12863,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlufm.cl2 starts with the
 		// following header: 0A 00 24 01 6D 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wluht.cl2": {
 		// The contents of the archive header at offset 0 in wluht.cl2:
@@ -12863,8 +12874,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wluht.cl2 starts with the
 		// following header: 0A 00 0F 01 D4 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wlulm.cl2": {
 		// The contents of the archive header at offset 0 in wlulm.cl2:
@@ -12874,8 +12885,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlulm.cl2 starts with the
 		// following header: 0A 00 29 01 54 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wluqm.cl2": {
 		// The contents of the archive header at offset 0 in wluqm.cl2:
@@ -12885,8 +12896,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wluqm.cl2 starts with the
 		// following header: 0A 00 A9 01 D8 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wlust.cl2": {
 		// The contents of the archive header at offset 0 in wlust.cl2:
@@ -12896,8 +12907,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wlust.cl2 starts with the
 		// following header: 0A 00 60 01 8B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wlu/wluwl.cl2": {
 		// The contents of the archive header at offset 0 in wluwl.cl2:
@@ -12907,8 +12918,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wluwl.cl2 starts with the
 		// following header: 0A 00 F1 00 D1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmaas.cl2": {
 		// The contents of the archive header at offset 0 in wmaas.cl2:
@@ -12918,8 +12929,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmaas.cl2 starts with the
 		// following header: 0A 00 45 01 19 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmaat.cl2": {
 		// The contents of the archive header at offset 0 in wmaat.cl2:
@@ -12929,8 +12940,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmaat.cl2 starts with the
 		// following header: 0A 00 45 01 2A 04 DB 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wma/wmaaw.cl2": {
 		// The contents of the archive header at offset 0 in wmaaw.cl2:
@@ -12940,8 +12951,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmaaw.cl2 starts with the
 		// following header: 0A 00 64 01 3F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmafm.cl2": {
 		// The contents of the archive header at offset 0 in wmafm.cl2:
@@ -12951,8 +12962,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmafm.cl2 starts with the
 		// following header: 0A 00 49 01 5E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmaht.cl2": {
 		// The contents of the archive header at offset 0 in wmaht.cl2:
@@ -12962,8 +12973,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmaht.cl2 starts with the
 		// following header: 0A 00 47 01 32 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmalm.cl2": {
 		// The contents of the archive header at offset 0 in wmalm.cl2:
@@ -12973,8 +12984,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmalm.cl2 starts with the
 		// following header: 0A 00 49 01 35 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmaqm.cl2": {
 		// The contents of the archive header at offset 0 in wmaqm.cl2:
@@ -12984,8 +12995,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmaqm.cl2 starts with the
 		// following header: 0A 00 B2 01 8C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmast.cl2": {
 		// The contents of the archive header at offset 0 in wmast.cl2:
@@ -12995,8 +13006,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmast.cl2 starts with the
 		// following header: 0A 00 7A 01 EA 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wma/wmawl.cl2": {
 		// The contents of the archive header at offset 0 in wmawl.cl2:
@@ -13006,8 +13017,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmawl.cl2 starts with the
 		// following header: 0A 00 2C 01 54 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbas.cl2": {
 		// The contents of the archive header at offset 0 in wmbas.cl2:
@@ -13017,8 +13028,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmbas.cl2 starts with the
 		// following header: 0A 00 1E 01 FD 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbat.cl2": {
 		// The contents of the archive header at offset 0 in wmbat.cl2:
@@ -13028,8 +13039,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmbat.cl2 starts with the
 		// following header: 0A 00 85 02 0A 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x44B120
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"plrgfx/warrior/wmb/wmbaw.cl2": {
 		// The contents of the archive header at offset 0 in wmbaw.cl2:
@@ -13039,8 +13050,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmbaw.cl2 starts with the
 		// following header: 0A 00 52 01 24 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbfm.cl2": {
 		// The contents of the archive header at offset 0 in wmbfm.cl2:
@@ -13050,8 +13061,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmbfm.cl2 starts with the
 		// following header: 0A 00 29 01 6F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbht.cl2": {
 		// The contents of the archive header at offset 0 in wmbht.cl2:
@@ -13061,8 +13072,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmbht.cl2 starts with the
 		// following header: 0A 00 40 01 08 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmblm.cl2": {
 		// The contents of the archive header at offset 0 in wmblm.cl2:
@@ -13072,8 +13083,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmblm.cl2 starts with the
 		// following header: 0A 00 34 01 62 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbqm.cl2": {
 		// The contents of the archive header at offset 0 in wmbqm.cl2:
@@ -13083,8 +13094,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmbqm.cl2 starts with the
 		// following header: 0A 00 C0 01 C3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbst.cl2": {
 		// The contents of the archive header at offset 0 in wmbst.cl2:
@@ -13094,8 +13105,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmbst.cl2 starts with the
 		// following header: 0A 00 52 01 B3 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmb/wmbwl.cl2": {
 		// The contents of the archive header at offset 0 in wmbwl.cl2:
@@ -13105,8 +13116,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmbwl.cl2 starts with the
 		// following header: 0A 00 08 01 37 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdas.cl2": {
 		// The contents of the archive header at offset 0 in wmdas.cl2:
@@ -13116,8 +13127,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmdas.cl2 starts with the
 		// following header: 0A 00 A3 01 12 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdat.cl2": {
 		// The contents of the archive header at offset 0 in wmdat.cl2:
@@ -13127,8 +13138,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmdat.cl2 starts with the
 		// following header: 0A 00 9F 01 FD 04 DF 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wmd/wmdaw.cl2": {
 		// The contents of the archive header at offset 0 in wmdaw.cl2:
@@ -13138,8 +13149,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmdaw.cl2 starts with the
 		// following header: 0A 00 7B 01 8F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdbl.cl2": {
 		// The contents of the archive header at offset 0 in wmdbl.cl2:
@@ -13149,8 +13160,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in wmdbl.cl2 starts with the
 		// following header: 0A 00 E3 01 DC 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdfm.cl2": {
 		// The contents of the archive header at offset 0 in wmdfm.cl2:
@@ -13160,8 +13171,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmdfm.cl2 starts with the
 		// following header: 0A 00 CF 01 10 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdht.cl2": {
 		// The contents of the archive header at offset 0 in wmdht.cl2:
@@ -13171,8 +13182,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmdht.cl2 starts with the
 		// following header: 0A 00 7F 01 CF 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdlm.cl2": {
 		// The contents of the archive header at offset 0 in wmdlm.cl2:
@@ -13182,8 +13193,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2E0 in wmdlm.cl2 starts with the
 		// following header: 0A 00 B3 01 13 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdqm.cl2": {
 		// The contents of the archive header at offset 0 in wmdqm.cl2:
@@ -13193,8 +13204,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmdqm.cl2 starts with the
 		// following header: 0A 00 2F 02 4A 05 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdst.cl2": {
 		// The contents of the archive header at offset 0 in wmdst.cl2:
@@ -13204,8 +13215,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmdst.cl2 starts with the
 		// following header: 0A 00 5B 01 C5 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmd/wmdwl.cl2": {
 		// The contents of the archive header at offset 0 in wmdwl.cl2:
@@ -13215,8 +13226,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmdwl.cl2 starts with the
 		// following header: 0A 00 1A 01 6A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhas.cl2": {
 		// The contents of the archive header at offset 0 in wmhas.cl2:
@@ -13226,8 +13237,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmhas.cl2 starts with the
 		// following header: 0A 00 6E 01 88 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhat.cl2": {
 		// The contents of the archive header at offset 0 in wmhat.cl2:
@@ -13237,8 +13248,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmhat.cl2 starts with the
 		// following header: 0A 00 3F 01 19 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/wmh/wmhaw.cl2": {
 		// The contents of the archive header at offset 0 in wmhaw.cl2:
@@ -13248,8 +13259,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmhaw.cl2 starts with the
 		// following header: 0A 00 78 01 41 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhbl.cl2": {
 		// The contents of the archive header at offset 0 in wmhbl.cl2:
@@ -13259,8 +13270,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in wmhbl.cl2 starts with the
 		// following header: 0A 00 72 01 63 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhfm.cl2": {
 		// The contents of the archive header at offset 0 in wmhfm.cl2:
@@ -13270,8 +13281,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmhfm.cl2 starts with the
 		// following header: 0A 00 68 01 89 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhht.cl2": {
 		// The contents of the archive header at offset 0 in wmhht.cl2:
@@ -13281,8 +13292,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmhht.cl2 starts with the
 		// following header: 0A 00 2F 01 31 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhlm.cl2": {
 		// The contents of the archive header at offset 0 in wmhlm.cl2:
@@ -13292,8 +13303,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmhlm.cl2 starts with the
 		// following header: 0A 00 64 01 74 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhqm.cl2": {
 		// The contents of the archive header at offset 0 in wmhqm.cl2:
@@ -13303,8 +13314,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmhqm.cl2 starts with the
 		// following header: 0A 00 DF 01 DF 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhst.cl2": {
 		// The contents of the archive header at offset 0 in wmhst.cl2:
@@ -13314,8 +13325,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmhst.cl2 starts with the
 		// following header: 0A 00 6B 01 F7 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmh/wmhwl.cl2": {
 		// The contents of the archive header at offset 0 in wmhwl.cl2:
@@ -13325,8 +13336,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmhwl.cl2 starts with the
 		// following header: 0A 00 3F 01 73 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmas.cl2": {
 		// The contents of the archive header at offset 0 in wmmas.cl2:
@@ -13336,8 +13347,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmmas.cl2 starts with the
 		// following header: 0A 00 33 01 90 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmat.cl2": {
 		// The contents of the archive header at offset 0 in wmmat.cl2:
@@ -13347,8 +13358,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmmat.cl2 starts with the
 		// following header: 0A 00 33 01 8F 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/wmm/wmmaw.cl2": {
 		// The contents of the archive header at offset 0 in wmmaw.cl2:
@@ -13358,8 +13369,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmmaw.cl2 starts with the
 		// following header: 0A 00 5F 01 E2 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmfm.cl2": {
 		// The contents of the archive header at offset 0 in wmmfm.cl2:
@@ -13369,8 +13380,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmmfm.cl2 starts with the
 		// following header: 0A 00 4B 01 C1 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmht.cl2": {
 		// The contents of the archive header at offset 0 in wmmht.cl2:
@@ -13380,8 +13391,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmmht.cl2 starts with the
 		// following header: 0A 00 2A 01 98 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmlm.cl2": {
 		// The contents of the archive header at offset 0 in wmmlm.cl2:
@@ -13391,8 +13402,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmmlm.cl2 starts with the
 		// following header: 0A 00 38 01 9A 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmqm.cl2": {
 		// The contents of the archive header at offset 0 in wmmqm.cl2:
@@ -13402,8 +13413,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmmqm.cl2 starts with the
 		// following header: 0A 00 B2 01 E6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmst.cl2": {
 		// The contents of the archive header at offset 0 in wmmst.cl2:
@@ -13413,8 +13424,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmmst.cl2 starts with the
 		// following header: 0A 00 54 01 C0 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmm/wmmwl.cl2": {
 		// The contents of the archive header at offset 0 in wmmwl.cl2:
@@ -13424,8 +13435,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmmwl.cl2 starts with the
 		// following header: 0A 00 29 01 2F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnas.cl2": {
 		// The contents of the archive header at offset 0 in wmnas.cl2:
@@ -13435,8 +13446,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmnas.cl2 starts with the
 		// following header: 0A 00 2B 01 3B 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnat.cl2": {
 		// The contents of the archive header at offset 0 in wmnat.cl2:
@@ -13446,8 +13457,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmnat.cl2 starts with the
 		// following header: 0A 00 36 01 75 03 FA 03 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wmn/wmnaw.cl2": {
 		// The contents of the archive header at offset 0 in wmnaw.cl2:
@@ -13457,8 +13468,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmnaw.cl2 starts with the
 		// following header: 0A 00 61 01 4A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmndt.cl2": {
 		// The contents of the archive header at offset 0 in wmndt.cl2:
@@ -13468,8 +13479,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x220 in wmndt.cl2 starts with the
 		// following header: 0A 00 CF 01 C7 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B047
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/wmn/wmnfm.cl2": {
 		// The contents of the archive header at offset 0 in wmnfm.cl2:
@@ -13479,8 +13490,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmnfm.cl2 starts with the
 		// following header: 0A 00 34 01 52 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnht.cl2": {
 		// The contents of the archive header at offset 0 in wmnht.cl2:
@@ -13490,8 +13501,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmnht.cl2 starts with the
 		// following header: 0A 00 31 01 6E 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnlm.cl2": {
 		// The contents of the archive header at offset 0 in wmnlm.cl2:
@@ -13501,8 +13512,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmnlm.cl2 starts with the
 		// following header: 0A 00 2E 01 43 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnqm.cl2": {
 		// The contents of the archive header at offset 0 in wmnqm.cl2:
@@ -13512,8 +13523,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmnqm.cl2 starts with the
 		// following header: 0A 00 A8 01 A8 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnst.cl2": {
 		// The contents of the archive header at offset 0 in wmnst.cl2:
@@ -13523,8 +13534,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmnst.cl2 starts with the
 		// following header: 0A 00 4D 01 85 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmn/wmnwl.cl2": {
 		// The contents of the archive header at offset 0 in wmnwl.cl2:
@@ -13534,8 +13545,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmnwl.cl2 starts with the
 		// following header: 0A 00 02 01 ED 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmsas.cl2": {
 		// The contents of the archive header at offset 0 in wmsas.cl2:
@@ -13545,8 +13556,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmsas.cl2 starts with the
 		// following header: 0A 00 90 01 09 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmsat.cl2": {
 		// The contents of the archive header at offset 0 in wmsat.cl2:
@@ -13556,8 +13567,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmsat.cl2 starts with the
 		// following header: 0A 00 8F 01 C8 03 A8 04 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wms/wmsaw.cl2": {
 		// The contents of the archive header at offset 0 in wmsaw.cl2:
@@ -13567,8 +13578,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmsaw.cl2 starts with the
 		// following header: 0A 00 76 01 55 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmsfm.cl2": {
 		// The contents of the archive header at offset 0 in wmsfm.cl2:
@@ -13578,8 +13589,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmsfm.cl2 starts with the
 		// following header: 0A 00 95 01 3E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmsht.cl2": {
 		// The contents of the archive header at offset 0 in wmsht.cl2:
@@ -13589,8 +13600,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmsht.cl2 starts with the
 		// following header: 0A 00 85 01 27 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmslm.cl2": {
 		// The contents of the archive header at offset 0 in wmslm.cl2:
@@ -13600,8 +13611,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmslm.cl2 starts with the
 		// following header: 0A 00 8F 01 1F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmsqm.cl2": {
 		// The contents of the archive header at offset 0 in wmsqm.cl2:
@@ -13611,8 +13622,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmsqm.cl2 starts with the
 		// following header: 0A 00 F3 01 5F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmsst.cl2": {
 		// The contents of the archive header at offset 0 in wmsst.cl2:
@@ -13622,8 +13633,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmsst.cl2 starts with the
 		// following header: 0A 00 44 01 7C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wms/wmswl.cl2": {
 		// The contents of the archive header at offset 0 in wmswl.cl2:
@@ -13633,8 +13644,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmswl.cl2 starts with the
 		// following header: 0A 00 13 01 2F 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtas.cl2": {
 		// The contents of the archive header at offset 0 in wmtas.cl2:
@@ -13644,8 +13655,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmtas.cl2 starts with the
 		// following header: 0A 00 60 01 3B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtat.cl2": {
 		// The contents of the archive header at offset 0 in wmtat.cl2:
@@ -13655,8 +13666,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmtat.cl2 starts with the
 		// following header: 0A 00 60 01 38 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      96,  // h = npixels/w = 12288/128 = 96
 	},
 	"plrgfx/warrior/wmt/wmtaw.cl2": {
 		// The contents of the archive header at offset 0 in wmtaw.cl2:
@@ -13666,8 +13677,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmtaw.cl2 starts with the
 		// following header: 0A 00 66 01 7C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtfm.cl2": {
 		// The contents of the archive header at offset 0 in wmtfm.cl2:
@@ -13677,8 +13688,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmtfm.cl2 starts with the
 		// following header: 0A 00 62 01 4A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtht.cl2": {
 		// The contents of the archive header at offset 0 in wmtht.cl2:
@@ -13688,8 +13699,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmtht.cl2 starts with the
 		// following header: 0A 00 58 01 02 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtlm.cl2": {
 		// The contents of the archive header at offset 0 in wmtlm.cl2:
@@ -13699,8 +13710,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmtlm.cl2 starts with the
 		// following header: 0A 00 6B 01 44 04 11 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 12288/unknown = baz
+		W:      96,  // ref: 0x44B041
+		H:      128, // h = npixels/w = 12288/96 = 128
 	},
 	"plrgfx/warrior/wmt/wmtqm.cl2": {
 		// The contents of the archive header at offset 0 in wmtqm.cl2:
@@ -13710,8 +13721,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmtqm.cl2 starts with the
 		// following header: 0A 00 F0 01 A8 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtst.cl2": {
 		// The contents of the archive header at offset 0 in wmtst.cl2:
@@ -13721,8 +13732,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmtst.cl2 starts with the
 		// following header: 0A 00 A7 01 DF 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmt/wmtwl.cl2": {
 		// The contents of the archive header at offset 0 in wmtwl.cl2:
@@ -13732,8 +13743,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmtwl.cl2 starts with the
 		// following header: 0A 00 65 01 9B 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmuas.cl2": {
 		// The contents of the archive header at offset 0 in wmuas.cl2:
@@ -13743,8 +13754,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x180 in wmuas.cl2 starts with the
 		// following header: 0A 00 74 01 8E 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmuat.cl2": {
 		// The contents of the archive header at offset 0 in wmuat.cl2:
@@ -13754,8 +13765,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x240 in wmuat.cl2 starts with the
 		// following header: 0A 00 6B 01 81 04 06 05 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 16384/unknown = baz
+		W:      128, // ref: 0x44B035
+		H:      128, // h = npixels/w = 16384/128 = 128
 	},
 	"plrgfx/warrior/wmu/wmuaw.cl2": {
 		// The contents of the archive header at offset 0 in wmuaw.cl2:
@@ -13765,8 +13776,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmuaw.cl2 starts with the
 		// following header: 0A 00 57 01 49 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmubl.cl2": {
 		// The contents of the archive header at offset 0 in wmubl.cl2:
@@ -13776,8 +13787,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x80 in wmubl.cl2 starts with the
 		// following header: 0A 00 88 01 7A 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B04D
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmufm.cl2": {
 		// The contents of the archive header at offset 0 in wmufm.cl2:
@@ -13787,8 +13798,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmufm.cl2 starts with the
 		// following header: 0A 00 53 01 B6 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmuht.cl2": {
 		// The contents of the archive header at offset 0 in wmuht.cl2:
@@ -13798,8 +13809,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x100 in wmuht.cl2 starts with the
 		// following header: 0A 00 31 01 0C 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B03B
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmulm.cl2": {
 		// The contents of the archive header at offset 0 in wmulm.cl2:
@@ -13809,8 +13820,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmulm.cl2 starts with the
 		// following header: 0A 00 62 01 C0 03 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmuqm.cl2": {
 		// The contents of the archive header at offset 0 in wmuqm.cl2:
@@ -13820,8 +13831,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmuqm.cl2 starts with the
 		// following header: 0A 00 C4 01 A8 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B041
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmust.cl2": {
 		// The contents of the archive header at offset 0 in wmust.cl2:
@@ -13831,8 +13842,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x2C0 in wmust.cl2 starts with the
 		// following header: 0A 00 5B 01 AE 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B029
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 	"plrgfx/warrior/wmu/wmuwl.cl2": {
 		// The contents of the archive header at offset 0 in wmuwl.cl2:
@@ -13842,8 +13853,8 @@ var confs = map[string]*Config{
 		// The contents of frame 0 at offset 0x140 in wmuwl.cl2 starts with the
 		// following header: 0A 00 1A 01 38 04 00 00 00 00.
 		Header: 10,
-		W:      unknown,
-		H:      unknown, // h = npixels/w = 9216/unknown = baz
+		W:      96, // ref: 0x44B02F
+		H:      96, // h = npixels/w = 9216/96 = 96
 	},
 }
 
