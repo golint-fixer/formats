@@ -3,16 +3,16 @@
 // The MIN file of each level (e.g. "levels/l1data/l1.min") specifies how to
 // arrange the frames of the level's CEL file (e.g. "levels/l1data/l1.cel") in
 // order to form miniature tiles (henceforth referred to as dungeon pieces, or
-// pieces for short). A dungeon piece consists of either 10 or 16 blocks, where
+// dpieces for short). A dungeon piece consists of either 10 or 16 blocks, where
 // each non-empty block is represented by a CEL frame.
 //
 // Below follows a pseudo-code description of the MIN file format.
 //
 //    // A MIN file consists of a sequence of dungeon piece definitions.
-//    type MIN []Piece
+//    type MIN []DPiece
 //
-//    // A Piece consists of a sequence of either 10 or 16 block definitions.
-//    type Piece struct {
+//    // A DPiece consists of a sequence of either 10 or 16 block definitions.
+//    type DPiece struct {
 //       // nblocks is either 10 (for "l1.min", "l2.min" and "l3.min") or 16
 //       // (for "l4.min" and "town.min").
 //       blocks [nblocks]Block
@@ -39,10 +39,10 @@ import (
 	"github.com/pkg/errors"
 )
 
-// A Piece represents a dungeon piece, which specifies how to arrange frames of
+// A DPiece represents a dungeon piece, which specifies how to arrange frames of
 // a level CEL file in order to form a miniature tile. A dungeon piece consists
 // of 10 or 16 blocks, where each non-empty block is represented by a CEL frame.
-type Piece struct {
+type DPiece struct {
 	// Either 10 or 16 blocks constituting the dungeon piece.
 	Blocks []Block
 }
@@ -57,7 +57,7 @@ type Block struct {
 }
 
 // Parse parses the given MIN file and returns its dungeon piece definitions.
-func Parse(path string) ([]Piece, error) {
+func Parse(path string) ([]DPiece, error) {
 	// Open file for reading.
 	fr, err := os.Open(path)
 	if err != nil {
@@ -74,12 +74,12 @@ func Parse(path string) ([]Piece, error) {
 	case "l4.min", "town.min":
 		nblocks = 16
 	default:
-		panic(fmt.Sprintf("min.Parse: support for %q not yet implemented", name))
+		panic(fmt.Errorf("min.Parse: support for MIN file %q not yet implemented", name))
 	}
 	buf := make([]uint16, nblocks)
 
 	// Decode dungeon pieces.
-	var pieces []Piece
+	var dpieces []DPiece
 	for {
 		if err := binary.Read(br, binary.LittleEndian, buf); err != nil {
 			if err == io.EOF {
@@ -87,7 +87,7 @@ func Parse(path string) ([]Piece, error) {
 			}
 			return nil, errors.WithStack(err)
 		}
-		piece := Piece{
+		dpiece := DPiece{
 			Blocks: make([]Block, nblocks),
 		}
 		for i := range buf {
@@ -95,12 +95,12 @@ func Parse(path string) ([]Piece, error) {
 				FrameNum:  int(buf[i] & 0x0FFF),
 				FrameType: int(buf[i] & 0x7000 >> 12),
 			}
-			piece.Blocks[i] = block
+			dpiece.Blocks[i] = block
 		}
-		pieces = append(pieces, piece)
+		dpieces = append(dpieces, dpiece)
 	}
 
-	return pieces, nil
+	return dpieces, nil
 }
 
 // Image returns an image representation of the dungeon piece, where each non-
@@ -126,15 +126,15 @@ func Parse(path string) ([]Piece, error) {
 //    +----+----+
 //    | 14 | 15 |
 //    +----+----+
-func (piece Piece) Image(levelFrames []image.Image) image.Image {
+func (dpiece DPiece) Image(levelFrames []image.Image) image.Image {
 	const (
 		blockWidth  = 32
 		blockHeight = 32
 	)
 	width := blockWidth * 2
-	height := blockHeight * (len(piece.Blocks) / 2)
+	height := blockHeight * (len(dpiece.Blocks) / 2)
 	img := image.NewRGBA(image.Rect(0, 0, width, height))
-	for blockNum, block := range piece.Blocks {
+	for blockNum, block := range dpiece.Blocks {
 		if block.FrameNum != 0 {
 			frame := levelFrames[block.FrameNum-1]
 			x := blockWidth * (blockNum % 2)
