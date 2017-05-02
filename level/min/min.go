@@ -36,7 +36,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/mewkiz/pkg/errutil"
+	"github.com/pkg/errors"
 )
 
 // A Piece represents a dungeon piece, which specifies how to arrange frames of
@@ -61,7 +61,7 @@ func Parse(path string) ([]Piece, error) {
 	// Open file for reading.
 	fr, err := os.Open(path)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 	defer fr.Close()
 	br := bufio.NewReader(fr)
@@ -85,7 +85,7 @@ func Parse(path string) ([]Piece, error) {
 			if err == io.EOF {
 				break
 			}
-			return nil, errutil.Err(err)
+			return nil, errors.WithStack(err)
 		}
 		piece := Piece{
 			Blocks: make([]Block, nblocks),

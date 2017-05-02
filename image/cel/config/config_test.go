@@ -5,10 +5,11 @@ import (
 	"testing"
 )
 
-// TODO: Extend the test case to verify that npixelsMapping contains the same
-// paths as confs.
-
 func TestConfs(t *testing.T) {
+	if len(confs) != len(RelPaths) {
+		t.Errorf("mismatch between numer of configs (%d) and relative paths (%d)", len(confs), len(RelPaths))
+	}
+
 	var relCelPaths []string
 	for _, relCelPath := range RelPaths {
 		relCelPaths = append(relCelPaths, relCelPath)

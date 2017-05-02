@@ -35,7 +35,7 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/mewkiz/pkg/errutil"
+	"github.com/pkg/errors"
 	"github.com/sanctuary/formats/image/cel/config"
 )
 
@@ -46,22 +46,22 @@ func DecodeArchive(path string, pal color.Palette) ([][]image.Image, error) {
 	name := filepath.Base(path)
 	conf, err := config.Get(name)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 	if conf.Nimgs == 0 {
-		return nil, errutil.Newf("cel.DecodeArchive: invalid call for CEL image %q; use cel.DecodeAll instead")
+		return nil, errors.Errorf("invalid call for CEL image %q; use cel.DecodeAll instead")
 	}
 
 	// Read file contents.
 	archive, err := ioutil.ReadFile(path)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 
 	// Read the contents of each embedded CEL image.
 	cels, err := readCELs(archive)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 
 	// Decode embedded CEL images.
@@ -69,7 +69,7 @@ func DecodeArchive(path string, pal color.Palette) ([][]image.Image, error) {
 	for i, cel := range cels {
 		archiveImgs[i], err = decodeAll(cel, pal, conf)
 		if err != nil {
-			return nil, errutil.Err(err)
+			return nil, errors.WithStack(err)
 		}
 	}
 
@@ -83,16 +83,16 @@ func DecodeAll(path string, pal color.Palette) ([]image.Image, error) {
 	name := filepath.Base(path)
 	conf, err := config.Get(name)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 	if conf.Nimgs != 0 {
-		return nil, errutil.Newf("cel.DecodeAll: invalid call for CEL archive %q; use cel.DecodeArchive instead")
+		return nil, errors.Errorf("invalid call cel.DecodeAll for CEL archive %q; use cel.DecodeArchive instead")
 	}
 
 	// Read file contents.
 	cel, err := ioutil.ReadFile(path)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 
 	// Decode CEL image frames.
@@ -105,7 +105,7 @@ func decodeAll(cel []byte, pal color.Palette, conf *config.Config) ([]image.Imag
 	// Read the contents of each frame.
 	frames, err := readFrames(cel)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 
 	// Decode frames.
@@ -145,7 +145,7 @@ func readCELs(archive []byte) (cels [][]byte, err error) {
 	celOffsets := make([]uint32, ncels+1)
 	r := bytes.NewReader(archive)
 	if err := binary.Read(r, binary.LittleEndian, celOffsets[:ncels]); err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 
 	// Append end offset of the last embedded CEL image.
@@ -170,11 +170,11 @@ func readFrames(cel []byte) (frames [][]byte, err error) {
 	r := bytes.NewReader(cel)
 	var nframes uint32
 	if err := binary.Read(r, binary.LittleEndian, &nframes); err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 	frameOffsets := make([]uint32, nframes+1)
 	if err := binary.Read(r, binary.LittleEndian, frameOffsets); err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 
 	// Read the contents of each frame.

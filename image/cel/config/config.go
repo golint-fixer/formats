@@ -49,11 +49,6 @@ type Config struct {
 	GetDecoderType func(frameNum int) int
 }
 
-// TODO: Remove unknown once no longer needed.
-
-// unknown tracks unknown data.
-const unknown = 0
-
 // NOTE: The embedded CEL image 5 and 6 are identical of
 // "monsters/darkmage/dmageh.cl2", thus one direction of the hit animation is
 // missing.

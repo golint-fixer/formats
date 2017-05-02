@@ -31,7 +31,7 @@ func TestDecodeAll(t *testing.T) {
 	mpqDir := "diabdat/"
 
 	// Skip test if extracted "diabdat.mpq" is not present.
-	if exist, _ := osutil.Exists(mpqDir); !exist {
+	if !osutil.Exists(mpqDir) {
 		t.Skipf("%q directory not present", mpqDir)
 		return
 	}

@@ -4,7 +4,7 @@ import (
 	"image/color"
 	"io/ioutil"
 
-	"github.com/mewkiz/pkg/errutil"
+	"github.com/pkg/errors"
 )
 
 // ParsePal parses the given PAL file and returns the corresponding palette.
@@ -23,7 +23,7 @@ import (
 func ParsePal(path string) (color.Palette, error) {
 	buf, err := ioutil.ReadFile(path)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 	const (
 		// Number of colours within a palette.
@@ -32,7 +32,7 @@ func ParsePal(path string) (color.Palette, error) {
 		colorSize = 3
 	)
 	if len(buf) != ncolors*colorSize {
-		return nil, errutil.Newf("cel.ParsePal: invalid PAL file size for %q; expected %d, got %d", path, ncolors*colorSize, len(buf))
+		return nil, errors.Errorf("invalid PAL file size for %q; expected %d, got %d", path, ncolors*colorSize, len(buf))
 	}
 	pal := make(color.Palette, ncolors)
 	for i := range pal {
