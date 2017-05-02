@@ -3,17 +3,19 @@
 // Package config specifies the data required for decoding CEL images.
 package config
 
-import "github.com/mewkiz/pkg/errutil"
+import (
+	"github.com/pkg/errors"
+)
 
 // Get returns the image config data of the given CEL image.
 func Get(name string) (*Config, error) {
 	relPath, ok := RelPaths[name]
 	if !ok {
-		return nil, errutil.Newf("config.Get: unable to locate relative path of %q", name)
+		return nil, errors.Errorf("unable to locate relative path of %q", name)
 	}
 	conf, ok := confs[relPath]
 	if !ok {
-		return nil, errutil.Newf("config.Get: unable to locate CEL config for %q", name)
+		return nil, errors.Errorf("unable to locate CEL config for %q", name)
 	}
 	conf.GetDecoderType = func(frameNum int) int {
 		return getDecoderType(name, frameNum)
@@ -926,6 +928,15 @@ var confs = map[string]*Config{
 	"levels/l1data/l1.cel": {
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
+		Pals: []string{
+			"levels/l1data/l1.pal",
+			"levels/l1data/l1_1.pal",
+			"levels/l1data/l1_2.pal",
+			"levels/l1data/l1_3.pal",
+			"levels/l1data/l1_4.pal",
+			"levels/l1data/l1_5.pal",
+			"levels/l1data/l1palg.pal",
+		},
 	},
 	"levels/l1data/l1s.cel": {
 		// The contents of frame 0 at offset 0x28 in l1s.cel starts with the
@@ -933,10 +944,28 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      64,  // ref: 0x455835
 		H:      160, // h = npixels/w = 10240/64 = 160
+		Pals: []string{
+			"levels/l1data/l1.pal",
+			"levels/l1data/l1_1.pal",
+			"levels/l1data/l1_2.pal",
+			"levels/l1data/l1_3.pal",
+			"levels/l1data/l1_4.pal",
+			"levels/l1data/l1_5.pal",
+			"levels/l1data/l1palg.pal",
+		},
 	},
 	"levels/l2data/l2.cel": {
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
+		Pals: []string{
+			"levels/l2data/l2.pal",
+			"levels/l2data/l2_1.pal",
+			"levels/l2data/l2_2.pal",
+			"levels/l2data/l2_3.pal",
+			"levels/l2data/l2_4.pal",
+			"levels/l2data/l2_5.pal",
+			"levels/l2data/l2palg.pal",
+		},
 	},
 	"levels/l2data/l2s.cel": {
 		// The contents of frame 0 at offset 0x20 in l2s.cel starts with the
@@ -944,14 +973,41 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      64,  // ref: 0x455835
 		H:      160, // h = npixels/w = 10240/64 = 160
+		Pals: []string{
+			"levels/l2data/l2.pal",
+			"levels/l2data/l2_1.pal",
+			"levels/l2data/l2_2.pal",
+			"levels/l2data/l2_3.pal",
+			"levels/l2data/l2_4.pal",
+			"levels/l2data/l2_5.pal",
+			"levels/l2data/l2palg.pal",
+		},
 	},
 	"levels/l3data/l3.cel": {
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
+		Pals: []string{
+			"levels/l3data/l3.pal",
+			"levels/l3data/l3palg.pal",
+			"levels/l3data/l3pfoul.pal",
+			"levels/l3data/l3pwater.pal",
+			"levels/l3data/l3_1.pal",
+			"levels/l3data/l3_2.pal",
+			"levels/l3data/l3_3.pal",
+			"levels/l3data/l3_4.pal",
+			"levels/l3data/l3_i.pal",
+			"levels/l3data/l3_w.pal",
+		},
 	},
 	"levels/l4data/l4.cel": {
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
+		Pals: []string{
+			"levels/l4data/l4_1.pal",
+			"levels/l4data/l4_2.pal",
+			"levels/l4data/l4_3.pal",
+			"levels/l4data/l4_4.pal",
+		},
 	},
 	"levels/towndata/town.cel": {
 		W: 32, // ref: 0x4632D5

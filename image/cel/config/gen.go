@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/mewkiz/pkg/errutil"
+	"github.com/pkg/errors"
 	"github.com/sanctuary/formats/level/min"
 )
 
@@ -60,7 +60,7 @@ func parseMin(mpqDir, levelName string) (*minMapping, error) {
 	minPath := filepath.Join(mpqDir, "levels", levelName+"data", name)
 	pieces, err := min.Parse(minPath)
 	if err != nil {
-		return nil, errutil.Err(err)
+		return nil, errors.WithStack(err)
 	}
 	// m maps from frame numbers to frame types.
 	m := make(map[int]int)
@@ -87,18 +87,18 @@ func parseMin(mpqDir, levelName string) (*minMapping, error) {
 func genData(mappings []*minMapping) error {
 	t := template.New("data")
 	if _, err := t.Parse(dataContent[1:]); err != nil {
-		return errutil.Err(err)
+		return errors.WithStack(err)
 	}
 	buf := new(bytes.Buffer)
 	if err := t.Execute(buf, mappings); err != nil {
-		return errutil.Err(err)
+		return errors.WithStack(err)
 	}
 	data, err := format.Source(buf.Bytes())
 	if err != nil {
-		return errutil.Err(err)
+		return errors.WithStack(err)
 	}
 	if err := ioutil.WriteFile("data.go", data, 0644); err != nil {
-		return errutil.Err(err)
+		return errors.WithStack(err)
 	}
 	return nil
 }
