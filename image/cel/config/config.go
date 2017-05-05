@@ -929,7 +929,7 @@ var confs = map[string]*Config{
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
 		Pals: []string{
-			"levels/l1data/l1.pal",
+			//"levels/l1data/l1.pal", NOTE: Identical to levels/l1data/l1_1.pal.
 			"levels/l1data/l1_1.pal",
 			"levels/l1data/l1_2.pal",
 			"levels/l1data/l1_3.pal",
@@ -945,7 +945,7 @@ var confs = map[string]*Config{
 		W:      64,  // ref: 0x455835
 		H:      160, // h = npixels/w = 10240/64 = 160
 		Pals: []string{
-			"levels/l1data/l1.pal",
+			//"levels/l1data/l1.pal", NOTE: Identical to levels/l1data/l1_1.pal.
 			"levels/l1data/l1_1.pal",
 			"levels/l1data/l1_2.pal",
 			"levels/l1data/l1_3.pal",
@@ -958,7 +958,7 @@ var confs = map[string]*Config{
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
 		Pals: []string{
-			"levels/l2data/l2.pal",
+			//"levels/l2data/l2.pal", // NOTE: Identical to levels/l2data/l2_1.pal
 			"levels/l2data/l2_1.pal",
 			"levels/l2data/l2_2.pal",
 			"levels/l2data/l2_3.pal",
@@ -974,7 +974,7 @@ var confs = map[string]*Config{
 		W:      64,  // ref: 0x455835
 		H:      160, // h = npixels/w = 10240/64 = 160
 		Pals: []string{
-			"levels/l2data/l2.pal",
+			//"levels/l2data/l2.pal", // NOTE: Identical to levels/l2data/l2_1.pal
 			"levels/l2data/l2_1.pal",
 			"levels/l2data/l2_2.pal",
 			"levels/l2data/l2_3.pal",
@@ -987,16 +987,16 @@ var confs = map[string]*Config{
 		W: 32, // ref: 0x418F12
 		H: 32, // h = npixels/w = 1024/32 = 32
 		Pals: []string{
-			"levels/l3data/l3.pal",
-			"levels/l3data/l3palg.pal",
-			"levels/l3data/l3pfoul.pal",
-			"levels/l3data/l3pwater.pal",
+			//"levels/l3data/l3.pal", // NOTE: Identical to levels/l3data/l3_1.pal
 			"levels/l3data/l3_1.pal",
 			"levels/l3data/l3_2.pal",
 			"levels/l3data/l3_3.pal",
 			"levels/l3data/l3_4.pal",
 			"levels/l3data/l3_i.pal",
-			"levels/l3data/l3_w.pal",
+			//"levels/l3data/l3_w.pal", // NOTE: Identical to levels/l3data/l3pwater.pal
+			"levels/l3data/l3palg.pal",
+			"levels/l3data/l3pfoul.pal",
+			"levels/l3data/l3pwater.pal",
 		},
 	},
 	"levels/l4data/l4.cel": {
@@ -1012,10 +1012,18 @@ var confs = map[string]*Config{
 	"levels/towndata/town.cel": {
 		W: 32, // ref: 0x4632D5
 		H: 32, // h = npixels/w = 1024/32 = 32
+		Pals: []string{
+			"levels/towndata/ltpalg.pal",
+			"levels/towndata/town.pal",
+		},
 	},
 	"levels/towndata/towns.cel": {
 		W: 64,  // ref: 0x455835
 		H: 224, // h = npixels/w = 14336/64 = 224
+		Pals: []string{
+			"levels/towndata/ltpalg.pal",
+			"levels/towndata/town.pal",
+		},
 	},
 	// NOTE: Unused?
 	"missiles/flamel1.cel": {

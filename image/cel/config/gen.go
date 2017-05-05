@@ -23,7 +23,7 @@ func main() {
 		// mpqDir specifies the path to an extracted "diabdat.mpq".
 		mpqDir string
 	)
-	flag.StringVar(&mpqDir, "mpqdir", "diabdat/", `Path to extracted "diabdat.mpq".`)
+	flag.StringVar(&mpqDir, "mpqdir", "diabdat", `Path to extracted "diabdat.mpq".`)
 	flag.Parse()
 
 	// Parse MIN files.
