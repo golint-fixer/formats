@@ -117,6 +117,26 @@ func dumpArchive(mpqDir, relCelPath string, conf *config.Config) error {
 		if err := dumpArchiveWithPal(dstDir, celPath, pal); err != nil {
 			return errors.WithStack(err)
 		}
+
+		// Dump CEL image with colour transitions.
+		for _, relTrnPath := range conf.Trns {
+			// Parse TRN file.
+			trnPath := filepath.Join(mpqDir, relTrnPath)
+			trn, err := cel.ParseTrn(trnPath)
+			if err != nil {
+				return errors.WithStack(err)
+			}
+			trnPal := trn.Pal(pal)
+
+			// Determine destination directory.
+			trnDir := filepath.Base(relTrnPath)
+			dstDir := filepath.Join("_dump_", celDir, palDir, trnDir)
+
+			// Dump CEL image.
+			if err := dumpArchiveWithPal(dstDir, celPath, trnPal); err != nil {
+				return errors.WithStack(err)
+			}
+		}
 	}
 	return nil
 }
@@ -181,6 +201,26 @@ func dumpCel(mpqDir, relCelPath string, conf *config.Config) error {
 		celPath := filepath.Join(mpqDir, relCelPath)
 		if err := dumpCelWithPal(dstDir, celPath, pal); err != nil {
 			return errors.WithStack(err)
+		}
+
+		// Dump CEL image with colour transitions.
+		for _, relTrnPath := range conf.Trns {
+			// Parse TRN file.
+			trnPath := filepath.Join(mpqDir, relTrnPath)
+			trn, err := cel.ParseTrn(trnPath)
+			if err != nil {
+				return errors.WithStack(err)
+			}
+			trnPal := trn.Pal(pal)
+
+			// Determine destination directory.
+			trnDir := filepath.Base(relTrnPath)
+			dstDir := filepath.Join("_dump_", celDir, palDir, trnDir)
+
+			// Dump CEL image.
+			if err := dumpCelWithPal(dstDir, celPath, trnPal); err != nil {
+				return errors.WithStack(err)
+			}
 		}
 	}
 	return nil

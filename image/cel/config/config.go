@@ -1449,7 +1449,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      96, // h = npixels/w = 12288/128 = 96
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball1.cl2.
 	"monsters/magma/magball1.cel": {
 		// The contents of frame 0 at offset 0x48 in magball1.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 53 01 00 00.
@@ -1457,7 +1457,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball2.cl2.
 	"monsters/magma/magball2.cel": {
 		// The contents of frame 0 at offset 0x48 in magball2.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 82 01 00 00.
@@ -1465,7 +1465,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball3.cl2.
 	"monsters/magma/magball3.cel": {
 		// The contents of frame 0 at offset 0x48 in magball3.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 88 01 00 00.
@@ -1473,7 +1473,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball4.cl2.
 	"monsters/magma/magball4.cel": {
 		// The contents of frame 0 at offset 0x48 in magball4.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 70 01 00 00.
@@ -1481,7 +1481,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball5.cl2.
 	"monsters/magma/magball5.cel": {
 		// The contents of frame 0 at offset 0x48 in magball5.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 6E 01 00 00.
@@ -1489,7 +1489,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball6.cl2.
 	"monsters/magma/magball6.cel": {
 		// The contents of frame 0 at offset 0x48 in magball6.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 7D 01 00 00.
@@ -1497,7 +1497,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball7.cl2.
 	"monsters/magma/magball7.cel": {
 		// The contents of frame 0 at offset 0x48 in magball7.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 99 01 00 00.
@@ -1505,7 +1505,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magball8.cl2.
 	"monsters/magma/magball8.cel": {
 		// The contents of frame 0 at offset 0x48 in magball8.cel starts with the
 		// following header: 0A 00 2A 00 4A 00 81 01 00 00.
@@ -1513,7 +1513,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/magblos.cl2.
 	"monsters/magma/magblos.cel": {
 		// The contents of frame 0 at offset 0x30 in magblos.cel starts with the
 		// following header: 0A 00 58 00 3B 01 5B 01 00 00.
@@ -1521,7 +1521,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction S.
 	"monsters/rhino/rhinos1.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos1.cel starts with the
 		// following header: 0A 00 D0 02 77 09 87 0D 00 00.
@@ -1529,7 +1529,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction SW.
 	"monsters/rhino/rhinos2.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos2.cel starts with the
 		// following header: 0A 00 9C 03 FB 09 25 0D 00 00.
@@ -1537,7 +1537,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction W.
 	"monsters/rhino/rhinos3.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos3.cel starts with the
 		// following header: 0A 00 29 04 0F 08 B6 0B 00 00.
@@ -1545,7 +1545,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction NW.
 	"monsters/rhino/rhinos4.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos4.cel starts with the
 		// following header: 0A 00 A6 04 A3 0A EF 0E 00 00.
@@ -1553,7 +1553,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction N.
 	"monsters/rhino/rhinos5.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos5.cel starts with the
 		// following header: 0A 00 F7 03 AA 0A D5 0E 00 00.
@@ -1561,7 +1561,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction NE.
 	"monsters/rhino/rhinos6.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos6.cel starts with the
 		// following header: 0A 00 94 04 69 0A A1 0E 00 00.
@@ -1569,7 +1569,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction E.
 	"monsters/rhino/rhinos7.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos7.cel starts with the
 		// following header: 0A 00 81 03 05 07 9D 0A 00 00.
@@ -1577,7 +1577,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to monsters/rhino/rhinos.cl2 with direction SE.
 	"monsters/rhino/rhinos8.cel": {
 		// The contents of frame 0 at offset 0x20 in rhinos8.cel starts with the
 		// following header: 0A 00 A0 03 9D 09 DB 0C 00 00.
@@ -1585,7 +1585,7 @@ var confs = map[string]*Config{
 		W:      160,
 		H:      128, // h = npixels/w = 20480/160 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/flare.cl2.
 	"monsters/succ/flare.cel": {
 		// The contents of frame 0 at offset 0x48 in flare.cel starts with the
 		// following header: 0A 00 55 00 21 03 80 03 00 00.
@@ -1593,7 +1593,7 @@ var confs = map[string]*Config{
 		W:      128,
 		H:      128, // h = npixels/w = 16384/128 = 128
 	},
-	// NOTE: Unused?
+	// NOTE: Unused. Identical to missiles/flareexp.cl2.
 	"monsters/succ/flarexp.cel": {
 		// The contents of frame 0 at offset 0x24 in flarexp.cel starts with the
 		// following header: 0A 00 2A 00 4D 00 6D 00 00 00.
@@ -3447,6 +3447,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/acid/acidb.trn",
+			"monsters/acid/acidblk.trn",
+			"monsters/acid/acidr.trn",
+		},
 	},
 	"monsters/acid/acidd.cl2": {
 		// The contents of the archive header at offset 0 in acidd.cl2:
@@ -3458,6 +3463,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/acid/acidb.trn",
+			"monsters/acid/acidblk.trn",
+			"monsters/acid/acidr.trn",
+		},
 	},
 	"monsters/acid/acidh.cl2": {
 		// The contents of the archive header at offset 0 in acidh.cl2:
@@ -3469,6 +3479,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/acid/acidb.trn",
+			"monsters/acid/acidblk.trn",
+			"monsters/acid/acidr.trn",
+		},
 	},
 	"monsters/acid/acidn.cl2": {
 		// The contents of the archive header at offset 0 in acidn.cl2:
@@ -3480,6 +3495,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/acid/acidb.trn",
+			"monsters/acid/acidblk.trn",
+			"monsters/acid/acidr.trn",
+		},
 	},
 	"monsters/acid/acids.cl2": {
 		// The contents of the archive header at offset 0 in acids.cl2:
@@ -3491,6 +3511,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/acid/acidb.trn",
+			"monsters/acid/acidblk.trn",
+			"monsters/acid/acidr.trn",
+		},
 	},
 	"monsters/acid/acidw.cl2": {
 		// The contents of the archive header at offset 0 in acidw.cl2:
@@ -3502,6 +3527,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/acid/acidb.trn",
+			"monsters/acid/acidblk.trn",
+			"monsters/acid/acidr.trn",
+		},
 	},
 	"monsters/bat/bata.cl2": {
 		// The contents of the archive header at offset 0 in bata.cl2:
@@ -3513,6 +3543,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/bat/grey.trn",
+			"monsters/bat/orange.trn",
+			"monsters/bat/red.trn",
+		},
 	},
 	"monsters/bat/batd.cl2": {
 		// The contents of the archive header at offset 0 in batd.cl2:
@@ -3524,6 +3559,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/bat/grey.trn",
+			"monsters/bat/orange.trn",
+			"monsters/bat/red.trn",
+		},
 	},
 	"monsters/bat/bath.cl2": {
 		// The contents of the archive header at offset 0 in bath.cl2:
@@ -3535,6 +3575,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/bat/grey.trn",
+			"monsters/bat/orange.trn",
+			"monsters/bat/red.trn",
+		},
 	},
 	"monsters/bat/batn.cl2": {
 		// The contents of the archive header at offset 0 in batn.cl2:
@@ -3546,6 +3591,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/bat/grey.trn",
+			"monsters/bat/orange.trn",
+			"monsters/bat/red.trn",
+		},
 	},
 	"monsters/bat/batw.cl2": {
 		// The contents of the archive header at offset 0 in batw.cl2:
@@ -3557,6 +3607,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/bat/grey.trn",
+			"monsters/bat/orange.trn",
+			"monsters/bat/red.trn",
+		},
 	},
 	"monsters/bigfall/fallga.cl2": {
 		// The contents of the archive header at offset 0 in fallga.cl2:
@@ -3623,6 +3678,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/black/blkkntbe.trn",
+			"monsters/black/blkkntbt.trn",
+			"monsters/black/blkkntrk.trn",
+			"monsters/black/blkkntrt.trn",
+		},
 	},
 	"monsters/black/blackd.cl2": {
 		// The contents of the archive header at offset 0 in blackd.cl2:
@@ -3634,6 +3695,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/black/blkkntbe.trn",
+			"monsters/black/blkkntbt.trn",
+			"monsters/black/blkkntrk.trn",
+			"monsters/black/blkkntrt.trn",
+		},
 	},
 	"monsters/black/blackh.cl2": {
 		// The contents of the archive header at offset 0 in blackh.cl2:
@@ -3645,6 +3712,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/black/blkkntbe.trn",
+			"monsters/black/blkkntbt.trn",
+			"monsters/black/blkkntrk.trn",
+			"monsters/black/blkkntrt.trn",
+		},
 	},
 	"monsters/black/blackn.cl2": {
 		// The contents of the archive header at offset 0 in blackn.cl2:
@@ -3656,6 +3729,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/black/blkkntbe.trn",
+			"monsters/black/blkkntbt.trn",
+			"monsters/black/blkkntrk.trn",
+			"monsters/black/blkkntrt.trn",
+		},
 	},
 	"monsters/black/blackw.cl2": {
 		// The contents of the archive header at offset 0 in blackw.cl2:
@@ -3667,6 +3746,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/black/blkkntbe.trn",
+			"monsters/black/blkkntbt.trn",
+			"monsters/black/blkkntrk.trn",
+			"monsters/black/blkkntrt.trn",
+		},
 	},
 	"monsters/darkmage/dmagea.cl2": {
 		// The contents of the archive header at offset 0 in dmagea.cl2:
@@ -3874,6 +3959,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falspear/blue.trn",
+			"monsters/falspear/dark.trn",
+			"monsters/falspear/fallent.trn",
+			"monsters/falspear/orange.trn",
+			"monsters/falspear/salam.trn",
+			"monsters/falspear/yellow.trn",
+		},
 	},
 	"monsters/falspear/phalld.cl2": {
 		// The contents of the archive header at offset 0 in phalld.cl2:
@@ -3885,6 +3978,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falspear/blue.trn",
+			"monsters/falspear/dark.trn",
+			"monsters/falspear/fallent.trn",
+			"monsters/falspear/orange.trn",
+			"monsters/falspear/salam.trn",
+			"monsters/falspear/yellow.trn",
+		},
 	},
 	"monsters/falspear/phallh.cl2": {
 		// The contents of the archive header at offset 0 in phallh.cl2:
@@ -3896,6 +3997,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falspear/blue.trn",
+			"monsters/falspear/dark.trn",
+			"monsters/falspear/fallent.trn",
+			"monsters/falspear/orange.trn",
+			"monsters/falspear/salam.trn",
+			"monsters/falspear/yellow.trn",
+		},
 	},
 	"monsters/falspear/phalln.cl2": {
 		// The contents of the archive header at offset 0 in phalln.cl2:
@@ -3907,6 +4016,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falspear/blue.trn",
+			"monsters/falspear/dark.trn",
+			"monsters/falspear/fallent.trn",
+			"monsters/falspear/orange.trn",
+			"monsters/falspear/salam.trn",
+			"monsters/falspear/yellow.trn",
+		},
 	},
 	"monsters/falspear/phalls.cl2": {
 		// The contents of the archive header at offset 0 in phalls.cl2:
@@ -3918,6 +4035,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falspear/blue.trn",
+			"monsters/falspear/dark.trn",
+			"monsters/falspear/fallent.trn",
+			"monsters/falspear/orange.trn",
+			"monsters/falspear/salam.trn",
+			"monsters/falspear/yellow.trn",
+		},
 	},
 	"monsters/falspear/phallw.cl2": {
 		// The contents of the archive header at offset 0 in phallw.cl2:
@@ -3929,6 +4054,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falspear/blue.trn",
+			"monsters/falspear/dark.trn",
+			"monsters/falspear/fallent.trn",
+			"monsters/falspear/orange.trn",
+			"monsters/falspear/salam.trn",
+			"monsters/falspear/yellow.trn",
+		},
 	},
 	"monsters/falsword/falla.cl2": {
 		// The contents of the archive header at offset 0 in falla.cl2:
@@ -3940,6 +4073,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falsword/blue.trn",
+			"monsters/falsword/dark.trn",
+			"monsters/falsword/fallent.trn",
+			"monsters/falsword/orange.trn",
+			"monsters/falsword/salam.trn",
+			"monsters/falsword/yellow.trn",
+		},
 	},
 	"monsters/falsword/falld.cl2": {
 		// The contents of the archive header at offset 0 in falld.cl2:
@@ -3951,6 +4092,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falsword/blue.trn",
+			"monsters/falsword/dark.trn",
+			"monsters/falsword/fallent.trn",
+			"monsters/falsword/orange.trn",
+			"monsters/falsword/salam.trn",
+			"monsters/falsword/yellow.trn",
+		},
 	},
 	"monsters/falsword/fallh.cl2": {
 		// The contents of the archive header at offset 0 in fallh.cl2:
@@ -3962,6 +4111,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falsword/blue.trn",
+			"monsters/falsword/dark.trn",
+			"monsters/falsword/fallent.trn",
+			"monsters/falsword/orange.trn",
+			"monsters/falsword/salam.trn",
+			"monsters/falsword/yellow.trn",
+		},
 	},
 	"monsters/falsword/falln.cl2": {
 		// The contents of the archive header at offset 0 in falln.cl2:
@@ -3973,6 +4130,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falsword/blue.trn",
+			"monsters/falsword/dark.trn",
+			"monsters/falsword/fallent.trn",
+			"monsters/falsword/orange.trn",
+			"monsters/falsword/salam.trn",
+			"monsters/falsword/yellow.trn",
+		},
 	},
 	"monsters/falsword/falls.cl2": {
 		// The contents of the archive header at offset 0 in falls.cl2:
@@ -3984,6 +4149,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falsword/blue.trn",
+			"monsters/falsword/dark.trn",
+			"monsters/falsword/fallent.trn",
+			"monsters/falsword/orange.trn",
+			"monsters/falsword/salam.trn",
+			"monsters/falsword/yellow.trn",
+		},
 	},
 	"monsters/falsword/fallw.cl2": {
 		// The contents of the archive header at offset 0 in fallw.cl2:
@@ -3995,6 +4168,14 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/falsword/blue.trn",
+			"monsters/falsword/dark.trn",
+			"monsters/falsword/fallent.trn",
+			"monsters/falsword/orange.trn",
+			"monsters/falsword/salam.trn",
+			"monsters/falsword/yellow.trn",
+		},
 	},
 	"monsters/fatc/fatca.cl2": {
 		// The contents of the archive header at offset 0 in fatca.cl2:
@@ -4061,6 +4242,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/fat/blue.trn",
+			"monsters/fat/fat.trn",
+			"monsters/fat/fatb.trn",
+			"monsters/fat/fatf.trn",
+		},
 	},
 	"monsters/fat/fatd.cl2": {
 		// The contents of the archive header at offset 0 in fatd.cl2:
@@ -4072,6 +4259,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/fat/blue.trn",
+			"monsters/fat/fat.trn",
+			"monsters/fat/fatb.trn",
+			"monsters/fat/fatf.trn",
+		},
 	},
 	"monsters/fat/fath.cl2": {
 		// The contents of the archive header at offset 0 in fath.cl2:
@@ -4083,6 +4276,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/fat/blue.trn",
+			"monsters/fat/fat.trn",
+			"monsters/fat/fatb.trn",
+			"monsters/fat/fatf.trn",
+		},
 	},
 	"monsters/fat/fatn.cl2": {
 		// The contents of the archive header at offset 0 in fatn.cl2:
@@ -4094,6 +4293,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/fat/blue.trn",
+			"monsters/fat/fat.trn",
+			"monsters/fat/fatb.trn",
+			"monsters/fat/fatf.trn",
+		},
 	},
 	"monsters/fat/fats.cl2": {
 		// The contents of the archive header at offset 0 in fats.cl2:
@@ -4105,6 +4310,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/fat/blue.trn",
+			"monsters/fat/fat.trn",
+			"monsters/fat/fatb.trn",
+			"monsters/fat/fatf.trn",
+		},
 	},
 	"monsters/fat/fatw.cl2": {
 		// The contents of the archive header at offset 0 in fatw.cl2:
@@ -4116,6 +4327,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/fat/blue.trn",
+			"monsters/fat/fat.trn",
+			"monsters/fat/fatb.trn",
+			"monsters/fat/fatf.trn",
+		},
 	},
 	"monsters/fireman/firema.cl2": {
 		// The contents of the archive header at offset 0 in firema.cl2:
@@ -4197,6 +4414,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/gargoyle/gare.trn",
+			"monsters/gargoyle/gargb.trn",
+			"monsters/gargoyle/gargbr.trn",
+			"monsters/gargoyle/gargr.trn",
+			"monsters/gargoyle/gargy.trn",
+		},
 	},
 	"monsters/gargoyle/gargod.cl2": {
 		// The contents of the archive header at offset 0 in gargod.cl2:
@@ -4208,6 +4432,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/gargoyle/gare.trn",
+			"monsters/gargoyle/gargb.trn",
+			"monsters/gargoyle/gargbr.trn",
+			"monsters/gargoyle/gargr.trn",
+			"monsters/gargoyle/gargy.trn",
+		},
 	},
 	"monsters/gargoyle/gargoh.cl2": {
 		// The contents of the archive header at offset 0 in gargoh.cl2:
@@ -4219,6 +4450,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/gargoyle/gare.trn",
+			"monsters/gargoyle/gargb.trn",
+			"monsters/gargoyle/gargbr.trn",
+			"monsters/gargoyle/gargr.trn",
+			"monsters/gargoyle/gargy.trn",
+		},
 	},
 	"monsters/gargoyle/gargon.cl2": {
 		// The contents of the archive header at offset 0 in gargon.cl2:
@@ -4230,6 +4468,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/gargoyle/gare.trn",
+			"monsters/gargoyle/gargb.trn",
+			"monsters/gargoyle/gargbr.trn",
+			"monsters/gargoyle/gargr.trn",
+			"monsters/gargoyle/gargy.trn",
+		},
 	},
 	"monsters/gargoyle/gargos.cl2": {
 		// The contents of the archive header at offset 0 in gargos.cl2:
@@ -4241,6 +4486,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/gargoyle/gare.trn",
+			"monsters/gargoyle/gargb.trn",
+			"monsters/gargoyle/gargbr.trn",
+			"monsters/gargoyle/gargr.trn",
+			"monsters/gargoyle/gargy.trn",
+		},
 	},
 	"monsters/gargoyle/gargow.cl2": {
 		// The contents of the archive header at offset 0 in gargow.cl2:
@@ -4252,6 +4504,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/gargoyle/gare.trn",
+			"monsters/gargoyle/gargb.trn",
+			"monsters/gargoyle/gargbr.trn",
+			"monsters/gargoyle/gargr.trn",
+			"monsters/gargoyle/gargy.trn",
+		},
 	},
 	"monsters/goatbow/goatba.cl2": {
 		// The contents of the archive header at offset 0 in goatba.cl2:
@@ -4263,6 +4522,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatbow/beige.trn",
+			"monsters/goatbow/gray.trn",
+			"monsters/goatbow/red.trn",
+		},
 	},
 	"monsters/goatbow/goatbd.cl2": {
 		// The contents of the archive header at offset 0 in goatbd.cl2:
@@ -4274,6 +4538,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatbow/beige.trn",
+			"monsters/goatbow/gray.trn",
+			"monsters/goatbow/red.trn",
+		},
 	},
 	"monsters/goatbow/goatbh.cl2": {
 		// The contents of the archive header at offset 0 in goatbh.cl2:
@@ -4285,6 +4554,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatbow/beige.trn",
+			"monsters/goatbow/gray.trn",
+			"monsters/goatbow/red.trn",
+		},
 	},
 	"monsters/goatbow/goatbn.cl2": {
 		// The contents of the archive header at offset 0 in goatbn.cl2:
@@ -4296,6 +4570,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatbow/beige.trn",
+			"monsters/goatbow/gray.trn",
+			"monsters/goatbow/red.trn",
+		},
 	},
 	"monsters/goatbow/goatbw.cl2": {
 		// The contents of the archive header at offset 0 in goatbw.cl2:
@@ -4307,6 +4586,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatbow/beige.trn",
+			"monsters/goatbow/gray.trn",
+			"monsters/goatbow/red.trn",
+		},
 	},
 	"monsters/goatlord/goatla.cl2": {
 		// The contents of the archive header at offset 0 in goatla.cl2:
@@ -4373,6 +4657,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatmace/beige.trn",
+			"monsters/goatmace/gray.trn",
+			"monsters/goatmace/red.trn",
+		},
 	},
 	"monsters/goatmace/goatd.cl2": {
 		// The contents of the archive header at offset 0 in goatd.cl2:
@@ -4384,6 +4673,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatmace/beige.trn",
+			"monsters/goatmace/gray.trn",
+			"monsters/goatmace/red.trn",
+		},
 	},
 	"monsters/goatmace/goath.cl2": {
 		// The contents of the archive header at offset 0 in goath.cl2:
@@ -4395,6 +4689,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatmace/beige.trn",
+			"monsters/goatmace/gray.trn",
+			"monsters/goatmace/red.trn",
+		},
 	},
 	"monsters/goatmace/goatn.cl2": {
 		// The contents of the archive header at offset 0 in goatn.cl2:
@@ -4406,6 +4705,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatmace/beige.trn",
+			"monsters/goatmace/gray.trn",
+			"monsters/goatmace/red.trn",
+		},
 	},
 	"monsters/goatmace/goats.cl2": {
 		// The contents of the archive header at offset 0 in goats.cl2:
@@ -4417,6 +4721,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatmace/beige.trn",
+			"monsters/goatmace/gray.trn",
+			"monsters/goatmace/red.trn",
+		},
 	},
 	"monsters/goatmace/goatw.cl2": {
 		// The contents of the archive header at offset 0 in goatw.cl2:
@@ -4428,6 +4737,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/goatmace/beige.trn",
+			"monsters/goatmace/gray.trn",
+			"monsters/goatmace/red.trn",
+		},
 	},
 	"monsters/golem/golema.cl2": {
 		// The contents of the archive header at offset 0 in golema.cl2:
@@ -4475,6 +4789,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/mage/cnselbk.trn",
+			"monsters/mage/cnselg.trn",
+			"monsters/mage/cnselgd.trn",
+		},
 	},
 	"monsters/mage/maged.cl2": {
 		// The contents of the archive header at offset 0 in maged.cl2:
@@ -4486,6 +4805,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/mage/cnselbk.trn",
+			"monsters/mage/cnselg.trn",
+			"monsters/mage/cnselgd.trn",
+		},
 	},
 	"monsters/mage/mageh.cl2": {
 		// The contents of the archive header at offset 0 in mageh.cl2:
@@ -4497,6 +4821,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/mage/cnselbk.trn",
+			"monsters/mage/cnselg.trn",
+			"monsters/mage/cnselgd.trn",
+		},
 	},
 	"monsters/mage/magen.cl2": {
 		// The contents of the archive header at offset 0 in magen.cl2:
@@ -4508,6 +4837,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/mage/cnselbk.trn",
+			"monsters/mage/cnselg.trn",
+			"monsters/mage/cnselgd.trn",
+		},
 	},
 	"monsters/mage/mages.cl2": {
 		// The contents of the archive header at offset 0 in mages.cl2:
@@ -4519,6 +4853,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/mage/cnselbk.trn",
+			"monsters/mage/cnselg.trn",
+			"monsters/mage/cnselgd.trn",
+		},
 	},
 	"monsters/mage/magew.cl2": {
 		// The contents of the archive header at offset 0 in magew.cl2:
@@ -4530,6 +4869,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/mage/cnselbk.trn",
+			"monsters/mage/cnselg.trn",
+			"monsters/mage/cnselgd.trn",
+		},
 	},
 	"monsters/magma/magmaa.cl2": {
 		// The contents of the archive header at offset 0 in magmaa.cl2:
@@ -4541,6 +4885,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/magma/blue.trn",
+			"monsters/magma/wierd.trn",
+			"monsters/magma/yellow.trn",
+		},
 	},
 	"monsters/magma/magmad.cl2": {
 		// The contents of the archive header at offset 0 in magmad.cl2:
@@ -4552,6 +4901,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/magma/blue.trn",
+			"monsters/magma/wierd.trn",
+			"monsters/magma/yellow.trn",
+		},
 	},
 	"monsters/magma/magmah.cl2": {
 		// The contents of the archive header at offset 0 in magmah.cl2:
@@ -4563,6 +4917,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/magma/blue.trn",
+			"monsters/magma/wierd.trn",
+			"monsters/magma/yellow.trn",
+		},
 	},
 	"monsters/magma/magman.cl2": {
 		// The contents of the archive header at offset 0 in magman.cl2:
@@ -4574,6 +4933,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/magma/blue.trn",
+			"monsters/magma/wierd.trn",
+			"monsters/magma/yellow.trn",
+		},
 	},
 	"monsters/magma/magmas.cl2": {
 		// The contents of the archive header at offset 0 in magmas.cl2:
@@ -4585,6 +4949,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/magma/blue.trn",
+			"monsters/magma/wierd.trn",
+			"monsters/magma/yellow.trn",
+		},
 	},
 	"monsters/magma/magmaw.cl2": {
 		// The contents of the archive header at offset 0 in magmaw.cl2:
@@ -4596,6 +4965,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/magma/blue.trn",
+			"monsters/magma/wierd.trn",
+			"monsters/magma/yellow.trn",
+		},
 	},
 	"monsters/mega/megaa.cl2": {
 		// The contents of the archive header at offset 0 in megaa.cl2:
@@ -4607,6 +4981,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/mega/balr.trn",
+			"monsters/mega/guard.trn",
+			"monsters/mega/vtexl.trn",
+		},
 	},
 	"monsters/mega/megad.cl2": {
 		// The contents of the archive header at offset 0 in megad.cl2:
@@ -4618,6 +4997,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/mega/balr.trn",
+			"monsters/mega/guard.trn",
+			"monsters/mega/vtexl.trn",
+		},
 	},
 	"monsters/mega/megah.cl2": {
 		// The contents of the archive header at offset 0 in megah.cl2:
@@ -4629,6 +5013,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/mega/balr.trn",
+			"monsters/mega/guard.trn",
+			"monsters/mega/vtexl.trn",
+		},
 	},
 	"monsters/mega/megan.cl2": {
 		// The contents of the archive header at offset 0 in megan.cl2:
@@ -4640,6 +5029,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/mega/balr.trn",
+			"monsters/mega/guard.trn",
+			"monsters/mega/vtexl.trn",
+		},
 	},
 	"monsters/mega/megas.cl2": {
 		// The contents of the archive header at offset 0 in megas.cl2:
@@ -4651,6 +5045,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/mega/balr.trn",
+			"monsters/mega/guard.trn",
+			"monsters/mega/vtexl.trn",
+		},
 	},
 	"monsters/mega/megaw.cl2": {
 		// The contents of the archive header at offset 0 in megaw.cl2:
@@ -4662,6 +5061,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/mega/balr.trn",
+			"monsters/mega/guard.trn",
+			"monsters/mega/vtexl.trn",
+		},
 	},
 	"monsters/rhino/rhinoa.cl2": {
 		// The contents of the archive header at offset 0 in rhinoa.cl2:
@@ -4673,6 +5077,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/rhino/blue.trn",
+			"monsters/rhino/orange.trn",
+			"monsters/rhino/red.trn",
+			"monsters/rhino/rhinob.trn",
+		},
 	},
 	"monsters/rhino/rhinod.cl2": {
 		// The contents of the archive header at offset 0 in rhinod.cl2:
@@ -4684,6 +5094,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/rhino/blue.trn",
+			"monsters/rhino/orange.trn",
+			"monsters/rhino/red.trn",
+			"monsters/rhino/rhinob.trn",
+		},
 	},
 	"monsters/rhino/rhinoh.cl2": {
 		// The contents of the archive header at offset 0 in rhinoh.cl2:
@@ -4695,6 +5111,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/rhino/blue.trn",
+			"monsters/rhino/orange.trn",
+			"monsters/rhino/red.trn",
+			"monsters/rhino/rhinob.trn",
+		},
 	},
 	"monsters/rhino/rhinon.cl2": {
 		// The contents of the archive header at offset 0 in rhinon.cl2:
@@ -4706,6 +5128,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/rhino/blue.trn",
+			"monsters/rhino/orange.trn",
+			"monsters/rhino/red.trn",
+			"monsters/rhino/rhinob.trn",
+		},
 	},
 	"monsters/rhino/rhinos.cl2": {
 		// The contents of the archive header at offset 0 in rhinos.cl2:
@@ -4717,6 +5145,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/rhino/blue.trn",
+			"monsters/rhino/orange.trn",
+			"monsters/rhino/red.trn",
+			"monsters/rhino/rhinob.trn",
+		},
 	},
 	"monsters/rhino/rhinow.cl2": {
 		// The contents of the archive header at offset 0 in rhinow.cl2:
@@ -4728,6 +5162,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/rhino/blue.trn",
+			"monsters/rhino/orange.trn",
+			"monsters/rhino/red.trn",
+			"monsters/rhino/rhinob.trn",
+		},
 	},
 	"monsters/scav/scava.cl2": {
 		// The contents of the archive header at offset 0 in scava.cl2:
@@ -4739,6 +5179,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/scav/scavbe.trn",
+			"monsters/scav/scavbr.trn",
+			"monsters/scav/scavw.trn",
+			"monsters/scav/scavy.trn",
+		},
 	},
 	"monsters/scav/scavd.cl2": {
 		// The contents of the archive header at offset 0 in scavd.cl2:
@@ -4750,6 +5196,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/scav/scavbe.trn",
+			"monsters/scav/scavbr.trn",
+			"monsters/scav/scavw.trn",
+			"monsters/scav/scavy.trn",
+		},
 	},
 	"monsters/scav/scavh.cl2": {
 		// The contents of the archive header at offset 0 in scavh.cl2:
@@ -4761,6 +5213,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/scav/scavbe.trn",
+			"monsters/scav/scavbr.trn",
+			"monsters/scav/scavw.trn",
+			"monsters/scav/scavy.trn",
+		},
 	},
 	"monsters/scav/scavn.cl2": {
 		// The contents of the archive header at offset 0 in scavn.cl2:
@@ -4772,6 +5230,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/scav/scavbe.trn",
+			"monsters/scav/scavbr.trn",
+			"monsters/scav/scavw.trn",
+			"monsters/scav/scavy.trn",
+		},
 	},
 	"monsters/scav/scavs.cl2": {
 		// The contents of the archive header at offset 0 in scavs.cl2:
@@ -4783,6 +5247,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/scav/scavbe.trn",
+			"monsters/scav/scavbr.trn",
+			"monsters/scav/scavw.trn",
+			"monsters/scav/scavy.trn",
+		},
 	},
 	"monsters/scav/scavw.cl2": {
 		// The contents of the archive header at offset 0 in scavw.cl2:
@@ -4794,6 +5264,12 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/scav/scavbe.trn",
+			"monsters/scav/scavbr.trn",
+			"monsters/scav/scavw.trn",
+			"monsters/scav/scavy.trn",
+		},
 	},
 	"monsters/skelaxe/sklaxa.cl2": {
 		// The contents of the archive header at offset 0 in sklaxa.cl2:
@@ -4805,6 +5281,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelaxe/black.trn",
+			"monsters/skelaxe/blue.trn",
+			"monsters/skelaxe/red.trn",
+			"monsters/skelaxe/skelt.trn",
+			"monsters/skelaxe/white.trn",
+		},
 	},
 	"monsters/skelaxe/sklaxd.cl2": {
 		// The contents of the archive header at offset 0 in sklaxd.cl2:
@@ -4816,6 +5299,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelaxe/black.trn",
+			"monsters/skelaxe/blue.trn",
+			"monsters/skelaxe/red.trn",
+			"monsters/skelaxe/skelt.trn",
+			"monsters/skelaxe/white.trn",
+		},
 	},
 	"monsters/skelaxe/sklaxh.cl2": {
 		// The contents of the archive header at offset 0 in sklaxh.cl2:
@@ -4827,6 +5317,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelaxe/black.trn",
+			"monsters/skelaxe/blue.trn",
+			"monsters/skelaxe/red.trn",
+			"monsters/skelaxe/skelt.trn",
+			"monsters/skelaxe/white.trn",
+		},
 	},
 	"monsters/skelaxe/sklaxn.cl2": {
 		// The contents of the archive header at offset 0 in sklaxn.cl2:
@@ -4838,6 +5335,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelaxe/black.trn",
+			"monsters/skelaxe/blue.trn",
+			"monsters/skelaxe/red.trn",
+			"monsters/skelaxe/skelt.trn",
+			"monsters/skelaxe/white.trn",
+		},
 	},
 	"monsters/skelaxe/sklaxs.cl2": {
 		// The contents of the archive header at offset 0 in sklaxs.cl2:
@@ -4849,6 +5353,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelaxe/black.trn",
+			"monsters/skelaxe/blue.trn",
+			"monsters/skelaxe/red.trn",
+			"monsters/skelaxe/skelt.trn",
+			"monsters/skelaxe/white.trn",
+		},
 	},
 	"monsters/skelaxe/sklaxw.cl2": {
 		// The contents of the archive header at offset 0 in sklaxw.cl2:
@@ -4860,6 +5371,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelaxe/black.trn",
+			"monsters/skelaxe/blue.trn",
+			"monsters/skelaxe/red.trn",
+			"monsters/skelaxe/skelt.trn",
+			"monsters/skelaxe/white.trn",
+		},
 	},
 	"monsters/skelbow/sklbwa.cl2": {
 		// The contents of the archive header at offset 0 in sklbwa.cl2:
@@ -4871,6 +5389,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelbow/black.trn",
+			"monsters/skelbow/blue.trn",
+			"monsters/skelbow/red.trn",
+			"monsters/skelbow/skelt.trn",
+			"monsters/skelbow/white.trn",
+		},
 	},
 	"monsters/skelbow/sklbwd.cl2": {
 		// The contents of the archive header at offset 0 in sklbwd.cl2:
@@ -4882,6 +5407,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelbow/black.trn",
+			"monsters/skelbow/blue.trn",
+			"monsters/skelbow/red.trn",
+			"monsters/skelbow/skelt.trn",
+			"monsters/skelbow/white.trn",
+		},
 	},
 	"monsters/skelbow/sklbwh.cl2": {
 		// The contents of the archive header at offset 0 in sklbwh.cl2:
@@ -4893,6 +5425,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelbow/black.trn",
+			"monsters/skelbow/blue.trn",
+			"monsters/skelbow/red.trn",
+			"monsters/skelbow/skelt.trn",
+			"monsters/skelbow/white.trn",
+		},
 	},
 	"monsters/skelbow/sklbwn.cl2": {
 		// The contents of the archive header at offset 0 in sklbwn.cl2:
@@ -4904,6 +5443,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelbow/black.trn",
+			"monsters/skelbow/blue.trn",
+			"monsters/skelbow/red.trn",
+			"monsters/skelbow/skelt.trn",
+			"monsters/skelbow/white.trn",
+		},
 	},
 	"monsters/skelbow/sklbws.cl2": {
 		// The contents of the archive header at offset 0 in sklbws.cl2:
@@ -4915,6 +5461,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelbow/black.trn",
+			"monsters/skelbow/blue.trn",
+			"monsters/skelbow/red.trn",
+			"monsters/skelbow/skelt.trn",
+			"monsters/skelbow/white.trn",
+		},
 	},
 	"monsters/skelbow/sklbww.cl2": {
 		// The contents of the archive header at offset 0 in sklbww.cl2:
@@ -4926,6 +5479,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelbow/black.trn",
+			"monsters/skelbow/blue.trn",
+			"monsters/skelbow/red.trn",
+			"monsters/skelbow/skelt.trn",
+			"monsters/skelbow/white.trn",
+		},
 	},
 	"monsters/skelsd/sklsra.cl2": {
 		// The contents of the archive header at offset 0 in sklsra.cl2:
@@ -4937,6 +5497,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelsd/black.trn",
+			"monsters/skelsd/blue.trn",
+			"monsters/skelsd/red.trn",
+			"monsters/skelsd/skelt.trn",
+			"monsters/skelsd/white.trn",
+		},
 	},
 	"monsters/skelsd/sklsrd.cl2": {
 		// The contents of the archive header at offset 0 in sklsrd.cl2:
@@ -4948,6 +5515,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelsd/black.trn",
+			"monsters/skelsd/blue.trn",
+			"monsters/skelsd/red.trn",
+			"monsters/skelsd/skelt.trn",
+			"monsters/skelsd/white.trn",
+		},
 	},
 	"monsters/skelsd/sklsrh.cl2": {
 		// The contents of the archive header at offset 0 in sklsrh.cl2:
@@ -4959,6 +5533,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelsd/black.trn",
+			"monsters/skelsd/blue.trn",
+			"monsters/skelsd/red.trn",
+			"monsters/skelsd/skelt.trn",
+			"monsters/skelsd/white.trn",
+		},
 	},
 	"monsters/skelsd/sklsrn.cl2": {
 		// The contents of the archive header at offset 0 in sklsrn.cl2:
@@ -4970,6 +5551,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelsd/black.trn",
+			"monsters/skelsd/blue.trn",
+			"monsters/skelsd/red.trn",
+			"monsters/skelsd/skelt.trn",
+			"monsters/skelsd/white.trn",
+		},
 	},
 	"monsters/skelsd/sklsrs.cl2": {
 		// The contents of the archive header at offset 0 in sklsrs.cl2:
@@ -4981,6 +5569,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelsd/black.trn",
+			"monsters/skelsd/blue.trn",
+			"monsters/skelsd/red.trn",
+			"monsters/skelsd/skelt.trn",
+			"monsters/skelsd/white.trn",
+		},
 	},
 	"monsters/skelsd/sklsrw.cl2": {
 		// The contents of the archive header at offset 0 in sklsrw.cl2:
@@ -4992,6 +5587,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/skelsd/black.trn",
+			"monsters/skelsd/blue.trn",
+			"monsters/skelsd/red.trn",
+			"monsters/skelsd/skelt.trn",
+			"monsters/skelsd/white.trn",
+		},
 	},
 	"monsters/sking/skinga.cl2": {
 		// The contents of the archive header at offset 0 in skinga.cl2:
@@ -5069,6 +5671,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/snake/snakb.trn",
+			"monsters/snake/snakbl.trn",
+			"monsters/snake/snakg.trn",
+			"monsters/snake/snakr.trn",
+			"monsters/snake/snaky.trn",
+		},
 	},
 	"monsters/snake/snaked.cl2": {
 		// The contents of the archive header at offset 0 in snaked.cl2:
@@ -5080,6 +5689,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/snake/snakb.trn",
+			"monsters/snake/snakbl.trn",
+			"monsters/snake/snakg.trn",
+			"monsters/snake/snakr.trn",
+			"monsters/snake/snaky.trn",
+		},
 	},
 	"monsters/snake/snakeh.cl2": {
 		// The contents of the archive header at offset 0 in snakeh.cl2:
@@ -5091,6 +5707,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/snake/snakb.trn",
+			"monsters/snake/snakbl.trn",
+			"monsters/snake/snakg.trn",
+			"monsters/snake/snakr.trn",
+			"monsters/snake/snaky.trn",
+		},
 	},
 	"monsters/snake/snaken.cl2": {
 		// The contents of the archive header at offset 0 in snaken.cl2:
@@ -5102,6 +5725,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/snake/snakb.trn",
+			"monsters/snake/snakbl.trn",
+			"monsters/snake/snakg.trn",
+			"monsters/snake/snakr.trn",
+			"monsters/snake/snaky.trn",
+		},
 	},
 	"monsters/snake/snakes.cl2": {
 		// The contents of the archive header at offset 0 in snakes.cl2:
@@ -5113,6 +5743,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/snake/snakb.trn",
+			"monsters/snake/snakbl.trn",
+			"monsters/snake/snakg.trn",
+			"monsters/snake/snakr.trn",
+			"monsters/snake/snaky.trn",
+		},
 	},
 	"monsters/snake/snakew.cl2": {
 		// The contents of the archive header at offset 0 in snakew.cl2:
@@ -5124,6 +5761,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/snake/snakb.trn",
+			"monsters/snake/snakbl.trn",
+			"monsters/snake/snakg.trn",
+			"monsters/snake/snakr.trn",
+			"monsters/snake/snaky.trn",
+		},
 	},
 	"monsters/sneak/sneaka.cl2": {
 		// The contents of the archive header at offset 0 in sneaka.cl2:
@@ -5135,6 +5779,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/sneak/sneakv1.trn",
+			"monsters/sneak/sneakv2.trn",
+			"monsters/sneak/sneakv3.trn",
+		},
 	},
 	"monsters/sneak/sneakd.cl2": {
 		// The contents of the archive header at offset 0 in sneakd.cl2:
@@ -5146,6 +5795,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/sneak/sneakv1.trn",
+			"monsters/sneak/sneakv2.trn",
+			"monsters/sneak/sneakv3.trn",
+		},
 	},
 	"monsters/sneak/sneakh.cl2": {
 		// The contents of the archive header at offset 0 in sneakh.cl2:
@@ -5157,6 +5811,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/sneak/sneakv1.trn",
+			"monsters/sneak/sneakv2.trn",
+			"monsters/sneak/sneakv3.trn",
+		},
 	},
 	"monsters/sneak/sneakn.cl2": {
 		// The contents of the archive header at offset 0 in sneakn.cl2:
@@ -5168,6 +5827,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/sneak/sneakv1.trn",
+			"monsters/sneak/sneakv2.trn",
+			"monsters/sneak/sneakv3.trn",
+		},
 	},
 	"monsters/sneak/sneaks.cl2": {
 		// The contents of the archive header at offset 0 in sneaks.cl2:
@@ -5179,6 +5843,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/sneak/sneakv1.trn",
+			"monsters/sneak/sneakv2.trn",
+			"monsters/sneak/sneakv3.trn",
+		},
 	},
 	"monsters/sneak/sneakw.cl2": {
 		// The contents of the archive header at offset 0 in sneakw.cl2:
@@ -5190,6 +5859,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/sneak/sneakv1.trn",
+			"monsters/sneak/sneakv2.trn",
+			"monsters/sneak/sneakv3.trn",
+		},
 	},
 	"monsters/succ/scbsa.cl2": {
 		// The contents of the archive header at offset 0 in scbsa.cl2:
@@ -5201,6 +5875,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/succ/blkjd.trn",
+			"monsters/succ/redv.trn",
+			"monsters/succ/succb.trn",
+			"monsters/succ/succbw.trn",
+			"monsters/succ/succrw.trn",
+		},
 	},
 	"monsters/succ/scbsd.cl2": {
 		// The contents of the archive header at offset 0 in scbsd.cl2:
@@ -5212,6 +5893,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/succ/blkjd.trn",
+			"monsters/succ/redv.trn",
+			"monsters/succ/succb.trn",
+			"monsters/succ/succbw.trn",
+			"monsters/succ/succrw.trn",
+		},
 	},
 	"monsters/succ/scbsh.cl2": {
 		// The contents of the archive header at offset 0 in scbsh.cl2:
@@ -5223,6 +5911,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/succ/blkjd.trn",
+			"monsters/succ/redv.trn",
+			"monsters/succ/succb.trn",
+			"monsters/succ/succbw.trn",
+			"monsters/succ/succrw.trn",
+		},
 	},
 	"monsters/succ/scbsn.cl2": {
 		// The contents of the archive header at offset 0 in scbsn.cl2:
@@ -5234,6 +5929,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/succ/blkjd.trn",
+			"monsters/succ/redv.trn",
+			"monsters/succ/succb.trn",
+			"monsters/succ/succbw.trn",
+			"monsters/succ/succrw.trn",
+		},
 	},
 	"monsters/succ/scbsw.cl2": {
 		// The contents of the archive header at offset 0 in scbsw.cl2:
@@ -5245,6 +5947,13 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/succ/blkjd.trn",
+			"monsters/succ/redv.trn",
+			"monsters/succ/succb.trn",
+			"monsters/succ/succbw.trn",
+			"monsters/succ/succrw.trn",
+		},
 	},
 	"monsters/thin/thina.cl2": {
 		// The contents of the archive header at offset 0 in thina.cl2:
@@ -5256,6 +5965,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/thin/thinv1.trn",
+			"monsters/thin/thinv2.trn",
+			"monsters/thin/thinv3.trn",
+		},
 	},
 	"monsters/thin/thind.cl2": {
 		// The contents of the archive header at offset 0 in thind.cl2:
@@ -5267,6 +5981,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/thin/thinv1.trn",
+			"monsters/thin/thinv2.trn",
+			"monsters/thin/thinv3.trn",
+		},
 	},
 	"monsters/thin/thinh.cl2": {
 		// The contents of the archive header at offset 0 in thinh.cl2:
@@ -5278,6 +5997,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/thin/thinv1.trn",
+			"monsters/thin/thinv2.trn",
+			"monsters/thin/thinv3.trn",
+		},
 	},
 	"monsters/thin/thinn.cl2": {
 		// The contents of the archive header at offset 0 in thinn.cl2:
@@ -5289,6 +6013,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/thin/thinv1.trn",
+			"monsters/thin/thinv2.trn",
+			"monsters/thin/thinv3.trn",
+		},
 	},
 	"monsters/thin/thins.cl2": {
 		// The contents of the archive header at offset 0 in thins.cl2:
@@ -5300,6 +6029,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/thin/thinv1.trn",
+			"monsters/thin/thinv2.trn",
+			"monsters/thin/thinv3.trn",
+		},
 	},
 	"monsters/thin/thinw.cl2": {
 		// The contents of the archive header at offset 0 in thinw.cl2:
@@ -5311,6 +6045,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/thin/thinv1.trn",
+			"monsters/thin/thinv2.trn",
+			"monsters/thin/thinv3.trn",
+		},
 	},
 	"monsters/tsneak/tsneaka.cl2": {
 		// The contents of the archive header at offset 0 in tsneaka.cl2:
@@ -5432,6 +6171,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/zombie/bluered.trn",
+			"monsters/zombie/grey.trn",
+			"monsters/zombie/yellow.trn",
+		},
 	},
 	"monsters/zombie/zombied.cl2": {
 		// The contents of the archive header at offset 0 in zombied.cl2:
@@ -5443,6 +6187,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/zombie/bluered.trn",
+			"monsters/zombie/grey.trn",
+			"monsters/zombie/yellow.trn",
+		},
 	},
 	"monsters/zombie/zombieh.cl2": {
 		// The contents of the archive header at offset 0 in zombieh.cl2:
@@ -5454,6 +6203,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/zombie/bluered.trn",
+			"monsters/zombie/grey.trn",
+			"monsters/zombie/yellow.trn",
+		},
 	},
 	"monsters/zombie/zombien.cl2": {
 		// The contents of the archive header at offset 0 in zombien.cl2:
@@ -5465,6 +6219,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/zombie/bluered.trn",
+			"monsters/zombie/grey.trn",
+			"monsters/zombie/yellow.trn",
+		},
 	},
 	"monsters/zombie/zombies.cl2": {
 		// The contents of the archive header at offset 0 in zombies.cl2:
@@ -5476,6 +6235,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/zombie/bluered.trn",
+			"monsters/zombie/grey.trn",
+			"monsters/zombie/yellow.trn",
+		},
 	},
 	"monsters/zombie/zombiew.cl2": {
 		// The contents of the archive header at offset 0 in zombiew.cl2:
@@ -5487,6 +6251,11 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
+		Trns: []string{
+			"monsters/zombie/bluered.trn",
+			"monsters/zombie/grey.trn",
+			"monsters/zombie/yellow.trn",
+		},
 	},
 	"plrgfx/rogue/rha/rhaas.cl2": {
 		// The contents of the archive header at offset 0 in rhaas.cl2:
