@@ -124,11 +124,11 @@ func dumpArchive(mpqDir, relCelPath string, conf *config.Config) error {
 // dumpArchiveWithPal converts the given CEL archive to a set of PNG images,
 // using colours from the given palette.
 func dumpArchiveWithPal(dstDir, celPath string, pal color.Palette) error {
-	if err := os.MkdirAll(dstDir, 0755); err != nil {
-		return errors.WithStack(err)
-	}
 	archiveImgs, err := cel.DecodeArchive(celPath, pal)
 	if err != nil {
+		return errors.WithStack(err)
+	}
+	if err := os.MkdirAll(dstDir, 0755); err != nil {
 		return errors.WithStack(err)
 	}
 	celName := pathutil.FileName(celPath)
@@ -189,11 +189,11 @@ func dumpCel(mpqDir, relCelPath string, conf *config.Config) error {
 // dumpCelWithPal converts the CEL file to a set of PNG images, using colours
 // from the given palette.
 func dumpCelWithPal(dstDir, celPath string, pal color.Palette) error {
-	if err := os.MkdirAll(dstDir, 0755); err != nil {
-		return errors.WithStack(err)
-	}
 	imgs, err := cel.DecodeAll(celPath, pal)
 	if err != nil {
+		return errors.WithStack(err)
+	}
+	if err := os.MkdirAll(dstDir, 0755); err != nil {
 		return errors.WithStack(err)
 	}
 	for i, img := range imgs {
