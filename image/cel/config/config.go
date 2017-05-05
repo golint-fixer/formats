@@ -100,7 +100,38 @@ type Config struct {
 //
 //    {
 //       W: 160, // ref: 0x4219E1
+//       Trns: []string{
+//          "monsters/monsters/general.trn", // ref: 0x49B6F8; Warmaggot the Mad
+//       },
 //    }
+
+// TODO: Check if these TRNs are ever used.
+//
+//    "monsters/monsters/balr.trn" // NOTE: Unused?
+//    "monsters/monsters/blodgol.trn" // NOTE: Unused?
+//    "monsters/monsters/cnselbk.trn" // NOTE: Unused?
+//    "monsters/monsters/cnselg.trn" // NOTE: Unused?
+//    "monsters/monsters/cnselgd.trn" // NOTE: Unused?
+//    "monsters/monsters/default.trn" // NOTE: Unused?
+//    "monsters/monsters/demsklb.trn" // NOTE: Unused?
+//    "monsters/monsters/demsklw.trn" // NOTE: Unused?
+//    "monsters/monsters/demskly.trn" // NOTE: Unused?
+//    "monsters/monsters/fmanb.trn" // NOTE: Unused?
+//    "monsters/monsters/fmanr.trn" // NOTE: Unused?
+//    "monsters/monsters/fmany.trn" // NOTE: Unused?
+//    "monsters/monsters/genrlll.trn" // NOTE: Unused?
+//    "monsters/monsters/gsda.trn" // NOTE: Unused?
+//    "monsters/monsters/guard.trn" // NOTE: Unused?
+//    "monsters/monsters/nwtc.trn" // NOTE: Unused?
+//    "monsters/monsters/shcr.trn" // NOTE: Unused?
+//    "monsters/monsters/succb.trn" // NOTE: Unused?
+//    "monsters/monsters/succbw.trn" // NOTE: Unused?
+//    "monsters/monsters/succrw.trn" // NOTE: Unused?
+//    "monsters/monsters/unravb.trn" // NOTE: Unused?
+//    "monsters/monsters/unravbk.trn" // NOTE: Unused?
+//    "monsters/monsters/unravr.trn" // NOTE: Unused?
+//    "monsters/monsters/vtexl.trn" // NOTE: Unused?
+//    "monsters/monsters/wrra.trn" // NOTE: Unused?
 
 // confs specifies the data required for decoding
 var confs = map[string]*Config{
@@ -3451,6 +3482,8 @@ var confs = map[string]*Config{
 			"monsters/acid/acidb.trn",
 			"monsters/acid/acidblk.trn",
 			"monsters/acid/acidr.trn",
+			"monsters/monsters/bfds.trn",    // ref: 0x49B6F8; Deathspit
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Chaoshowler, Plaguewrath
 		},
 	},
 	"monsters/acid/acidd.cl2": {
@@ -3467,6 +3500,8 @@ var confs = map[string]*Config{
 			"monsters/acid/acidb.trn",
 			"monsters/acid/acidblk.trn",
 			"monsters/acid/acidr.trn",
+			"monsters/monsters/bfds.trn",    // ref: 0x49B6F8; Deathspit
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Chaoshowler, Plaguewrath
 		},
 	},
 	"monsters/acid/acidh.cl2": {
@@ -3483,6 +3518,8 @@ var confs = map[string]*Config{
 			"monsters/acid/acidb.trn",
 			"monsters/acid/acidblk.trn",
 			"monsters/acid/acidr.trn",
+			"monsters/monsters/bfds.trn",    // ref: 0x49B6F8; Deathspit
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Chaoshowler, Plaguewrath
 		},
 	},
 	"monsters/acid/acidn.cl2": {
@@ -3499,6 +3536,8 @@ var confs = map[string]*Config{
 			"monsters/acid/acidb.trn",
 			"monsters/acid/acidblk.trn",
 			"monsters/acid/acidr.trn",
+			"monsters/monsters/bfds.trn",    // ref: 0x49B6F8; Deathspit
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Chaoshowler, Plaguewrath
 		},
 	},
 	"monsters/acid/acids.cl2": {
@@ -3515,6 +3554,8 @@ var confs = map[string]*Config{
 			"monsters/acid/acidb.trn",
 			"monsters/acid/acidblk.trn",
 			"monsters/acid/acidr.trn",
+			"monsters/monsters/bfds.trn",    // ref: 0x49B6F8; Deathspit
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Chaoshowler, Plaguewrath
 		},
 	},
 	"monsters/acid/acidw.cl2": {
@@ -3531,6 +3572,8 @@ var confs = map[string]*Config{
 			"monsters/acid/acidb.trn",
 			"monsters/acid/acidblk.trn",
 			"monsters/acid/acidr.trn",
+			"monsters/monsters/bfds.trn",    // ref: 0x49B6F8; Deathspit
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Chaoshowler, Plaguewrath
 		},
 	},
 	"monsters/bat/bata.cl2": {
@@ -3547,6 +3590,8 @@ var confs = map[string]*Config{
 			"monsters/bat/grey.trn",
 			"monsters/bat/orange.trn",
 			"monsters/bat/red.trn",
+			"monsters/monsters/db.trn",      // ref: 0x49B6F8; Foulwing
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Moonbender, Wrathraven
 		},
 	},
 	"monsters/bat/batd.cl2": {
@@ -3563,6 +3608,8 @@ var confs = map[string]*Config{
 			"monsters/bat/grey.trn",
 			"monsters/bat/orange.trn",
 			"monsters/bat/red.trn",
+			"monsters/monsters/db.trn",      // ref: 0x49B6F8; Foulwing
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Moonbender, Wrathraven
 		},
 	},
 	"monsters/bat/bath.cl2": {
@@ -3579,6 +3626,8 @@ var confs = map[string]*Config{
 			"monsters/bat/grey.trn",
 			"monsters/bat/orange.trn",
 			"monsters/bat/red.trn",
+			"monsters/monsters/db.trn",      // ref: 0x49B6F8; Foulwing
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Moonbender, Wrathraven
 		},
 	},
 	"monsters/bat/batn.cl2": {
@@ -3595,6 +3644,8 @@ var confs = map[string]*Config{
 			"monsters/bat/grey.trn",
 			"monsters/bat/orange.trn",
 			"monsters/bat/red.trn",
+			"monsters/monsters/db.trn",      // ref: 0x49B6F8; Foulwing
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Moonbender, Wrathraven
 		},
 	},
 	"monsters/bat/batw.cl2": {
@@ -3611,6 +3662,8 @@ var confs = map[string]*Config{
 			"monsters/bat/grey.trn",
 			"monsters/bat/orange.trn",
 			"monsters/bat/red.trn",
+			"monsters/monsters/db.trn",      // ref: 0x49B6F8; Foulwing
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Moonbender, Wrathraven
 		},
 	},
 	"monsters/bigfall/fallga.cl2": {
@@ -3683,6 +3736,8 @@ var confs = map[string]*Config{
 			"monsters/black/blkkntbt.trn",
 			"monsters/black/blkkntrk.trn",
 			"monsters/black/blkkntrt.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Lachdanan
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Graywar the Slayer, Lionskull the Bent, Rustweaver, Sir Gorash, Steelskull the Hunter, Warlord of Blood
 		},
 	},
 	"monsters/black/blackd.cl2": {
@@ -3700,6 +3755,8 @@ var confs = map[string]*Config{
 			"monsters/black/blkkntbt.trn",
 			"monsters/black/blkkntrk.trn",
 			"monsters/black/blkkntrt.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Lachdanan
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Graywar the Slayer, Lionskull the Bent, Rustweaver, Sir Gorash, Steelskull the Hunter, Warlord of Blood
 		},
 	},
 	"monsters/black/blackh.cl2": {
@@ -3717,6 +3774,8 @@ var confs = map[string]*Config{
 			"monsters/black/blkkntbt.trn",
 			"monsters/black/blkkntrk.trn",
 			"monsters/black/blkkntrt.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Lachdanan
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Graywar the Slayer, Lionskull the Bent, Rustweaver, Sir Gorash, Steelskull the Hunter, Warlord of Blood
 		},
 	},
 	"monsters/black/blackn.cl2": {
@@ -3734,6 +3793,8 @@ var confs = map[string]*Config{
 			"monsters/black/blkkntbt.trn",
 			"monsters/black/blkkntrk.trn",
 			"monsters/black/blkkntrt.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Lachdanan
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Graywar the Slayer, Lionskull the Bent, Rustweaver, Sir Gorash, Steelskull the Hunter, Warlord of Blood
 		},
 	},
 	"monsters/black/blackw.cl2": {
@@ -3751,6 +3812,8 @@ var confs = map[string]*Config{
 			"monsters/black/blkkntbt.trn",
 			"monsters/black/blkkntrk.trn",
 			"monsters/black/blkkntrt.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Lachdanan
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Graywar the Slayer, Lionskull the Bent, Rustweaver, Sir Gorash, Steelskull the Hunter, Warlord of Blood
 		},
 	},
 	"monsters/darkmage/dmagea.cl2": {
@@ -3966,6 +4029,8 @@ var confs = map[string]*Config{
 			"monsters/falspear/orange.trn",
 			"monsters/falspear/salam.trn",
 			"monsters/falspear/yellow.trn",
+			"monsters/monsters/bng.trn", // ref: 0x49B6F8; Bongo, Snotspill
+			"monsters/monsters/ptu.trn", // ref: 0x49B6F8; Pukerat the Unclean
 		},
 	},
 	"monsters/falspear/phalld.cl2": {
@@ -3985,6 +4050,8 @@ var confs = map[string]*Config{
 			"monsters/falspear/orange.trn",
 			"monsters/falspear/salam.trn",
 			"monsters/falspear/yellow.trn",
+			"monsters/monsters/bng.trn", // ref: 0x49B6F8; Bongo, Snotspill
+			"monsters/monsters/ptu.trn", // ref: 0x49B6F8; Pukerat the Unclean
 		},
 	},
 	"monsters/falspear/phallh.cl2": {
@@ -4004,6 +4071,8 @@ var confs = map[string]*Config{
 			"monsters/falspear/orange.trn",
 			"monsters/falspear/salam.trn",
 			"monsters/falspear/yellow.trn",
+			"monsters/monsters/bng.trn", // ref: 0x49B6F8; Bongo, Snotspill
+			"monsters/monsters/ptu.trn", // ref: 0x49B6F8; Pukerat the Unclean
 		},
 	},
 	"monsters/falspear/phalln.cl2": {
@@ -4023,6 +4092,8 @@ var confs = map[string]*Config{
 			"monsters/falspear/orange.trn",
 			"monsters/falspear/salam.trn",
 			"monsters/falspear/yellow.trn",
+			"monsters/monsters/bng.trn", // ref: 0x49B6F8; Bongo, Snotspill
+			"monsters/monsters/ptu.trn", // ref: 0x49B6F8; Pukerat the Unclean
 		},
 	},
 	"monsters/falspear/phalls.cl2": {
@@ -4042,6 +4113,8 @@ var confs = map[string]*Config{
 			"monsters/falspear/orange.trn",
 			"monsters/falspear/salam.trn",
 			"monsters/falspear/yellow.trn",
+			"monsters/monsters/bng.trn", // ref: 0x49B6F8; Bongo, Snotspill
+			"monsters/monsters/ptu.trn", // ref: 0x49B6F8; Pukerat the Unclean
 		},
 	},
 	"monsters/falspear/phallw.cl2": {
@@ -4061,6 +4134,8 @@ var confs = map[string]*Config{
 			"monsters/falspear/orange.trn",
 			"monsters/falspear/salam.trn",
 			"monsters/falspear/yellow.trn",
+			"monsters/monsters/bng.trn", // ref: 0x49B6F8; Bongo, Snotspill
+			"monsters/monsters/ptu.trn", // ref: 0x49B6F8; Pukerat the Unclean
 		},
 	},
 	"monsters/falsword/falla.cl2": {
@@ -4080,6 +4155,9 @@ var confs = map[string]*Config{
 			"monsters/falsword/orange.trn",
 			"monsters/falsword/salam.trn",
 			"monsters/falsword/yellow.trn",
+			"monsters/monsters/bsts.trn",    // ref: 0x49B6F8; Bladeskin the Slasher
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Shadowcrow
+			"monsters/monsters/gtq.trn",     // ref: 0x49B6F8; Gutshank the Quick
 		},
 	},
 	"monsters/falsword/falld.cl2": {
@@ -4099,6 +4177,9 @@ var confs = map[string]*Config{
 			"monsters/falsword/orange.trn",
 			"monsters/falsword/salam.trn",
 			"monsters/falsword/yellow.trn",
+			"monsters/monsters/bsts.trn",    // ref: 0x49B6F8; Bladeskin the Slasher
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Shadowcrow
+			"monsters/monsters/gtq.trn",     // ref: 0x49B6F8; Gutshank the Quick
 		},
 	},
 	"monsters/falsword/fallh.cl2": {
@@ -4118,6 +4199,9 @@ var confs = map[string]*Config{
 			"monsters/falsword/orange.trn",
 			"monsters/falsword/salam.trn",
 			"monsters/falsword/yellow.trn",
+			"monsters/monsters/bsts.trn",    // ref: 0x49B6F8; Bladeskin the Slasher
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Shadowcrow
+			"monsters/monsters/gtq.trn",     // ref: 0x49B6F8; Gutshank the Quick
 		},
 	},
 	"monsters/falsword/falln.cl2": {
@@ -4137,6 +4221,9 @@ var confs = map[string]*Config{
 			"monsters/falsword/orange.trn",
 			"monsters/falsword/salam.trn",
 			"monsters/falsword/yellow.trn",
+			"monsters/monsters/bsts.trn",    // ref: 0x49B6F8; Bladeskin the Slasher
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Shadowcrow
+			"monsters/monsters/gtq.trn",     // ref: 0x49B6F8; Gutshank the Quick
 		},
 	},
 	"monsters/falsword/falls.cl2": {
@@ -4156,6 +4243,9 @@ var confs = map[string]*Config{
 			"monsters/falsword/orange.trn",
 			"monsters/falsword/salam.trn",
 			"monsters/falsword/yellow.trn",
+			"monsters/monsters/bsts.trn",    // ref: 0x49B6F8; Bladeskin the Slasher
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Shadowcrow
+			"monsters/monsters/gtq.trn",     // ref: 0x49B6F8; Gutshank the Quick
 		},
 	},
 	"monsters/falsword/fallw.cl2": {
@@ -4175,6 +4265,9 @@ var confs = map[string]*Config{
 			"monsters/falsword/orange.trn",
 			"monsters/falsword/salam.trn",
 			"monsters/falsword/yellow.trn",
+			"monsters/monsters/bsts.trn",    // ref: 0x49B6F8; Bladeskin the Slasher
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Shadowcrow
+			"monsters/monsters/gtq.trn",     // ref: 0x49B6F8; Gutshank the Quick
 		},
 	},
 	"monsters/fatc/fatca.cl2": {
@@ -4187,6 +4280,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; The Butcher
+		},
 	},
 	"monsters/fatc/fatcd.cl2": {
 		// The contents of the archive header at offset 0 in fatcd.cl2:
@@ -4198,6 +4294,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; The Butcher
+		},
 	},
 	"monsters/fatc/fatch.cl2": {
 		// The contents of the archive header at offset 0 in fatch.cl2:
@@ -4209,6 +4308,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; The Butcher
+		},
 	},
 	"monsters/fatc/fatcn.cl2": {
 		// The contents of the archive header at offset 0 in fatcn.cl2:
@@ -4220,6 +4322,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; The Butcher
+		},
 	},
 	"monsters/fatc/fatcw.cl2": {
 		// The contents of the archive header at offset 0 in fatcw.cl2:
@@ -4231,6 +4336,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; The Butcher
+		},
 	},
 	"monsters/fat/fata.cl2": {
 		// The contents of the archive header at offset 0 in fata.cl2:
@@ -4247,6 +4355,9 @@ var confs = map[string]*Config{
 			"monsters/fat/fat.trn",
 			"monsters/fat/fatb.trn",
 			"monsters/fat/fatf.trn",
+			"monsters/monsters/bftp.trn",    // ref: 0x49B6F8; Bilefroth the Pit Master
+			"monsters/monsters/bsm.trn",     // ref: 0x49B6F8; Baron Sludge
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Oozedrool
 		},
 	},
 	"monsters/fat/fatd.cl2": {
@@ -4264,6 +4375,9 @@ var confs = map[string]*Config{
 			"monsters/fat/fat.trn",
 			"monsters/fat/fatb.trn",
 			"monsters/fat/fatf.trn",
+			"monsters/monsters/bftp.trn",    // ref: 0x49B6F8; Bilefroth the Pit Master
+			"monsters/monsters/bsm.trn",     // ref: 0x49B6F8; Baron Sludge
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Oozedrool
 		},
 	},
 	"monsters/fat/fath.cl2": {
@@ -4281,6 +4395,9 @@ var confs = map[string]*Config{
 			"monsters/fat/fat.trn",
 			"monsters/fat/fatb.trn",
 			"monsters/fat/fatf.trn",
+			"monsters/monsters/bftp.trn",    // ref: 0x49B6F8; Bilefroth the Pit Master
+			"monsters/monsters/bsm.trn",     // ref: 0x49B6F8; Baron Sludge
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Oozedrool
 		},
 	},
 	"monsters/fat/fatn.cl2": {
@@ -4298,6 +4415,9 @@ var confs = map[string]*Config{
 			"monsters/fat/fat.trn",
 			"monsters/fat/fatb.trn",
 			"monsters/fat/fatf.trn",
+			"monsters/monsters/bftp.trn",    // ref: 0x49B6F8; Bilefroth the Pit Master
+			"monsters/monsters/bsm.trn",     // ref: 0x49B6F8; Baron Sludge
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Oozedrool
 		},
 	},
 	"monsters/fat/fats.cl2": {
@@ -4315,6 +4435,9 @@ var confs = map[string]*Config{
 			"monsters/fat/fat.trn",
 			"monsters/fat/fatb.trn",
 			"monsters/fat/fatf.trn",
+			"monsters/monsters/bftp.trn",    // ref: 0x49B6F8; Bilefroth the Pit Master
+			"monsters/monsters/bsm.trn",     // ref: 0x49B6F8; Baron Sludge
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Oozedrool
 		},
 	},
 	"monsters/fat/fatw.cl2": {
@@ -4332,6 +4455,9 @@ var confs = map[string]*Config{
 			"monsters/fat/fat.trn",
 			"monsters/fat/fatb.trn",
 			"monsters/fat/fatf.trn",
+			"monsters/monsters/bftp.trn",    // ref: 0x49B6F8; Bilefroth the Pit Master
+			"monsters/monsters/bsm.trn",     // ref: 0x49B6F8; Baron Sludge
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Oozedrool
 		},
 	},
 	"monsters/fireman/firema.cl2": {
@@ -4348,6 +4474,10 @@ var confs = map[string]*Config{
 		// NOTE: Each frame contain 128x128 (16384) pixels, but the correct width
 		// is 96.
 		H: 171, // h = npixels/w = 16384/96 = 170.66
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Madburner, Warpfire Hellspawn
+			"monsters/monsters/wftd.trn",    // ref: 0x49B6F8; Wrathfire the Doomed
+		},
 	},
 	"monsters/fireman/firemd.cl2": {
 		// The contents of the archive header at offset 0 in firemd.cl2:
@@ -4359,6 +4489,10 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      160, // h = npixels/w = 20480/128 = 160
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Madburner, Warpfire Hellspawn
+			"monsters/monsters/wftd.trn",    // ref: 0x49B6F8; Wrathfire the Doomed
+		},
 	},
 	"monsters/fireman/firemh.cl2": {
 		// The contents of the archive header at offset 0 in firemh.cl2:
@@ -4370,6 +4504,10 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      160, // h = npixels/w = 20480/128 = 160
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Madburner, Warpfire Hellspawn
+			"monsters/monsters/wftd.trn",    // ref: 0x49B6F8; Wrathfire the Doomed
+		},
 	},
 	"monsters/fireman/firemn.cl2": {
 		// The contents of the archive header at offset 0 in firemn.cl2:
@@ -4381,6 +4519,10 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Madburner, Warpfire Hellspawn
+			"monsters/monsters/wftd.trn",    // ref: 0x49B6F8; Wrathfire the Doomed
+		},
 	},
 	"monsters/fireman/firems.cl2": {
 		// The contents of the archive header at offset 0 in firems.cl2:
@@ -4392,6 +4534,10 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Madburner, Warpfire Hellspawn
+			"monsters/monsters/wftd.trn",    // ref: 0x49B6F8; Wrathfire the Doomed
+		},
 	},
 	"monsters/fireman/firemw.cl2": {
 		// The contents of the archive header at offset 0 in firemw.cl2:
@@ -4403,6 +4549,10 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Madburner, Warpfire Hellspawn
+			"monsters/monsters/wftd.trn",    // ref: 0x49B6F8; Wrathfire the Doomed
+		},
 	},
 	"monsters/gargoyle/gargoa.cl2": {
 		// The contents of the archive header at offset 0 in gargoa.cl2:
@@ -4420,6 +4570,7 @@ var confs = map[string]*Config{
 			"monsters/gargoyle/gargbr.trn",
 			"monsters/gargoyle/gargr.trn",
 			"monsters/gargoyle/gargy.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Goldblight of the Flame, Nightwing the Cold, Viletouch
 		},
 	},
 	"monsters/gargoyle/gargod.cl2": {
@@ -4438,6 +4589,7 @@ var confs = map[string]*Config{
 			"monsters/gargoyle/gargbr.trn",
 			"monsters/gargoyle/gargr.trn",
 			"monsters/gargoyle/gargy.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Goldblight of the Flame, Nightwing the Cold, Viletouch
 		},
 	},
 	"monsters/gargoyle/gargoh.cl2": {
@@ -4456,6 +4608,7 @@ var confs = map[string]*Config{
 			"monsters/gargoyle/gargbr.trn",
 			"monsters/gargoyle/gargr.trn",
 			"monsters/gargoyle/gargy.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Goldblight of the Flame, Nightwing the Cold, Viletouch
 		},
 	},
 	"monsters/gargoyle/gargon.cl2": {
@@ -4474,6 +4627,7 @@ var confs = map[string]*Config{
 			"monsters/gargoyle/gargbr.trn",
 			"monsters/gargoyle/gargr.trn",
 			"monsters/gargoyle/gargy.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Goldblight of the Flame, Nightwing the Cold, Viletouch
 		},
 	},
 	"monsters/gargoyle/gargos.cl2": {
@@ -4492,6 +4646,7 @@ var confs = map[string]*Config{
 			"monsters/gargoyle/gargbr.trn",
 			"monsters/gargoyle/gargr.trn",
 			"monsters/gargoyle/gargy.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Goldblight of the Flame, Nightwing the Cold, Viletouch
 		},
 	},
 	"monsters/gargoyle/gargow.cl2": {
@@ -4510,6 +4665,7 @@ var confs = map[string]*Config{
 			"monsters/gargoyle/gargbr.trn",
 			"monsters/gargoyle/gargr.trn",
 			"monsters/gargoyle/gargy.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Goldblight of the Flame, Nightwing the Cold, Viletouch
 		},
 	},
 	"monsters/goatbow/goatba.cl2": {
@@ -4526,6 +4682,9 @@ var confs = map[string]*Config{
 			"monsters/goatbow/beige.trn",
 			"monsters/goatbow/gray.trn",
 			"monsters/goatbow/red.trn",
+			"monsters/monsters/blf.trn",     // ref: 0x49B6F8; Blightfire
+			"monsters/monsters/bsdb.trn",    // ref: 0x49B6F8; Bloodskin Darkbow
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorestone
 		},
 	},
 	"monsters/goatbow/goatbd.cl2": {
@@ -4542,6 +4701,9 @@ var confs = map[string]*Config{
 			"monsters/goatbow/beige.trn",
 			"monsters/goatbow/gray.trn",
 			"monsters/goatbow/red.trn",
+			"monsters/monsters/blf.trn",     // ref: 0x49B6F8; Blightfire
+			"monsters/monsters/bsdb.trn",    // ref: 0x49B6F8; Bloodskin Darkbow
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorestone
 		},
 	},
 	"monsters/goatbow/goatbh.cl2": {
@@ -4558,6 +4720,9 @@ var confs = map[string]*Config{
 			"monsters/goatbow/beige.trn",
 			"monsters/goatbow/gray.trn",
 			"monsters/goatbow/red.trn",
+			"monsters/monsters/blf.trn",     // ref: 0x49B6F8; Blightfire
+			"monsters/monsters/bsdb.trn",    // ref: 0x49B6F8; Bloodskin Darkbow
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorestone
 		},
 	},
 	"monsters/goatbow/goatbn.cl2": {
@@ -4574,6 +4739,9 @@ var confs = map[string]*Config{
 			"monsters/goatbow/beige.trn",
 			"monsters/goatbow/gray.trn",
 			"monsters/goatbow/red.trn",
+			"monsters/monsters/blf.trn",     // ref: 0x49B6F8; Blightfire
+			"monsters/monsters/bsdb.trn",    // ref: 0x49B6F8; Bloodskin Darkbow
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorestone
 		},
 	},
 	"monsters/goatbow/goatbw.cl2": {
@@ -4590,6 +4758,9 @@ var confs = map[string]*Config{
 			"monsters/goatbow/beige.trn",
 			"monsters/goatbow/gray.trn",
 			"monsters/goatbow/red.trn",
+			"monsters/monsters/blf.trn",     // ref: 0x49B6F8; Blightfire
+			"monsters/monsters/bsdb.trn",    // ref: 0x49B6F8; Bloodskin Darkbow
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorestone
 		},
 	},
 	"monsters/goatlord/goatla.cl2": {
@@ -4602,6 +4773,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Blightstone the Weak
+		},
 	},
 	"monsters/goatlord/goatld.cl2": {
 		// The contents of the archive header at offset 0 in goatld.cl2:
@@ -4613,6 +4787,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Blightstone the Weak
+		},
 	},
 	"monsters/goatlord/goatlh.cl2": {
 		// The contents of the archive header at offset 0 in goatlh.cl2:
@@ -4624,6 +4801,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Blightstone the Weak
+		},
 	},
 	"monsters/goatlord/goatln.cl2": {
 		// The contents of the archive header at offset 0 in goatln.cl2:
@@ -4635,6 +4815,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Blightstone the Weak
+		},
 	},
 	"monsters/goatlord/goatlw.cl2": {
 		// The contents of the archive header at offset 0 in goatlw.cl2:
@@ -4646,6 +4829,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
+		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Blightstone the Weak
+		},
 	},
 	"monsters/goatmace/goata.cl2": {
 		// The contents of the archive header at offset 0 in goata.cl2:
@@ -4661,6 +4847,10 @@ var confs = map[string]*Config{
 			"monsters/goatmace/beige.trn",
 			"monsters/goatmace/gray.trn",
 			"monsters/goatmace/red.trn",
+			"monsters/monsters/bgbl.trn", // ref: 0x49B6F8; Bloodgutter
+			"monsters/monsters/bhsm.trn", // ref: 0x49B6F8; Blighthorn Steelmace
+			"monsters/monsters/bsdb.trn", // ref: 0x49B6F8; Gharbad the Weak
+			"monsters/monsters/dsfm.trn", // ref: 0x49B6F8; Deathshade Fleshmaul
 		},
 	},
 	"monsters/goatmace/goatd.cl2": {
@@ -4677,6 +4867,10 @@ var confs = map[string]*Config{
 			"monsters/goatmace/beige.trn",
 			"monsters/goatmace/gray.trn",
 			"monsters/goatmace/red.trn",
+			"monsters/monsters/bgbl.trn", // ref: 0x49B6F8; Bloodgutter
+			"monsters/monsters/bhsm.trn", // ref: 0x49B6F8; Blighthorn Steelmace
+			"monsters/monsters/bsdb.trn", // ref: 0x49B6F8; Gharbad the Weak
+			"monsters/monsters/dsfm.trn", // ref: 0x49B6F8; Deathshade Fleshmaul
 		},
 	},
 	"monsters/goatmace/goath.cl2": {
@@ -4693,6 +4887,10 @@ var confs = map[string]*Config{
 			"monsters/goatmace/beige.trn",
 			"monsters/goatmace/gray.trn",
 			"monsters/goatmace/red.trn",
+			"monsters/monsters/bgbl.trn", // ref: 0x49B6F8; Bloodgutter
+			"monsters/monsters/bhsm.trn", // ref: 0x49B6F8; Blighthorn Steelmace
+			"monsters/monsters/bsdb.trn", // ref: 0x49B6F8; Gharbad the Weak
+			"monsters/monsters/dsfm.trn", // ref: 0x49B6F8; Deathshade Fleshmaul
 		},
 	},
 	"monsters/goatmace/goatn.cl2": {
@@ -4709,6 +4907,10 @@ var confs = map[string]*Config{
 			"monsters/goatmace/beige.trn",
 			"monsters/goatmace/gray.trn",
 			"monsters/goatmace/red.trn",
+			"monsters/monsters/bgbl.trn", // ref: 0x49B6F8; Bloodgutter
+			"monsters/monsters/bhsm.trn", // ref: 0x49B6F8; Blighthorn Steelmace
+			"monsters/monsters/bsdb.trn", // ref: 0x49B6F8; Gharbad the Weak
+			"monsters/monsters/dsfm.trn", // ref: 0x49B6F8; Deathshade Fleshmaul
 		},
 	},
 	"monsters/goatmace/goats.cl2": {
@@ -4725,6 +4927,10 @@ var confs = map[string]*Config{
 			"monsters/goatmace/beige.trn",
 			"monsters/goatmace/gray.trn",
 			"monsters/goatmace/red.trn",
+			"monsters/monsters/bgbl.trn", // ref: 0x49B6F8; Bloodgutter
+			"monsters/monsters/bhsm.trn", // ref: 0x49B6F8; Blighthorn Steelmace
+			"monsters/monsters/bsdb.trn", // ref: 0x49B6F8; Gharbad the Weak
+			"monsters/monsters/dsfm.trn", // ref: 0x49B6F8; Deathshade Fleshmaul
 		},
 	},
 	"monsters/goatmace/goatw.cl2": {
@@ -4741,6 +4947,10 @@ var confs = map[string]*Config{
 			"monsters/goatmace/beige.trn",
 			"monsters/goatmace/gray.trn",
 			"monsters/goatmace/red.trn",
+			"monsters/monsters/bgbl.trn", // ref: 0x49B6F8; Bloodgutter
+			"monsters/monsters/bhsm.trn", // ref: 0x49B6F8; Blighthorn Steelmace
+			"monsters/monsters/bsdb.trn", // ref: 0x49B6F8; Gharbad the Weak
+			"monsters/monsters/dsfm.trn", // ref: 0x49B6F8; Deathshade Fleshmaul
 		},
 	},
 	"monsters/golem/golema.cl2": {
@@ -4793,6 +5003,7 @@ var confs = map[string]*Config{
 			"monsters/mage/cnselbk.trn",
 			"monsters/mage/cnselg.trn",
 			"monsters/mage/cnselgd.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Arch-Bishop Lazarus, Blacktongue, Dreadjudge, The Vizier, Zhar the Mad
 		},
 	},
 	"monsters/mage/maged.cl2": {
@@ -4809,6 +5020,7 @@ var confs = map[string]*Config{
 			"monsters/mage/cnselbk.trn",
 			"monsters/mage/cnselg.trn",
 			"monsters/mage/cnselgd.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Arch-Bishop Lazarus, Blacktongue, Dreadjudge, The Vizier, Zhar the Mad
 		},
 	},
 	"monsters/mage/mageh.cl2": {
@@ -4825,6 +5037,7 @@ var confs = map[string]*Config{
 			"monsters/mage/cnselbk.trn",
 			"monsters/mage/cnselg.trn",
 			"monsters/mage/cnselgd.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Arch-Bishop Lazarus, Blacktongue, Dreadjudge, The Vizier, Zhar the Mad
 		},
 	},
 	"monsters/mage/magen.cl2": {
@@ -4841,6 +5054,7 @@ var confs = map[string]*Config{
 			"monsters/mage/cnselbk.trn",
 			"monsters/mage/cnselg.trn",
 			"monsters/mage/cnselgd.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Arch-Bishop Lazarus, Blacktongue, Dreadjudge, The Vizier, Zhar the Mad
 		},
 	},
 	"monsters/mage/mages.cl2": {
@@ -4857,6 +5071,7 @@ var confs = map[string]*Config{
 			"monsters/mage/cnselbk.trn",
 			"monsters/mage/cnselg.trn",
 			"monsters/mage/cnselgd.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Arch-Bishop Lazarus, Blacktongue, Dreadjudge, The Vizier, Zhar the Mad
 		},
 	},
 	"monsters/mage/magew.cl2": {
@@ -4873,6 +5088,7 @@ var confs = map[string]*Config{
 			"monsters/mage/cnselbk.trn",
 			"monsters/mage/cnselg.trn",
 			"monsters/mage/cnselgd.trn",
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Arch-Bishop Lazarus, Blacktongue, Dreadjudge, The Vizier, Zhar the Mad
 		},
 	},
 	"monsters/magma/magmaa.cl2": {
@@ -4889,6 +5105,8 @@ var confs = map[string]*Config{
 			"monsters/magma/blue.trn",
 			"monsters/magma/wierd.trn",
 			"monsters/magma/yellow.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Firewound the Grim
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bronzefist Firestone
 		},
 	},
 	"monsters/magma/magmad.cl2": {
@@ -4905,6 +5123,8 @@ var confs = map[string]*Config{
 			"monsters/magma/blue.trn",
 			"monsters/magma/wierd.trn",
 			"monsters/magma/yellow.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Firewound the Grim
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bronzefist Firestone
 		},
 	},
 	"monsters/magma/magmah.cl2": {
@@ -4921,6 +5141,8 @@ var confs = map[string]*Config{
 			"monsters/magma/blue.trn",
 			"monsters/magma/wierd.trn",
 			"monsters/magma/yellow.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Firewound the Grim
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bronzefist Firestone
 		},
 	},
 	"monsters/magma/magman.cl2": {
@@ -4937,6 +5159,8 @@ var confs = map[string]*Config{
 			"monsters/magma/blue.trn",
 			"monsters/magma/wierd.trn",
 			"monsters/magma/yellow.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Firewound the Grim
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bronzefist Firestone
 		},
 	},
 	"monsters/magma/magmas.cl2": {
@@ -4953,6 +5177,8 @@ var confs = map[string]*Config{
 			"monsters/magma/blue.trn",
 			"monsters/magma/wierd.trn",
 			"monsters/magma/yellow.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Firewound the Grim
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bronzefist Firestone
 		},
 	},
 	"monsters/magma/magmaw.cl2": {
@@ -4969,6 +5195,8 @@ var confs = map[string]*Config{
 			"monsters/magma/blue.trn",
 			"monsters/magma/wierd.trn",
 			"monsters/magma/yellow.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Firewound the Grim
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bronzefist Firestone
 		},
 	},
 	"monsters/mega/megaa.cl2": {
@@ -4985,6 +5213,8 @@ var confs = map[string]*Config{
 			"monsters/mega/balr.trn",
 			"monsters/mega/guard.trn",
 			"monsters/mega/vtexl.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Blackskull
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorefeast, Windspawn
 		},
 	},
 	"monsters/mega/megad.cl2": {
@@ -5001,6 +5231,8 @@ var confs = map[string]*Config{
 			"monsters/mega/balr.trn",
 			"monsters/mega/guard.trn",
 			"monsters/mega/vtexl.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Blackskull
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorefeast, Windspawn
 		},
 	},
 	"monsters/mega/megah.cl2": {
@@ -5017,6 +5249,8 @@ var confs = map[string]*Config{
 			"monsters/mega/balr.trn",
 			"monsters/mega/guard.trn",
 			"monsters/mega/vtexl.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Blackskull
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorefeast, Windspawn
 		},
 	},
 	"monsters/mega/megan.cl2": {
@@ -5033,6 +5267,8 @@ var confs = map[string]*Config{
 			"monsters/mega/balr.trn",
 			"monsters/mega/guard.trn",
 			"monsters/mega/vtexl.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Blackskull
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorefeast, Windspawn
 		},
 	},
 	"monsters/mega/megas.cl2": {
@@ -5049,6 +5285,8 @@ var confs = map[string]*Config{
 			"monsters/mega/balr.trn",
 			"monsters/mega/guard.trn",
 			"monsters/mega/vtexl.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Blackskull
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorefeast, Windspawn
 		},
 	},
 	"monsters/mega/megaw.cl2": {
@@ -5065,6 +5303,8 @@ var confs = map[string]*Config{
 			"monsters/mega/balr.trn",
 			"monsters/mega/guard.trn",
 			"monsters/mega/vtexl.trn",
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Blackskull
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Gorefeast, Windspawn
 		},
 	},
 	"monsters/rhino/rhinoa.cl2": {
@@ -5078,6 +5318,7 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Blackstorm, Bluehorn, Breakspine, Grimspike
 			"monsters/rhino/blue.trn",
 			"monsters/rhino/orange.trn",
 			"monsters/rhino/red.trn",
@@ -5095,6 +5336,7 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Blackstorm, Bluehorn, Breakspine, Grimspike
 			"monsters/rhino/blue.trn",
 			"monsters/rhino/orange.trn",
 			"monsters/rhino/red.trn",
@@ -5112,6 +5354,7 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Blackstorm, Bluehorn, Breakspine, Grimspike
 			"monsters/rhino/blue.trn",
 			"monsters/rhino/orange.trn",
 			"monsters/rhino/red.trn",
@@ -5129,6 +5372,7 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Blackstorm, Bluehorn, Breakspine, Grimspike
 			"monsters/rhino/blue.trn",
 			"monsters/rhino/orange.trn",
 			"monsters/rhino/red.trn",
@@ -5146,6 +5390,7 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Blackstorm, Bluehorn, Breakspine, Grimspike
 			"monsters/rhino/blue.trn",
 			"monsters/rhino/orange.trn",
 			"monsters/rhino/red.trn",
@@ -5163,6 +5408,7 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Blackstorm, Bluehorn, Breakspine, Grimspike
 			"monsters/rhino/blue.trn",
 			"monsters/rhino/orange.trn",
 			"monsters/rhino/red.trn",
@@ -5180,6 +5426,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Pulsecrawler
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; El Chupacabras, Spineeater
+			"monsters/monsters/shbt.trn",    // ref: 0x49B6F8; Shadowbite
 			"monsters/scav/scavbe.trn",
 			"monsters/scav/scavbr.trn",
 			"monsters/scav/scavw.trn",
@@ -5197,6 +5446,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Pulsecrawler
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; El Chupacabras, Spineeater
+			"monsters/monsters/shbt.trn",    // ref: 0x49B6F8; Shadowbite
 			"monsters/scav/scavbe.trn",
 			"monsters/scav/scavbr.trn",
 			"monsters/scav/scavw.trn",
@@ -5214,6 +5466,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Pulsecrawler
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; El Chupacabras, Spineeater
+			"monsters/monsters/shbt.trn",    // ref: 0x49B6F8; Shadowbite
 			"monsters/scav/scavbe.trn",
 			"monsters/scav/scavbr.trn",
 			"monsters/scav/scavw.trn",
@@ -5231,6 +5486,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Pulsecrawler
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; El Chupacabras, Spineeater
+			"monsters/monsters/shbt.trn",    // ref: 0x49B6F8; Shadowbite
 			"monsters/scav/scavbe.trn",
 			"monsters/scav/scavbr.trn",
 			"monsters/scav/scavw.trn",
@@ -5248,6 +5506,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Pulsecrawler
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; El Chupacabras, Spineeater
+			"monsters/monsters/shbt.trn",    // ref: 0x49B6F8; Shadowbite
 			"monsters/scav/scavbe.trn",
 			"monsters/scav/scavbr.trn",
 			"monsters/scav/scavw.trn",
@@ -5265,6 +5526,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Pulsecrawler
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; El Chupacabras, Spineeater
+			"monsters/monsters/shbt.trn",    // ref: 0x49B6F8; Shadowbite
 			"monsters/scav/scavbe.trn",
 			"monsters/scav/scavbr.trn",
 			"monsters/scav/scavw.trn",
@@ -5282,6 +5546,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Bonehead Keenaxe
+			"monsters/monsters/br.trn",   // ref: 0x49B6F8; Boneripper
+			"monsters/monsters/mtd.trn",  // ref: 0x49B6F8; Madeye the Dead
 			"monsters/skelaxe/black.trn",
 			"monsters/skelaxe/blue.trn",
 			"monsters/skelaxe/red.trn",
@@ -5300,6 +5567,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Bonehead Keenaxe
+			"monsters/monsters/br.trn",   // ref: 0x49B6F8; Boneripper
+			"monsters/monsters/mtd.trn",  // ref: 0x49B6F8; Madeye the Dead
 			"monsters/skelaxe/black.trn",
 			"monsters/skelaxe/blue.trn",
 			"monsters/skelaxe/red.trn",
@@ -5318,6 +5588,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Bonehead Keenaxe
+			"monsters/monsters/br.trn",   // ref: 0x49B6F8; Boneripper
+			"monsters/monsters/mtd.trn",  // ref: 0x49B6F8; Madeye the Dead
 			"monsters/skelaxe/black.trn",
 			"monsters/skelaxe/blue.trn",
 			"monsters/skelaxe/red.trn",
@@ -5336,6 +5609,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Bonehead Keenaxe
+			"monsters/monsters/br.trn",   // ref: 0x49B6F8; Boneripper
+			"monsters/monsters/mtd.trn",  // ref: 0x49B6F8; Madeye the Dead
 			"monsters/skelaxe/black.trn",
 			"monsters/skelaxe/blue.trn",
 			"monsters/skelaxe/red.trn",
@@ -5354,6 +5630,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Bonehead Keenaxe
+			"monsters/monsters/br.trn",   // ref: 0x49B6F8; Boneripper
+			"monsters/monsters/mtd.trn",  // ref: 0x49B6F8; Madeye the Dead
 			"monsters/skelaxe/black.trn",
 			"monsters/skelaxe/blue.trn",
 			"monsters/skelaxe/red.trn",
@@ -5372,6 +5651,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Bonehead Keenaxe
+			"monsters/monsters/br.trn",   // ref: 0x49B6F8; Boneripper
+			"monsters/monsters/mtd.trn",  // ref: 0x49B6F8; Madeye the Dead
 			"monsters/skelaxe/black.trn",
 			"monsters/skelaxe/blue.trn",
 			"monsters/skelaxe/red.trn",
@@ -5390,6 +5672,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bashtb.trn", // ref: 0x49B6F8; Blackash the Burning
+			"monsters/monsters/de.trn",     // ref: 0x49B6F8; Deadeye
+			"monsters/monsters/skfr.trn",   // ref: 0x49B6F8; Skullfire
 			"monsters/skelbow/black.trn",
 			"monsters/skelbow/blue.trn",
 			"monsters/skelbow/red.trn",
@@ -5408,6 +5693,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bashtb.trn", // ref: 0x49B6F8; Blackash the Burning
+			"monsters/monsters/de.trn",     // ref: 0x49B6F8; Deadeye
+			"monsters/monsters/skfr.trn",   // ref: 0x49B6F8; Skullfire
 			"monsters/skelbow/black.trn",
 			"monsters/skelbow/blue.trn",
 			"monsters/skelbow/red.trn",
@@ -5426,6 +5714,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bashtb.trn", // ref: 0x49B6F8; Blackash the Burning
+			"monsters/monsters/de.trn",     // ref: 0x49B6F8; Deadeye
+			"monsters/monsters/skfr.trn",   // ref: 0x49B6F8; Skullfire
 			"monsters/skelbow/black.trn",
 			"monsters/skelbow/blue.trn",
 			"monsters/skelbow/red.trn",
@@ -5444,6 +5735,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bashtb.trn", // ref: 0x49B6F8; Blackash the Burning
+			"monsters/monsters/de.trn",     // ref: 0x49B6F8; Deadeye
+			"monsters/monsters/skfr.trn",   // ref: 0x49B6F8; Skullfire
 			"monsters/skelbow/black.trn",
 			"monsters/skelbow/blue.trn",
 			"monsters/skelbow/red.trn",
@@ -5462,6 +5756,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bashtb.trn", // ref: 0x49B6F8; Blackash the Burning
+			"monsters/monsters/de.trn",     // ref: 0x49B6F8; Deadeye
+			"monsters/monsters/skfr.trn",   // ref: 0x49B6F8; Skullfire
 			"monsters/skelbow/black.trn",
 			"monsters/skelbow/blue.trn",
 			"monsters/skelbow/red.trn",
@@ -5480,6 +5777,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bashtb.trn", // ref: 0x49B6F8; Blackash the Burning
+			"monsters/monsters/de.trn",     // ref: 0x49B6F8; Deadeye
+			"monsters/monsters/skfr.trn",   // ref: 0x49B6F8; Skullfire
 			"monsters/skelbow/black.trn",
 			"monsters/skelbow/blue.trn",
 			"monsters/skelbow/red.trn",
@@ -5498,6 +5798,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhbs.trn", // ref: 0x49B6F8; Brokenhead Bangshield
+			"monsters/monsters/shdr.trn", // ref: 0x49B6F8; Shadowdrinker
 			"monsters/skelsd/black.trn",
 			"monsters/skelsd/blue.trn",
 			"monsters/skelsd/red.trn",
@@ -5516,6 +5818,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhbs.trn", // ref: 0x49B6F8; Brokenhead Bangshield
+			"monsters/monsters/shdr.trn", // ref: 0x49B6F8; Shadowdrinker
 			"monsters/skelsd/black.trn",
 			"monsters/skelsd/blue.trn",
 			"monsters/skelsd/red.trn",
@@ -5534,6 +5838,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhbs.trn", // ref: 0x49B6F8; Brokenhead Bangshield
+			"monsters/monsters/shdr.trn", // ref: 0x49B6F8; Shadowdrinker
 			"monsters/skelsd/black.trn",
 			"monsters/skelsd/blue.trn",
 			"monsters/skelsd/red.trn",
@@ -5552,6 +5858,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhbs.trn", // ref: 0x49B6F8; Brokenhead Bangshield
+			"monsters/monsters/shdr.trn", // ref: 0x49B6F8; Shadowdrinker
 			"monsters/skelsd/black.trn",
 			"monsters/skelsd/blue.trn",
 			"monsters/skelsd/red.trn",
@@ -5570,6 +5878,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhbs.trn", // ref: 0x49B6F8; Brokenhead Bangshield
+			"monsters/monsters/shdr.trn", // ref: 0x49B6F8; Shadowdrinker
 			"monsters/skelsd/black.trn",
 			"monsters/skelsd/blue.trn",
 			"monsters/skelsd/red.trn",
@@ -5588,6 +5898,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhbs.trn", // ref: 0x49B6F8; Brokenhead Bangshield
+			"monsters/monsters/shdr.trn", // ref: 0x49B6F8; Shadowdrinker
 			"monsters/skelsd/black.trn",
 			"monsters/skelsd/blue.trn",
 			"monsters/skelsd/red.trn",
@@ -5605,6 +5917,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+		},
 	},
 	"monsters/sking/skingd.cl2": {
 		// The contents of the archive header at offset 0 in skingd.cl2:
@@ -5616,6 +5931,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+		},
 	},
 	"monsters/sking/skingh.cl2": {
 		// The contents of the archive header at offset 0 in skingh.cl2:
@@ -5627,6 +5945,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+		},
 	},
 	"monsters/sking/skingn.cl2": {
 		// The contents of the archive header at offset 0 in skingn.cl2:
@@ -5638,6 +5959,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+		},
 	},
 	"monsters/sking/skings.cl2": {
 		// The contents of the archive header at offset 0 in skings.cl2:
@@ -5649,6 +5973,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+		},
 	},
 	"monsters/sking/skingw.cl2": {
 		// The contents of the archive header at offset 0 in skingw.cl2:
@@ -5660,6 +5987,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
+		Trns: []string{
+			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+		},
 	},
 	"monsters/snake/snakea.cl2": {
 		// The contents of the archive header at offset 0 in snakea.cl2:
@@ -5672,6 +6002,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Fangskin
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Fangspeir, Lord of the Pit, Viperflame
 			"monsters/snake/snakb.trn",
 			"monsters/snake/snakbl.trn",
 			"monsters/snake/snakg.trn",
@@ -5690,6 +6022,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Fangskin
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Fangspeir, Lord of the Pit, Viperflame
 			"monsters/snake/snakb.trn",
 			"monsters/snake/snakbl.trn",
 			"monsters/snake/snakg.trn",
@@ -5708,6 +6042,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Fangskin
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Fangspeir, Lord of the Pit, Viperflame
 			"monsters/snake/snakb.trn",
 			"monsters/snake/snakbl.trn",
 			"monsters/snake/snakg.trn",
@@ -5726,6 +6062,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Fangskin
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Fangspeir, Lord of the Pit, Viperflame
 			"monsters/snake/snakb.trn",
 			"monsters/snake/snakbl.trn",
 			"monsters/snake/snakg.trn",
@@ -5744,6 +6082,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Fangskin
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Fangspeir, Lord of the Pit, Viperflame
 			"monsters/snake/snakb.trn",
 			"monsters/snake/snakbl.trn",
 			"monsters/snake/snakg.trn",
@@ -5762,6 +6102,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Fangskin
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Fangspeir, Lord of the Pit, Viperflame
 			"monsters/snake/snakb.trn",
 			"monsters/snake/snakbl.trn",
 			"monsters/snake/snakg.trn",
@@ -5780,6 +6122,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Hazeshifter
+			"monsters/monsters/tspo.trn", // ref: 0x49B6F8; Warpskull
 			"monsters/sneak/sneakv1.trn",
 			"monsters/sneak/sneakv2.trn",
 			"monsters/sneak/sneakv3.trn",
@@ -5796,6 +6140,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Hazeshifter
+			"monsters/monsters/tspo.trn", // ref: 0x49B6F8; Warpskull
 			"monsters/sneak/sneakv1.trn",
 			"monsters/sneak/sneakv2.trn",
 			"monsters/sneak/sneakv3.trn",
@@ -5812,6 +6158,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Hazeshifter
+			"monsters/monsters/tspo.trn", // ref: 0x49B6F8; Warpskull
 			"monsters/sneak/sneakv1.trn",
 			"monsters/sneak/sneakv2.trn",
 			"monsters/sneak/sneakv3.trn",
@@ -5828,6 +6176,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Hazeshifter
+			"monsters/monsters/tspo.trn", // ref: 0x49B6F8; Warpskull
 			"monsters/sneak/sneakv1.trn",
 			"monsters/sneak/sneakv2.trn",
 			"monsters/sneak/sneakv3.trn",
@@ -5844,6 +6194,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Hazeshifter
+			"monsters/monsters/tspo.trn", // ref: 0x49B6F8; Warpskull
 			"monsters/sneak/sneakv1.trn",
 			"monsters/sneak/sneakv2.trn",
 			"monsters/sneak/sneakv3.trn",
@@ -5860,6 +6212,8 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/bhka.trn", // ref: 0x49B6F8; Hazeshifter
+			"monsters/monsters/tspo.trn", // ref: 0x49B6F8; Warpskull
 			"monsters/sneak/sneakv1.trn",
 			"monsters/sneak/sneakv2.trn",
 			"monsters/sneak/sneakv3.trn",
@@ -5876,6 +6230,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
 		Trns: []string{
+			"monsters/monsters/blkjd.trn",   // ref: 0x49B6F8; Blackjade
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodlust, Fleshdancer, Stareye the Witch, Webwidow, Witchfire the Unholy, Witchmoon
+			"monsters/monsters/redv.trn",    // ref: 0x49B6F8; Red Vex
 			"monsters/succ/blkjd.trn",
 			"monsters/succ/redv.trn",
 			"monsters/succ/succb.trn",
@@ -5894,6 +6251,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
 		Trns: []string{
+			"monsters/monsters/blkjd.trn",   // ref: 0x49B6F8; Blackjade
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodlust, Fleshdancer, Stareye the Witch, Webwidow, Witchfire the Unholy, Witchmoon
+			"monsters/monsters/redv.trn",    // ref: 0x49B6F8; Red Vex
 			"monsters/succ/blkjd.trn",
 			"monsters/succ/redv.trn",
 			"monsters/succ/succb.trn",
@@ -5912,6 +6272,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
 		Trns: []string{
+			"monsters/monsters/blkjd.trn",   // ref: 0x49B6F8; Blackjade
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodlust, Fleshdancer, Stareye the Witch, Webwidow, Witchfire the Unholy, Witchmoon
+			"monsters/monsters/redv.trn",    // ref: 0x49B6F8; Red Vex
 			"monsters/succ/blkjd.trn",
 			"monsters/succ/redv.trn",
 			"monsters/succ/succb.trn",
@@ -5930,6 +6293,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
 		Trns: []string{
+			"monsters/monsters/blkjd.trn",   // ref: 0x49B6F8; Blackjade
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodlust, Fleshdancer, Stareye the Witch, Webwidow, Witchfire the Unholy, Witchmoon
+			"monsters/monsters/redv.trn",    // ref: 0x49B6F8; Red Vex
 			"monsters/succ/blkjd.trn",
 			"monsters/succ/redv.trn",
 			"monsters/succ/succb.trn",
@@ -5948,6 +6314,9 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      128, // h = npixels/w = 16384/128 = 128
 		Trns: []string{
+			"monsters/monsters/blkjd.trn",   // ref: 0x49B6F8; Blackjade
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodlust, Fleshdancer, Stareye the Witch, Webwidow, Witchfire the Unholy, Witchmoon
+			"monsters/monsters/redv.trn",    // ref: 0x49B6F8; Red Vex
 			"monsters/succ/blkjd.trn",
 			"monsters/succ/redv.trn",
 			"monsters/succ/succb.trn",
@@ -5966,6 +6335,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Glasskull the Jagged
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bonesaw the Litch, Brokenstorm, Devilskull Sharpbone, Doomcloud, Doomgrin the Rotting, Doomlock, Festerskull, Stormbane, The Flayer
 			"monsters/thin/thinv1.trn",
 			"monsters/thin/thinv2.trn",
 			"monsters/thin/thinv3.trn",
@@ -5982,6 +6353,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Glasskull the Jagged
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bonesaw the Litch, Brokenstorm, Devilskull Sharpbone, Doomcloud, Doomgrin the Rotting, Doomlock, Festerskull, Stormbane, The Flayer
 			"monsters/thin/thinv1.trn",
 			"monsters/thin/thinv2.trn",
 			"monsters/thin/thinv3.trn",
@@ -5998,6 +6371,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Glasskull the Jagged
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bonesaw the Litch, Brokenstorm, Devilskull Sharpbone, Doomcloud, Doomgrin the Rotting, Doomlock, Festerskull, Stormbane, The Flayer
 			"monsters/thin/thinv1.trn",
 			"monsters/thin/thinv2.trn",
 			"monsters/thin/thinv3.trn",
@@ -6014,6 +6389,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Glasskull the Jagged
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bonesaw the Litch, Brokenstorm, Devilskull Sharpbone, Doomcloud, Doomgrin the Rotting, Doomlock, Festerskull, Stormbane, The Flayer
 			"monsters/thin/thinv1.trn",
 			"monsters/thin/thinv2.trn",
 			"monsters/thin/thinv3.trn",
@@ -6030,6 +6407,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Glasskull the Jagged
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bonesaw the Litch, Brokenstorm, Devilskull Sharpbone, Doomcloud, Doomgrin the Rotting, Doomlock, Festerskull, Stormbane, The Flayer
 			"monsters/thin/thinv1.trn",
 			"monsters/thin/thinv2.trn",
 			"monsters/thin/thinv3.trn",
@@ -6046,6 +6425,8 @@ var confs = map[string]*Config{
 		W:      160, // ref: 0x497E08
 		H:      128, // h = npixels/w = 20480/160 = 128
 		Trns: []string{
+			"monsters/monsters/bhka.trn",    // ref: 0x49B6F8; Glasskull the Jagged
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bonesaw the Litch, Brokenstorm, Devilskull Sharpbone, Doomcloud, Doomgrin the Rotting, Doomlock, Festerskull, Stormbane, The Flayer
 			"monsters/thin/thinv1.trn",
 			"monsters/thin/thinv2.trn",
 			"monsters/thin/thinv3.trn",
@@ -6116,6 +6497,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96, // ref: 0x497E08
 		H:      96, // h = npixels/w = 9216/96 = 96
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodmoon Soulfire, Howlingire the Shade, Soulslash, Zamphir
+		},
 	},
 	"monsters/unrav/unravd.cl2": {
 		// The contents of the archive header at offset 0 in unravd.cl2:
@@ -6127,6 +6511,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodmoon Soulfire, Howlingire the Shade, Soulslash, Zamphir
+		},
 	},
 	"monsters/unrav/unravh.cl2": {
 		// The contents of the archive header at offset 0 in unravh.cl2:
@@ -6138,6 +6525,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodmoon Soulfire, Howlingire the Shade, Soulslash, Zamphir
+		},
 	},
 	"monsters/unrav/unravn.cl2": {
 		// The contents of the archive header at offset 0 in unravn.cl2:
@@ -6149,6 +6539,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodmoon Soulfire, Howlingire the Shade, Soulslash, Zamphir
+		},
 	},
 	"monsters/unrav/unravs.cl2": {
 		// The contents of the archive header at offset 0 in unravs.cl2:
@@ -6160,6 +6553,9 @@ var confs = map[string]*Config{
 		Header: 10,
 		W:      96,  // ref: 0x497E08
 		H:      128, // h = npixels/w = 12288/96 = 128
+		Trns: []string{
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Bloodmoon Soulfire, Howlingire the Shade, Soulslash, Zamphir
+		},
 	},
 	"monsters/zombie/zombiea.cl2": {
 		// The contents of the archive header at offset 0 in zombiea.cl2:
