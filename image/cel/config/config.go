@@ -6568,6 +6568,10 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/eth.trn",     // ref: 0x49B6F8; Rotfeast the Hungry
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Soulpus
+			"monsters/monsters/pmr.trn",     // ref: 0x49B6F8; Goretongue
+			"monsters/monsters/rcrn.trn",    // ref: 0x49B6F8; Rotcarnage
 			"monsters/zombie/bluered.trn",
 			"monsters/zombie/grey.trn",
 			"monsters/zombie/yellow.trn",
@@ -6584,6 +6588,10 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/eth.trn",     // ref: 0x49B6F8; Rotfeast the Hungry
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Soulpus
+			"monsters/monsters/pmr.trn",     // ref: 0x49B6F8; Goretongue
+			"monsters/monsters/rcrn.trn",    // ref: 0x49B6F8; Rotcarnage
 			"monsters/zombie/bluered.trn",
 			"monsters/zombie/grey.trn",
 			"monsters/zombie/yellow.trn",
@@ -6600,6 +6608,10 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/eth.trn",     // ref: 0x49B6F8; Rotfeast the Hungry
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Soulpus
+			"monsters/monsters/pmr.trn",     // ref: 0x49B6F8; Goretongue
+			"monsters/monsters/rcrn.trn",    // ref: 0x49B6F8; Rotcarnage
 			"monsters/zombie/bluered.trn",
 			"monsters/zombie/grey.trn",
 			"monsters/zombie/yellow.trn",
@@ -6616,6 +6628,10 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/eth.trn",     // ref: 0x49B6F8; Rotfeast the Hungry
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Soulpus
+			"monsters/monsters/pmr.trn",     // ref: 0x49B6F8; Goretongue
+			"monsters/monsters/rcrn.trn",    // ref: 0x49B6F8; Rotcarnage
 			"monsters/zombie/bluered.trn",
 			"monsters/zombie/grey.trn",
 			"monsters/zombie/yellow.trn",
@@ -6632,6 +6648,10 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/eth.trn",     // ref: 0x49B6F8; Rotfeast the Hungry
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Soulpus
+			"monsters/monsters/pmr.trn",     // ref: 0x49B6F8; Goretongue
+			"monsters/monsters/rcrn.trn",    // ref: 0x49B6F8; Rotcarnage
 			"monsters/zombie/bluered.trn",
 			"monsters/zombie/grey.trn",
 			"monsters/zombie/yellow.trn",
@@ -6648,6 +6668,10 @@ var confs = map[string]*Config{
 		W:      128, // ref: 0x497E08
 		H:      96,  // h = npixels/w = 12288/128 = 96
 		Trns: []string{
+			"monsters/monsters/eth.trn",     // ref: 0x49B6F8; Rotfeast the Hungry
+			"monsters/monsters/general.trn", // ref: 0x49B6F8; Soulpus
+			"monsters/monsters/pmr.trn",     // ref: 0x49B6F8; Goretongue
+			"monsters/monsters/rcrn.trn",    // ref: 0x49B6F8; Rotcarnage
 			"monsters/zombie/bluered.trn",
 			"monsters/zombie/grey.trn",
 			"monsters/zombie/yellow.trn",
