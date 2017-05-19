@@ -5919,6 +5919,7 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
 			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+			"monsters/skelaxe/white.trn",  // ref: 0x497E08
 		},
 	},
 	"monsters/sking/skingd.cl2": {
@@ -5933,6 +5934,7 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
 			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+			"monsters/skelaxe/white.trn",  // ref: 0x497E08
 		},
 	},
 	"monsters/sking/skingh.cl2": {
@@ -5947,6 +5949,7 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
 			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+			"monsters/skelaxe/white.trn",  // ref: 0x497E08
 		},
 	},
 	"monsters/sking/skingn.cl2": {
@@ -5961,6 +5964,7 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
 			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+			"monsters/skelaxe/white.trn",  // ref: 0x497E08
 		},
 	},
 	"monsters/sking/skings.cl2": {
@@ -5975,6 +5979,7 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
 			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+			"monsters/skelaxe/white.trn",  // ref: 0x497E08
 		},
 	},
 	"monsters/sking/skingw.cl2": {
@@ -5989,6 +5994,7 @@ var confs = map[string]*Config{
 		H:      160, // h = npixels/w = 25600/160 = 160
 		Trns: []string{
 			"monsters/monsters/genrl.trn", // ref: 0x49B6F8; Skeleton King
+			"monsters/skelaxe/white.trn",  // ref: 0x497E08
 		},
 	},
 	"monsters/snake/snakea.cl2": {
