@@ -1,4 +1,4 @@
-// Package min implements access to MIN files.
+// Package min provides access to MIN files.
 //
 // The MIN file of each level (e.g. "levels/l1data/l1.min") specifies how to
 // arrange the frames of the level's CEL file (e.g. "levels/l1data/l1.cel") in
