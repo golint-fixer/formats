@@ -26,7 +26,7 @@
 //       // Dungeon piece ID at the bottom of the tile.
 //       Bottom uint16
 //    }
-package min
+package til
 
 import (
 	"bufio"
