@@ -86,7 +86,7 @@ func DecodeAll(path string, pal color.Palette) ([]image.Image, error) {
 		return nil, errors.WithStack(err)
 	}
 	if conf.Nimgs != 0 {
-		return nil, errors.Errorf("invalid call cel.DecodeAll for CEL archive %q; use cel.DecodeArchive instead")
+		return nil, errors.Errorf("invalid call cel.DecodeAll for CEL archive %q; use cel.DecodeArchive instead", path)
 	}
 
 	// Read file contents.
