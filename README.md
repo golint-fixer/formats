@@ -28,6 +28,8 @@ mpq -dir diabdat -m diabdat.mpq
 
 ```bash
 # Convert all CEL and CL2 files into PNG format.
+#
+# The command takes ~15 minutes to complete.
 cel_dump -a
 ```
 
@@ -35,6 +37,8 @@ cel_dump -a
 
 ```bash
 # Convert all MIN files into PNG format.
+#
+# The command takes ~1 minute to complete.
 min_dump -a
 ```
 
