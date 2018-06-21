@@ -9,7 +9,7 @@ The aim of this project is to provide open source reference decoders for the fil
 ## Installation
 
 ```bash
-go get github.com/sanctuary/formats/...
+go get -u github.com/sanctuary/formats/...
 ```
 
 ## Usage
@@ -41,9 +41,3 @@ cel_dump -a
 # The command takes ~1 minute to complete.
 min_dump -a
 ```
-
-## Public domain
-
-The source code and any original content of this repository is hereby released into the [public domain].
-
-[public domain]: https://creativecommons.org/publicdomain/zero/1.0/
