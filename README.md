@@ -20,7 +20,7 @@ The `cel_dump` and `min_dump` tools search for game assets in the `diabdat/` dir
 
 ```bash
 # Extract DIABDAT.MPQ archive.
-go get github.com/sanctuary/mpq
+go -u get github.com/sanctuary/mpq
 mpq -dir diabdat -m diabdat.mpq
 ```
 
