@@ -24,6 +24,15 @@ go -u get github.com/sanctuary/mpq
 mpq -dir diabdat -m diabdat.mpq
 ```
 
+### Fix broken files in diabdat.mpq
+
+The original `diabdat.mpq` archive contains three broken files, `levels/l1data/banner2.dun`, `monsters/darkmage/dmagew.cl2` and `monsters/unrav/unravw.cel`. All of which can be fixed by running the `mpqfix` tool on the `diabdat/` directory containing the extracted game assets.
+
+```bash
+go get -u github.com/mewrnd/blizzconv/cmd/mpqfix
+mpqfix -mpqdump diabdat
+```
+
 ### Dump CEL files
 
 ```bash
